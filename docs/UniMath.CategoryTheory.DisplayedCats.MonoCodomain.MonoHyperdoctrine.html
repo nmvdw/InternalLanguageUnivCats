@@ -1,21 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="coqdoc.css" rel="stylesheet" type="text/css" />
-<title>UniMath.CategoryTheory.DisplayedCats.MonoCodomain.MonoHyperdoctrine</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link href="coqdoc.css" rel="stylesheet" type="text/css"/>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<script src="./proofs-toggle.js" type="text/javascript"></script>
+	<style>
+		div.proofcomment {
+			font-style: italic;
+		}
+	</style>
+	<title>Documentation</title>
 </head>
-
 <body>
-
 <div id="page">
-
-<div id="header">
-</div>
-
 <div id="main">
-
 <h1 class="libtitle">Library UniMath.CategoryTheory.DisplayedCats.MonoCodomain.MonoHyperdoctrine</h1>
 
 <div class="code">
@@ -62,7 +61,7 @@
 </div>
 
 <div class="doc">
-<a id="lab1466"></a><h1 class="section">1. The preorder hyperdoctrine of monomorphisms in a category</h1>
+<a id="lab1471"></a><h1 class="section">1. The preorder hyperdoctrine of monomorphisms in a category</h1>
 
 </div>
 <div class="code">
@@ -89,7 +88,7 @@
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="mono_preorder_hyperdoctrine" class="idref" href="#mono_preorder_hyperdoctrine"><span class="id" title="definition">mono_preorder_hyperdoctrine</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Hyperdoctrines.Hyperdoctrine.html#preorder_hyperdoctrine"><span class="id" title="definition">preorder_hyperdoctrine</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Hyperdoctrines.Hyperdoctrine.html#make_preorder_hyperdoctrine"><span class="id" title="definition">make_preorder_hyperdoctrine</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.MonoCodomain.MonoHyperdoctrine.html#PreorderHyperdoctrineMonos.C"><span class="id" title="variable">C</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#disp_mono_codomain"><span class="id" title="definition">disp_mono_codomain</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.MonoCodomain.MonoHyperdoctrine.html#PreorderHyperdoctrineMonos.C"><span class="id" title="variable">C</span></a>).<br/>
@@ -97,12 +96,12 @@
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.MonoCodomain.MonoHyperdoctrine.html#PreorderHyperdoctrineMonos.BP"><span class="id" title="variable">BP</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#mono_cod_disp_cleaving"><span class="id" title="definition">mono_cod_disp_cleaving</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.MonoCodomain.MonoHyperdoctrine.html#PreorderHyperdoctrineMonos.PB"><span class="id" title="variable">PB</span></a>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#locally_propositional_mono_cod_disp_cat"><span class="id" title="definition">locally_propositional_mono_cod_disp_cat</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="mono_first_order_preorder_hyperdoctrine" class="idref" href="#mono_first_order_preorder_hyperdoctrine"><span class="id" title="definition">mono_first_order_preorder_hyperdoctrine</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Hyperdoctrines.FirstOrderHyperdoctrine.html#first_order_preorder_hyperdoctrine"><span class="id" title="definition">first_order_preorder_hyperdoctrine</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Hyperdoctrines.FirstOrderHyperdoctrine.html#make_first_order_preorder_hyperdoctrine"><span class="id" title="definition">make_first_order_preorder_hyperdoctrine</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.MonoCodomain.MonoHyperdoctrine.html#mono_preorder_hyperdoctrine"><span class="id" title="definition">mono_preorder_hyperdoctrine</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.MonoCodomain.MonoCodLimits.html#mono_codomain_fiberwise_terminal"><span class="id" title="definition">mono_codomain_fiberwise_terminal</span></a>.<br/>
@@ -112,14 +111,14 @@
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.MonoCodomain.MonoCodRightAdjoint.html#fiberwise_exponentials_mono_cod"><span class="id" title="definition">fiberwise_exponentials_mono_cod</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.MonoCodomain.MonoHyperdoctrine.html#PreorderHyperdoctrineMonos.HC'"><span class="id" title="variable">HC'</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.MonoCodomain.MonoHyperdoctrine.html#PreorderHyperdoctrineMonos.HC"><span class="id" title="variable">HC</span></a>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.MonoCodomain.MonoCodRightAdjoint.html#has_dependent_products_mono_cod"><span class="id" title="definition">has_dependent_products_mono_cod</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.MonoCodomain.MonoHyperdoctrine.html#PreorderHyperdoctrineMonos.HC'"><span class="id" title="variable">HC'</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.MonoCodomain.MonoHyperdoctrine.html#PreorderHyperdoctrineMonos.HC"><span class="id" title="variable">HC</span></a>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.MonoCodomain.MonoCodLeftAdjoint.html#mono_codomain_has_dependent_sums"><span class="id" title="definition">mono_codomain_has_dependent_sums</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.MonoCodomain.MonoHyperdoctrine.html#PreorderHyperdoctrineMonos.HC'"><span class="id" title="variable">HC'</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 <span class="id" title="keyword">End</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.MonoCodomain.MonoHyperdoctrine.html#PreorderHyperdoctrineMonos"><span class="id" title="section">PreorderHyperdoctrineMonos</span></a>.<br/>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab1467"></a><h1 class="section">2. The hyperdoctrine of monomorphisms in a univalent category</h1>
+<a id="lab1472"></a><h1 class="section">2. The hyperdoctrine of monomorphisms in a univalent category</h1>
 
 </div>
 <div class="code">
@@ -146,7 +145,7 @@
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="subobject_hyperdoctrine" class="idref" href="#subobject_hyperdoctrine"><span class="id" title="definition">subobject_hyperdoctrine</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Hyperdoctrines.Hyperdoctrine.html#hyperdoctrine"><span class="id" title="definition">hyperdoctrine</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Hyperdoctrines.Hyperdoctrine.html#make_hyperdoctrine"><span class="id" title="definition">make_hyperdoctrine</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.MonoCodomain.MonoHyperdoctrine.html#HyperdoctrineUnivalentSubobjects.C"><span class="id" title="variable">C</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#disp_mono_codomain"><span class="id" title="definition">disp_mono_codomain</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.MonoCodomain.MonoHyperdoctrine.html#HyperdoctrineUnivalentSubobjects.C"><span class="id" title="variable">C</span></a>).<br/>
@@ -155,12 +154,12 @@
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#mono_cod_disp_cleaving"><span class="id" title="definition">mono_cod_disp_cleaving</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.MonoCodomain.MonoHyperdoctrine.html#HyperdoctrineUnivalentSubobjects.PB"><span class="id" title="variable">PB</span></a>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#locally_propositional_mono_cod_disp_cat"><span class="id" title="definition">locally_propositional_mono_cod_disp_cat</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#disp_univalent_disp_mono_codomain"><span class="id" title="lemma">disp_univalent_disp_mono_codomain</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="subobject_first_order_hyperdoctrine" class="idref" href="#subobject_first_order_hyperdoctrine"><span class="id" title="definition">subobject_first_order_hyperdoctrine</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Hyperdoctrines.FirstOrderHyperdoctrine.html#first_order_hyperdoctrine"><span class="id" title="definition">first_order_hyperdoctrine</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Hyperdoctrines.FirstOrderHyperdoctrine.html#make_first_order_hyperdoctrine"><span class="id" title="definition">make_first_order_hyperdoctrine</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.MonoCodomain.MonoHyperdoctrine.html#subobject_hyperdoctrine"><span class="id" title="definition">subobject_hyperdoctrine</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.MonoCodomain.MonoCodLimits.html#mono_codomain_fiberwise_terminal"><span class="id" title="definition">mono_codomain_fiberwise_terminal</span></a>.<br/>
@@ -170,7 +169,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.MonoCodomain.MonoCodRightAdjoint.html#fiberwise_exponentials_mono_cod"><span class="id" title="definition">fiberwise_exponentials_mono_cod</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.MonoCodomain.MonoHyperdoctrine.html#HyperdoctrineUnivalentSubobjects.HC'"><span class="id" title="variable">HC'</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.MonoCodomain.MonoHyperdoctrine.html#HyperdoctrineUnivalentSubobjects.HC"><span class="id" title="variable">HC</span></a>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.MonoCodomain.MonoCodRightAdjoint.html#has_dependent_products_mono_cod"><span class="id" title="definition">has_dependent_products_mono_cod</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.MonoCodomain.MonoHyperdoctrine.html#HyperdoctrineUnivalentSubobjects.HC'"><span class="id" title="variable">HC'</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.MonoCodomain.MonoHyperdoctrine.html#HyperdoctrineUnivalentSubobjects.HC"><span class="id" title="variable">HC</span></a>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.MonoCodomain.MonoCodLeftAdjoint.html#mono_codomain_has_dependent_sums"><span class="id" title="definition">mono_codomain_has_dependent_sums</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.MonoCodomain.MonoHyperdoctrine.html#HyperdoctrineUnivalentSubobjects.HC'"><span class="id" title="variable">HC'</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 <span class="id" title="keyword">End</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.MonoCodomain.MonoHyperdoctrine.html#HyperdoctrineUnivalentSubobjects"><span class="id" title="section">HyperdoctrineUnivalentSubobjects</span></a>.<br/>
 </div>
 </div>

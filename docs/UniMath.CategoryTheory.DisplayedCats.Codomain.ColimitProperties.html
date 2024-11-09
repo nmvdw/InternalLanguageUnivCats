@@ -1,21 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="coqdoc.css" rel="stylesheet" type="text/css" />
-<title>UniMath.CategoryTheory.DisplayedCats.Codomain.ColimitProperties</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link href="coqdoc.css" rel="stylesheet" type="text/css"/>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<script src="./proofs-toggle.js" type="text/javascript"></script>
+	<style>
+		div.proofcomment {
+			font-style: italic;
+		}
+	</style>
+	<title>Documentation</title>
 </head>
-
 <body>
-
 <div id="page">
-
-<div id="header">
-</div>
-
 <div id="main">
-
 <h1 class="libtitle">Library UniMath.CategoryTheory.DisplayedCats.Codomain.ColimitProperties</h1>
 
 <div class="code">
@@ -53,7 +52,7 @@
 </div>
 
 <div class="doc">
-<a id="lab1570"></a><h1 class="section">1. Strict initial objects in the slice category</h1>
+<a id="lab1602"></a><h1 class="section">1. Strict initial objects in the slice category</h1>
 
 </div>
 <div class="code">
@@ -61,29 +60,29 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="I:3" class="idref" href="#I:3"><span class="id" title="binder">I</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Initial.html#Initial"><span class="id" title="definition">Initial</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.ColimitProperties.html#ASlice.C"><span class="id" title="variable">C</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HI:4" class="idref" href="#HI:4"><span class="id" title="binder">HI</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.StrictInitial.html#is_strict_initial"><span class="id" title="definition">is_strict_initial</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.ColimitProperties.html#I:3"><span class="id" title="variable">I</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.StrictInitial.html#is_strict_initial"><span class="id" title="definition">is_strict_initial</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.CodColimits.html#initial_cod_fib"><span class="id" title="definition">initial_cod_fib</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.ColimitProperties.html#ASlice.x"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.ColimitProperties.html#I:3"><span class="id" title="variable">I</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">y</span> <span class="id" title="var">f</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiber.html#is_z_iso_fiber_from_is_z_iso_disp"><span class="id" title="definition">is_z_iso_fiber_from_is_z_iso_disp</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.html#is_z_iso_disp_codomain"><span class="id" title="definition">is_z_iso_disp_codomain</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <span class="id" title="var">HI</span>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="strict_initial_cod_fib" class="idref" href="#strict_initial_cod_fib"><span class="id" title="definition">strict_initial_cod_fib</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="I:5" class="idref" href="#I:5"><span class="id" title="binder">I</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.StrictInitial.html#strict_initial_object"><span class="id" title="definition">strict_initial_object</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.ColimitProperties.html#ASlice.C"><span class="id" title="variable">C</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.StrictInitial.html#strict_initial_object"><span class="id" title="definition">strict_initial_object</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.ColimitProperties.html#ASlice.C"><span class="id" title="variable">C</span></a><a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.FiberCod.html#3ba4da14416d01104aa99a372e1c96df"><span class="id" title="notation">/</span></a><a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.ColimitProperties.html#ASlice.x"><span class="id" title="variable">x</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Limits.StrictInitial.html#make_strict_initial"><span class="id" title="definition">make_strict_initial</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.CodColimits.html#initial_cod_fib"><span class="id" title="definition">initial_cod_fib</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.ColimitProperties.html#ASlice.x"><span class="id" title="variable">x</span></a> <span class="id" title="var">I</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.ColimitProperties.html#is_strict_initial_cod_fib"><span class="id" title="definition">is_strict_initial_cod_fib</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.StrictInitial.html#is_strict_initial_strict_initial"><span class="id" title="lemma">is_strict_initial_strict_initial</span></a> <span class="id" title="var">I</span>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab1571"></a><h1 class="section">2. Disjoint binary coproducts in the slice</h1>
+<a id="lab1603"></a><h1 class="section">2. Disjoint binary coproducts in the slice</h1>
 
 </div>
 <div class="code">
@@ -94,7 +93,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.DisjointBinCoproducts.html#disjoint_bincoproducts"><span class="id" title="definition">disjoint_bincoproducts</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.CodColimits.html#bincoproducts_cod_fib"><span class="id" title="definition">bincoproducts_cod_fib</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.ColimitProperties.html#ASlice.x"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.ColimitProperties.html#BC:7"><span class="id" title="variable">BC</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.CodColimits.html#initial_cod_fib"><span class="id" title="definition">initial_cod_fib</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.ColimitProperties.html#ASlice.x"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.ColimitProperties.html#I:6"><span class="id" title="variable">I</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">repeat</span> <span class="id" title="tactic">split</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.CodMorphisms.html#is_monic_cod_fib"><span class="id" title="definition">is_monic_cod_fib</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <span class="id" title="var">H</span>.<br/>
@@ -106,13 +105,13 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Initial.html#InitialArrowEq"><span class="id" title="lemma">InitialArrowEq</span></a>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">apply</span> <span class="id" title="var">H</span>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab1572"></a><h1 class="section">3. Stable binary coproducts in the slice</h1>
+<a id="lab1604"></a><h1 class="section">3. Stable binary coproducts in the slice</h1>
 
 </div>
 <div class="code">
@@ -121,21 +120,21 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HC:10" class="idref" href="#HC:10"><span class="id" title="binder">HC</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#Pullbacks"><span class="id" title="definition">Pullbacks</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.ColimitProperties.html#ASlice.C"><span class="id" title="variable">C</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="H:11" class="idref" href="#H:11"><span class="id" title="binder">H</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.DisjointBinCoproducts.html#stable_bincoproducts"><span class="id" title="definition">stable_bincoproducts</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.ColimitProperties.html#BC:9"><span class="id" title="variable">BC</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.DisjointBinCoproducts.html#stable_bincoproducts"><span class="id" title="definition">stable_bincoproducts</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.CodColimits.html#bincoproducts_cod_fib"><span class="id" title="definition">bincoproducts_cod_fib</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.ColimitProperties.html#ASlice.x"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.ColimitProperties.html#BC:9"><span class="id" title="variable">BC</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Limits.DisjointBinCoproducts.html#stable_bincoproducts_from_pb_preserves_bincoproduct"><span class="id" title="lemma">stable_bincoproducts_from_pb_preserves_bincoproduct</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.CodLimits.html#codomain_fiberwise_pullbacks"><span class="id" title="definition">codomain_fiberwise_pullbacks</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">HC</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">intros</span> <span class="id" title="var">f</span> <span class="id" title="var">g</span> <span class="id" title="var">p</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.IteratedSlice.html#preserves_bincoproduct_cod_pb_iterated"><span class="id" title="definition">preserves_bincoproduct_cod_pb_iterated</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.DisjointBinCoproducts.html#pb_preserves_bincoproduct_from_stable_bincoproducts"><span class="id" title="lemma">pb_preserves_bincoproduct_from_stable_bincoproducts</span></a> <span class="id" title="var">BC</span> <span class="id" title="var">HC</span> <span class="id" title="var">H</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.FiberCod.html#dom_mor"><span class="id" title="definition">dom_mor</span></a> <span class="id" title="var">p</span>)).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 <span class="id" title="keyword">End</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.ColimitProperties.html#ASlice"><span class="id" title="section">ASlice</span></a>.<br/>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab1573"></a><h1 class="section">4. Preservation of colimits by the arrow functor</h1>
+<a id="lab1605"></a><h1 class="section">4. Preservation of colimits by the arrow functor</h1>
 
 </div>
 <div class="code">
@@ -146,7 +145,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HF:16" class="idref" href="#HF:16"><span class="id" title="binder">HF</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_initial"><span class="id" title="definition">preserves_initial</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.ColimitProperties.html#F:15"><span class="id" title="variable">F</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="x:17" class="idref" href="#x:17"><span class="id" title="binder">x</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.ColimitProperties.html#047aea41034b0f1d683a10ec01db4493"><span class="id" title="variable">C₁</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_initial"><span class="id" title="definition">preserves_initial</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiber.html#fiber_functor"><span class="id" title="definition">fiber_functor</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.CodFunctor.html#disp_codomain_functor"><span class="id" title="definition">disp_codomain_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.ColimitProperties.html#F:15"><span class="id" title="variable">F</span></a>) <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.ColimitProperties.html#x:17"><span class="id" title="variable">x</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_initial_if_preserves_chosen"><span class="id" title="definition">preserves_initial_if_preserves_chosen</span></a>.<br/>
 &nbsp;&nbsp;{<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.CodColimits.html#initial_cod_fib"><span class="id" title="definition">initial_cod_fib</span></a> <span class="id" title="var">x</span> <span class="id" title="var">I</span>).<br/>
@@ -155,7 +154,7 @@
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.CodColimits.html#to_initial_slice"><span class="id" title="definition">to_initial_slice</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <span class="id" title="var">HF</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> <span class="id" title="var">I</span>).<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="preserves_bincoproducts_fiber_functor_disp_codomain" class="idref" href="#preserves_bincoproducts_fiber_functor_disp_codomain"><span class="id" title="definition">preserves_bincoproducts_fiber_functor_disp_codomain</span></a><br/>
@@ -165,7 +164,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HF:22" class="idref" href="#HF:22"><span class="id" title="binder">HF</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_bincoproduct"><span class="id" title="definition">preserves_bincoproduct</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.ColimitProperties.html#F:21"><span class="id" title="variable">F</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="x:23" class="idref" href="#x:23"><span class="id" title="binder">x</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.ColimitProperties.html#269d1706fef7241faa5465b31ec3fa93"><span class="id" title="variable">C₁</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_bincoproduct"><span class="id" title="definition">preserves_bincoproduct</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiber.html#fiber_functor"><span class="id" title="definition">fiber_functor</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.CodFunctor.html#disp_codomain_functor"><span class="id" title="definition">disp_codomain_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.ColimitProperties.html#F:21"><span class="id" title="variable">F</span></a>) <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.ColimitProperties.html#x:23"><span class="id" title="variable">x</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_bincoproduct_if_preserves_chosen"><span class="id" title="definition">preserves_bincoproduct_if_preserves_chosen</span></a>.<br/>
 &nbsp;&nbsp;{<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.CodColimits.html#bincoproducts_cod_fib"><span class="id" title="definition">bincoproducts_cod_fib</span></a> <span class="id" title="var">x</span> <span class="id" title="var">BC</span>).<br/>
@@ -179,7 +178,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.CodFunctor.html#disp_codomain_fiber_functor_mor"><span class="id" title="lemma">disp_codomain_fiber_functor_mor</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 </div>
 </div>
 

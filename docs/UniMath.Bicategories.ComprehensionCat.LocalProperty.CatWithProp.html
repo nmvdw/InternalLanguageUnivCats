@@ -1,21 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="coqdoc.css" rel="stylesheet" type="text/css" />
-<title>UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link href="coqdoc.css" rel="stylesheet" type="text/css"/>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<script src="./proofs-toggle.js" type="text/javascript"></script>
+	<style>
+		div.proofcomment {
+			font-style: italic;
+		}
+	</style>
+	<title>Documentation</title>
 </head>
-
 <body>
-
 <div id="page">
-
-<div id="header">
-</div>
-
 <div id="main">
-
 <h1 class="libtitle">Library UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp</h1>
 
 <div class="code">
@@ -44,14 +43,14 @@
 </div>
 
 <div class="doc">
-<a id="lab3238"></a><h1 class="section">1. The displayed bicategory arising from a categorical property</h1>
+<a id="lab3327"></a><h1 class="section">1. The displayed bicategory arising from a categorical property</h1>
 
 </div>
 <div class="code">
 <span class="id" title="keyword">Definition</span> <a id="disp_bicat_of_univ_cat_with_cat_property" class="idref" href="#disp_bicat_of_univ_cat_with_cat_property"><span class="id" title="definition">disp_bicat_of_univ_cat_with_cat_property</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="P:1" class="idref" href="#P:1"><span class="id" title="binder">P</span></a> : <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.LocalProperties.html#cat_property"><span class="id" title="definition">cat_property</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispBicat.html#disp_bicat"><span class="id" title="definition">disp_bicat</span></a> <a class="idref" href="UniMath.Bicategories.Core.Examples.StructuredCategories.html#bicat_of_univ_cat_with_finlim"><span class="id" title="definition">bicat_of_univ_cat_with_finlim</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.Examples.Sub1Cell.html#disp_subbicat"><span class="id" title="definition">disp_subbicat</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">(</span></a><a id="C:2" class="idref" href="#C:2"><span class="id" title="binder"><span id="C:3" class="id">C</span></span></a> : <a class="idref" href="UniMath.Bicategories.Core.Examples.StructuredCategories.html#univ_cat_with_finlim"><span class="id" title="definition">univ_cat_with_finlim</span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">),</span></a> <span class="id" title="var">P</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp.html#C:2"><span class="id" title="variable">C</span></a>).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">(</span></a><a id="7a9c4a29798196c9e0949082c7ce30b8" class="idref" href="#7a9c4a29798196c9e0949082c7ce30b8"><span class="id" title="binder"><span id="422fa54cfa58f613edff23e882af5e79" class="id">C₁</span></span></a> <a id="603f1cccf45cfa7ce65909d4b3398a78" class="idref" href="#603f1cccf45cfa7ce65909d4b3398a78"><span class="id" title="binder"><span id="fac20af712cc0c8374543dcdfdb71a00" class="id">C₂</span></span></a> : <a class="idref" href="UniMath.Bicategories.Core.Examples.StructuredCategories.html#univ_cat_with_finlim"><span class="id" title="definition">univ_cat_with_finlim</span></a>)<br/>
@@ -63,7 +62,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.LocalProperties.html#cat_property_id_functor"><span class="id" title="lemma">cat_property_id_functor</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">intros</span> <span class="id" title="var">C₁</span> <span class="id" title="var">C₂</span> <span class="id" title="var">C₃</span> <span class="id" title="var">P₁</span> <span class="id" title="var">P₂</span> <span class="id" title="var">P₃</span> <span class="id" title="var">F</span> <span class="id" title="var">G</span> <span class="id" title="var">HF</span> <span class="id" title="var">HG</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.LocalProperties.html#cat_property_comp_functor"><span class="id" title="lemma">cat_property_comp_functor</span></a> <span class="id" title="var">P</span> <span class="id" title="var">HF</span> <span class="id" title="var">HG</span>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="bicat_of_univ_cat_with_cat_property" class="idref" href="#bicat_of_univ_cat_with_cat_property"><span class="id" title="definition">bicat_of_univ_cat_with_cat_property</span></a><br/>
@@ -75,102 +74,102 @@
 </div>
 
 <div class="doc">
-<a id="lab3239"></a><h1 class="section">2. The univalence of this bicategory</h1>
+<a id="lab3328"></a><h1 class="section">2. The univalence of this bicategory</h1>
 
 </div>
 <div class="code">
 <span class="id" title="keyword">Definition</span> <a id="disp_univalent_2_1_disp_bicat_univ_cat_with_cat_property" class="idref" href="#disp_univalent_2_1_disp_bicat_univ_cat_with_cat_property"><span class="id" title="definition">disp_univalent_2_1_disp_bicat_univ_cat_with_cat_property</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="P:15" class="idref" href="#P:15"><span class="id" title="binder">P</span></a> : <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.LocalProperties.html#cat_property"><span class="id" title="definition">cat_property</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispUnivalence.html#disp_univalent_2_1"><span class="id" title="definition">disp_univalent_2_1</span></a> (<a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp.html#disp_bicat_of_univ_cat_with_cat_property"><span class="id" title="definition">disp_bicat_of_univ_cat_with_cat_property</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp.html#P:15"><span class="id" title="variable">P</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.Examples.Sub1Cell.html#disp_subbicat_univalent_2_1"><span class="id" title="definition">disp_subbicat_univalent_2_1</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.LocalProperties.html#isaprop_cat_property_functor"><span class="id" title="lemma">isaprop_cat_property_functor</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="disp_univalent_2_0_disp_bicat_univ_cat_with_cat_property" class="idref" href="#disp_univalent_2_0_disp_bicat_univ_cat_with_cat_property"><span class="id" title="definition">disp_univalent_2_0_disp_bicat_univ_cat_with_cat_property</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="P:16" class="idref" href="#P:16"><span class="id" title="binder">P</span></a> : <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.LocalProperties.html#cat_property"><span class="id" title="definition">cat_property</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispUnivalence.html#disp_univalent_2_0"><span class="id" title="definition">disp_univalent_2_0</span></a> (<a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp.html#disp_bicat_of_univ_cat_with_cat_property"><span class="id" title="definition">disp_bicat_of_univ_cat_with_cat_property</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp.html#P:16"><span class="id" title="variable">P</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.Examples.Sub1Cell.html#disp_subbicat_univalent_2_0"><span class="id" title="definition">disp_subbicat_univalent_2_0</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.Core.Examples.StructuredCategories.html#is_univalent_2_bicat_of_univ_cat_with_finlim"><span class="id" title="definition">is_univalent_2_bicat_of_univ_cat_with_finlim</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">intro</span> <span class="id" title="var">C</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.LocalProperties.html#isaprop_cat_property_ob"><span class="id" title="lemma">isaprop_cat_property_ob</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">intros</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.LocalProperties.html#isaprop_cat_property_functor"><span class="id" title="lemma">isaprop_cat_property_functor</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="disp_univalent_2_disp_bicat_univ_cat_with_cat_property" class="idref" href="#disp_univalent_2_disp_bicat_univ_cat_with_cat_property"><span class="id" title="definition">disp_univalent_2_disp_bicat_univ_cat_with_cat_property</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="P:17" class="idref" href="#P:17"><span class="id" title="binder">P</span></a> : <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.LocalProperties.html#cat_property"><span class="id" title="definition">cat_property</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispUnivalence.html#disp_univalent_2"><span class="id" title="definition">disp_univalent_2</span></a> (<a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp.html#disp_bicat_of_univ_cat_with_cat_property"><span class="id" title="definition">disp_bicat_of_univ_cat_with_cat_property</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp.html#P:17"><span class="id" title="variable">P</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">split</span>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp.html#disp_univalent_2_0_disp_bicat_univ_cat_with_cat_property"><span class="id" title="definition">disp_univalent_2_0_disp_bicat_univ_cat_with_cat_property</span></a> <span class="id" title="var">P</span>).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp.html#disp_univalent_2_1_disp_bicat_univ_cat_with_cat_property"><span class="id" title="definition">disp_univalent_2_1_disp_bicat_univ_cat_with_cat_property</span></a> <span class="id" title="var">P</span>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="is_univalent_2_1_bicat_of_univ_cat_with_cat_property" class="idref" href="#is_univalent_2_1_bicat_of_univ_cat_with_cat_property"><span class="id" title="definition">is_univalent_2_1_bicat_of_univ_cat_with_cat_property</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="P:18" class="idref" href="#P:18"><span class="id" title="binder">P</span></a> : <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.LocalProperties.html#cat_property"><span class="id" title="definition">cat_property</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.Core.Univalence.html#is_univalent_2_1"><span class="id" title="definition">is_univalent_2_1</span></a> (<a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp.html#bicat_of_univ_cat_with_cat_property"><span class="id" title="definition">bicat_of_univ_cat_with_cat_property</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp.html#P:18"><span class="id" title="variable">P</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispUnivalence.html#total_is_univalent_2_1"><span class="id" title="definition">total_is_univalent_2_1</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.Core.Examples.StructuredCategories.html#is_univalent_2_1_bicat_of_univ_cat_with_finlim"><span class="id" title="definition">is_univalent_2_1_bicat_of_univ_cat_with_finlim</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp.html#disp_univalent_2_1_disp_bicat_univ_cat_with_cat_property"><span class="id" title="definition">disp_univalent_2_1_disp_bicat_univ_cat_with_cat_property</span></a> <span class="id" title="var">P</span>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="is_univalent_2_0_bicat_of_univ_cat_with_cat_property" class="idref" href="#is_univalent_2_0_bicat_of_univ_cat_with_cat_property"><span class="id" title="definition">is_univalent_2_0_bicat_of_univ_cat_with_cat_property</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="P:19" class="idref" href="#P:19"><span class="id" title="binder">P</span></a> : <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.LocalProperties.html#cat_property"><span class="id" title="definition">cat_property</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.Core.Univalence.html#is_univalent_2_0"><span class="id" title="definition">is_univalent_2_0</span></a> (<a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp.html#bicat_of_univ_cat_with_cat_property"><span class="id" title="definition">bicat_of_univ_cat_with_cat_property</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp.html#P:19"><span class="id" title="variable">P</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispUnivalence.html#total_is_univalent_2_0"><span class="id" title="definition">total_is_univalent_2_0</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.Core.Examples.StructuredCategories.html#is_univalent_2_0_bicat_of_univ_cat_with_finlim"><span class="id" title="definition">is_univalent_2_0_bicat_of_univ_cat_with_finlim</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp.html#disp_univalent_2_0_disp_bicat_univ_cat_with_cat_property"><span class="id" title="definition">disp_univalent_2_0_disp_bicat_univ_cat_with_cat_property</span></a> <span class="id" title="var">P</span>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="is_univalent_2_bicat_of_univ_cat_with_cat_property" class="idref" href="#is_univalent_2_bicat_of_univ_cat_with_cat_property"><span class="id" title="definition">is_univalent_2_bicat_of_univ_cat_with_cat_property</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="P:20" class="idref" href="#P:20"><span class="id" title="binder">P</span></a> : <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.LocalProperties.html#cat_property"><span class="id" title="definition">cat_property</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.Core.Univalence.html#is_univalent_2"><span class="id" title="definition">is_univalent_2</span></a> (<a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp.html#bicat_of_univ_cat_with_cat_property"><span class="id" title="definition">bicat_of_univ_cat_with_cat_property</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp.html#P:20"><span class="id" title="variable">P</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">split</span>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp.html#is_univalent_2_0_bicat_of_univ_cat_with_cat_property"><span class="id" title="definition">is_univalent_2_0_bicat_of_univ_cat_with_cat_property</span></a> <span class="id" title="var">P</span>).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp.html#is_univalent_2_1_bicat_of_univ_cat_with_cat_property"><span class="id" title="definition">is_univalent_2_1_bicat_of_univ_cat_with_cat_property</span></a> <span class="id" title="var">P</span>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="disp_2cells_isaprop_disp_bicat_of_univ_cat_with_cat_property" class="idref" href="#disp_2cells_isaprop_disp_bicat_of_univ_cat_with_cat_property"><span class="id" title="definition">disp_2cells_isaprop_disp_bicat_of_univ_cat_with_cat_property</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="P:21" class="idref" href="#P:21"><span class="id" title="binder">P</span></a> : <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.LocalProperties.html#cat_property"><span class="id" title="definition">cat_property</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispBicat.html#disp_2cells_isaprop"><span class="id" title="definition">disp_2cells_isaprop</span></a> (<a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp.html#disp_bicat_of_univ_cat_with_cat_property"><span class="id" title="definition">disp_bicat_of_univ_cat_with_cat_property</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp.html#P:21"><span class="id" title="variable">P</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.Examples.Sub1Cell.html#disp_2cells_isaprop_subbicat"><span class="id" title="definition">disp_2cells_isaprop_subbicat</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="disp_locally_groupoid_disp_bicat_of_univ_cat_with_cat_property" class="idref" href="#disp_locally_groupoid_disp_bicat_of_univ_cat_with_cat_property"><span class="id" title="definition">disp_locally_groupoid_disp_bicat_of_univ_cat_with_cat_property</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="P:22" class="idref" href="#P:22"><span class="id" title="binder">P</span></a> : <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.LocalProperties.html#cat_property"><span class="id" title="definition">cat_property</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispBicat.html#disp_locally_groupoid"><span class="id" title="definition">disp_locally_groupoid</span></a> (<a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp.html#disp_bicat_of_univ_cat_with_cat_property"><span class="id" title="definition">disp_bicat_of_univ_cat_with_cat_property</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp.html#P:22"><span class="id" title="variable">P</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.Examples.Sub1Cell.html#disp_locally_groupoid_subbicat"><span class="id" title="definition">disp_locally_groupoid_subbicat</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.Core.Examples.StructuredCategories.html#is_univalent_2_bicat_of_univ_cat_with_finlim"><span class="id" title="definition">is_univalent_2_bicat_of_univ_cat_with_finlim</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="disp_2cells_iscontr_disp_bicat_of_univ_cat_with_cat_property" class="idref" href="#disp_2cells_iscontr_disp_bicat_of_univ_cat_with_cat_property"><span class="id" title="definition">disp_2cells_iscontr_disp_bicat_of_univ_cat_with_cat_property</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="P:23" class="idref" href="#P:23"><span class="id" title="binder">P</span></a> : <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.LocalProperties.html#cat_property"><span class="id" title="definition">cat_property</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispBicat.html#disp_2cells_iscontr"><span class="id" title="definition">disp_2cells_iscontr</span></a> (<a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp.html#disp_bicat_of_univ_cat_with_cat_property"><span class="id" title="definition">disp_bicat_of_univ_cat_with_cat_property</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp.html#P:23"><span class="id" title="variable">P</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.Examples.Sub1Cell.html#disp_2cells_iscontr_subbicat"><span class="id" title="definition">disp_2cells_iscontr_subbicat</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab3240"></a><h1 class="section">3. Displayed adjoint equivalences in this bicategory</h1>
+<a id="lab3329"></a><h1 class="section">3. Displayed adjoint equivalences in this bicategory</h1>
 
 </div>
 <div class="code">
@@ -183,15 +182,13 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="b2928d74c41ab751cc5e13d1939d7ba5" class="idref" href="#b2928d74c41ab751cc5e13d1939d7ba5"><span class="id" title="binder">T₂</span></a> : <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp.html#disp_bicat_of_univ_cat_with_cat_property"><span class="id" title="definition">disp_bicat_of_univ_cat_with_cat_property</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp.html#P:24"><span class="id" title="variable">P</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp.html#ab26be953e3ee58159fb6a967f9520ea"><span class="id" title="variable">C₂</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="FF:31" class="idref" href="#FF:31"><span class="id" title="binder">FF</span></a> : <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp.html#3ddec3c50cdf904beb0d2178bd4d4944"><span class="id" title="variable">T₁</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">--&gt;[</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp.html#F:27"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">]</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp.html#b2928d74c41ab751cc5e13d1939d7ba5"><span class="id" title="variable">T₂</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#disp_left_adjoint_equivalence"><span class="id" title="definition">disp_left_adjoint_equivalence</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp.html#HF:28"><span class="id" title="variable">HF</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp.html#FF:31"><span class="id" title="variable">FF</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.Examples.Sub1Cell.html#disp_left_adjoint_equivalence_subbicat"><span class="id" title="definition">disp_left_adjoint_equivalence_subbicat</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">clear</span> <span class="id" title="var">C₁</span> <span class="id" title="var">C₂</span> <span class="id" title="var">F</span> <span class="id" title="var">HF</span> <span class="id" title="var">T₁</span> <span class="id" title="var">T₂</span> <span class="id" title="var">FF</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">C₁</span> <span class="id" title="var">C₂</span> <span class="id" title="var">H₁</span> <span class="id" title="var">H₂</span> <span class="id" title="var">F</span> <span class="id" title="var">HF</span>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.LocalProperties.html#cat_property_adj_equiv"><span class="id" title="lemma">cat_property_adj_equiv</span></a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> (<a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#left_adjoint_equivalence_total_disp_weq"><span class="id" title="lemma">left_adjoint_equivalence_total_disp_weq</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">HF</span>))).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.LocalProperties.html#cat_property_adj_equiv"><span class="id" title="lemma">cat_property_adj_equiv</span></a> <span class="id" title="var">P</span> (<span class="id" title="var">F</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">HF</span>)).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.Core.Examples.StructuredCategories.html#is_univalent_2_bicat_of_univ_cat_with_finlim"><span class="id" title="definition">is_univalent_2_bicat_of_univ_cat_with_finlim</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 </div>
 </div>
 

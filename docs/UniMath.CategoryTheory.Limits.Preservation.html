@@ -1,21 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="coqdoc.css" rel="stylesheet" type="text/css" />
-<title>UniMath.CategoryTheory.Limits.Preservation</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link href="coqdoc.css" rel="stylesheet" type="text/css"/>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<script src="./proofs-toggle.js" type="text/javascript"></script>
+	<style>
+		div.proofcomment {
+			font-style: italic;
+		}
+	</style>
+	<title>Documentation</title>
 </head>
-
 <body>
-
 <div id="page">
-
-<div id="header">
-</div>
-
 <div id="main">
-
 <h1 class="libtitle">Library UniMath.CategoryTheory.Limits.Preservation</h1>
 
 <div class="code">
@@ -87,9 +86,9 @@
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:11"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">TerminalArrow</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">T</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">x</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">)</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.Limits.Terminal.html#TerminalArrow"><span class="id" title="definition">TerminalArrow</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_terminal_to_terminal"><span class="id" title="definition">preserves_terminal_to_terminal</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:11"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#HF:12"><span class="id" title="variable">HF</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#T:10"><span class="id" title="variable">T</span></a>) <span class="id" title="var">_</span>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Terminal.html#TerminalArrowEq"><span class="id" title="lemma">TerminalArrowEq</span></a> (<span class="id" title="var">T</span> := <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_terminal_to_terminal"><span class="id" title="definition">preserves_terminal_to_terminal</span></a> <span class="id" title="var">F</span> <span class="id" title="var">HF</span> <span class="id" title="var">T</span>)).<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="identity_preserves_terminal" class="idref" href="#identity_preserves_terminal"><span class="id" title="definition">identity_preserves_terminal</span></a><br/>
@@ -112,10 +111,10 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="1ca0e6874f93ee359dc2bcb129e9e15a" class="idref" href="#1ca0e6874f93ee359dc2bcb129e9e15a"><span class="id" title="binder">C₁</span></a> <a id="3832b264c5f9200df9cefd81230e34a1" class="idref" href="#3832b264c5f9200df9cefd81230e34a1"><span class="id" title="binder">C₂</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#category"><span class="id" title="definition">category</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="F:28" class="idref" href="#F:28"><span class="id" title="binder">F</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#1ca0e6874f93ee359dc2bcb129e9e15a"><span class="id" title="variable">C₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#2e11fa34845c6475af27ac9ab3f166ed"><span class="id" title="notation">⟶</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#3832b264c5f9200df9cefd81230e34a1"><span class="id" title="variable">C₂</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.PartB.html#isaprop"><span class="id" title="definition">isaprop</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_terminal"><span class="id" title="definition">preserves_terminal</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:28"><span class="id" title="variable">F</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">repeat</span> (<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartD.html#impred"><span class="id" title="lemma">impred</span></a> ; <span class="id" title="tactic">intro</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartD.html#isapropiscontr"><span class="id" title="lemma">isapropiscontr</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="preserves_chosen_terminal" class="idref" href="#preserves_chosen_terminal"><span class="id" title="definition">preserves_chosen_terminal</span></a><br/>
@@ -132,7 +131,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="F:36" class="idref" href="#F:36"><span class="id" title="binder">F</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#15fb95de46be4eb86c773d59e4ea41d7"><span class="id" title="variable">C₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#2e11fa34845c6475af27ac9ab3f166ed"><span class="id" title="notation">⟶</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#bb2217447bec79a04d7b1d66a8953739"><span class="id" title="variable">C₂</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HF:37" class="idref" href="#HF:37"><span class="id" title="binder">HF</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_chosen_terminal"><span class="id" title="definition">preserves_chosen_terminal</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#70d715ca8513d46558305a91f4fe4676"><span class="id" title="variable">HC₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:36"><span class="id" title="variable">F</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_terminal"><span class="id" title="definition">preserves_terminal</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:36"><span class="id" title="variable">F</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">Hx</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Terminal.html#iso_to_Terminal"><span class="id" title="definition">iso_to_Terminal</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.Limits.Terminal.html#make_Terminal"><span class="id" title="definition">make_Terminal</span></a> <span class="id" title="var">_</span> <span class="id" title="var">HF</span>)<br/>
@@ -140,7 +139,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_on_z_iso"><span class="id" title="definition">functor_on_z_iso</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">F</span><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.Limits.Terminal.html#z_iso_Terminals"><span class="id" title="definition">z_iso_Terminals</span></a> <span class="id" title="var">HC₁</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Terminal.html#make_Terminal"><span class="id" title="definition">make_Terminal</span></a> <span class="id" title="var">_</span> <span class="id" title="var">Hx</span>)))).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="preserves_terminal_chosen_to_chosen" class="idref" href="#preserves_terminal_chosen_to_chosen"><span class="id" title="definition">preserves_terminal_chosen_to_chosen</span></a><br/>
@@ -150,13 +149,13 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="F:42" class="idref" href="#F:42"><span class="id" title="binder">F</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#9d1c17c1510bfe774530b516308806e9"><span class="id" title="variable">C₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#2e11fa34845c6475af27ac9ab3f166ed"><span class="id" title="notation">⟶</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#8a6ba170772e69b5eb4d54dcc212c766"><span class="id" title="variable">C₂</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HF:43" class="idref" href="#HF:43"><span class="id" title="binder">HF</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#is_z_isomorphism"><span class="id" title="definition">is_z_isomorphism</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Terminal.html#TerminalArrow"><span class="id" title="definition">TerminalArrow</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#6bf4907df2edbb86826b80b5e8bb67bc"><span class="id" title="variable">T₂</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:42"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#5029ca3c2e477ec1e810a4aba61d6fcc"><span class="id" title="variable">T₁</span></a>)))<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_terminal"><span class="id" title="definition">preserves_terminal</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:42"><span class="id" title="variable">F</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_terminal_if_preserves_chosen"><span class="id" title="definition">preserves_terminal_if_preserves_chosen</span></a> <span class="id" title="var">T₁</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_chosen_terminal"><span class="id" title="definition">preserves_chosen_terminal</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Terminal.html#iso_to_Terminal"><span class="id" title="definition">iso_to_Terminal</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <span class="id" title="var">T₂</span>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#z_iso_inv"><span class="id" title="definition">z_iso_inv</span></a> (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">HF</span>)).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="preserves_terminal_chosen_to_chosen_z_iso" class="idref" href="#preserves_terminal_chosen_to_chosen_z_iso"><span class="id" title="definition">preserves_terminal_chosen_to_chosen_z_iso</span></a><br/>
@@ -166,13 +165,13 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="F:48" class="idref" href="#F:48"><span class="id" title="binder">F</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#31ca1e8a93828d81f639360460040e55"><span class="id" title="variable">C₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#2e11fa34845c6475af27ac9ab3f166ed"><span class="id" title="notation">⟶</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#1c5f7a2d605fa6f79727d8ba93012e43"><span class="id" title="variable">C₂</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HF:49" class="idref" href="#HF:49"><span class="id" title="binder">HF</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#z_iso"><span class="id" title="definition">z_iso</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#821a9bf358e911864cbfdcc506f31b37"><span class="id" title="variable">T₂</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:48"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#55a0fdb934f75e3696c14b65b2345cf6"><span class="id" title="variable">T₁</span></a>))<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_terminal"><span class="id" title="definition">preserves_terminal</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:48"><span class="id" title="variable">F</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_terminal_if_preserves_chosen"><span class="id" title="definition">preserves_terminal_if_preserves_chosen</span></a> <span class="id" title="var">T₁</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_chosen_terminal"><span class="id" title="definition">preserves_chosen_terminal</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Terminal.html#iso_to_Terminal"><span class="id" title="definition">iso_to_Terminal</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <span class="id" title="var">T₂</span>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <span class="id" title="var">HF</span>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="preserves_chosen_terminal_eq" class="idref" href="#preserves_chosen_terminal_eq"><span class="id" title="definition">preserves_chosen_terminal_eq</span></a><br/>
@@ -188,10 +187,10 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="C:55" class="idref" href="#C:55"><span class="id" title="binder">C</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#category"><span class="id" title="definition">category</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="T:56" class="idref" href="#T:56"><span class="id" title="binder">T</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Terminal.html#Terminal"><span class="id" title="definition">Terminal</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#C:55"><span class="id" title="variable">C</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_chosen_terminal_eq"><span class="id" title="definition">preserves_chosen_terminal_eq</span></a> (<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_identity"><span class="id" title="definition">functor_identity</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#C:55"><span class="id" title="variable">C</span></a>) <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#T:56"><span class="id" title="variable">T</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#T:56"><span class="id" title="variable">T</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Propositions.html#hinhpr"><span class="id" title="definition">hinhpr</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Proposition</span> <a id="composition_preserves_chosen_terminal_eq" class="idref" href="#composition_preserves_chosen_terminal_eq"><span class="id" title="lemma">composition_preserves_chosen_terminal_eq</span></a><br/>
@@ -204,7 +203,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HF:65" class="idref" href="#HF:65"><span class="id" title="binder">HF</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_chosen_terminal_eq"><span class="id" title="definition">preserves_chosen_terminal_eq</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:60"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#5de0e3d968b99c2c1af9e6c8730341a6"><span class="id" title="variable">T₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#6fd07b9c8c45f19a26edebf4d634a6b7"><span class="id" title="variable">T₂</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HG:66" class="idref" href="#HG:66"><span class="id" title="binder">HG</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_chosen_terminal_eq"><span class="id" title="definition">preserves_chosen_terminal_eq</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#G:61"><span class="id" title="variable">G</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#6fd07b9c8c45f19a26edebf4d634a6b7"><span class="id" title="variable">T₂</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#97ba5802fbf72b5e8807c24d838b141f"><span class="id" title="variable">T₃</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_chosen_terminal_eq"><span class="id" title="definition">preserves_chosen_terminal_eq</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:60"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#938ca2d32d8c8186c2d73ab2872ae3c9"><span class="id" title="notation">∙</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#G:61"><span class="id" title="variable">G</span></a>) <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#5de0e3d968b99c2c1af9e6c8730341a6"><span class="id" title="variable">T₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#97ba5802fbf72b5e8807c24d838b141f"><span class="id" title="variable">T₃</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">revert</span> <span class="id" title="var">HF</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.Propositions.html#factor_through_squash"><span class="id" title="lemma">factor_through_squash</span></a>.<br/>
 &nbsp;&nbsp;{<br/>
@@ -221,7 +220,7 @@
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Propositions.html#hinhpr"><span class="id" title="definition">hinhpr</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <span class="id" title="var">p</span>, <span class="id" title="var">q</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 </div>
@@ -251,10 +250,10 @@
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="isaprop_preserves_binproduct" class="idref" href="#isaprop_preserves_binproduct"><span class="id" title="definition">isaprop_preserves_binproduct</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.PartB.html#isaprop"><span class="id" title="definition">isaprop</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_binproduct"><span class="id" title="definition">preserves_binproduct</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">repeat</span> (<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartD.html#impred"><span class="id" title="lemma">impred</span></a> ; <span class="id" title="tactic">intro</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartD.html#isapropiscontr"><span class="id" title="lemma">isapropiscontr</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="preserves_chosen_binproduct" class="idref" href="#preserves_chosen_binproduct"><span class="id" title="definition">preserves_chosen_binproduct</span></a><br/>
@@ -271,7 +270,7 @@
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="preserves_binproduct_if_preserves_chosen" class="idref" href="#preserves_binproduct_if_preserves_chosen"><span class="id" title="definition">preserves_binproduct_if_preserves_chosen</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HF:78" class="idref" href="#HF:78"><span class="id" title="binder">HF</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_chosen_binproduct"><span class="id" title="definition">preserves_chosen_binproduct</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_binproduct"><span class="id" title="definition">preserves_binproduct</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">z</span> π<span class="id" title="var">₁</span> π<span class="id" title="var">₂</span> <span class="id" title="var">Hxy</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#isBinProduct_eq_arrow"><span class="id" title="definition">isBinProduct_eq_arrow</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">_</span> <span class="id" title="var">_</span><br/>
@@ -292,7 +291,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">rewrite</span> &lt;- <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_comp"><span class="id" title="definition">functor_comp</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#BinProductPr2Commutes"><span class="id" title="lemma">BinProductPr2Commutes</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Section</span> <a id="PreservesBinProduct.Accessors" class="idref" href="#PreservesBinProduct.Accessors"><span class="id" title="section">Accessors</span></a>.<br/>
@@ -316,16 +315,16 @@
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Lemma</span> <a id="preserves_binproduct_to_preserves_pr1" class="idref" href="#preserves_binproduct_to_preserves_pr1"><span class="id" title="lemma">preserves_binproduct_to_preserves_pr1</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#PreservesBinProduct.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">BinProductPr1</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">_</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">BP</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_binproduct_to_z_iso"><span class="id" title="definition">preserves_binproduct_to_z_iso</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#BinProductPr1"><span class="id" title="definition">BinProductPr1</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#PreservesBinProduct.Accessors.BP'"><span class="id" title="variable">BP'</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">!</span></a><a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#BinProductPr1Commutes"><span class="id" title="lemma">BinProductPr1Commutes</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span>).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Lemma</span> <a id="preserves_binproduct_to_preserves_pr2" class="idref" href="#preserves_binproduct_to_preserves_pr2"><span class="id" title="lemma">preserves_binproduct_to_preserves_pr2</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#PreservesBinProduct.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">BinProductPr2</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">_</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">BP</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_binproduct_to_z_iso"><span class="id" title="definition">preserves_binproduct_to_z_iso</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#BinProductPr2"><span class="id" title="definition">BinProductPr2</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#PreservesBinProduct.Accessors.BP'"><span class="id" title="variable">BP'</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">!</span></a><a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#BinProductPr2Commutes"><span class="id" title="lemma">BinProductPr2Commutes</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span>).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Lemma</span> <a id="preserves_binproduct_to_preserves_arrow" class="idref" href="#preserves_binproduct_to_preserves_arrow"><span class="id" title="lemma">preserves_binproduct_to_preserves_arrow</span></a><br/>
@@ -335,7 +334,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#PreservesBinProduct.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">BinProductArrow</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">_</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">BP</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">f</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">f'</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">)</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#BinProductArrow"><span class="id" title="definition">BinProductArrow</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#PreservesBinProduct.Accessors.BP'"><span class="id" title="variable">BP'</span></a> (<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#PreservesBinProduct.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">f</span></a>) (<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#PreservesBinProduct.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">f'</span></a>) <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#inv_from_z_iso"><span class="id" title="definition">inv_from_z_iso</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_binproduct_to_z_iso"><span class="id" title="definition">preserves_binproduct_to_z_iso</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#z_iso_inv_on_left"><span class="id" title="lemma">z_iso_inv_on_left</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#BinProductArrowsEq"><span class="id" title="lemma">BinProductArrowsEq</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">!</span></a><span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.PartA.html#8b57b11be4275b47948f6caec264b70f"><span class="id" title="notation">@</span></a> <a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a><br/>
@@ -362,7 +361,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">!</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_comp"><span class="id" title="definition">functor_comp</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.PartA.html#8b57b11be4275b47948f6caec264b70f"><span class="id" title="notation">@</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="x:101" class="idref" href="#x:101"><span class="id" title="binder"><span id="x:102" class="id">x</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#PreservesBinProduct.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">x</span></a>) (<a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#BinProductPr2Commutes"><span class="id" title="lemma">BinProductPr2Commutes</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span>) <a class="idref" href="UniMath.Foundations.PartA.html#8b57b11be4275b47948f6caec264b70f"><span class="id" title="notation">@</span></a> <a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">!</span></a><span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#BinProductPr2Commutes"><span class="id" title="lemma">BinProductPr2Commutes</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span>).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">End</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#PreservesBinProduct.Accessors"><span class="id" title="section">Accessors</span></a>.<br/>
@@ -383,7 +382,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:107"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">BinProductPr1</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">_</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">P₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">x</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">y</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">))</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:107"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">BinProductPr2</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">_</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">P₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">x</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">y</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">))</span></a>)))<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_binproduct"><span class="id" title="definition">preserves_binproduct</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:107"><span class="id" title="variable">F</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_binproduct_if_preserves_chosen"><span class="id" title="definition">preserves_binproduct_if_preserves_chosen</span></a> <span class="id" title="var">P₁</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#isBinProduct_z_iso"><span class="id" title="definition">isBinProduct_z_iso</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#isBinProduct_BinProduct"><span class="id" title="definition">isBinProduct_BinProduct</span></a> <span class="id" title="var">_</span> (<span class="id" title="var">P₂</span> (<span class="id" title="var">F</span> <span class="id" title="var">x</span>) (<span class="id" title="var">F</span> <span class="id" title="var">y</span>)))).<br/>
@@ -396,7 +395,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="var">cbn</span> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#BinProductPr2Commutes"><span class="id" title="lemma">BinProductPr2Commutes</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="identity_preserves_binproduct" class="idref" href="#identity_preserves_binproduct"><span class="id" title="definition">identity_preserves_binproduct</span></a><br/>
@@ -412,12 +411,12 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HF:118" class="idref" href="#HF:118"><span class="id" title="binder">HF</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_binproduct"><span class="id" title="definition">preserves_binproduct</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:116"><span class="id" title="variable">F</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HG:119" class="idref" href="#HG:119"><span class="id" title="binder">HG</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_binproduct"><span class="id" title="definition">preserves_binproduct</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#G:117"><span class="id" title="variable">G</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_binproduct"><span class="id" title="definition">preserves_binproduct</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:116"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#938ca2d32d8c8186c2d73ab2872ae3c9"><span class="id" title="notation">∙</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#G:117"><span class="id" title="variable">G</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> ? ? ? ? ? <span class="id" title="var">Hx</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <span class="id" title="var">HG</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <span class="id" title="var">HF</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">Hx</span>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
@@ -448,10 +447,10 @@
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="isaprop_preserves_product" class="idref" href="#isaprop_preserves_product"><span class="id" title="definition">isaprop_preserves_product</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.PartB.html#isaprop"><span class="id" title="definition">isaprop</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_product"><span class="id" title="definition">preserves_product</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">repeat</span> (<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartD.html#impred"><span class="id" title="lemma">impred</span></a> ; <span class="id" title="tactic">intro</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartD.html#isapropiscontr"><span class="id" title="lemma">isapropiscontr</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="preserves_chosen_product" class="idref" href="#preserves_chosen_product"><span class="id" title="definition">preserves_chosen_product</span></a><br/>
@@ -468,7 +467,7 @@
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="preserves_product_if_preserves_chosen" class="idref" href="#preserves_product_if_preserves_chosen"><span class="id" title="definition">preserves_product_if_preserves_chosen</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HF:134" class="idref" href="#HF:134"><span class="id" title="binder">HF</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_chosen_product"><span class="id" title="definition">preserves_chosen_product</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_product"><span class="id" title="definition">preserves_product</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">z</span> π <span class="id" title="var">Hxy</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">pose</span> (<span class="id" title="var">p</span> := <a class="idref" href="UniMath.CategoryTheory.Limits.Products.html#make_Product"><span class="id" title="definition">make_Product</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">Hxy</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">pose</span> (<span class="id" title="var">i</span> := <a class="idref" href="UniMath.CategoryTheory.Limits.Products.html#z_iso_between_Product"><span class="id" title="definition">z_iso_between_Product</span></a> <span class="id" title="var">p</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#c5a0c81e2b5c76de8a01161a2e5a07b5"><span class="id" title="variable">HC₁</span></a> <span class="id" title="var">x</span>)).<br/>
@@ -477,7 +476,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Products.html#isProduct_eq_arrow"><span class="id" title="definition">isProduct_eq_arrow</span></a> <span class="id" title="var">_</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Products.html#iso_to_isProduct"><span class="id" title="lemma">iso_to_isProduct</span></a> <span class="id" title="var">p'</span> <span class="id" title="var">_</span> <span class="id" title="var">i'</span>)).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">j</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">abstract</span> <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">!</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_comp"><span class="id" title="definition">functor_comp</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.PartA.html#8b57b11be4275b47948f6caec264b70f"><span class="id" title="notation">@</span></a> <a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a> <span class="id" title="var">_</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Products.html#ProductPrCommutes"><span class="id" title="lemma">ProductPrCommutes</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span>)).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Section</span> <a id="PreservesProduct.Accessors" class="idref" href="#PreservesProduct.Accessors"><span class="id" title="section">Accessors</span></a>.<br/>
@@ -502,10 +501,10 @@
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Lemma</span> <a id="preserves_product_to_preserves_pr" class="idref" href="#preserves_product_to_preserves_pr"><span class="id" title="lemma">preserves_product_to_preserves_pr</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="j:141" class="idref" href="#j:141"><span class="id" title="binder">j</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#PreservesProduct.J"><span class="id" title="variable">J</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#inv_from_z_iso"><span class="id" title="definition">inv_from_z_iso</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_product_to_z_iso"><span class="id" title="definition">preserves_product_to_z_iso</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#PreservesProduct.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">ProductPr</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">_</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">_</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">P</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">j</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Products.html#ProductPr"><span class="id" title="definition">ProductPr</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#PreservesProduct.Accessors.P'"><span class="id" title="variable">P'</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#j:141"><span class="id" title="variable">j</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#z_iso_inv_on_right"><span class="id" title="lemma">z_iso_inv_on_right</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">!</span></a><a class="idref" href="UniMath.CategoryTheory.Limits.Products.html#ProductPrCommutes"><span class="id" title="lemma">ProductPrCommutes</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#PreservesProduct.Accessors.P'"><span class="id" title="variable">P'</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span>).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">End</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#PreservesProduct.Accessors"><span class="id" title="section">Accessors</span></a>.<br/>
@@ -529,12 +528,12 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HF:151" class="idref" href="#HF:151"><span class="id" title="binder">HF</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_product"><span class="id" title="definition">preserves_product</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#J:145"><span class="id" title="variable">J</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:149"><span class="id" title="variable">F</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HG:152" class="idref" href="#HG:152"><span class="id" title="binder">HG</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_product"><span class="id" title="definition">preserves_product</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#J:145"><span class="id" title="variable">J</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#G:150"><span class="id" title="variable">G</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_product"><span class="id" title="definition">preserves_product</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#J:145"><span class="id" title="variable">J</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:149"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#938ca2d32d8c8186c2d73ab2872ae3c9"><span class="id" title="notation">∙</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#G:150"><span class="id" title="variable">G</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> ? ? ? <span class="id" title="var">Hx</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <span class="id" title="var">HG</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <span class="id" title="var">HF</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">Hx</span>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="preserves_chosen_binproducts_eq" class="idref" href="#preserves_chosen_binproducts_eq"><span class="id" title="definition">preserves_chosen_binproducts_eq</span></a><br/>
@@ -550,11 +549,11 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="C:160" class="idref" href="#C:160"><span class="id" title="binder">C</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#category"><span class="id" title="definition">category</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="BP:161" class="idref" href="#BP:161"><span class="id" title="binder">BP</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#BinProducts"><span class="id" title="definition">BinProducts</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#C:160"><span class="id" title="variable">C</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_chosen_binproducts_eq"><span class="id" title="definition">preserves_chosen_binproducts_eq</span></a> (<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_identity"><span class="id" title="definition">functor_identity</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#C:160"><span class="id" title="variable">C</span></a>) <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#BP:161"><span class="id" title="variable">BP</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#BP:161"><span class="id" title="variable">BP</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intro</span> ; <span class="id" title="tactic">intros</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Propositions.html#hinhpr"><span class="id" title="definition">hinhpr</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Proposition</span> <a id="composition_preserves_chosen_binproducts_eq" class="idref" href="#composition_preserves_chosen_binproducts_eq"><span class="id" title="lemma">composition_preserves_chosen_binproducts_eq</span></a><br/>
@@ -567,7 +566,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HF:170" class="idref" href="#HF:170"><span class="id" title="binder">HF</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_chosen_binproducts_eq"><span class="id" title="definition">preserves_chosen_binproducts_eq</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:165"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#863e28dccd71131eb93f051404fcef68"><span class="id" title="variable">BP₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#e9471f6922cd229d119792bbde2b9c8a"><span class="id" title="variable">BP₂</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HG:171" class="idref" href="#HG:171"><span class="id" title="binder">HG</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_chosen_binproducts_eq"><span class="id" title="definition">preserves_chosen_binproducts_eq</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#G:166"><span class="id" title="variable">G</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#e9471f6922cd229d119792bbde2b9c8a"><span class="id" title="variable">BP₂</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#a60dc3e5805e08c002fc7060ce0b0430"><span class="id" title="variable">BP₃</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_chosen_binproducts_eq"><span class="id" title="definition">preserves_chosen_binproducts_eq</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:165"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#938ca2d32d8c8186c2d73ab2872ae3c9"><span class="id" title="notation">∙</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#G:166"><span class="id" title="variable">G</span></a>) <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#863e28dccd71131eb93f051404fcef68"><span class="id" title="variable">BP₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#a60dc3e5805e08c002fc7060ce0b0430"><span class="id" title="variable">BP₃</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span>.<br/>
 
 <br/>
@@ -582,10 +581,10 @@
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Propositions.html#hinhpr"><span class="id" title="definition">hinhpr</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="var">cbn</span> <span class="id" title="tactic">in</span> ×.<br/>
+&nbsp;&nbsp;<span class="id" title="var">cbn</span> <span class="id" title="tactic">in</span> *.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <span class="id" title="var">HFxy</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="var">now</span> <span class="id" title="tactic">rewrite</span> <span class="id" title="var">HGxy</span>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 </div>
@@ -622,7 +621,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HF:190" class="idref" href="#HF:190"><span class="id" title="binder">HF</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_equalizer"><span class="id" title="definition">preserves_equalizer</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:188"><span class="id" title="variable">F</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HG:191" class="idref" href="#HG:191"><span class="id" title="binder">HG</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_equalizer"><span class="id" title="definition">preserves_equalizer</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#G:189"><span class="id" title="variable">G</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_equalizer"><span class="id" title="definition">preserves_equalizer</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:188"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#938ca2d32d8c8186c2d73ab2872ae3c9"><span class="id" title="notation">∙</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#G:189"><span class="id" title="variable">G</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> ? ? ? ? ? ? ? ? <span class="id" title="var">Hx</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> <span class="id" title="var">HG</span>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">abstract</span><br/>
@@ -632,17 +631,17 @@
 &nbsp;&nbsp;- <span class="id" title="var">use</span> <span class="id" title="var">HF</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> <span class="id" title="var">p</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> <span class="id" title="var">Hx</span>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="isaprop_preserves_equalizer" class="idref" href="#isaprop_preserves_equalizer"><span class="id" title="definition">isaprop_preserves_equalizer</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="11908eca99e76a4f257ac1b72d132abd" class="idref" href="#11908eca99e76a4f257ac1b72d132abd"><span class="id" title="binder">C₁</span></a> <a id="11d686b133656baa1c8d9257703a9571" class="idref" href="#11d686b133656baa1c8d9257703a9571"><span class="id" title="binder">C₂</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#category"><span class="id" title="definition">category</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="F:194" class="idref" href="#F:194"><span class="id" title="binder">F</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#11908eca99e76a4f257ac1b72d132abd"><span class="id" title="variable">C₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#2e11fa34845c6475af27ac9ab3f166ed"><span class="id" title="notation">⟶</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#11d686b133656baa1c8d9257703a9571"><span class="id" title="variable">C₂</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.PartB.html#isaprop"><span class="id" title="definition">isaprop</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_equalizer"><span class="id" title="definition">preserves_equalizer</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:194"><span class="id" title="variable">F</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">repeat</span> (<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartD.html#impred"><span class="id" title="lemma">impred</span></a> ; <span class="id" title="tactic">intro</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartD.html#isapropiscontr"><span class="id" title="lemma">isapropiscontr</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="preserves_chosen_equalizer" class="idref" href="#preserves_chosen_equalizer"><span class="id" title="definition">preserves_chosen_equalizer</span></a><br/>
@@ -668,7 +667,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="F:207" class="idref" href="#F:207"><span class="id" title="binder">F</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#ab1d73ddbbdb309a1710fac5b1da28fe"><span class="id" title="variable">C₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#2e11fa34845c6475af27ac9ab3f166ed"><span class="id" title="notation">⟶</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#7adb748f05d3b6d6ffc3146fe9ffc405"><span class="id" title="variable">C₂</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HF:208" class="idref" href="#HF:208"><span class="id" title="binder">HF</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_chosen_equalizer"><span class="id" title="definition">preserves_chosen_equalizer</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#ade88be5f79531fb0269df670195ea8a"><span class="id" title="variable">HC₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:207"><span class="id" title="variable">F</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_equalizer"><span class="id" title="definition">preserves_equalizer</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:207"><span class="id" title="variable">F</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">e</span> <span class="id" title="var">f</span> <span class="id" title="var">g</span> <span class="id" title="var">h</span> <span class="id" title="var">p</span> <span class="id" title="var">Fp</span> <span class="id" title="var">H</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Equalizers.html#isEqualizer_z_iso"><span class="id" title="definition">isEqualizer_z_iso</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="var">HF</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">f</span> <span class="id" title="var">g</span> <span class="id" title="var">_</span>)<br/>
@@ -688,7 +687,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">!</span></a><span class="id" title="var">_</span>) ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Equalizers.html#from_Equalizer_to_Equalizer"><span class="id" title="definition">from_Equalizer_to_Equalizer</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Equalizers.html#EqualizerCommutes"><span class="id" title="lemma">EqualizerCommutes</span></a>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="preserves_equalizer_equalizer" class="idref" href="#preserves_equalizer_equalizer"><span class="id" title="definition">preserves_equalizer_equalizer</span></a><br/>
@@ -699,13 +698,13 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="f:215" class="idref" href="#f:215"><span class="id" title="binder">f</span></a> <a id="g:216" class="idref" href="#g:216"><span class="id" title="binder">g</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#x:213"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#y:214"><span class="id" title="variable">y</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="e:217" class="idref" href="#e:217"><span class="id" title="binder">e</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Equalizers.html#Equalizer"><span class="id" title="definition">Equalizer</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#f:215"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#g:216"><span class="id" title="variable">g</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Equalizers.html#Equalizer"><span class="id" title="definition">Equalizer</span></a> (<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:211"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">f</span></a>) (<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:211"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">g</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Equalizers.html#make_Equalizer"><span class="id" title="definition">make_Equalizer</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> (<span class="id" title="var">HF</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Equalizers.html#isEqualizer_Equalizer"><span class="id" title="definition">isEqualizer_Equalizer</span></a> <span class="id" title="var">e</span>))).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">abstract</span><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">rewrite</span> &lt;- !<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_comp"><span class="id" title="definition">functor_comp</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Equalizers.html#EqualizerEqAr"><span class="id" title="definition">EqualizerEqAr</span></a>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
@@ -734,10 +733,10 @@
 <span class="id" title="keyword">Definition</span> <a id="identity_preserves_pullback" class="idref" href="#identity_preserves_pullback"><span class="id" title="definition">identity_preserves_pullback</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="C:231" class="idref" href="#C:231"><span class="id" title="binder">C</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#category"><span class="id" title="definition">category</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_pullback"><span class="id" title="definition">preserves_pullback</span></a> (<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_identity"><span class="id" title="definition">functor_identity</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#C:231"><span class="id" title="variable">C</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> ? ? ? ? ? ? ? ? ? ? <span class="id" title="var">H</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">H</span>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="composition_preserves_pullback" class="idref" href="#composition_preserves_pullback"><span class="id" title="definition">composition_preserves_pullback</span></a><br/>
@@ -747,7 +746,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HF:237" class="idref" href="#HF:237"><span class="id" title="binder">HF</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_pullback"><span class="id" title="definition">preserves_pullback</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:235"><span class="id" title="variable">F</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HG:238" class="idref" href="#HG:238"><span class="id" title="binder">HG</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_pullback"><span class="id" title="definition">preserves_pullback</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#G:236"><span class="id" title="variable">G</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_pullback"><span class="id" title="definition">preserves_pullback</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:235"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#938ca2d32d8c8186c2d73ab2872ae3c9"><span class="id" title="notation">∙</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#G:236"><span class="id" title="variable">G</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> ? ? ? ? ? ? ? ? ? ? <span class="id" title="var">H</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> <span class="id" title="var">HG</span>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">abstract</span><br/>
@@ -757,17 +756,17 @@
 &nbsp;&nbsp;- <span class="id" title="var">use</span> <span class="id" title="var">HF</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> <span class="id" title="var">q</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> <span class="id" title="var">H</span>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="isaprop_preserves_pullback" class="idref" href="#isaprop_preserves_pullback"><span class="id" title="definition">isaprop_preserves_pullback</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="73d1949570544795b8a86c9463932809" class="idref" href="#73d1949570544795b8a86c9463932809"><span class="id" title="binder">C₁</span></a> <a id="127367ad9db4e85ac7c3ddd301ba9cc7" class="idref" href="#127367ad9db4e85ac7c3ddd301ba9cc7"><span class="id" title="binder">C₂</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#category"><span class="id" title="definition">category</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="F:241" class="idref" href="#F:241"><span class="id" title="binder">F</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#73d1949570544795b8a86c9463932809"><span class="id" title="variable">C₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#2e11fa34845c6475af27ac9ab3f166ed"><span class="id" title="notation">⟶</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#127367ad9db4e85ac7c3ddd301ba9cc7"><span class="id" title="variable">C₂</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.PartB.html#isaprop"><span class="id" title="definition">isaprop</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_pullback"><span class="id" title="definition">preserves_pullback</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:241"><span class="id" title="variable">F</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">repeat</span> (<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartD.html#impred"><span class="id" title="lemma">impred</span></a> ; <span class="id" title="tactic">intro</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartD.html#isapropiscontr"><span class="id" title="lemma">isapropiscontr</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="preserves_chosen_pullback" class="idref" href="#preserves_chosen_pullback"><span class="id" title="definition">preserves_chosen_pullback</span></a><br/>
@@ -775,7 +774,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="3a339cdd785441324b8d464121eb44b1" class="idref" href="#3a339cdd785441324b8d464121eb44b1"><span class="id" title="binder">HC₁</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#Pullbacks"><span class="id" title="definition">Pullbacks</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#47f0897cad1f58c479e9e7f4d99123cb"><span class="id" title="variable">C₁</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="F:245" class="idref" href="#F:245"><span class="id" title="binder">F</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#47f0897cad1f58c479e9e7f4d99123cb"><span class="id" title="variable">C₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#2e11fa34845c6475af27ac9ab3f166ed"><span class="id" title="notation">⟶</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#04c07bc392e2cf84636a415ed0ea368a"><span class="id" title="variable">C₂</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.Init.html#dff69deb40f49011cdae37d20690a136"><span class="id" title="notation">∏</span></a> <a class="idref" href="UniMath.Foundations.Init.html#dff69deb40f49011cdae37d20690a136"><span class="id" title="notation">(</span></a><a id="x:246" class="idref" href="#x:246"><span class="id" title="binder"><span id="x:251" class="id">x</span></span></a> <a id="y:247" class="idref" href="#y:247"><span class="id" title="binder"><span id="y:252" class="id">y</span></span></a> <a id="z:248" class="idref" href="#z:248"><span class="id" title="binder"><span id="z:253" class="id">z</span></span></a> : <span class="id" title="var">C₁</span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="f:249" class="idref" href="#f:249"><span class="id" title="binder"><span id="f:254" class="id">f</span></span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#x:246"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#z:248"><span class="id" title="variable">z</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="g:250" class="idref" href="#g:250"><span class="id" title="binder"><span id="g:255" class="id">g</span></span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#y:247"><span class="id" title="variable">y</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#z:248"><span class="id" title="variable">z</span></a><a class="idref" href="UniMath.Foundations.Init.html#dff69deb40f49011cdae37d20690a136"><span class="id" title="notation">),</span></a><br/>
@@ -792,7 +791,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">rewrite</span> &lt;- !<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_comp"><span class="id" title="definition">functor_comp</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#PullbackSqrCommutes"><span class="id" title="definition">PullbackSqrCommutes</span></a>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="preserves_pullback_if_preserves_chosen" class="idref" href="#preserves_pullback_if_preserves_chosen"><span class="id" title="definition">preserves_pullback_if_preserves_chosen</span></a><br/>
@@ -801,7 +800,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="F:259" class="idref" href="#F:259"><span class="id" title="binder">F</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#13208ca60be7964a3f487faeda746f12"><span class="id" title="variable">C₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#2e11fa34845c6475af27ac9ab3f166ed"><span class="id" title="notation">⟶</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#b30080ff961af00aae1cee8671527245"><span class="id" title="variable">C₂</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HF:260" class="idref" href="#HF:260"><span class="id" title="binder">HF</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_chosen_pullback"><span class="id" title="definition">preserves_chosen_pullback</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#4fff5c8e907fcc8f020e87419db095ec"><span class="id" title="variable">HC₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:259"><span class="id" title="variable">F</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_pullback"><span class="id" title="definition">preserves_pullback</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:259"><span class="id" title="variable">F</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">z</span> <span class="id" title="var">pb</span> <span class="id" title="var">f</span> <span class="id" title="var">g</span> π<span class="id" title="var">₁</span> π<span class="id" title="var">₂</span> <span class="id" title="var">p</span> <span class="id" title="var">Hxy</span> <span class="id" title="var">Hpb</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#isPullback_z_iso"><span class="id" title="definition">isPullback_z_iso</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">_</span><br/>
@@ -822,7 +821,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> &lt;- !<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_comp"><span class="id" title="definition">functor_comp</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#PullbackArrow_PullbackPr2"><span class="id" title="lemma">PullbackArrow_PullbackPr2</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#make_Pullback"><span class="id" title="definition">make_Pullback</span></a> <span class="id" title="var">p</span> <span class="id" title="var">Hpb</span>))).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
@@ -859,10 +858,10 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="de50286017fedcd511eafc3fa3629bb3" class="idref" href="#de50286017fedcd511eafc3fa3629bb3"><span class="id" title="binder">C₁</span></a> <a id="87b96f55966eb3be057f44343c013a6b" class="idref" href="#87b96f55966eb3be057f44343c013a6b"><span class="id" title="binder">C₂</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#category"><span class="id" title="definition">category</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="F:279" class="idref" href="#F:279"><span class="id" title="binder">F</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#de50286017fedcd511eafc3fa3629bb3"><span class="id" title="variable">C₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#2e11fa34845c6475af27ac9ab3f166ed"><span class="id" title="notation">⟶</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#87b96f55966eb3be057f44343c013a6b"><span class="id" title="variable">C₂</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.PartB.html#isaprop"><span class="id" title="definition">isaprop</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_initial"><span class="id" title="definition">preserves_initial</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:279"><span class="id" title="variable">F</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">repeat</span> (<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartD.html#impred"><span class="id" title="lemma">impred</span></a> ; <span class="id" title="tactic">intro</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartD.html#isapropiscontr"><span class="id" title="lemma">isapropiscontr</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="preserves_initial_to_initial" class="idref" href="#preserves_initial_to_initial"><span class="id" title="definition">preserves_initial_to_initial</span></a><br/>
@@ -881,9 +880,9 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="fa5b9c52543db31fe7975a634843cde4" class="idref" href="#fa5b9c52543db31fe7975a634843cde4"><span class="id" title="binder">I₁</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Initial.html#Initial"><span class="id" title="definition">Initial</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#7895131b434fd63cbcbc1947ddf4bd7b"><span class="id" title="variable">C₁</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="ffee576066c556fe15fb702b68fc8381" class="idref" href="#ffee576066c556fe15fb702b68fc8381"><span class="id" title="binder">I₂</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Initial.html#Initial"><span class="id" title="definition">Initial</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#920d6b3b0f6069d6de490612627dc989"><span class="id" title="variable">C₂</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#z_iso"><span class="id" title="definition">z_iso</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_initial_to_initial"><span class="id" title="definition">preserves_initial_to_initial</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:287"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#HF:288"><span class="id" title="variable">HF</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#fa5b9c52543db31fe7975a634843cde4"><span class="id" title="variable">I₁</span></a>) <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#ffee576066c556fe15fb702b68fc8381"><span class="id" title="variable">I₂</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Initial.html#ziso_Initials"><span class="id" title="definition">ziso_Initials</span></a>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="preserves_chosen_initial" class="idref" href="#preserves_chosen_initial"><span class="id" title="definition">preserves_chosen_initial</span></a><br/>
@@ -900,7 +899,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="F:298" class="idref" href="#F:298"><span class="id" title="binder">F</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#b7ef36ea8ed3b37540597c1e624b42c5"><span class="id" title="variable">C₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#2e11fa34845c6475af27ac9ab3f166ed"><span class="id" title="notation">⟶</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#d8d065635d428238d0abdbc84cdb4c38"><span class="id" title="variable">C₂</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HF:299" class="idref" href="#HF:299"><span class="id" title="binder">HF</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_chosen_initial"><span class="id" title="definition">preserves_chosen_initial</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#abcfaca908f91980c591b6f64471be45"><span class="id" title="variable">HC₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:298"><span class="id" title="variable">F</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_initial"><span class="id" title="definition">preserves_initial</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:298"><span class="id" title="variable">F</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">Hx</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Initial.html#iso_to_Initial"><span class="id" title="definition">iso_to_Initial</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.Limits.Initial.html#make_Initial"><span class="id" title="definition">make_Initial</span></a> <span class="id" title="var">_</span> <span class="id" title="var">HF</span>)<br/>
@@ -908,7 +907,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_on_z_iso"><span class="id" title="definition">functor_on_z_iso</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">F</span><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.Limits.Initial.html#ziso_Initials"><span class="id" title="definition">ziso_Initials</span></a> <span class="id" title="var">HC₁</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Initial.html#make_Initial"><span class="id" title="definition">make_Initial</span></a> <span class="id" title="var">_</span> <span class="id" title="var">Hx</span>)))).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
@@ -943,22 +942,22 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HF:315" class="idref" href="#HF:315"><span class="id" title="binder">HF</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_bincoproduct"><span class="id" title="definition">preserves_bincoproduct</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:313"><span class="id" title="variable">F</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HG:316" class="idref" href="#HG:316"><span class="id" title="binder">HG</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_bincoproduct"><span class="id" title="definition">preserves_bincoproduct</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#G:314"><span class="id" title="variable">G</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_bincoproduct"><span class="id" title="definition">preserves_bincoproduct</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:313"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#938ca2d32d8c8186c2d73ab2872ae3c9"><span class="id" title="notation">∙</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#G:314"><span class="id" title="variable">G</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> ? ? ? ? ? <span class="id" title="var">Hx</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <span class="id" title="var">HG</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <span class="id" title="var">HF</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">Hx</span>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="isaprop_preserves_bincoproduct" class="idref" href="#isaprop_preserves_bincoproduct"><span class="id" title="definition">isaprop_preserves_bincoproduct</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="5f3827a2408aa3019b601983fde4d72a" class="idref" href="#5f3827a2408aa3019b601983fde4d72a"><span class="id" title="binder">C₁</span></a> <a id="82e9672fcbdfe64e7d5fa95c333f3fc8" class="idref" href="#82e9672fcbdfe64e7d5fa95c333f3fc8"><span class="id" title="binder">C₂</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#category"><span class="id" title="definition">category</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="F:319" class="idref" href="#F:319"><span class="id" title="binder">F</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#5f3827a2408aa3019b601983fde4d72a"><span class="id" title="variable">C₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#2e11fa34845c6475af27ac9ab3f166ed"><span class="id" title="notation">⟶</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#82e9672fcbdfe64e7d5fa95c333f3fc8"><span class="id" title="variable">C₂</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.PartB.html#isaprop"><span class="id" title="definition">isaprop</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_bincoproduct"><span class="id" title="definition">preserves_bincoproduct</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:319"><span class="id" title="variable">F</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">repeat</span> (<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartD.html#impred"><span class="id" title="lemma">impred</span></a> ; <span class="id" title="tactic">intro</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartD.html#isapropiscontr"><span class="id" title="lemma">isapropiscontr</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="preserves_chosen_bincoproduct" class="idref" href="#preserves_chosen_bincoproduct"><span class="id" title="definition">preserves_chosen_bincoproduct</span></a><br/>
@@ -981,7 +980,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="F:329" class="idref" href="#F:329"><span class="id" title="binder">F</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#9ce51894d5ed15f9448c19e5f5efc7bb"><span class="id" title="variable">C₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#2e11fa34845c6475af27ac9ab3f166ed"><span class="id" title="notation">⟶</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#3fad896df6996a0f257e3a284458a4de"><span class="id" title="variable">C₂</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HF:330" class="idref" href="#HF:330"><span class="id" title="binder">HF</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_chosen_bincoproduct"><span class="id" title="definition">preserves_chosen_bincoproduct</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#ec449db25eb8fe0dc208dcbc6286ae27"><span class="id" title="variable">HC₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:329"><span class="id" title="variable">F</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_bincoproduct"><span class="id" title="definition">preserves_bincoproduct</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:329"><span class="id" title="variable">F</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">z</span> <span class="id" title="var">ι₁</span> <span class="id" title="var">ι₂</span> <span class="id" title="var">Hxy</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.BinCoproducts.html#isBinCoproduct_eq_arrow"><span class="id" title="definition">isBinCoproduct_eq_arrow</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">_</span> <span class="id" title="var">_</span><br/>
@@ -1002,7 +1001,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">rewrite</span> &lt;- <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_comp"><span class="id" title="definition">functor_comp</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Limits.BinCoproducts.html#BinCoproductIn2Commutes"><span class="id" title="lemma">BinCoproductIn2Commutes</span></a>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Section</span> <a id="Accessors" class="idref" href="#Accessors"><span class="id" title="section">Accessors</span></a>.<br/>
@@ -1028,20 +1027,20 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#Accessors.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">BinCoproductIn1</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">BP</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">)</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.Limits.BinCoproducts.html#BinCoproductIn1"><span class="id" title="definition">BinCoproductIn1</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#Accessors.BP'"><span class="id" title="variable">BP'</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#inv_from_z_iso"><span class="id" title="definition">inv_from_z_iso</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_bincoproduct_to_z_iso"><span class="id" title="definition">preserves_bincoproduct_to_z_iso</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">!</span></a><span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.BinCoproducts.html#BinCoproductIn1Commutes"><span class="id" title="lemma">BinCoproductIn1Commutes</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span>).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Lemma</span> <a id="preserves_bincoproduct_to_preserves_in2" class="idref" href="#preserves_bincoproduct_to_preserves_in2"><span class="id" title="lemma">preserves_bincoproduct_to_preserves_in2</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#Accessors.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">BinCoproductIn2</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">BP</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">)</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.Limits.BinCoproducts.html#BinCoproductIn2"><span class="id" title="definition">BinCoproductIn2</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#Accessors.BP'"><span class="id" title="variable">BP'</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#inv_from_z_iso"><span class="id" title="definition">inv_from_z_iso</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_bincoproduct_to_z_iso"><span class="id" title="definition">preserves_bincoproduct_to_z_iso</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">!</span></a><span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.BinCoproducts.html#BinCoproductIn2Commutes"><span class="id" title="lemma">BinCoproductIn2Commutes</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span>).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Lemma</span> <a id="preserves_bincoproduct_to_preserves_arrow" class="idref" href="#preserves_bincoproduct_to_preserves_arrow"><span class="id" title="lemma">preserves_bincoproduct_to_preserves_arrow</span></a><br/>
@@ -1051,7 +1050,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#inv_from_z_iso"><span class="id" title="definition">inv_from_z_iso</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_bincoproduct_to_z_iso"><span class="id" title="definition">preserves_bincoproduct_to_z_iso</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#Accessors.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">BinCoproductArrow</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">BP</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">f</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">f'</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">)</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.Limits.BinCoproducts.html#BinCoproductArrow"><span class="id" title="definition">BinCoproductArrow</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#Accessors.BP'"><span class="id" title="variable">BP'</span></a> (<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#Accessors.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">f</span></a>) (<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#Accessors.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">f'</span></a>).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Limits.BinCoproducts.html#BinCoproductArrowsEq"><span class="id" title="lemma">BinCoproductArrowsEq</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <a class="idref" href="UniMath.CategoryTheory.Limits.BinCoproducts.html#from_BinCoproduct_to_BinCoproduct"><span class="id" title="definition">from_BinCoproduct_to_BinCoproduct</span></a>.<br/>
@@ -1069,7 +1068,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> &lt;- <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_comp"><span class="id" title="definition">functor_comp</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Limits.BinCoproducts.html#BinCoproductIn2Commutes"><span class="id" title="lemma">BinCoproductIn2Commutes</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 <span class="id" title="keyword">End</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#Accessors"><span class="id" title="section">Accessors</span></a>.<br/>
 
 <br/>
@@ -1107,7 +1106,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HF:360" class="idref" href="#HF:360"><span class="id" title="binder">HF</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_coequalizer"><span class="id" title="definition">preserves_coequalizer</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:358"><span class="id" title="variable">F</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HG:361" class="idref" href="#HG:361"><span class="id" title="binder">HG</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_coequalizer"><span class="id" title="definition">preserves_coequalizer</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#G:359"><span class="id" title="variable">G</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_coequalizer"><span class="id" title="definition">preserves_coequalizer</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:358"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#938ca2d32d8c8186c2d73ab2872ae3c9"><span class="id" title="notation">∙</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#G:359"><span class="id" title="variable">G</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> ? ? ? ? ? ? ? ? <span class="id" title="var">Hx</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> <span class="id" title="var">HG</span>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">abstract</span><br/>
@@ -1117,17 +1116,17 @@
 &nbsp;&nbsp;- <span class="id" title="var">use</span> <span class="id" title="var">HF</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> <span class="id" title="var">p</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> <span class="id" title="var">Hx</span>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="isaprop_preserves_coequalizer" class="idref" href="#isaprop_preserves_coequalizer"><span class="id" title="definition">isaprop_preserves_coequalizer</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="878eaabffb25265678b485a259fc6e2a" class="idref" href="#878eaabffb25265678b485a259fc6e2a"><span class="id" title="binder">C₁</span></a> <a id="1b84da140a6602febf655e927f23e095" class="idref" href="#1b84da140a6602febf655e927f23e095"><span class="id" title="binder">C₂</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#category"><span class="id" title="definition">category</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="F:364" class="idref" href="#F:364"><span class="id" title="binder">F</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#878eaabffb25265678b485a259fc6e2a"><span class="id" title="variable">C₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#2e11fa34845c6475af27ac9ab3f166ed"><span class="id" title="notation">⟶</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#1b84da140a6602febf655e927f23e095"><span class="id" title="variable">C₂</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.PartB.html#isaprop"><span class="id" title="definition">isaprop</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_coequalizer"><span class="id" title="definition">preserves_coequalizer</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:364"><span class="id" title="variable">F</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">repeat</span> (<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartD.html#impred"><span class="id" title="lemma">impred</span></a> ; <span class="id" title="tactic">intro</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartD.html#isapropiscontr"><span class="id" title="lemma">isapropiscontr</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="preserves_chosen_coequalizer" class="idref" href="#preserves_chosen_coequalizer"><span class="id" title="definition">preserves_chosen_coequalizer</span></a><br/>
@@ -1153,7 +1152,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="F:377" class="idref" href="#F:377"><span class="id" title="binder">F</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#3c8072037a3f05ba36db0de47b17679c"><span class="id" title="variable">C₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#2e11fa34845c6475af27ac9ab3f166ed"><span class="id" title="notation">⟶</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#ce8caffafaad8ded341efe2dcbaaae3d"><span class="id" title="variable">C₂</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HF:378" class="idref" href="#HF:378"><span class="id" title="binder">HF</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_chosen_coequalizer"><span class="id" title="definition">preserves_chosen_coequalizer</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#f1808e9e5f89743ae3f4c1ba2282cdeb"><span class="id" title="variable">HC₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:377"><span class="id" title="variable">F</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_coequalizer"><span class="id" title="definition">preserves_coequalizer</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:377"><span class="id" title="variable">F</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">c</span> <span class="id" title="var">f</span> <span class="id" title="var">g</span> <span class="id" title="var">h</span> <span class="id" title="var">p</span> <span class="id" title="var">Fp</span> <span class="id" title="var">Hz</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Coequalizers.html#Coequalizer_eq_ar"><span class="id" title="definition">Coequalizer_eq_ar</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">_</span><br/>
@@ -1175,7 +1174,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">rewrite</span> &lt;- !<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_comp"><span class="id" title="definition">functor_comp</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Coequalizers.html#CoequalizerEqAr"><span class="id" title="definition">CoequalizerEqAr</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="preserves_reflexive_coequalizer" class="idref" href="#preserves_reflexive_coequalizer"><span class="id" title="definition">preserves_reflexive_coequalizer</span></a><br/>
@@ -1208,7 +1207,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HF:400" class="idref" href="#HF:400"><span class="id" title="binder">HF</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_reflexive_coequalizer"><span class="id" title="definition">preserves_reflexive_coequalizer</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:398"><span class="id" title="variable">F</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HG:401" class="idref" href="#HG:401"><span class="id" title="binder">HG</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_reflexive_coequalizer"><span class="id" title="definition">preserves_reflexive_coequalizer</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#G:399"><span class="id" title="variable">G</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_reflexive_coequalizer"><span class="id" title="definition">preserves_reflexive_coequalizer</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:398"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#938ca2d32d8c8186c2d73ab2872ae3c9"><span class="id" title="notation">∙</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#G:399"><span class="id" title="variable">G</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">c</span> <span class="id" title="var">f</span> <span class="id" title="var">g</span> <span class="id" title="var">s</span> <span class="id" title="var">pf</span> <span class="id" title="var">pg</span> <span class="id" title="var">h</span> <span class="id" title="var">p</span> <span class="id" title="var">Fp</span> <span class="id" title="var">Hx</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> (<span class="id" title="var">HG</span> (<span class="id" title="var">F</span> <span class="id" title="var">x</span>) (<span class="id" title="var">F</span> <span class="id" title="var">y</span>) (<span class="id" title="var">F</span> <span class="id" title="var">c</span>) (<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a><span class="id" title="var">F</span> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">f</span></a>) (<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a><span class="id" title="var">F</span> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">g</span></a>) (<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a><span class="id" title="var">F</span> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">s</span></a>) <span class="id" title="var">_</span> <span class="id" title="var">_</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a><span class="id" title="var">F</span> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">h</span></a>)).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">abstract</span><br/>
@@ -1228,17 +1227,17 @@
 &nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> <span class="id" title="var">pg</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> <span class="id" title="var">p</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> <span class="id" title="var">Hx</span>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="isaprop_preserves_reflexive_coequalizer" class="idref" href="#isaprop_preserves_reflexive_coequalizer"><span class="id" title="definition">isaprop_preserves_reflexive_coequalizer</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="5f1b097e5a069a40b63366c694f3981f" class="idref" href="#5f1b097e5a069a40b63366c694f3981f"><span class="id" title="binder">C₁</span></a> <a id="c6ce6d074ddeddc0236639823866f314" class="idref" href="#c6ce6d074ddeddc0236639823866f314"><span class="id" title="binder">C₂</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#category"><span class="id" title="definition">category</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="F:404" class="idref" href="#F:404"><span class="id" title="binder">F</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#5f1b097e5a069a40b63366c694f3981f"><span class="id" title="variable">C₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#2e11fa34845c6475af27ac9ab3f166ed"><span class="id" title="notation">⟶</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#c6ce6d074ddeddc0236639823866f314"><span class="id" title="variable">C₂</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.PartB.html#isaprop"><span class="id" title="definition">isaprop</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_reflexive_coequalizer"><span class="id" title="definition">preserves_reflexive_coequalizer</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:404"><span class="id" title="variable">F</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">repeat</span> (<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartD.html#impred"><span class="id" title="lemma">impred</span></a> ; <span class="id" title="tactic">intro</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartD.html#isapropiscontr"><span class="id" title="lemma">isapropiscontr</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="preserves_chosen_reflexive_coequalizer" class="idref" href="#preserves_chosen_reflexive_coequalizer"><span class="id" title="definition">preserves_chosen_reflexive_coequalizer</span></a><br/>
@@ -1267,7 +1266,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="F:420" class="idref" href="#F:420"><span class="id" title="binder">F</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#156cdbf365a629207bbb82227958eb82"><span class="id" title="variable">C₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#2e11fa34845c6475af27ac9ab3f166ed"><span class="id" title="notation">⟶</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#838c2d2860094d606cd6ed9c7040aa2b"><span class="id" title="variable">C₂</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HF:421" class="idref" href="#HF:421"><span class="id" title="binder">HF</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_chosen_reflexive_coequalizer"><span class="id" title="definition">preserves_chosen_reflexive_coequalizer</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#e2b7e2ac486d92b178c7e5d107afafef"><span class="id" title="variable">HC₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:420"><span class="id" title="variable">F</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_reflexive_coequalizer"><span class="id" title="definition">preserves_reflexive_coequalizer</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:420"><span class="id" title="variable">F</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">c</span> <span class="id" title="var">f</span> <span class="id" title="var">g</span> <span class="id" title="var">s</span> <span class="id" title="var">pf</span> <span class="id" title="var">pg</span> <span class="id" title="var">h</span> <span class="id" title="var">p</span> <span class="id" title="var">Fp</span> <span class="id" title="var">Hz</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Coequalizers.html#Coequalizer_eq_ar"><span class="id" title="definition">Coequalizer_eq_ar</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">_</span><br/>
@@ -1289,7 +1288,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">rewrite</span> &lt;- !<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_comp"><span class="id" title="definition">functor_comp</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Coequalizers.html#CoequalizerEqAr"><span class="id" title="definition">CoequalizerEqAr</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
@@ -1327,12 +1326,12 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HF:441" class="idref" href="#HF:441"><span class="id" title="binder">HF</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_coproduct"><span class="id" title="definition">preserves_coproduct</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#J:435"><span class="id" title="variable">J</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:439"><span class="id" title="variable">F</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HG:442" class="idref" href="#HG:442"><span class="id" title="binder">HG</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_coproduct"><span class="id" title="definition">preserves_coproduct</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#J:435"><span class="id" title="variable">J</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#G:440"><span class="id" title="variable">G</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_coproduct"><span class="id" title="definition">preserves_coproduct</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#J:435"><span class="id" title="variable">J</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:439"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#938ca2d32d8c8186c2d73ab2872ae3c9"><span class="id" title="notation">∙</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#G:440"><span class="id" title="variable">G</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> ? ? ? <span class="id" title="var">Hx</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <span class="id" title="var">HG</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <span class="id" title="var">HF</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">Hx</span>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="isaprop_preserves_coproduct" class="idref" href="#isaprop_preserves_coproduct"><span class="id" title="definition">isaprop_preserves_coproduct</span></a><br/>
@@ -1340,10 +1339,10 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="0af1d669bafde24b58a3a49ac67146ff" class="idref" href="#0af1d669bafde24b58a3a49ac67146ff"><span class="id" title="binder">C₁</span></a> <a id="c141915d45f0e815d33dc288d5aeb182" class="idref" href="#c141915d45f0e815d33dc288d5aeb182"><span class="id" title="binder">C₂</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#category"><span class="id" title="definition">category</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="F:446" class="idref" href="#F:446"><span class="id" title="binder">F</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#0af1d669bafde24b58a3a49ac67146ff"><span class="id" title="variable">C₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#2e11fa34845c6475af27ac9ab3f166ed"><span class="id" title="notation">⟶</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#c141915d45f0e815d33dc288d5aeb182"><span class="id" title="variable">C₂</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.PartB.html#isaprop"><span class="id" title="definition">isaprop</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_coproduct"><span class="id" title="definition">preserves_coproduct</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#J:443"><span class="id" title="variable">J</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:446"><span class="id" title="variable">F</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">repeat</span> (<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartD.html#impred"><span class="id" title="lemma">impred</span></a> ; <span class="id" title="tactic">intro</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartD.html#isapropiscontr"><span class="id" title="lemma">isapropiscontr</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="preserves_chosen_coproduct" class="idref" href="#preserves_chosen_coproduct"><span class="id" title="definition">preserves_chosen_coproduct</span></a><br/>
@@ -1387,10 +1386,10 @@
 <span class="id" title="keyword">Definition</span> <a id="identity_preserves_pushout" class="idref" href="#identity_preserves_pushout"><span class="id" title="definition">identity_preserves_pushout</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="C:468" class="idref" href="#C:468"><span class="id" title="binder">C</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#category"><span class="id" title="definition">category</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_pushout"><span class="id" title="definition">preserves_pushout</span></a> (<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_identity"><span class="id" title="definition">functor_identity</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#C:468"><span class="id" title="variable">C</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> ? ? ? ? ? ? ? ? ? ? <span class="id" title="var">H</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">H</span>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="composition_preserves_pushout" class="idref" href="#composition_preserves_pushout"><span class="id" title="definition">composition_preserves_pushout</span></a><br/>
@@ -1400,7 +1399,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HF:474" class="idref" href="#HF:474"><span class="id" title="binder">HF</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_pushout"><span class="id" title="definition">preserves_pushout</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:472"><span class="id" title="variable">F</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HG:475" class="idref" href="#HG:475"><span class="id" title="binder">HG</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_pushout"><span class="id" title="definition">preserves_pushout</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#G:473"><span class="id" title="variable">G</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_pushout"><span class="id" title="definition">preserves_pushout</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:472"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#938ca2d32d8c8186c2d73ab2872ae3c9"><span class="id" title="notation">∙</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#G:473"><span class="id" title="variable">G</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> ? ? ? ? ? ? ? ? ? ? <span class="id" title="var">H</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> <span class="id" title="var">HG</span>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">abstract</span><br/>
@@ -1410,17 +1409,17 @@
 &nbsp;&nbsp;- <span class="id" title="var">use</span> <span class="id" title="var">HF</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> <span class="id" title="var">q</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> <span class="id" title="var">H</span>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="isaprop_preserves_pushout" class="idref" href="#isaprop_preserves_pushout"><span class="id" title="definition">isaprop_preserves_pushout</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="9fd516b09ac1e6438a0cfdabf3076563" class="idref" href="#9fd516b09ac1e6438a0cfdabf3076563"><span class="id" title="binder">C₁</span></a> <a id="e2dc3ac69b9bc5f8eaae885752732e3c" class="idref" href="#e2dc3ac69b9bc5f8eaae885752732e3c"><span class="id" title="binder">C₂</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#category"><span class="id" title="definition">category</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="F:478" class="idref" href="#F:478"><span class="id" title="binder">F</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#9fd516b09ac1e6438a0cfdabf3076563"><span class="id" title="variable">C₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#2e11fa34845c6475af27ac9ab3f166ed"><span class="id" title="notation">⟶</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#e2dc3ac69b9bc5f8eaae885752732e3c"><span class="id" title="variable">C₂</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.PartB.html#isaprop"><span class="id" title="definition">isaprop</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_pushout"><span class="id" title="definition">preserves_pushout</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#F:478"><span class="id" title="variable">F</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">repeat</span> (<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartD.html#impred"><span class="id" title="lemma">impred</span></a> ; <span class="id" title="tactic">intro</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartD.html#isapropiscontr"><span class="id" title="lemma">isapropiscontr</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 </div>
@@ -1444,17 +1443,17 @@
 &nbsp;&nbsp;<span class="id" title="keyword">Local Lemma</span> <a id="triangle_1_help" class="idref" href="#triangle_1_help"><span class="id" title="lemma">triangle_1_help</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="x:483" class="idref" href="#x:483"><span class="id" title="binder">x</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#344bb7ecb665b4d700c4d27ab64f8d95"><span class="id" title="variable">C₁</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.L"><span class="id" title="variable">L</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">η</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">x</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#4b0817023c2dcddc59518626d10a30c1"><span class="id" title="variable">ε</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.L"><span class="id" title="variable">L</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#x:483"><span class="id" title="variable">x</span></a>) <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#identity"><span class="id" title="definition">identity</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.L"><span class="id" title="variable">L</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#x:483"><span class="id" title="variable">x</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr122'_x"><span class="id" title="notation">pr122</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.HL"><span class="id" title="variable">HL</span></a> <a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr122'_x"><span class="id" title="notation">x</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Local Lemma</span> <a id="triangle_2_help" class="idref" href="#triangle_2_help"><span class="id" title="lemma">triangle_2_help</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="x:484" class="idref" href="#x:484"><span class="id" title="binder">x</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#93404a259728b963a1c4c787062cf016"><span class="id" title="variable">C₂</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#1d930622983faa553ccf92b0b11b7945"><span class="id" title="variable">η</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.R"><span class="id" title="variable">R</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#x:484"><span class="id" title="variable">x</span></a>) <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.R"><span class="id" title="variable">R</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">ε</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">x</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#identity"><span class="id" title="definition">identity</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.R"><span class="id" title="variable">R</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#x:484"><span class="id" title="variable">x</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr222'_x"><span class="id" title="notation">pr222</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.HL"><span class="id" title="variable">HL</span></a> <a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr222'_x"><span class="id" title="notation">x</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 </div>
@@ -1466,7 +1465,7 @@
 <div class="code">
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="right_adjoint_preserves_terminal" class="idref" href="#right_adjoint_preserves_terminal"><span class="id" title="definition">right_adjoint_preserves_terminal</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_terminal"><span class="id" title="definition">preserves_terminal</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.R"><span class="id" title="variable">R</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">T</span> <span class="id" title="var">HT</span> <span class="id" title="var">x</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartB.html#iscontraprop1"><span class="id" title="lemma">iscontraprop1</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartB.html#invproofirrelevance"><span class="id" title="lemma">invproofirrelevance</span></a>.<br/>
@@ -1490,12 +1489,12 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">do</span> 2 <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> (@<a class="idref" href="UniMath.CategoryTheory.Limits.Terminal.html#TerminalArrowEq"><span class="id" title="lemma">TerminalArrowEq</span></a> <span class="id" title="var">_</span> (<span class="id" title="var">T</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">HT</span>)).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#1d930622983faa553ccf92b0b11b7945"><span class="id" title="variable">η</span></a> <span class="id" title="var">x</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.R"><span class="id" title="variable">R</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">TerminalArrow</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">_</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">HT</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">_</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">)</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="right_adjoint_preserves_binproduct" class="idref" href="#right_adjoint_preserves_binproduct"><span class="id" title="definition">right_adjoint_preserves_binproduct</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_binproduct"><span class="id" title="definition">preserves_binproduct</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.R"><span class="id" title="variable">R</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">p</span> π<span class="id" title="var">₁</span> π<span class="id" title="var">₂</span> <span class="id" title="var">Hp</span> <span class="id" title="var">c</span> <span class="id" title="var">f</span> <span class="id" title="var">g</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">pose</span> (<span class="id" title="var">P</span> := <a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#make_BinProduct"><span class="id" title="definition">make_BinProduct</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">Hp</span> : <a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#BinProduct"><span class="id" title="definition">BinProduct</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartB.html#iscontraprop1"><span class="id" title="lemma">iscontraprop1</span></a>.<br/>
@@ -1602,12 +1601,12 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> !<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc'"><span class="id" title="definition">assoc'</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#triangle_2_help"><span class="id" title="lemma">triangle_2_help</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_right"><span class="id" title="definition">id_right</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="right_adjoint_preserves_pullback" class="idref" href="#right_adjoint_preserves_pullback"><span class="id" title="definition">right_adjoint_preserves_pullback</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_pullback"><span class="id" title="definition">preserves_pullback</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.R"><span class="id" title="variable">R</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">z</span> <span class="id" title="var">p</span> <span class="id" title="var">f</span> <span class="id" title="var">g</span> π<span class="id" title="var">₁</span> π<span class="id" title="var">₂</span> <span class="id" title="var">q</span> <span class="id" title="var">Fq</span> <span class="id" title="var">Hp</span> <span class="id" title="var">w</span> <span class="id" title="var">h₁</span> <span class="id" title="var">h₂</span> <span class="id" title="var">r</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">pose</span> (<span class="id" title="var">P</span> := <a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#make_Pullback"><span class="id" title="definition">make_Pullback</span></a> <span class="id" title="var">_</span> <span class="id" title="var">Hp</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartB.html#iscontraprop1"><span class="id" title="lemma">iscontraprop1</span></a>.<br/>
@@ -1717,12 +1716,12 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> !<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc'"><span class="id" title="definition">assoc'</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#triangle_2_help"><span class="id" title="lemma">triangle_2_help</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="right_adjoint_preserves_equalizer" class="idref" href="#right_adjoint_preserves_equalizer"><span class="id" title="definition">right_adjoint_preserves_equalizer</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_equalizer"><span class="id" title="definition">preserves_equalizer</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.R"><span class="id" title="variable">R</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">c</span> <span class="id" title="var">f</span> <span class="id" title="var">g</span> <span class="id" title="var">h</span> <span class="id" title="var">p</span> <span class="id" title="var">Fp</span> <span class="id" title="var">Hc</span> <span class="id" title="var">z</span> <span class="id" title="var">k</span> <span class="id" title="var">q</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">pose</span> (<span class="id" title="var">Eq</span> := <a class="idref" href="UniMath.CategoryTheory.Limits.Equalizers.html#make_Equalizer"><span class="id" title="definition">make_Equalizer</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">Hc</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartB.html#iscontraprop1"><span class="id" title="lemma">iscontraprop1</span></a>.<br/>
@@ -1785,7 +1784,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.PartA.html#8b57b11be4275b47948f6caec264b70f"><span class="id" title="notation">@</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_right"><span class="id" title="definition">id_right</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#triangle_2_help"><span class="id" title="lemma">triangle_2_help</span></a> <span class="id" title="var">x</span>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 </div>
@@ -1797,7 +1796,7 @@
 <div class="code">
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="left_adjoint_preserves_initial" class="idref" href="#left_adjoint_preserves_initial"><span class="id" title="definition">left_adjoint_preserves_initial</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_initial"><span class="id" title="definition">preserves_initial</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.L"><span class="id" title="variable">L</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">Hx</span> <span class="id" title="var">y</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">pose</span> (<span class="id" title="var">I</span> := <a class="idref" href="UniMath.CategoryTheory.Limits.Initial.html#make_Initial"><span class="id" title="definition">make_Initial</span></a> <span class="id" title="var">x</span> <span class="id" title="var">Hx</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartB.html#iscontraprop1"><span class="id" title="lemma">iscontraprop1</span></a>.<br/>
@@ -1823,12 +1822,12 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> (@<a class="idref" href="UniMath.CategoryTheory.Limits.Initial.html#InitialArrowEq"><span class="id" title="lemma">InitialArrowEq</span></a> <span class="id" title="var">_</span> <span class="id" title="var">I</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.L"><span class="id" title="variable">L</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">InitialArrow</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">I</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">_</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#4b0817023c2dcddc59518626d10a30c1"><span class="id" title="variable">ε</span></a> <span class="id" title="var">y</span>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="left_adjoint_preserves_bincoproduct" class="idref" href="#left_adjoint_preserves_bincoproduct"><span class="id" title="definition">left_adjoint_preserves_bincoproduct</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_bincoproduct"><span class="id" title="definition">preserves_bincoproduct</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.L"><span class="id" title="variable">L</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">s</span> <span class="id" title="var">ι₁</span> <span class="id" title="var">ι₂</span> <span class="id" title="var">Hs</span> <span class="id" title="var">z</span> <span class="id" title="var">f</span> <span class="id" title="var">g</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">pose</span> (<span class="id" title="var">S</span> := <a class="idref" href="UniMath.CategoryTheory.Limits.BinCoproducts.html#make_BinCoproduct"><span class="id" title="definition">make_BinCoproduct</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">Hs</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartB.html#iscontraprop1"><span class="id" title="lemma">iscontraprop1</span></a>.<br/>
@@ -1887,13 +1886,13 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.PartA.html#8b57b11be4275b47948f6caec264b70f"><span class="id" title="notation">@</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_left"><span class="id" title="definition">id_left</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.MoreFoundations.PartA.html#maponpaths_2"><span class="id" title="definition">maponpaths_2</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#triangle_1_help"><span class="id" title="lemma">triangle_1_help</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="left_adjoint_preserves_coproduct" class="idref" href="#left_adjoint_preserves_coproduct"><span class="id" title="definition">left_adjoint_preserves_coproduct</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="J:517" class="idref" href="#J:517"><span class="id" title="binder">J</span></a> : <a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_coproduct"><span class="id" title="definition">preserves_coproduct</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#J:517"><span class="id" title="variable">J</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.L"><span class="id" title="variable">L</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">D</span> <span class="id" title="var">c</span> <span class="id" title="var">ι</span> <span class="id" title="var">Hc</span> <span class="id" title="var">x</span> <span class="id" title="var">f</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">pose</span> (<span class="id" title="var">S</span> := <a class="idref" href="UniMath.CategoryTheory.Limits.Coproducts.html#make_Coproduct"><span class="id" title="definition">make_Coproduct</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">Hc</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartB.html#iscontraprop1"><span class="id" title="lemma">iscontraprop1</span></a>.<br/>
@@ -1935,12 +1934,12 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.PartA.html#8b57b11be4275b47948f6caec264b70f"><span class="id" title="notation">@</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_left"><span class="id" title="definition">id_left</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.MoreFoundations.PartA.html#maponpaths_2"><span class="id" title="definition">maponpaths_2</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#triangle_1_help"><span class="id" title="lemma">triangle_1_help</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="left_adjoint_preserves_coequalizer" class="idref" href="#left_adjoint_preserves_coequalizer"><span class="id" title="definition">left_adjoint_preserves_coequalizer</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_coequalizer"><span class="id" title="definition">preserves_coequalizer</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.L"><span class="id" title="variable">L</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">c</span> <span class="id" title="var">f</span> <span class="id" title="var">g</span> <span class="id" title="var">h</span> <span class="id" title="var">p</span> <span class="id" title="var">Fp</span> <span class="id" title="var">Hc</span> <span class="id" title="var">z</span> <span class="id" title="var">k</span> <span class="id" title="var">q</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">pose</span> (<span class="id" title="var">Coeq</span> := <a class="idref" href="UniMath.CategoryTheory.Limits.Coequalizers.html#make_Coequalizer"><span class="id" title="definition">make_Coequalizer</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">Hc</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartB.html#iscontraprop1"><span class="id" title="lemma">iscontraprop1</span></a>.<br/>
@@ -2003,7 +2002,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.PartA.html#8b57b11be4275b47948f6caec264b70f"><span class="id" title="notation">@</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_left"><span class="id" title="definition">id_left</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.MoreFoundations.PartA.html#maponpaths_2"><span class="id" title="definition">maponpaths_2</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#triangle_1_help"><span class="id" title="lemma">triangle_1_help</span></a> <span class="id" title="var">y</span>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 <span class="id" title="keyword">End</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation"><span class="id" title="section">AdjunctionPreservation</span></a>.<br/>
 </div>
 </div>

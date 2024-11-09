@@ -1,28 +1,27 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="coqdoc.css" rel="stylesheet" type="text/css" />
-<title>UniMath.Bicategories.PseudoFunctors.Biequivalence</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link href="coqdoc.css" rel="stylesheet" type="text/css"/>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<script src="./proofs-toggle.js" type="text/javascript"></script>
+	<style>
+		div.proofcomment {
+			font-style: italic;
+		}
+	</style>
+	<title>Documentation</title>
 </head>
-
 <body>
-
 <div id="page">
-
-<div id="header">
-</div>
-
 <div id="main">
-
 <h1 class="libtitle">Library UniMath.Bicategories.PseudoFunctors.Biequivalence</h1>
 
 <div class="code">
 </div>
 
 <div class="doc">
-<a id="lab2683"></a><h1 class="section">Biequivalence</h1>
+<a id="lab2760"></a><h1 class="section">Biequivalence</h1>
 
 
 <div class="paragraph"> </div>
@@ -143,10 +142,10 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Bicategories.Transformations.PseudoTransformation.html#comp_pstrans"><span class="id" title="definition">comp_pstrans</span></a> (<a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#invunit_of_is_biequivalence"><span class="id" title="definition">invunit_of_is_biequivalence</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#a:49"><span class="id" title="variable">a</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#unit_of_is_biequivalence"><span class="id" title="definition">unit_of_is_biequivalence</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#e:48"><span class="id" title="variable">e</span></a>))<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Bicategories.Transformations.PseudoTransformation.html#id_pstrans"><span class="id" title="definition">id_pstrans</span></a> <span class="id" title="var">_</span>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Bicategories.Morphisms.Adjunctions.html#left_adjoint_counit"><span class="id" title="definition">left_adjoint_counit</span></a> (<a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#is_biequivalence_adjoint_unit"><span class="id" title="definition">is_biequivalence_adjoint_unit</span></a> <span class="id" title="var">a</span>) <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Bicategories.Morphisms.Adjunctions.html#left_equivalence_counit_iso"><span class="id" title="definition">left_equivalence_counit_iso</span></a> (<a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#is_biequivalence_adjoint_unit"><span class="id" title="definition">is_biequivalence_adjoint_unit</span></a> <span class="id" title="var">a</span>)).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="unitunit_of_is_biequivalence" class="idref" href="#unitunit_of_is_biequivalence"><span class="id" title="definition">unitunit_of_is_biequivalence</span></a> {<a id="C:50" class="idref" href="#C:50"><span class="id" title="binder">C</span></a> <a id="D:51" class="idref" href="#D:51"><span class="id" title="binder">D</span></a> : <a class="idref" href="UniMath.Bicategories.Core.Bicat.html#bicat"><span class="id" title="definition">bicat</span></a>}<br/>
@@ -158,11 +157,11 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Bicategories.Transformations.PseudoTransformation.html#comp_pstrans"><span class="id" title="definition">comp_pstrans</span></a> (<a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#unit_of_is_biequivalence"><span class="id" title="definition">unit_of_is_biequivalence</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#e:54"><span class="id" title="variable">e</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#invunit_of_is_biequivalence"><span class="id" title="definition">invunit_of_is_biequivalence</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#a:55"><span class="id" title="variable">a</span></a>))<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Bicategories.Transformations.PseudoTransformation.html#id_pstrans"><span class="id" title="definition">id_pstrans</span></a> <span class="id" title="var">_</span>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Bicategories.Core.Invertible_2cells.html#inv_of_invertible_2cell"><span class="id" title="definition">inv_of_invertible_2cell</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Bicategories.Morphisms.Adjunctions.html#left_adjoint_unit"><span class="id" title="definition">left_adjoint_unit</span></a> (<a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#is_biequivalence_adjoint_unit"><span class="id" title="definition">is_biequivalence_adjoint_unit</span></a> <span class="id" title="var">a</span>) <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Bicategories.Morphisms.Adjunctions.html#left_equivalence_unit_iso"><span class="id" title="definition">left_equivalence_unit_iso</span></a> (<a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#is_biequivalence_adjoint_unit"><span class="id" title="definition">is_biequivalence_adjoint_unit</span></a> <span class="id" title="var">a</span>)).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="counitunit_of_is_biequivalence" class="idref" href="#counitunit_of_is_biequivalence"><span class="id" title="definition">counitunit_of_is_biequivalence</span></a> {<a id="C:56" class="idref" href="#C:56"><span class="id" title="binder">C</span></a> <a id="D:57" class="idref" href="#D:57"><span class="id" title="binder">D</span></a> : <a class="idref" href="UniMath.Bicategories.Core.Bicat.html#bicat"><span class="id" title="definition">bicat</span></a>}<br/>
@@ -174,11 +173,11 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Bicategories.Transformations.PseudoTransformation.html#comp_pstrans"><span class="id" title="definition">comp_pstrans</span></a> (<a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#counit_of_is_biequivalence"><span class="id" title="definition">counit_of_is_biequivalence</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#e:60"><span class="id" title="variable">e</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#invcounit_of_is_biequivalence"><span class="id" title="definition">invcounit_of_is_biequivalence</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#a:61"><span class="id" title="variable">a</span></a>))<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Bicategories.Transformations.PseudoTransformation.html#id_pstrans"><span class="id" title="definition">id_pstrans</span></a> <span class="id" title="var">_</span>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Bicategories.Core.Invertible_2cells.html#inv_of_invertible_2cell"><span class="id" title="definition">inv_of_invertible_2cell</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Bicategories.Morphisms.Adjunctions.html#left_adjoint_unit"><span class="id" title="definition">left_adjoint_unit</span></a> (<a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#is_biequivalence_adjoint_counit"><span class="id" title="definition">is_biequivalence_adjoint_counit</span></a> <span class="id" title="var">a</span>) <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Bicategories.Morphisms.Adjunctions.html#left_equivalence_unit_iso"><span class="id" title="definition">left_equivalence_unit_iso</span></a> (<a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#is_biequivalence_adjoint_counit"><span class="id" title="definition">is_biequivalence_adjoint_counit</span></a> <span class="id" title="var">a</span>)).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="counitcounit_of_is_biequivalence" class="idref" href="#counitcounit_of_is_biequivalence"><span class="id" title="definition">counitcounit_of_is_biequivalence</span></a> {<a id="C:62" class="idref" href="#C:62"><span class="id" title="binder">C</span></a> <a id="D:63" class="idref" href="#D:63"><span class="id" title="binder">D</span></a> : <a class="idref" href="UniMath.Bicategories.Core.Bicat.html#bicat"><span class="id" title="definition">bicat</span></a>}<br/>
@@ -190,10 +189,10 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Bicategories.Transformations.PseudoTransformation.html#comp_pstrans"><span class="id" title="definition">comp_pstrans</span></a> (<a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#invcounit_of_is_biequivalence"><span class="id" title="definition">invcounit_of_is_biequivalence</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#a:67"><span class="id" title="variable">a</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#counit_of_is_biequivalence"><span class="id" title="definition">counit_of_is_biequivalence</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#e:66"><span class="id" title="variable">e</span></a>))<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Bicategories.Transformations.PseudoTransformation.html#id_pstrans"><span class="id" title="definition">id_pstrans</span></a> <span class="id" title="var">_</span>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Bicategories.Morphisms.Adjunctions.html#left_adjoint_counit"><span class="id" title="definition">left_adjoint_counit</span></a> (<a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#is_biequivalence_adjoint_counit"><span class="id" title="definition">is_biequivalence_adjoint_counit</span></a> <span class="id" title="var">a</span>) <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Bicategories.Morphisms.Adjunctions.html#left_equivalence_counit_iso"><span class="id" title="definition">left_equivalence_counit_iso</span></a> (<a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#is_biequivalence_adjoint_counit"><span class="id" title="definition">is_biequivalence_adjoint_counit</span></a> <span class="id" title="var">a</span>)).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="is_biequivalence" class="idref" href="#is_biequivalence"><span class="id" title="definition">is_biequivalence</span></a> {<a id="C:68" class="idref" href="#C:68"><span class="id" title="binder">C</span></a> <a id="D:69" class="idref" href="#D:69"><span class="id" title="binder">D</span></a> : <a class="idref" href="UniMath.Bicategories.Core.Bicat.html#bicat"><span class="id" title="definition">bicat</span></a>} (<a id="F:70" class="idref" href="#F:70"><span class="id" title="binder">F</span></a> : <a class="idref" href="UniMath.Bicategories.PseudoFunctors.PseudoFunctor.html#psfunctor"><span class="id" title="definition">psfunctor</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#C:68"><span class="id" title="variable">C</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#D:69"><span class="id" title="variable">D</span></a>) : <a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a><br/>
@@ -264,31 +263,31 @@
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="make_is_biequivalence" class="idref" href="#make_is_biequivalence"><span class="id" title="definition">make_is_biequivalence</span></a> : <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#is_biequivalence"><span class="id" title="definition">is_biequivalence</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#Builder.F"><span class="id" title="variable">F</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#Builder.G"><span class="id" title="variable">G</span></a><a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#89de166fe955dc94553720ab7e631315"><span class="id" title="variable">ηinv</span></a><a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#a455386261ea69920decbee153e6a415"><span class="id" title="variable">ε</span></a><a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">),,</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">split</span>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.Core.EquivToAdjequiv.html#equiv_to_isadjequiv"><span class="id" title="definition">equiv_to_isadjequiv</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.Preamble.html#tpair"><span class="id" title="constructor">tpair</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;× <span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.Preamble.html#tpair"><span class="id" title="constructor">tpair</span></a>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.Preamble.html#tpair"><span class="id" title="constructor">tpair</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;** <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#191086a7514c52d405df52efda614083"><span class="id" title="variable">η</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;** <span class="id" title="tactic">split</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*** <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#ee39d99bb98a6ac2b1d9c10bd2f04301"><span class="id" title="variable">pη</span></a>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*** <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#1e3eac4b629204f286078056f1409363"><span class="id" title="variable">qη</span></a>).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;× <span class="id" title="tactic">split</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="tactic">split</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;** <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#ee39d99bb98a6ac2b1d9c10bd2f04301"><span class="id" title="variable">pη</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;** <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#1e3eac4b629204f286078056f1409363"><span class="id" title="variable">qη</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.Core.EquivToAdjequiv.html#equiv_to_isadjequiv"><span class="id" title="definition">equiv_to_isadjequiv</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.Preamble.html#tpair"><span class="id" title="constructor">tpair</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;× <span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.Preamble.html#tpair"><span class="id" title="constructor">tpair</span></a>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.Preamble.html#tpair"><span class="id" title="constructor">tpair</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;** <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#9dc6653cd8c479fe2d3bf89483befab9"><span class="id" title="variable">εinv</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;** <span class="id" title="tactic">split</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*** <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#b2e7f617382de6f8d141eb6ee5d20acc"><span class="id" title="variable">pε</span></a>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*** <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#dfbd2df79b02242974a16a536e5aa4f4"><span class="id" title="variable">qε</span></a>).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;× <span class="id" title="tactic">split</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="tactic">split</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;** <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#b2e7f617382de6f8d141eb6ee5d20acc"><span class="id" title="variable">pε</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;** <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#dfbd2df79b02242974a16a536e5aa4f4"><span class="id" title="variable">qε</span></a>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">End</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#Builder"><span class="id" title="section">Builder</span></a>.<br/>
@@ -322,7 +321,7 @@
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="make_is_biequivalence_from_unit_counit" class="idref" href="#make_is_biequivalence_from_unit_counit"><span class="id" title="definition">make_is_biequivalence_from_unit_counit</span></a> : <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#is_biequivalence"><span class="id" title="definition">is_biequivalence</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#Builder_From_Unit_Counit.F"><span class="id" title="variable">F</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#make_is_biequivalence"><span class="id" title="definition">make_is_biequivalence</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#Builder_From_Unit_Counit.G"><span class="id" title="variable">G</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#1f381ab16382a955417b673026aca559"><span class="id" title="variable">η</span></a>.<br/>
@@ -333,7 +332,7 @@
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#6f8d96e553a2e09acb8a7291b71786cf"><span class="id" title="variable">qη</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Bicategories.Core.Invertible_2cells.html#inv_of_invertible_2cell"><span class="id" title="definition">inv_of_invertible_2cell</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#b6a83fd9a539bd2b3e445aa09bda1f10"><span class="id" title="variable">pε</span></a>).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#8e8c58cbd7fde72be972eab7a802c564"><span class="id" title="variable">qε</span></a>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">End</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#Builder_From_Unit_Counit"><span class="id" title="section">Builder_From_Unit_Counit</span></a>.<br/>
@@ -350,7 +349,7 @@
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="biequivalence_to_object_equivalence" class="idref" href="#biequivalence_to_object_equivalence"><span class="id" title="definition">biequivalence_to_object_equivalence</span></a><br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#ob"><span class="id" title="definition">ob</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#Pointwise.C"><span class="id" title="variable">C</span></a> <a class="idref" href="UniMath.Foundations.PartA.html#dd7277d0940f85bc9f30edc592228b3b"><span class="id" title="notation">≃</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#ob"><span class="id" title="definition">ob</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#Pointwise.D"><span class="id" title="variable">D</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">pose</span> (<span class="id" title="var">F</span> := <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#psfunctor_of_biequivalence"><span class="id" title="definition">psfunctor_of_biequivalence</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#Pointwise.e"><span class="id" title="variable">e</span></a>).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">pose</span> (<span class="id" title="var">G</span> := <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#inv_psfunctor_of_is_biequivalence"><span class="id" title="definition">inv_psfunctor_of_is_biequivalence</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#Pointwise.e"><span class="id" title="variable">e</span></a>).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">pose</span> (<span class="id" title="var">η</span> := <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#is_biequivalence_adjoint_unit"><span class="id" title="definition">is_biequivalence_adjoint_unit</span></a> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#Pointwise.e"><span class="id" title="variable">e</span></a>)).<br/>
@@ -363,26 +362,26 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.Bicategories.Core.Univalence.html#isotoid_2_0"><span class="id" title="definition">isotoid_2_0</span></a> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#Pointwise.HC"><span class="id" title="variable">HC</span></a>)).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.Preamble.html#tpair"><span class="id" title="constructor">tpair</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;× <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#unit_of_is_biequivalence"><span class="id" title="definition">unit_of_is_biequivalence</span></a> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#Pointwise.e"><span class="id" title="variable">e</span></a>) <span class="id" title="var">x</span>).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;× <span class="id" title="var">cbn</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#unit_of_is_biequivalence"><span class="id" title="definition">unit_of_is_biequivalence</span></a> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#Pointwise.e"><span class="id" title="variable">e</span></a>) <span class="id" title="var">x</span>).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.Bicategories.Transformations.PseudoTransformation.html#pointwise_adjequiv"><span class="id" title="definition">pointwise_adjequiv</span></a> (<a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#unit_of_is_biequivalence"><span class="id" title="definition">unit_of_is_biequivalence</span></a> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#Pointwise.e"><span class="id" title="variable">e</span></a>))).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <span class="id" title="var">η</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">intro</span> <span class="id" title="var">y</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.Bicategories.Core.Univalence.html#isotoid_2_0"><span class="id" title="definition">isotoid_2_0</span></a> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#Pointwise.HD"><span class="id" title="variable">HD</span></a>)).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.Preamble.html#tpair"><span class="id" title="constructor">tpair</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;× <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#counit_of_is_biequivalence"><span class="id" title="definition">counit_of_is_biequivalence</span></a> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#Pointwise.e"><span class="id" title="variable">e</span></a>) <span class="id" title="var">y</span>).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;× <span class="id" title="var">cbn</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#counit_of_is_biequivalence"><span class="id" title="definition">counit_of_is_biequivalence</span></a> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#Pointwise.e"><span class="id" title="variable">e</span></a>) <span class="id" title="var">y</span>).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.Bicategories.Transformations.PseudoTransformation.html#pointwise_adjequiv"><span class="id" title="definition">pointwise_adjequiv</span></a> (<a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#counit_of_is_biequivalence"><span class="id" title="definition">counit_of_is_biequivalence</span></a> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#Pointwise.e"><span class="id" title="variable">e</span></a>))).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <span class="id" title="var">ε</span>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">End</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#Pointwise"><span class="id" title="section">Pointwise</span></a>.<br/>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="id_is_biequivalence" class="idref" href="#id_is_biequivalence"><span class="id" title="definition">id_is_biequivalence</span></a> (<a id="B:126" class="idref" href="#B:126"><span class="id" title="binder">B</span></a> : <a class="idref" href="UniMath.Bicategories.Core.Bicat.html#bicat"><span class="id" title="definition">bicat</span></a>) : <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#is_biequivalence"><span class="id" title="definition">is_biequivalence</span></a> (<a class="idref" href="UniMath.Bicategories.PseudoFunctors.Examples.Identity.html#id_psfunctor"><span class="id" title="definition">id_psfunctor</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#B:126"><span class="id" title="variable">B</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#make_is_biequivalence_from_unit_counit"><span class="id" title="definition">make_is_biequivalence_from_unit_counit</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Bicategories.PseudoFunctors.Examples.Identity.html#id_psfunctor"><span class="id" title="definition">id_psfunctor</span></a> <span class="id" title="var">B</span>).<br/>
 &nbsp;&nbsp;- <span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.Preamble.html#tpair"><span class="id" title="constructor">tpair</span></a>.<br/>
@@ -394,7 +393,7 @@
 &nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.Modifications.Examples.Unitality.html#linvunitor_lunitor_pstrans"><span class="id" title="definition">linvunitor_lunitor_pstrans</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.Modifications.Examples.Unitality.html#lunitor_linvunitor_pstrans"><span class="id" title="definition">lunitor_linvunitor_pstrans</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.Modifications.Examples.Unitality.html#linvunitor_lunitor_pstrans"><span class="id" title="definition">linvunitor_lunitor_pstrans</span></a>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
@@ -443,18 +442,18 @@
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="biequiv_reflect_adjequiv" class="idref" href="#biequiv_reflect_adjequiv"><span class="id" title="definition">biequiv_reflect_adjequiv</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.Morphisms.Adjunctions.html#left_adjoint_equivalence"><span class="id" title="definition">left_adjoint_equivalence</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#BiequivReflectAdjequiv.f"><span class="id" title="variable">f</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.Morphisms.Properties.ClosedUnderInvertibles.html#left_adjoint_equivalence_invertible"><span class="id" title="definition">left_adjoint_equivalence_invertible</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#BiequivReflectAdjequiv.f'"><span class="id" title="variable">f'</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.Morphisms.Properties.Composition.html#comp_left_adjoint_equivalence"><span class="id" title="definition">comp_left_adjoint_equivalence</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.Morphisms.Properties.Composition.html#comp_left_adjoint_equivalence"><span class="id" title="definition">comp_left_adjoint_equivalence</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;× <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.Core.EquivToAdjequiv.html#inv_left_adjoint_equivalence"><span class="id" title="definition">inv_left_adjoint_equivalence</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;× <span class="id" title="var">use</span> (<a class="idref" href="UniMath.Bicategories.PseudoFunctors.PseudoFunctor.html#psfunctor_preserves_adjequiv'"><span class="id" title="definition">psfunctor_preserves_adjequiv'</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#BiequivReflectAdjequiv.R"><span class="id" title="variable">R</span></a>).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.Core.EquivToAdjequiv.html#inv_left_adjoint_equivalence"><span class="id" title="definition">inv_left_adjoint_equivalence</span></a>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="var">use</span> (<a class="idref" href="UniMath.Bicategories.PseudoFunctors.PseudoFunctor.html#psfunctor_preserves_adjequiv'"><span class="id" title="definition">psfunctor_preserves_adjequiv'</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#BiequivReflectAdjequiv.R"><span class="id" title="variable">R</span></a>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#BiequivReflectAdjequiv.Hf"><span class="id" title="variable">Hf</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Bicategories.Transformations.PseudoTransformation.html#pointwise_adjequiv"><span class="id" title="definition">pointwise_adjequiv</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#86ed489020443703d643ab2ddb1f8d26"><span class="id" title="variable">Hη</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#BiequivReflectAdjequiv.y"><span class="id" title="variable">y</span></a>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#biequiv_reflect_adjequiv_cell"><span class="id" title="definition">biequiv_reflect_adjequiv_cell</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.Core.Bicat.html#property_from_invertible_2cell"><span class="id" title="definition">property_from_invertible_2cell</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 <span class="id" title="keyword">End</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#BiequivReflectAdjequiv"><span class="id" title="section">BiequivReflectAdjequiv</span></a>.<br/>
 </div>
 </div>

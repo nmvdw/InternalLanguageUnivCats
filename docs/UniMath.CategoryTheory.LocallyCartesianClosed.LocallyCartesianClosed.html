@@ -1,21 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="coqdoc.css" rel="stylesheet" type="text/css" />
-<title>UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link href="coqdoc.css" rel="stylesheet" type="text/css"/>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<script src="./proofs-toggle.js" type="text/javascript"></script>
+	<style>
+		div.proofcomment {
+			font-style: italic;
+		}
+	</style>
+	<title>Documentation</title>
 </head>
-
 <body>
-
 <div id="page">
-
-<div id="header">
-</div>
-
 <div id="main">
-
 <h1 class="libtitle">Library UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed</h1>
 
 <div class="code">
@@ -54,7 +53,7 @@
 </div>
 
 <div class="doc">
-<a id="lab1555"></a><h1 class="section">1. Locally cartesian closed categories</h1>
+<a id="lab1587"></a><h1 class="section">1. Locally cartesian closed categories</h1>
 
 </div>
 <div class="code">
@@ -70,7 +69,7 @@
 </div>
 
 <div class="doc">
-<a id="lab1556"></a><h1 class="section">2. The slices of locally cartesian closed categories are cartesian closed</h1>
+<a id="lab1588"></a><h1 class="section">2. The slices of locally cartesian closed categories are cartesian closed</h1>
 
 </div>
 <div class="code">
@@ -83,7 +82,7 @@
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_trans_data"><span class="id" title="definition">nat_trans_data</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.FiberCod.html#cod_pb"><span class="id" title="definition">cod_pb</span></a> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#PB:7"><span class="id" title="variable">PB</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.FiberCod.html#cod_mor"><span class="id" title="definition">cod_mor</span></a> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#yf:10"><span class="id" title="variable">yf</span></a>) <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#938ca2d32d8c8186c2d73ab2872ae3c9"><span class="id" title="notation">∙</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.CodLeftAdjoint.html#comp_functor"><span class="id" title="definition">comp_functor</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.FiberCod.html#cod_mor"><span class="id" title="definition">cod_mor</span></a> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#yf:10"><span class="id" title="variable">yf</span></a>))<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.exponentials.html#constprod_functor1"><span class="id" title="definition">constprod_functor1</span></a> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#BP:9"><span class="id" title="variable">BP</span></a> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#yf:10"><span class="id" title="variable">yf</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">zg</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.FiberCod.html#make_cod_fib_mor"><span class="id" title="definition">make_cod_fib_mor</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#swap_pullback_z_iso"><span class="id" title="definition">swap_pullback_z_iso</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.FiberCod.html#cod_mor"><span class="id" title="definition">cod_mor</span></a> <span class="id" title="var">zg</span>) (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.FiberCod.html#cod_mor"><span class="id" title="definition">cod_mor</span></a> <span class="id" title="var">yf</span>)).<br/>
@@ -93,7 +92,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> !<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc"><span class="id" title="definition">assoc</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#PullbackArrow_PullbackPr1"><span class="id" title="lemma">PullbackArrow_PullbackPr1</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="slice_constprod_functor1_mor" class="idref" href="#slice_constprod_functor1_mor"><span class="id" title="definition">slice_constprod_functor1_mor</span></a><br/>
@@ -107,7 +106,7 @@
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.FiberCod.html#cod_dom"><span class="id" title="definition">cod_dom</span></a> (<a class="idref" href="UniMath.CategoryTheory.exponentials.html#constprod_functor1"><span class="id" title="definition">constprod_functor1</span></a> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#BP:14"><span class="id" title="variable">BP</span></a> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#yf:15"><span class="id" title="variable">yf</span></a> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#e38c1d1c4dd27ebacda92a64c3067f93"><span class="id" title="variable">zg₁</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.FiberCod.html#cod_dom"><span class="id" title="definition">cod_dom</span></a> (<a class="idref" href="UniMath.CategoryTheory.exponentials.html#constprod_functor1"><span class="id" title="definition">constprod_functor1</span></a> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#BP:14"><span class="id" title="variable">BP</span></a> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#yf:15"><span class="id" title="variable">yf</span></a> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#53ca53fc0c0da816db6756c8e85cdf64"><span class="id" title="variable">zg₂</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#PullbackArrow"><span class="id" title="definition">PullbackArrow</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#PullbackPr1"><span class="id" title="definition">PullbackPr1</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#PullbackPr2"><span class="id" title="definition">PullbackPr2</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.FiberCod.html#dom_mor"><span class="id" title="definition">dom_mor</span></a> <span class="id" title="var">hp</span>).<br/>
@@ -117,7 +116,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> !<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc'"><span class="id" title="definition">assoc'</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.FiberCod.html#mor_eq"><span class="id" title="lemma">mor_eq</span></a> <span class="id" title="var">hp</span>) ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Proposition</span> <a id="slice_constprod_functor1_mor_eq" class="idref" href="#slice_constprod_functor1_mor_eq"><span class="id" title="lemma">slice_constprod_functor1_mor_eq</span></a><br/>
@@ -131,7 +130,7 @@
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.FiberCod.html#dom_mor"><span class="id" title="definition">dom_mor</span></a> (<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#(</span></a><a class="idref" href="UniMath.CategoryTheory.exponentials.html#constprod_functor1"><span class="id" title="definition">constprod_functor1</span></a> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#BP:22"><span class="id" title="variable">BP</span></a> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#yf:23"><span class="id" title="variable">yf</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">hp</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#slice_constprod_functor1_mor"><span class="id" title="definition">slice_constprod_functor1_mor</span></a> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#PB:20"><span class="id" title="variable">PB</span></a> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#yf:23"><span class="id" title="variable">yf</span></a> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#hp:26"><span class="id" title="variable">hp</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#slice_constprod_functor1_mor"><span class="id" title="definition">slice_constprod_functor1_mor</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#MorphismsIntoPullbackEqual"><span class="id" title="lemma">MorphismsIntoPullbackEqual</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#isPullback_Pullback"><span class="id" title="definition">isPullback_Pullback</span></a> <span class="id" title="var">_</span>)).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#PullbackArrow_PullbackPr1"><span class="id" title="lemma">PullbackArrow_PullbackPr1</span></a>.<br/>
@@ -152,7 +151,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.FiberCod.html#comp_in_cod_fib"><span class="id" title="lemma">comp_in_cod_fib</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Proposition</span> <a id="locally_cartesian_closed_to_exponentials_nat_trans_laws" class="idref" href="#locally_cartesian_closed_to_exponentials_nat_trans_laws"><span class="id" title="lemma">locally_cartesian_closed_to_exponentials_nat_trans_laws</span></a><br/>
@@ -164,7 +163,7 @@
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#is_nat_trans"><span class="id" title="definition">is_nat_trans</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">_</span> <span class="id" title="var">_</span><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#locally_cartesian_closed_to_exponentials_nat_trans_data"><span class="id" title="definition">locally_cartesian_closed_to_exponentials_nat_trans_data</span></a> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#PB:28"><span class="id" title="variable">PB</span></a> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#yf:31"><span class="id" title="variable">yf</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">zg₁</span> <span class="id" title="var">zg₂</span> <span class="id" title="var">hp</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.FiberCod.html#eq_mor_cod_fib"><span class="id" title="lemma">eq_mor_cod_fib</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> !<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.FiberCod.html#comp_in_cod_fib"><span class="id" title="lemma">comp_in_cod_fib</span></a>.<br/>
@@ -188,7 +187,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc"><span class="id" title="definition">assoc</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#PullbackArrow_PullbackPr2"><span class="id" title="lemma">PullbackArrow_PullbackPr2</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="locally_cartesian_closed_to_exponentials_nat_trans" class="idref" href="#locally_cartesian_closed_to_exponentials_nat_trans"><span class="id" title="definition">locally_cartesian_closed_to_exponentials_nat_trans</span></a><br/>
@@ -200,11 +199,11 @@
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.FiberCod.html#cod_pb"><span class="id" title="definition">cod_pb</span></a> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#PB:33"><span class="id" title="variable">PB</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.FiberCod.html#cod_mor"><span class="id" title="definition">cod_mor</span></a> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#yf:36"><span class="id" title="variable">yf</span></a>) <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#938ca2d32d8c8186c2d73ab2872ae3c9"><span class="id" title="notation">∙</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.CodLeftAdjoint.html#comp_functor"><span class="id" title="definition">comp_functor</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.FiberCod.html#cod_mor"><span class="id" title="definition">cod_mor</span></a> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#yf:36"><span class="id" title="variable">yf</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#8848592016d1c94be2b36b727072e7e0"><span class="id" title="notation">⟹</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.exponentials.html#constprod_functor1"><span class="id" title="definition">constprod_functor1</span></a> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#BP:35"><span class="id" title="variable">BP</span></a> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#yf:36"><span class="id" title="variable">yf</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#make_nat_trans"><span class="id" title="definition">make_nat_trans</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#locally_cartesian_closed_to_exponentials_nat_trans_data"><span class="id" title="definition">locally_cartesian_closed_to_exponentials_nat_trans_data</span></a> <span class="id" title="var">PB</span> <span class="id" title="var">yf</span>).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#locally_cartesian_closed_to_exponentials_nat_trans_laws"><span class="id" title="lemma">locally_cartesian_closed_to_exponentials_nat_trans_laws</span></a>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="locally_cartesian_closed_to_exponentials_nat_z_iso" class="idref" href="#locally_cartesian_closed_to_exponentials_nat_z_iso"><span class="id" title="definition">locally_cartesian_closed_to_exponentials_nat_z_iso</span></a><br/>
@@ -216,14 +215,14 @@
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_z_iso"><span class="id" title="definition">nat_z_iso</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.FiberCod.html#cod_pb"><span class="id" title="definition">cod_pb</span></a> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#PB:38"><span class="id" title="variable">PB</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.FiberCod.html#cod_mor"><span class="id" title="definition">cod_mor</span></a> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#yf:41"><span class="id" title="variable">yf</span></a>) <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#938ca2d32d8c8186c2d73ab2872ae3c9"><span class="id" title="notation">∙</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.CodLeftAdjoint.html#comp_functor"><span class="id" title="definition">comp_functor</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.FiberCod.html#cod_mor"><span class="id" title="definition">cod_mor</span></a> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#yf:41"><span class="id" title="variable">yf</span></a>))<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.exponentials.html#constprod_functor1"><span class="id" title="definition">constprod_functor1</span></a> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#BP:40"><span class="id" title="variable">BP</span></a> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#yf:41"><span class="id" title="variable">yf</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#make_nat_z_iso"><span class="id" title="definition">make_nat_z_iso</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#locally_cartesian_closed_to_exponentials_nat_trans"><span class="id" title="definition">locally_cartesian_closed_to_exponentials_nat_trans</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">intro</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiber.html#is_z_iso_fiber_from_is_z_iso_disp"><span class="id" title="definition">is_z_iso_fiber_from_is_z_iso_disp</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.html#is_z_iso_disp_codomain"><span class="id" title="definition">is_z_iso_disp_codomain</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#z_iso_is_z_isomorphism"><span class="id" title="definition">z_iso_is_z_isomorphism</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#swap_pullback_z_iso"><span class="id" title="definition">swap_pullback_z_iso</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span>)).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="locally_cartesian_closed_to_exponentials" class="idref" href="#locally_cartesian_closed_to_exponentials"><span class="id" title="definition">locally_cartesian_closed_to_exponentials</span></a><br/>
@@ -233,7 +232,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="x:45" class="idref" href="#x:45"><span class="id" title="binder">x</span></a> : <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#C:42"><span class="id" title="variable">C</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="BP:46" class="idref" href="#BP:46"><span class="id" title="binder">BP</span></a> := <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.CodLimits.html#codomain_fib_binproducts"><span class="id" title="definition">codomain_fib_binproducts</span></a> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#PB:43"><span class="id" title="variable">PB</span></a> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#x:45"><span class="id" title="variable">x</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.exponentials.html#Exponentials"><span class="id" title="definition">Exponentials</span></a> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#BP:46"><span class="id" title="variable">BP</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">yf</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Adjunctions.Examples.html#is_left_adjoint_nat_z_iso"><span class="id" title="definition">is_left_adjoint_nat_z_iso</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.FiberCod.html#cod_pb"><span class="id" title="definition">cod_pb</span></a> <span class="id" title="var">PB</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.FiberCod.html#cod_mor"><span class="id" title="definition">cod_mor</span></a> <span class="id" title="var">yf</span>) <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#938ca2d32d8c8186c2d73ab2872ae3c9"><span class="id" title="notation">∙</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.CodLeftAdjoint.html#comp_functor"><span class="id" title="definition">comp_functor</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.FiberCod.html#cod_mor"><span class="id" title="definition">cod_mor</span></a> <span class="id" title="var">yf</span>)).<br/>
@@ -242,13 +241,13 @@
 &nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Adjunctions.Core.html#is_left_adjoint_left_adjoint"><span class="id" title="lemma">is_left_adjoint_left_adjoint</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.CodLeftAdjoint.html#is_right_adjoint_cod_fiber_functor"><span class="id" title="definition">is_right_adjoint_cod_fiber_functor</span></a> <span class="id" title="var">PB</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.FiberCod.html#cod_mor"><span class="id" title="definition">cod_mor</span></a> <span class="id" title="var">yf</span>))).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#locally_cartesian_closed_to_exponentials_nat_z_iso"><span class="id" title="definition">locally_cartesian_closed_to_exponentials_nat_z_iso</span></a> <span class="id" title="var">PB</span> <span class="id" title="var">yf</span>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab1557"></a><h1 class="section">3. Some properties of locally Cartesian closed categories</h1>
+<a id="lab1589"></a><h1 class="section">3. Some properties of locally Cartesian closed categories</h1>
 
 </div>
 <div class="code">
@@ -258,7 +257,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="exp:49" class="idref" href="#exp:49"><span class="id" title="binder">exp</span></a> : <a class="idref" href="UniMath.CategoryTheory.exponentials.html#Exponentials"><span class="id" title="definition">Exponentials</span></a> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#BP:48"><span class="id" title="variable">BP</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="I:50" class="idref" href="#I:50"><span class="id" title="binder">I</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Initial.html#Initial"><span class="id" title="definition">Initial</span></a> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#C:47"><span class="id" title="variable">C</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.StrictInitial.html#is_strict_initial"><span class="id" title="definition">is_strict_initial</span></a> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#I:50"><span class="id" title="variable">I</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">w</span> <span class="id" title="var">f</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">pose</span> (<span class="id" title="var">I'</span> := <a class="idref" href="UniMath.CategoryTheory.Limits.Initial.html#make_Initial"><span class="id" title="definition">make_Initial</span></a> <span class="id" title="var">_</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#left_adjoint_preserves_initial"><span class="id" title="definition">left_adjoint_preserves_initial</span></a> <span class="id" title="var">_</span> (<span class="id" title="var">exp</span> <span class="id" title="var">w</span>) <span class="id" title="var">_</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> <span class="id" title="var">I</span>))).<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#make_is_z_isomorphism"><span class="id" title="definition">make_is_z_isomorphism</span></a>.<br/>
@@ -270,7 +269,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Initial.html#InitialArrowEq"><span class="id" title="lemma">InitialArrowEq</span></a> (<span class="id" title="var">O</span> := <span class="id" title="var">I'</span>)).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Initial.html#InitialArrowEq"><span class="id" title="lemma">InitialArrowEq</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Proposition</span> <a id="is_strict_initial_from_locally_cartesian_closed" class="idref" href="#is_strict_initial_from_locally_cartesian_closed"><span class="id" title="lemma">is_strict_initial_from_locally_cartesian_closed</span></a><br/>
@@ -280,7 +279,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HC:54" class="idref" href="#HC:54"><span class="id" title="binder">HC</span></a> : <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#is_locally_cartesian_closed"><span class="id" title="definition">is_locally_cartesian_closed</span></a> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#PB:53"><span class="id" title="variable">PB</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="I:55" class="idref" href="#I:55"><span class="id" title="binder">I</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Initial.html#Initial"><span class="id" title="definition">Initial</span></a> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#C:51"><span class="id" title="variable">C</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.StrictInitial.html#is_strict_initial"><span class="id" title="definition">is_strict_initial</span></a> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#I:55"><span class="id" title="variable">I</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">w</span> <span class="id" title="var">f</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_on_is_z_isomorphism"><span class="id" title="definition">functor_on_is_z_isomorphism</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.FiberCod.html#cod_fib_terminal_to_base"><span class="id" title="definition">cod_fib_terminal_to_base</span></a> <span class="id" title="var">T</span>)<br/>
@@ -290,7 +289,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.FiberCod.html#make_cod_fib_ob"><span class="id" title="definition">make_cod_fib_ob</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Terminal.html#TerminalArrow"><span class="id" title="definition">TerminalArrow</span></a> <span class="id" title="var">T</span> <span class="id" title="var">w</span>))<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="var">f</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>))).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Terminal.html#TerminalArrowEq"><span class="id" title="lemma">TerminalArrowEq</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Proposition</span> <a id="is_locally_cartesian_closed_stable_bincoproducts" class="idref" href="#is_locally_cartesian_closed_stable_bincoproducts"><span class="id" title="lemma">is_locally_cartesian_closed_stable_bincoproducts</span></a><br/>
@@ -299,12 +298,12 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="BC:58" class="idref" href="#BC:58"><span class="id" title="binder">BC</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.BinCoproducts.html#BinCoproducts"><span class="id" title="definition">BinCoproducts</span></a> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#C:56"><span class="id" title="variable">C</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HC:59" class="idref" href="#HC:59"><span class="id" title="binder">HC</span></a> : <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#is_locally_cartesian_closed"><span class="id" title="definition">is_locally_cartesian_closed</span></a> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#PB:57"><span class="id" title="variable">PB</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.DisjointBinCoproducts.html#stable_bincoproducts"><span class="id" title="definition">stable_bincoproducts</span></a> <a class="idref" href="UniMath.CategoryTheory.LocallyCartesianClosed.LocallyCartesianClosed.html#BC:58"><span class="id" title="variable">BC</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Limits.DisjointBinCoproducts.html#stable_bincoproducts_from_pb_preserves_bincoproduct"><span class="id" title="lemma">stable_bincoproducts_from_pb_preserves_bincoproduct</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <span class="id" title="var">PB</span>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">f</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#left_adjoint_preserves_bincoproduct"><span class="id" title="definition">left_adjoint_preserves_bincoproduct</span></a> <span class="id" title="var">_</span> (<span class="id" title="var">HC</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">f</span>)).<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 </div>
 </div>
 

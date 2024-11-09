@@ -1,21 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="coqdoc.css" rel="stylesheet" type="text/css" />
-<title>UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link href="coqdoc.css" rel="stylesheet" type="text/css"/>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<script src="./proofs-toggle.js" type="text/javascript"></script>
+	<style>
+		div.proofcomment {
+			font-style: italic;
+		}
+	</style>
+	<title>Documentation</title>
 </head>
-
 <body>
-
 <div id="page">
-
-<div id="header">
-</div>
-
 <div id="main">
-
 <h1 class="libtitle">Library UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing</h1>
 
 <div class="code">
@@ -45,7 +44,7 @@
 </div>
 
 <div class="doc">
-<a id="lab2158"></a><h2 class="section">Reindexing</h2>
+<a id="lab2235"></a><h2 class="section">Reindexing</h2>
 
 </div>
 <div class="code">
@@ -62,14 +61,14 @@
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="reindex_disp_cat_ob_mor" class="idref" href="#reindex_disp_cat_ob_mor"><span class="id" title="definition">reindex_disp_cat_ob_mor</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#disp_cat_ob_mor"><span class="id" title="definition">disp_cat_ob_mor</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#Reindexing.C'"><span class="id" title="variable">C'</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">∃</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="c:5" class="idref" href="#c:5"><span class="id" title="binder"><span id="c:6" class="id">c</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#Reindexing.D"><span class="id" title="variable">D</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#Reindexing.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#c:5"><span class="id" title="variable">c</span></a>)).<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exists</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="c:5" class="idref" href="#c:5"><span class="id" title="binder"><span id="c:6" class="id">c</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#Reindexing.D"><span class="id" title="variable">D</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#Reindexing.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#c:5"><span class="id" title="variable">c</span></a>)).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">xx</span> <span class="id" title="var">yy</span> <span class="id" title="var">f</span>. <span class="id" title="tactic">exact</span> (<span class="id" title="var">xx</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">--&gt;[</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#Reindexing.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">f</span></a><a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">]</span></a> <span class="id" title="var">yy</span>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="reindex_disp_cat_id_comp" class="idref" href="#reindex_disp_cat_id_comp"><span class="id" title="definition">reindex_disp_cat_id_comp</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#disp_cat_id_comp"><span class="id" title="definition">disp_cat_id_comp</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#Reindexing.C'"><span class="id" title="variable">C'</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_disp_cat_ob_mor"><span class="id" title="definition">reindex_disp_cat_ob_mor</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#tpair"><span class="id" title="constructor">tpair</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">simpl</span>; <span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">xx</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.PartA.html#transportb"><span class="id" title="definition">transportb</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span>).<br/>
@@ -77,7 +76,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">simpl</span>; <span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">z</span> <span class="id" title="var">f</span> <span class="id" title="var">g</span> <span class="id" title="var">xx</span> <span class="id" title="var">yy</span> <span class="id" title="var">zz</span> <span class="id" title="var">ff</span> <span class="id" title="var">gg</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.PartA.html#transportb"><span class="id" title="definition">transportb</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_comp"><span class="id" title="definition">functor_comp</span></a>. <span class="id" title="tactic">exact</span> (<span class="id" title="var">ff</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#8735f787ddf36c3591f69d28c3fbee50"><span class="id" title="notation">;;</span></a> <span class="id" title="var">gg</span>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="reindex_disp_cat_data" class="idref" href="#reindex_disp_cat_data"><span class="id" title="definition">reindex_disp_cat_data</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#disp_cat_data"><span class="id" title="definition">disp_cat_data</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#Reindexing.C'"><span class="id" title="variable">C'</span></a><br/>
@@ -85,7 +84,7 @@
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="reindex_disp_cat_axioms" class="idref" href="#reindex_disp_cat_axioms"><span class="id" title="definition">reindex_disp_cat_axioms</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#disp_cat_axioms"><span class="id" title="definition">disp_cat_axioms</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#Reindexing.C'"><span class="id" title="variable">C'</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_disp_cat_data"><span class="id" title="definition">reindex_disp_cat_data</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">repeat</span> <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#tpair"><span class="id" title="constructor">tpair</span></a>; <span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">f</span> <span class="id" title="var">xx</span> <span class="id" title="var">yy</span> <span class="id" title="var">ff</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">eapply</span> <a class="idref" href="UniMath.Foundations.PartA.html#pathscomp0"><span class="id" title="definition">pathscomp0</span></a>. <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a>, <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#mor_disp_transportf_postwhisker"><span class="id" title="lemma">mor_disp_transportf_postwhisker</span></a>.<br/>
@@ -113,7 +112,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">eapply</span> <a class="idref" href="UniMath.Foundations.PartA.html#pathscomp0"><span class="id" title="definition">pathscomp0</span></a>. <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#transport_b_f"><span class="id" title="definition">transport_b_f</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <a class="idref" href="UniMath.Foundations.PartA.html#transportb"><span class="id" title="definition">transportb</span></a>; <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.MoreFoundations.PartA.html#maponpaths_2"><span class="id" title="definition">maponpaths_2</span></a>, <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">intros</span>; <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#homsets_disp"><span class="id" title="definition">homsets_disp</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="reindex_disp_cat" class="idref" href="#reindex_disp_cat"><span class="id" title="definition">reindex_disp_cat</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#disp_cat"><span class="id" title="definition">disp_cat</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#Reindexing.C'"><span class="id" title="variable">C'</span></a><br/>
@@ -123,14 +122,14 @@
 </div>
 
 <div class="doc">
-<a id="lab2159"></a><h2 class="section">A functor of displayed categories from reindexing</h2>
+<a id="lab2236"></a><h2 class="section">A functor of displayed categories from reindexing</h2>
 
 </div>
 <div class="code">
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="reindex_disp_functor" class="idref" href="#reindex_disp_functor"><span class="id" title="definition">reindex_disp_functor</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#disp_functor"><span class="id" title="definition">disp_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#Reindexing.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_disp_cat"><span class="id" title="definition">reindex_disp_cat</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#Reindexing.D"><span class="id" title="variable">D</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.Preamble.html#tpair"><span class="id" title="constructor">tpair</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.Preamble.html#tpair"><span class="id" title="constructor">tpair</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="var">cbn</span>. <span class="id" title="tactic">intro</span> <span class="id" title="var">x</span>. <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.PartA.html#idfun"><span class="id" title="definition">idfun</span></a> <span class="id" title="var">_</span> ).<br/>
@@ -140,7 +139,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<span class="id" title="tactic">intros</span>; <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a> |];<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span>; <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 <span class="id" title="keyword">End</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#Reindexing"><span class="id" title="section">Reindexing</span></a>.<br/>
 
 <br/>
@@ -177,9 +176,9 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#xx:13"><span class="id" title="variable">xx</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#yy:14"><span class="id" title="variable">yy</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a> (<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#F:10"><span class="id" title="variable">F</span></a>) <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#p:17"><span class="id" title="variable">p</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ff:18"><span class="id" title="variable">ff</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">induction</span> <span class="id" title="var">p</span> ; <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 </div>
@@ -205,7 +204,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#identity_z_iso"><span class="id" title="definition">identity_z_iso</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#x:23"><span class="id" title="variable">x</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#xx:24"><span class="id" title="variable">xx</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#yy:25"><span class="id" title="variable">yy</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">i</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Isos.html#make_z_iso_disp"><span class="id" title="definition">make_z_iso_disp</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.PartA.html#transportb"><span class="id" title="definition">transportb</span></a><br/>
@@ -247,7 +246,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.Foundations.PartA.html#transport_f_f"><span class="id" title="definition">transport_f_f</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.MoreFoundations.PartA.html#maponpaths_2"><span class="id" title="definition">maponpaths_2</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="z_iso_disp_reindex_to_z_iso_disp" class="idref" href="#z_iso_disp_reindex_to_z_iso_disp"><span class="id" title="definition">z_iso_disp_reindex_to_z_iso_disp</span></a><br/>
@@ -266,7 +265,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#yy:40"><span class="id" title="variable">yy</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Foundations.Init.html#c41c566ddac4c1298b9e7dd2bae1c794"><span class="id" title="notation">→</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Isos.html#z_iso_disp"><span class="id" title="definition">z_iso_disp</span></a> (<a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#identity_z_iso"><span class="id" title="definition">identity_z_iso</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#F:36"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#x:38"><span class="id" title="variable">x</span></a>)) <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#xx:39"><span class="id" title="variable">xx</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#yy:40"><span class="id" title="variable">yy</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">i</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Isos.html#make_z_iso_disp"><span class="id" title="definition">make_z_iso_disp</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.PartA.html#transportf"><span class="id" title="definition">transportf</span></a><br/>
@@ -318,7 +317,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> !<a class="idref" href="UniMath.Foundations.PartA.html#transport_f_f"><span class="id" title="definition">transport_f_f</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.MoreFoundations.PartA.html#maponpaths_2"><span class="id" title="definition">maponpaths_2</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="z_iso_disp_weq_z_iso_disp_reindex" class="idref" href="#z_iso_disp_weq_z_iso_disp_reindex"><span class="id" title="definition">z_iso_disp_weq_z_iso_disp_reindex</span></a><br/>
@@ -337,7 +336,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#identity_z_iso"><span class="id" title="definition">identity_z_iso</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#x:49"><span class="id" title="variable">x</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#xx:50"><span class="id" title="variable">xx</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#yy:51"><span class="id" title="variable">yy</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartA.html#make_weq"><span class="id" title="definition">make_weq</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#z_iso_disp_to_z_iso_disp_reindex"><span class="id" title="definition">z_iso_disp_to_z_iso_disp_reindex</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartA.html#isweq_iso"><span class="id" title="lemma">isweq_iso</span></a>.<br/>
@@ -352,7 +351,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartB.html#subtypePath"><span class="id" title="lemma">subtypePath</span></a> ; [ <span class="id" title="tactic">intro</span> ; <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Isos.html#isaprop_is_z_iso_disp"><span class="id" title="lemma">isaprop_is_z_iso_disp</span></a> | ] ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">cbn</span> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#transportbfinv"><span class="id" title="definition">transportbfinv</span></a>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
@@ -368,7 +367,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="D:55" class="idref" href="#D:55"><span class="id" title="binder">D</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#disp_cat"><span class="id" title="definition">disp_cat</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#14b4db7ff0ac37f9aae9ea6c548d0998"><span class="id" title="variable">C₂</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HD:56" class="idref" href="#HD:56"><span class="id" title="binder">HD</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Univalence.html#is_univalent_disp"><span class="id" title="definition">is_univalent_disp</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#D:55"><span class="id" title="variable">D</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Univalence.html#is_univalent_disp"><span class="id" title="definition">is_univalent_disp</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_disp_cat"><span class="id" title="definition">reindex_disp_cat</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#F:54"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#D:55"><span class="id" title="variable">D</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">p</span> <span class="id" title="var">xx</span> <span class="id" title="var">yy</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">induction</span> <span class="id" title="var">p</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.MoreFoundations.PartA.html#weqhomot"><span class="id" title="lemma">weqhomot</span></a>.<br/>
@@ -381,7 +380,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">induction</span> <span class="id" title="var">p</span> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartB.html#subtypePath"><span class="id" title="lemma">subtypePath</span></a> ; [ <span class="id" title="tactic">intro</span> ; <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Isos.html#isaprop_is_z_iso_disp"><span class="id" title="lemma">isaprop_is_z_iso_disp</span></a> | ] ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="univalent_reindex_cat" class="idref" href="#univalent_reindex_cat"><span class="id" title="definition">univalent_reindex_cat</span></a><br/>
@@ -389,13 +388,13 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="F:59" class="idref" href="#F:59"><span class="id" title="binder">F</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#14f90776437a98aed90422f54cd623e6"><span class="id" title="variable">C₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#2e11fa34845c6475af27ac9ab3f166ed"><span class="id" title="notation">⟶</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#10ed2273aac45d01f1ac23f1f2682678"><span class="id" title="variable">C₂</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="D:60" class="idref" href="#D:60"><span class="id" title="binder">D</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Univalence.html#disp_univalent_category"><span class="id" title="definition">disp_univalent_category</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#10ed2273aac45d01f1ac23f1f2682678"><span class="id" title="variable">C₂</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Univalence.html#univalent_category"><span class="id" title="definition">univalent_category</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.Univalence.html#make_univalent_category"><span class="id" title="definition">make_univalent_category</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Total.html#total_category"><span class="id" title="definition">total_category</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_disp_cat"><span class="id" title="definition">reindex_disp_cat</span></a> <span class="id" title="var">F</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <span class="id" title="var">D</span>))).<br/>
 &nbsp;&nbsp;- <span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Total.html#is_univalent_total_category"><span class="id" title="lemma">is_univalent_total_category</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> <span class="id" title="var">C₁</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#is_univalent_reindex_disp_cat"><span class="id" title="definition">is_univalent_reindex_disp_cat</span></a> <span class="id" title="var">F</span> <span class="id" title="var">_</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> <span class="id" title="var">D</span>)).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
@@ -416,8 +415,8 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="ff:70" class="idref" href="#ff:70"><span class="id" title="binder">ff</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#xx:68"><span class="id" title="variable">xx</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">--&gt;[</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a><a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#F:63"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">f</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">]</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#yy:69"><span class="id" title="variable">yy</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="Hff:71" class="idref" href="#Hff:71"><span class="id" title="binder">Hff</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fibrations.html#is_cartesian"><span class="id" title="definition">is_cartesian</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ff:70"><span class="id" title="variable">ff</span></a>)<br/>
 &nbsp;&nbsp;: @<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fibrations.html#is_cartesian"><span class="id" title="definition">is_cartesian</span></a> <span class="id" title="var">_</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_disp_cat"><span class="id" title="definition">reindex_disp_cat</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#F:63"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#D:64"><span class="id" title="variable">D</span></a>) <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#y:66"><span class="id" title="variable">y</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#x:65"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#f:67"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#yy:69"><span class="id" title="variable">yy</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#xx:68"><span class="id" title="variable">xx</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ff:70"><span class="id" title="variable">ff</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
-&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">z</span> <span class="id" title="var">g</span> <span class="id" title="var">zz</span> <span class="id" title="var">gg</span> ; <span class="id" title="var">cbn</span> <span class="id" title="tactic">in</span> ×.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
+&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">z</span> <span class="id" title="var">g</span> <span class="id" title="var">zz</span> <span class="id" title="var">gg</span> ; <span class="id" title="var">cbn</span> <span class="id" title="tactic">in</span> *.<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartB.html#iscontraprop1"><span class="id" title="lemma">iscontraprop1</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">abstract</span><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartB.html#invproofirrelevance"><span class="id" title="lemma">invproofirrelevance</span></a> ;<br/>
@@ -441,7 +440,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.Foundations.PartA.html#transport_f_f"><span class="id" title="definition">transport_f_f</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.MoreFoundations.PartA.html#transportf_set"><span class="id" title="lemma">transportf_set</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Section</span> <a id="IsCartesianFromReindexDispCat" class="idref" href="#IsCartesianFromReindexDispCat"><span class="id" title="section">IsCartesianFromReindexDispCat</span></a>.<br/>
@@ -484,7 +483,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="z:88" class="idref" href="#z:88"><span class="id" title="binder">z</span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">--&gt;[</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#z:88"><span class="id" title="variable">z</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">]</span></a> <span class="id" title="var">_</span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#z_iso_after_z_iso_inv"><span class="id" title="definition">z_iso_after_z_iso_inv</span></a> (<a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#make_z_iso'"><span class="id" title="definition">make_z_iso'</span></a> <span class="id" title="var">_</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#identity_is_z_iso"><span class="id" title="lemma">identity_is_z_iso</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#IsCartesianFromReindexDispCat.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#IsCartesianFromReindexDispCat.x"><span class="id" title="variable">x</span></a>))))<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#id_disp"><span class="id" title="definition">id_disp</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#75d15432c23c5a9be382e5b60dc8d770"><span class="id" title="variable">ℓ</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <span class="id" title="var">minv</span>, <span class="id" title="var">m</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <a class="idref" href="UniMath.Foundations.PartA.html#transportb"><span class="id" title="definition">transportb</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fibrations.html#cartesian_factorisation_unique"><span class="id" title="definition">cartesian_factorisation_unique</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#75d15432c23c5a9be382e5b60dc8d770"><span class="id" title="variable">ℓ</span></a>).<br/>
@@ -515,7 +514,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> !<a class="idref" href="UniMath.Foundations.PartA.html#transport_f_f"><span class="id" title="definition">transport_f_f</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.MoreFoundations.PartA.html#maponpaths_2"><span class="id" title="definition">maponpaths_2</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Local Lemma</span> <a id="m_minv" class="idref" href="#m_minv"><span class="id" title="lemma">m_minv</span></a><br/>
@@ -525,7 +524,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="z:91" class="idref" href="#z:91"><span class="id" title="binder">z</span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">--&gt;[</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#z:91"><span class="id" title="variable">z</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">]</span></a> <span class="id" title="var">_</span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#z_iso_inv_after_z_iso"><span class="id" title="definition">z_iso_inv_after_z_iso</span></a> (<a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#make_z_iso'"><span class="id" title="definition">make_z_iso'</span></a> <span class="id" title="var">_</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#identity_is_z_iso"><span class="id" title="lemma">identity_is_z_iso</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#IsCartesianFromReindexDispCat.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#IsCartesianFromReindexDispCat.x"><span class="id" title="variable">x</span></a>))))<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#id_disp"><span class="id" title="definition">id_disp</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#IsCartesianFromReindexDispCat.xx"><span class="id" title="variable">xx</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <span class="id" title="var">m</span>, <span class="id" title="var">minv</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#mor_disp_transportf_prewhisker"><span class="id" title="lemma">mor_disp_transportf_prewhisker</span></a>.<br/>
@@ -602,12 +601,12 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.Foundations.PartA.html#transport_f_f"><span class="id" title="definition">transport_f_f</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.MoreFoundations.PartA.html#maponpaths_2"><span class="id" title="definition">maponpaths_2</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="is_cartesian_from_reindex_disp_cat" class="idref" href="#is_cartesian_from_reindex_disp_cat"><span class="id" title="definition">is_cartesian_from_reindex_disp_cat</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fibrations.html#is_cartesian"><span class="id" title="definition">is_cartesian</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#IsCartesianFromReindexDispCat.ff"><span class="id" title="variable">ff</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fibrations.html#z_iso_disp_to_is_cartesian"><span class="id" title="definition">z_iso_disp_to_is_cartesian</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#75d15432c23c5a9be382e5b60dc8d770"><span class="id" title="variable">ℓ</span></a>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#identity"><span class="id" title="definition">identity</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#identity_is_z_iso"><span class="id" title="lemma">identity_is_z_iso</span></a>.<br/>
@@ -618,7 +617,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#minv_m"><span class="id" title="lemma">minv_m</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#m_minv"><span class="id" title="lemma">m_minv</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fibrations.html#cartesian_factorisation_commutes"><span class="id" title="definition">cartesian_factorisation_commutes</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 <span class="id" title="keyword">End</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#IsCartesianFromReindexDispCat"><span class="id" title="section">IsCartesianFromReindexDispCat</span></a>.<br/>
 
 <br/>
@@ -633,8 +632,8 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="ff:109" class="idref" href="#ff:109"><span class="id" title="binder">ff</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#xx:107"><span class="id" title="variable">xx</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">--&gt;[</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a><a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#F:102"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">f</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">]</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#yy:108"><span class="id" title="variable">yy</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="Hff:110" class="idref" href="#Hff:110"><span class="id" title="binder">Hff</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fibrations.html#is_opcartesian"><span class="id" title="definition">is_opcartesian</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ff:109"><span class="id" title="variable">ff</span></a>)<br/>
 &nbsp;&nbsp;: @<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fibrations.html#is_opcartesian"><span class="id" title="definition">is_opcartesian</span></a> <span class="id" title="var">_</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_disp_cat"><span class="id" title="definition">reindex_disp_cat</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#F:102"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#D:103"><span class="id" title="variable">D</span></a>) <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#x:104"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#y:105"><span class="id" title="variable">y</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#f:106"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#xx:107"><span class="id" title="variable">xx</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#yy:108"><span class="id" title="variable">yy</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ff:109"><span class="id" title="variable">ff</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
-&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">z</span> <span class="id" title="var">zz</span> <span class="id" title="var">g</span> <span class="id" title="var">gg</span> ; <span class="id" title="var">cbn</span> <span class="id" title="tactic">in</span> ×.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
+&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">z</span> <span class="id" title="var">zz</span> <span class="id" title="var">g</span> <span class="id" title="var">gg</span> ; <span class="id" title="var">cbn</span> <span class="id" title="tactic">in</span> *.<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartB.html#iscontraprop1"><span class="id" title="lemma">iscontraprop1</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">abstract</span><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartB.html#invproofirrelevance"><span class="id" title="lemma">invproofirrelevance</span></a> ;<br/>
@@ -658,7 +657,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.Foundations.PartA.html#transport_f_f"><span class="id" title="definition">transport_f_f</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.MoreFoundations.PartA.html#transportf_set"><span class="id" title="lemma">transportf_set</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Section</span> <a id="IsOpCartesianFromReindexDispCat" class="idref" href="#IsOpCartesianFromReindexDispCat"><span class="id" title="section">IsOpCartesianFromReindexDispCat</span></a>.<br/>
@@ -702,7 +701,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="z:127" class="idref" href="#z:127"><span class="id" title="binder">z</span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">--&gt;[</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#z:127"><span class="id" title="variable">z</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">]</span></a> <span class="id" title="var">_</span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#z_iso_after_z_iso_inv"><span class="id" title="definition">z_iso_after_z_iso_inv</span></a> (<a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#make_z_iso'"><span class="id" title="definition">make_z_iso'</span></a> <span class="id" title="var">_</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#identity_is_z_iso"><span class="id" title="lemma">identity_is_z_iso</span></a> <span class="id" title="var">_</span>)))<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#id_disp"><span class="id" title="definition">id_disp</span></a> <span class="id" title="var">_</span>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">pose</span> (<span class="id" title="var">p</span> := @<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fibrations.html#opcartesian_factorisation_unique"><span class="id" title="definition">opcartesian_factorisation_unique</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#IsOpCartesianFromReindexDispCat.Hff"><span class="id" title="variable">Hff</span></a><br/>
@@ -759,7 +758,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.Foundations.PartA.html#transport_f_f"><span class="id" title="definition">transport_f_f</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.MoreFoundations.PartA.html#maponpaths_2"><span class="id" title="definition">maponpaths_2</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Local Lemma</span> <a id="op_m_minv" class="idref" href="#op_m_minv"><span class="id" title="lemma">op_m_minv</span></a><br/>
@@ -769,7 +768,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="z:132" class="idref" href="#z:132"><span class="id" title="binder">z</span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">--&gt;[</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#z:132"><span class="id" title="variable">z</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">]</span></a> <span class="id" title="var">_</span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#z_iso_inv_after_z_iso"><span class="id" title="definition">z_iso_inv_after_z_iso</span></a> (<a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#make_z_iso'"><span class="id" title="definition">make_z_iso'</span></a> <span class="id" title="var">_</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#identity_is_z_iso"><span class="id" title="lemma">identity_is_z_iso</span></a> <span class="id" title="var">_</span>)))<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#id_disp"><span class="id" title="definition">id_disp</span></a> <span class="id" title="var">_</span>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <span class="id" title="var">m</span>, <span class="id" title="var">minv</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fibrations.html#opcartesian_factorisation_unique"><span class="id" title="definition">opcartesian_factorisation_unique</span></a><br/>
@@ -797,7 +796,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.Foundations.PartA.html#transport_f_f"><span class="id" title="definition">transport_f_f</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.MoreFoundations.PartA.html#maponpaths_2"><span class="id" title="definition">maponpaths_2</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Local Lemma</span> <a id="is_opcartesian_from_reindex_disp_cat_help" class="idref" href="#is_opcartesian_from_reindex_disp_cat_help"><span class="id" title="lemma">is_opcartesian_from_reindex_disp_cat_help</span></a><br/>
@@ -807,17 +806,17 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="z:133" class="idref" href="#z:133"><span class="id" title="binder">z</span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">--&gt;[</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#z:133"><span class="id" title="variable">z</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">]</span></a> <span class="id" title="var">_</span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_right"><span class="id" title="definition">id_right</span></a> <span class="id" title="var">_</span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fibrations.html#opcleaving_mor"><span class="id" title="definition">opcleaving_mor</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#IsOpCartesianFromReindexDispCat.HD"><span class="id" title="variable">HD</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#8735f787ddf36c3591f69d28c3fbee50"><span class="id" title="notation">;;</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#IsOpCartesianFromReindexDispCat.m"><span class="id" title="variable">m</span></a>)%<span class="id" title="var">mor_disp</span>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <span class="id" title="var">m</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fibrations.html#opcartesian_factorisation_commutes"><span class="id" title="definition">opcartesian_factorisation_commutes</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.Foundations.PartA.html#transportfbinv"><span class="id" title="definition">transportfbinv</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="is_opcartesian_from_reindex_disp_cat" class="idref" href="#is_opcartesian_from_reindex_disp_cat"><span class="id" title="definition">is_opcartesian_from_reindex_disp_cat</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fibrations.html#is_opcartesian"><span class="id" title="definition">is_opcartesian</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#IsOpCartesianFromReindexDispCat.ff"><span class="id" title="variable">ff</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.PartA.html#transportb"><span class="id" title="definition">transportb</span></a><br/>
@@ -830,10 +829,10 @@
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fibrations.html#is_opcartesian_z_iso_disp"><span class="id" title="definition">is_opcartesian_z_iso_disp</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#identity_is_z_iso"><span class="id" title="lemma">identity_is_z_iso</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">simple</span> <span class="id" title="tactic">refine</span> (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;× <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#IsOpCartesianFromReindexDispCat.minv"><span class="id" title="variable">minv</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;× <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#op_minv_m"><span class="id" title="lemma">op_minv_m</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;× <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#op_m_minv"><span class="id" title="lemma">op_m_minv</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#IsOpCartesianFromReindexDispCat.minv"><span class="id" title="variable">minv</span></a>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#op_minv_m"><span class="id" title="lemma">op_minv_m</span></a>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#op_m_minv"><span class="id" title="lemma">op_m_minv</span></a>.<br/>
+</div>
 <span class="id" title="keyword">End</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#IsOpCartesianFromReindexDispCat"><span class="id" title="section">IsOpCartesianFromReindexDispCat</span></a>.<br/>
 
 <br/>
@@ -850,7 +849,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="D:137" class="idref" href="#D:137"><span class="id" title="binder">D</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#disp_cat"><span class="id" title="definition">disp_cat</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#4c75756f312045dccd731214b10e6a97"><span class="id" title="variable">C₂</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HD:138" class="idref" href="#HD:138"><span class="id" title="binder">HD</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fibrations.html#cleaving"><span class="id" title="definition">cleaving</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#D:137"><span class="id" title="variable">D</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fibrations.html#cleaving"><span class="id" title="definition">cleaving</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_disp_cat"><span class="id" title="definition">reindex_disp_cat</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#F:136"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#D:137"><span class="id" title="variable">D</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">f</span> <span class="id" title="var">d</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">pose</span> (<span class="id" title="var">HD</span> (<span class="id" title="var">F</span> <span class="id" title="var">x</span>) (<span class="id" title="var">F</span> <span class="id" title="var">y</span>) (<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a><span class="id" title="var">F</span> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">f</span></a>) <span class="id" title="var">d</span>) <span class="id" title="keyword">as</span> <span class="id" title="var">lift</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">simple</span> <span class="id" title="tactic">refine</span> (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">(</span></a><span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span><a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">)</span></a>).<br/>
@@ -859,7 +858,7 @@
 &nbsp;&nbsp;- <span class="id" title="tactic">simpl</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#is_cartesian_in_reindex_disp_cat"><span class="id" title="definition">is_cartesian_in_reindex_disp_cat</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr22'_x"><span class="id" title="notation">pr22</span></a> <span class="id" title="var">lift</span>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="opcleaving_reindex_disp_cat" class="idref" href="#opcleaving_reindex_disp_cat"><span class="id" title="definition">opcleaving_reindex_disp_cat</span></a><br/>
@@ -868,7 +867,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="D:142" class="idref" href="#D:142"><span class="id" title="binder">D</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#disp_cat"><span class="id" title="definition">disp_cat</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#421059f10154a951b7b111a24982a249"><span class="id" title="variable">C₂</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HD:143" class="idref" href="#HD:143"><span class="id" title="binder">HD</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fibrations.html#opcleaving"><span class="id" title="definition">opcleaving</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#D:142"><span class="id" title="variable">D</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fibrations.html#opcleaving"><span class="id" title="definition">opcleaving</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_disp_cat"><span class="id" title="definition">reindex_disp_cat</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#F:141"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#D:142"><span class="id" title="variable">D</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">d</span> <span class="id" title="var">f</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">pose</span> (<span class="id" title="var">HD</span> (<span class="id" title="var">F</span> <span class="id" title="var">x</span>) (<span class="id" title="var">F</span> <span class="id" title="var">y</span>) <span class="id" title="var">d</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a><span class="id" title="var">F</span> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">f</span></a>)) <span class="id" title="keyword">as</span> <span class="id" title="var">lift</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">simple</span> <span class="id" title="tactic">refine</span> (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">(</span></a><span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span><a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">)</span></a>).<br/>
@@ -877,7 +876,7 @@
 &nbsp;&nbsp;- <span class="id" title="tactic">simpl</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#is_opcartesian_in_reindex_disp_cat"><span class="id" title="definition">is_opcartesian_in_reindex_disp_cat</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr22'_x"><span class="id" title="notation">pr22</span></a> <span class="id" title="var">lift</span>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
@@ -892,11 +891,11 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="F:146" class="idref" href="#F:146"><span class="id" title="binder">F</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#79ee49fae12a4140db41ffff5eaa12c4"><span class="id" title="variable">C₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#2e11fa34845c6475af27ac9ab3f166ed"><span class="id" title="notation">⟶</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ce22ecfafdfca6ef16b0fe9dab9eca22"><span class="id" title="variable">C₂</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="D:147" class="idref" href="#D:147"><span class="id" title="binder">D</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#disp_cat"><span class="id" title="definition">disp_cat</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ce22ecfafdfca6ef16b0fe9dab9eca22"><span class="id" title="variable">C₂</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#disp_functor_data"><span class="id" title="definition">disp_functor_data</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#F:146"><span class="id" title="variable">F</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_disp_cat"><span class="id" title="definition">reindex_disp_cat</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#F:146"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#D:147"><span class="id" title="variable">D</span></a>) <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#D:147"><span class="id" title="variable">D</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">simple</span> <span class="id" title="tactic">refine</span> (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <span class="id" title="var">_</span> <a id="xx:148" class="idref" href="#xx:148"><span class="id" title="binder"><span id="xx:149" class="id">xx</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#xx:148"><span class="id" title="variable">xx</span></a>).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <a id="ff:150" class="idref" href="#ff:150"><span class="id" title="binder"><span id="ff:151" class="id">ff</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ff:150"><span class="id" title="variable">ff</span></a>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="reindex_disp_cat_disp_functor_axioms" class="idref" href="#reindex_disp_cat_disp_functor_axioms"><span class="id" title="definition">reindex_disp_cat_disp_functor_axioms</span></a><br/>
@@ -904,9 +903,9 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="F:154" class="idref" href="#F:154"><span class="id" title="binder">F</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#85f3bad1bb30cdeabd490b8bcd0d21d7"><span class="id" title="variable">C₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#2e11fa34845c6475af27ac9ab3f166ed"><span class="id" title="notation">⟶</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#51aad297fa45d960073a41bb6be795e6"><span class="id" title="variable">C₂</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="D:155" class="idref" href="#D:155"><span class="id" title="binder">D</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#disp_cat"><span class="id" title="definition">disp_cat</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#51aad297fa45d960073a41bb6be795e6"><span class="id" title="variable">C₂</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#disp_functor_axioms"><span class="id" title="definition">disp_functor_axioms</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_disp_cat_disp_functor_data"><span class="id" title="definition">reindex_disp_cat_disp_functor_data</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#F:154"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#D:155"><span class="id" title="variable">D</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">split</span> ; <span class="id" title="var">cbn</span> ; <span class="id" title="tactic">intros</span> ; <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="reindex_disp_cat_disp_functor" class="idref" href="#reindex_disp_cat_disp_functor"><span class="id" title="definition">reindex_disp_cat_disp_functor</span></a><br/>
@@ -914,11 +913,11 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="F:158" class="idref" href="#F:158"><span class="id" title="binder">F</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#bcea7a18ba7bbf5129daa5b6012f45c1"><span class="id" title="variable">C₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#2e11fa34845c6475af27ac9ab3f166ed"><span class="id" title="notation">⟶</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#e3bae49cd694e962327f8824b86bfecf"><span class="id" title="variable">C₂</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="D:159" class="idref" href="#D:159"><span class="id" title="binder">D</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#disp_cat"><span class="id" title="definition">disp_cat</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#e3bae49cd694e962327f8824b86bfecf"><span class="id" title="variable">C₂</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#disp_functor"><span class="id" title="definition">disp_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#F:158"><span class="id" title="variable">F</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_disp_cat"><span class="id" title="definition">reindex_disp_cat</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#F:158"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#D:159"><span class="id" title="variable">D</span></a>) <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#D:159"><span class="id" title="variable">D</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">simple</span> <span class="id" title="tactic">refine</span> (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_disp_cat_disp_functor_data"><span class="id" title="definition">reindex_disp_cat_disp_functor_data</span></a> <span class="id" title="var">F</span> <span class="id" title="var">D</span>).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_disp_cat_disp_functor_axioms"><span class="id" title="definition">reindex_disp_cat_disp_functor_axioms</span></a> <span class="id" title="var">F</span> <span class="id" title="var">D</span>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="is_cartesian_reindex_disp_cat_disp_functor" class="idref" href="#is_cartesian_reindex_disp_cat_disp_functor"><span class="id" title="definition">is_cartesian_reindex_disp_cat_disp_functor</span></a><br/>
@@ -927,12 +926,12 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="D:163" class="idref" href="#D:163"><span class="id" title="binder">D</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#disp_cat"><span class="id" title="definition">disp_cat</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#69df521b672853e39b14a5ce3b69607a"><span class="id" title="variable">C₂</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HD:164" class="idref" href="#HD:164"><span class="id" title="binder">HD</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fibrations.html#cleaving"><span class="id" title="definition">cleaving</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#D:163"><span class="id" title="variable">D</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fibrations.html#is_cartesian_disp_functor"><span class="id" title="definition">is_cartesian_disp_functor</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_disp_cat_disp_functor"><span class="id" title="definition">reindex_disp_cat_disp_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#F:162"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#D:163"><span class="id" title="variable">D</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">f</span> <span class="id" title="var">xx</span> <span class="id" title="var">yy</span> <span class="id" title="var">ff</span> <span class="id" title="var">Hff</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#is_cartesian_from_reindex_disp_cat"><span class="id" title="definition">is_cartesian_from_reindex_disp_cat</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <span class="id" title="var">HD</span>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <span class="id" title="var">Hff</span>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="is_opcartesian_reindex_disp_cat_disp_functor" class="idref" href="#is_opcartesian_reindex_disp_cat_disp_functor"><span class="id" title="definition">is_opcartesian_reindex_disp_cat_disp_functor</span></a><br/>
@@ -941,12 +940,12 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="D:168" class="idref" href="#D:168"><span class="id" title="binder">D</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#disp_cat"><span class="id" title="definition">disp_cat</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#4e8bbebddcc4f033a5bfa1d58503b6e4"><span class="id" title="variable">C₂</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HD:169" class="idref" href="#HD:169"><span class="id" title="binder">HD</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fibrations.html#opcleaving"><span class="id" title="definition">opcleaving</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#D:168"><span class="id" title="variable">D</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fibrations.html#is_opcartesian_disp_functor"><span class="id" title="definition">is_opcartesian_disp_functor</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_disp_cat_disp_functor"><span class="id" title="definition">reindex_disp_cat_disp_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#F:167"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#D:168"><span class="id" title="variable">D</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">f</span> <span class="id" title="var">xx</span> <span class="id" title="var">yy</span> <span class="id" title="var">ff</span> <span class="id" title="var">Hff</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#is_opcartesian_from_reindex_disp_cat"><span class="id" title="definition">is_opcartesian_from_reindex_disp_cat</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <span class="id" title="var">HD</span>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <span class="id" title="var">Hff</span>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
@@ -964,11 +963,11 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="5ada63ce73a9925eb5dc1b530b45a614" class="idref" href="#5ada63ce73a9925eb5dc1b530b45a614"><span class="id" title="binder">F₂</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#1cd668d333811250cc1f1354ed467e1f"><span class="id" title="variable">C₂</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#2e11fa34845c6475af27ac9ab3f166ed"><span class="id" title="notation">⟶</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#278d65626cc7228eae7700a2790b5719"><span class="id" title="variable">C₃</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="FF:177" class="idref" href="#FF:177"><span class="id" title="binder">FF</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#disp_functor"><span class="id" title="definition">disp_functor</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#d20d185d9ddb225f739f3f05c9d6cbcd"><span class="id" title="variable">F₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#938ca2d32d8c8186c2d73ab2872ae3c9"><span class="id" title="notation">∙</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#5ada63ce73a9925eb5dc1b530b45a614"><span class="id" title="variable">F₂</span></a>) <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#a5527ff186d805bb13d24b562fa8f92a"><span class="id" title="variable">D₁</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#c8c55f2d11fb4019d719f782346eafea"><span class="id" title="variable">D₃</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#disp_functor_data"><span class="id" title="definition">disp_functor_data</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#d20d185d9ddb225f739f3f05c9d6cbcd"><span class="id" title="variable">F₁</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#a5527ff186d805bb13d24b562fa8f92a"><span class="id" title="variable">D₁</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_disp_cat"><span class="id" title="definition">reindex_disp_cat</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#5ada63ce73a9925eb5dc1b530b45a614"><span class="id" title="variable">F₂</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#c8c55f2d11fb4019d719f782346eafea"><span class="id" title="variable">D₃</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">simple</span> <span class="id" title="tactic">refine</span> (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="x:178" class="idref" href="#x:178"><span class="id" title="binder"><span id="x:180" class="id">x</span></span></a> <a id="xx:179" class="idref" href="#xx:179"><span class="id" title="binder"><span id="xx:181" class="id">xx</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <span class="id" title="var">FF</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#x:178"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#xx:179"><span class="id" title="variable">xx</span></a>).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="x:182" class="idref" href="#x:182"><span class="id" title="binder"><span id="x:188" class="id">x</span></span></a> <a id="y:183" class="idref" href="#y:183"><span class="id" title="binder"><span id="y:189" class="id">y</span></span></a> <a id="xx:184" class="idref" href="#xx:184"><span class="id" title="binder"><span id="xx:190" class="id">xx</span></span></a> <a id="yy:185" class="idref" href="#yy:185"><span class="id" title="binder"><span id="yy:191" class="id">yy</span></span></a> <a id="f:186" class="idref" href="#f:186"><span class="id" title="binder"><span id="f:192" class="id">f</span></span></a> <a id="ff:187" class="idref" href="#ff:187"><span class="id" title="binder"><span id="ff:193" class="id">ff</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#20269cdb016356ce8ac5f6510b4e5a6a"><span class="id" title="notation">♯</span></a> <span class="id" title="var">FF</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#20269cdb016356ce8ac5f6510b4e5a6a"><span class="id" title="notation">ff</span></a>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="lift_functor_into_reindex_axioms" class="idref" href="#lift_functor_into_reindex_axioms"><span class="id" title="definition">lift_functor_into_reindex_axioms</span></a><br/>
@@ -979,7 +978,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="9905b4fcaf411572ca762fa5d03cf943" class="idref" href="#9905b4fcaf411572ca762fa5d03cf943"><span class="id" title="binder">F₂</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#78fbdf657fc2f15e184ecc1c4a3855fd"><span class="id" title="variable">C₂</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#2e11fa34845c6475af27ac9ab3f166ed"><span class="id" title="notation">⟶</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#a5b5e11230432dfb9a31eeabfe9994ab"><span class="id" title="variable">C₃</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="FF:201" class="idref" href="#FF:201"><span class="id" title="binder">FF</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#disp_functor"><span class="id" title="definition">disp_functor</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#c54f6b3fdc24c7de1c072116a7d20190"><span class="id" title="variable">F₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#938ca2d32d8c8186c2d73ab2872ae3c9"><span class="id" title="notation">∙</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#9905b4fcaf411572ca762fa5d03cf943"><span class="id" title="variable">F₂</span></a>) <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#d205837a971aa22efaf52a84eb2b6a92"><span class="id" title="variable">D₁</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#b8d6ddd9e1b6a361988b9f9e33938fdb"><span class="id" title="variable">D₃</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#disp_functor_axioms"><span class="id" title="definition">disp_functor_axioms</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#lift_functor_into_reindex_data"><span class="id" title="definition">lift_functor_into_reindex_data</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#FF:201"><span class="id" title="variable">FF</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">split</span>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">xx</span> ; <span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <a class="idref" href="UniMath.Foundations.PartA.html#transportb"><span class="id" title="definition">transportb</span></a>.<br/>
@@ -1006,7 +1005,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <a class="idref" href="UniMath.Foundations.PartA.html#transportb"><span class="id" title="definition">transportb</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.MoreFoundations.PartA.html#maponpaths_2"><span class="id" title="definition">maponpaths_2</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="lift_functor_into_reindex" class="idref" href="#lift_functor_into_reindex"><span class="id" title="definition">lift_functor_into_reindex</span></a><br/>
@@ -1017,11 +1016,11 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="b6bcc4a992d162dbb6b0a7ceedbbd355" class="idref" href="#b6bcc4a992d162dbb6b0a7ceedbbd355"><span class="id" title="binder">F₂</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#70d0bd010227878e087117c0c8f57929"><span class="id" title="variable">C₂</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#2e11fa34845c6475af27ac9ab3f166ed"><span class="id" title="notation">⟶</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#59870e0dd7e768600ae8b4ac4a3e13b9"><span class="id" title="variable">C₃</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="FF:209" class="idref" href="#FF:209"><span class="id" title="binder">FF</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#disp_functor"><span class="id" title="definition">disp_functor</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#f673e8299b27d4c7802ffc21eef331e3"><span class="id" title="variable">F₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#938ca2d32d8c8186c2d73ab2872ae3c9"><span class="id" title="notation">∙</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#b6bcc4a992d162dbb6b0a7ceedbbd355"><span class="id" title="variable">F₂</span></a>) <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#b6a7d34f8740c0bcb865a43ee94ebe13"><span class="id" title="variable">D₁</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#7f5263606f13d054b0b7b0b6a1502463"><span class="id" title="variable">D₃</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#disp_functor"><span class="id" title="definition">disp_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#f673e8299b27d4c7802ffc21eef331e3"><span class="id" title="variable">F₁</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#b6a7d34f8740c0bcb865a43ee94ebe13"><span class="id" title="variable">D₁</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_disp_cat"><span class="id" title="definition">reindex_disp_cat</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#b6bcc4a992d162dbb6b0a7ceedbbd355"><span class="id" title="variable">F₂</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#7f5263606f13d054b0b7b0b6a1502463"><span class="id" title="variable">D₃</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">simple</span> <span class="id" title="tactic">refine</span> (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#lift_functor_into_reindex_data"><span class="id" title="definition">lift_functor_into_reindex_data</span></a> <span class="id" title="var">FF</span>).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#lift_functor_into_reindex_axioms"><span class="id" title="definition">lift_functor_into_reindex_axioms</span></a> <span class="id" title="var">FF</span>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="is_cartesian_lift_functor_into_reindex" class="idref" href="#is_cartesian_lift_functor_into_reindex"><span class="id" title="definition">is_cartesian_lift_functor_into_reindex</span></a><br/>
@@ -1033,12 +1032,12 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="FF:217" class="idref" href="#FF:217"><span class="id" title="binder">FF</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#disp_functor"><span class="id" title="definition">disp_functor</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#6d78e3e9974c76b340c91d6b0996a0d5"><span class="id" title="variable">F₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#938ca2d32d8c8186c2d73ab2872ae3c9"><span class="id" title="notation">∙</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#eb3e431fbfb36478f4e0dd32f919f05a"><span class="id" title="variable">F₂</span></a>) <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#127a94e9faa6e8a1004629f8452c1929"><span class="id" title="variable">D₁</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#d32abf8da0bcaa1eee302b319154ecd4"><span class="id" title="variable">D₃</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HFF:218" class="idref" href="#HFF:218"><span class="id" title="binder">HFF</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fibrations.html#is_cartesian_disp_functor"><span class="id" title="definition">is_cartesian_disp_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#FF:217"><span class="id" title="variable">FF</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fibrations.html#is_cartesian_disp_functor"><span class="id" title="definition">is_cartesian_disp_functor</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#lift_functor_into_reindex"><span class="id" title="definition">lift_functor_into_reindex</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#FF:217"><span class="id" title="variable">FF</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">f</span> <span class="id" title="var">xx</span> <span class="id" title="var">yy</span> <span class="id" title="var">ff</span> <span class="id" title="var">Hff</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#is_cartesian_in_reindex_disp_cat"><span class="id" title="definition">is_cartesian_in_reindex_disp_cat</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <span class="id" title="var">HFF</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">Hff</span>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="is_opcartesian_lift_functor_into_reindex" class="idref" href="#is_opcartesian_lift_functor_into_reindex"><span class="id" title="definition">is_opcartesian_lift_functor_into_reindex</span></a><br/>
@@ -1050,12 +1049,12 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="FF:226" class="idref" href="#FF:226"><span class="id" title="binder">FF</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#disp_functor"><span class="id" title="definition">disp_functor</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#93dd19a14344484bd2ae16851363c7e7"><span class="id" title="variable">F₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#938ca2d32d8c8186c2d73ab2872ae3c9"><span class="id" title="notation">∙</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#569e2e24a0913d14a402b6a6889bdedf"><span class="id" title="variable">F₂</span></a>) <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#48c1ffdb68c79a547bfbad0a19172990"><span class="id" title="variable">D₁</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#fcc4a7bcb3b12e9aa418d226079ad34b"><span class="id" title="variable">D₃</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HFF:227" class="idref" href="#HFF:227"><span class="id" title="binder">HFF</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fibrations.html#is_opcartesian_disp_functor"><span class="id" title="definition">is_opcartesian_disp_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#FF:226"><span class="id" title="variable">FF</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fibrations.html#is_opcartesian_disp_functor"><span class="id" title="definition">is_opcartesian_disp_functor</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#lift_functor_into_reindex"><span class="id" title="definition">lift_functor_into_reindex</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#FF:226"><span class="id" title="variable">FF</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">f</span> <span class="id" title="var">xx</span> <span class="id" title="var">yy</span> <span class="id" title="var">ff</span> <span class="id" title="var">Hff</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#is_opcartesian_in_reindex_disp_cat"><span class="id" title="definition">is_opcartesian_in_reindex_disp_cat</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <span class="id" title="var">HFF</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">Hff</span>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="lift_functor_into_reindex_commute_data" class="idref" href="#lift_functor_into_reindex_commute_data"><span class="id" title="definition">lift_functor_into_reindex_commute_data</span></a><br/>
@@ -1082,14 +1081,14 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="c9a23f9c9c35ace1c87f5f739e2ccd02" class="idref" href="#c9a23f9c9c35ace1c87f5f739e2ccd02"><span class="id" title="binder">F₂</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#368a362de79495189818514972f85a49"><span class="id" title="variable">C₂</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#2e11fa34845c6475af27ac9ab3f166ed"><span class="id" title="notation">⟶</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#a93097436fae327852a99027b9b409f7"><span class="id" title="variable">C₃</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="FF:245" class="idref" href="#FF:245"><span class="id" title="binder">FF</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#disp_functor"><span class="id" title="definition">disp_functor</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#989de2187a143ff9d5630756f252504e"><span class="id" title="variable">F₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#938ca2d32d8c8186c2d73ab2872ae3c9"><span class="id" title="notation">∙</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#c9a23f9c9c35ace1c87f5f739e2ccd02"><span class="id" title="variable">F₂</span></a>) <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#c887d9991416ab669aee3d1c40cef2e8"><span class="id" title="variable">D₁</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#b896ff4e8b49cef66b995e824aba84bb"><span class="id" title="variable">D₃</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.NaturalTransformations.html#disp_nat_trans_axioms"><span class="id" title="definition">disp_nat_trans_axioms</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#lift_functor_into_reindex_commute_data"><span class="id" title="definition">lift_functor_into_reindex_commute_data</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#FF:245"><span class="id" title="variable">FF</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">f</span> <span class="id" title="var">xx</span> <span class="id" title="var">yy</span> <span class="id" title="var">ff</span> ; <span class="id" title="tactic">unfold</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#lift_functor_into_reindex_commute_data"><span class="id" title="definition">lift_functor_into_reindex_commute_data</span></a> ; <span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#id_left_disp"><span class="id" title="definition">id_left_disp</span></a>, <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#id_right_disp"><span class="id" title="definition">id_right_disp</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <a class="idref" href="UniMath.Foundations.PartA.html#transportb"><span class="id" title="definition">transportb</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.Foundations.PartA.html#transport_f_f"><span class="id" title="definition">transport_f_f</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.MoreFoundations.PartA.html#maponpaths_2"><span class="id" title="definition">maponpaths_2</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="lift_functor_into_reindex_commute" class="idref" href="#lift_functor_into_reindex_commute"><span class="id" title="definition">lift_functor_into_reindex_commute</span></a><br/>
@@ -1105,11 +1104,11 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#lift_functor_into_reindex"><span class="id" title="definition">lift_functor_into_reindex</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#FF:253"><span class="id" title="variable">FF</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_disp_cat_disp_functor"><span class="id" title="definition">reindex_disp_cat_disp_functor</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span>))<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#FF:253"><span class="id" title="variable">FF</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">simple</span> <span class="id" title="tactic">refine</span> (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#lift_functor_into_reindex_commute_data"><span class="id" title="definition">lift_functor_into_reindex_commute_data</span></a> <span class="id" title="var">FF</span>).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#lift_functor_into_reindex_commute_axioms"><span class="id" title="definition">lift_functor_into_reindex_commute_axioms</span></a> <span class="id" title="var">FF</span>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="lift_functor_into_reindex_disp_nat_trans_data" class="idref" href="#lift_functor_into_reindex_disp_nat_trans_data"><span class="id" title="definition">lift_functor_into_reindex_disp_nat_trans_data</span></a><br/>
@@ -1140,7 +1139,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="1eab32d71922eed5a639294095920759" class="idref" href="#1eab32d71922eed5a639294095920759"><span class="id" title="binder">FF₂</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#disp_functor"><span class="id" title="definition">disp_functor</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#163cf40e9edaf69974711f297e6bcdb3"><span class="id" title="variable">F₁'</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#938ca2d32d8c8186c2d73ab2872ae3c9"><span class="id" title="notation">∙</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#573e0f36ba1bdcb8084990325dba2656"><span class="id" title="variable">F₂</span></a>) <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#c0e69fd03d1260c79063598545ade4f9"><span class="id" title="variable">D₁</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#7fe82f5e5e95cd5d7d84dca892308e47"><span class="id" title="variable">D₃</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="8edb72f9f5042181a7828b4b00fcf6c5" class="idref" href="#8edb72f9f5042181a7828b4b00fcf6c5"><span class="id" title="binder">αα</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.NaturalTransformations.html#disp_nat_trans"><span class="id" title="definition">disp_nat_trans</span></a> (<a class="idref" href="UniMath.CategoryTheory.whiskering.html#post_whisker"><span class="id" title="definition">post_whisker</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#8e0fc2cabb67ead20527f1910c50fa86"><span class="id" title="variable">α</span></a> <span class="id" title="var">_</span>) <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#f4d6cae4e27103bcdb7036c7f8c8d2ef"><span class="id" title="variable">FF₁</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#1eab32d71922eed5a639294095920759"><span class="id" title="variable">FF₂</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.NaturalTransformations.html#disp_nat_trans_axioms"><span class="id" title="definition">disp_nat_trans_axioms</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#lift_functor_into_reindex_disp_nat_trans_data"><span class="id" title="definition">lift_functor_into_reindex_disp_nat_trans_data</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#8edb72f9f5042181a7828b4b00fcf6c5"><span class="id" title="variable">αα</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">f</span> <span class="id" title="var">xx</span> <span class="id" title="var">yy</span> <span class="id" title="var">ff</span> ; <span class="id" title="var">cbn</span> ; <span class="id" title="tactic">unfold</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#lift_functor_into_reindex_disp_nat_trans_data"><span class="id" title="definition">lift_functor_into_reindex_disp_nat_trans_data</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="var">etrans</span>.<br/>
 &nbsp;&nbsp;{<br/>
@@ -1157,7 +1156,7 @@
 &nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.Foundations.PartA.html#transport_f_f"><span class="id" title="definition">transport_f_f</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.MoreFoundations.PartA.html#maponpaths_2"><span class="id" title="definition">maponpaths_2</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="lift_functor_into_reindex_disp_nat_trans" class="idref" href="#lift_functor_into_reindex_disp_nat_trans"><span class="id" title="definition">lift_functor_into_reindex_disp_nat_trans</span></a><br/>
@@ -1174,11 +1173,11 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ef8c071a114770077eb0cd6353e2cd44"><span class="id" title="variable">α</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#lift_functor_into_reindex"><span class="id" title="definition">lift_functor_into_reindex</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ee5ae2d7c21735d8f96050b53d9c665e"><span class="id" title="variable">FF₁</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#lift_functor_into_reindex"><span class="id" title="definition">lift_functor_into_reindex</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#dd76654070ef3a85fc9f5e132eb7093e"><span class="id" title="variable">FF₂</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">simple</span> <span class="id" title="tactic">refine</span> (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#lift_functor_into_reindex_disp_nat_trans_data"><span class="id" title="definition">lift_functor_into_reindex_disp_nat_trans_data</span></a> <span class="id" title="var">αα</span>).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#lift_functor_into_reindex_disp_nat_trans_axioms"><span class="id" title="definition">lift_functor_into_reindex_disp_nat_trans_axioms</span></a> <span class="id" title="var">αα</span>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
@@ -1211,7 +1210,7 @@ Universal property for functors
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_data"><span class="id" title="definition">functor_data</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#7a1d4f2e1d3784d9a049cea3cef9e3da"><span class="id" title="variable">C₀</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Total.html#total_category"><span class="id" title="definition">total_category</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_disp_cat"><span class="id" title="definition">reindex_disp_cat</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ReindexIsPB.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#d78c186f93962f4daead6c45ae56e938"><span class="id" title="variable">D₂</span></a>)).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#make_functor_data"><span class="id" title="definition">make_functor_data</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="x:301" class="idref" href="#x:301"><span class="id" title="binder"><span id="x:302" class="id">x</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ReindexIsPB.H"><span class="id" title="variable">H</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#x:301"><span class="id" title="variable">x</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a><br/>
@@ -1231,12 +1230,12 @@ Universal property for functors
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#z_iso_inv_on_left"><span class="id" title="lemma">z_iso_inv_on_left</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">!</span></a><span class="id" title="var">_</span>) ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_trans_ax"><span class="id" title="definition">nat_trans_ax</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#c4960d79790e7a52cb3a1c6e1add2d5e"><span class="id" title="variable">α</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">f</span>)).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="reindex_pb_ump_1_is_functor" class="idref" href="#reindex_pb_ump_1_is_functor"><span class="id" title="definition">reindex_pb_ump_1_is_functor</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#is_functor"><span class="id" title="definition">is_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_pb_ump_1_data"><span class="id" title="definition">reindex_pb_ump_1_data</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">split</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">intros</span> <span class="id" title="var">x</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartA.html#total2_paths_f"><span class="id" title="lemma">total2_paths_f</span></a> ; <span class="id" title="var">cbn</span>.<br/>
@@ -1325,40 +1324,40 @@ Universal property for functors
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> !<a class="idref" href="UniMath.Foundations.PartA.html#transport_f_f"><span class="id" title="definition">transport_f_f</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.MoreFoundations.PartA.html#maponpaths_2"><span class="id" title="definition">maponpaths_2</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="reindex_pb_ump_1" class="idref" href="#reindex_pb_ump_1"><span class="id" title="definition">reindex_pb_ump_1</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#7a1d4f2e1d3784d9a049cea3cef9e3da"><span class="id" title="variable">C₀</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#2e11fa34845c6475af27ac9ab3f166ed"><span class="id" title="notation">⟶</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Total.html#total_category"><span class="id" title="definition">total_category</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_disp_cat"><span class="id" title="definition">reindex_disp_cat</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ReindexIsPB.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#d78c186f93962f4daead6c45ae56e938"><span class="id" title="variable">D₂</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#make_functor"><span class="id" title="definition">make_functor</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_pb_ump_1_data"><span class="id" title="definition">reindex_pb_ump_1_data</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_pb_ump_1_is_functor"><span class="id" title="definition">reindex_pb_ump_1_is_functor</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="reindex_pb_ump_1_pr1" class="idref" href="#reindex_pb_ump_1_pr1"><span class="id" title="definition">reindex_pb_ump_1_pr1</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_pb_ump_1"><span class="id" title="definition">reindex_pb_ump_1</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#938ca2d32d8c8186c2d73ab2872ae3c9"><span class="id" title="notation">∙</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Total.html#pr1_category"><span class="id" title="definition">pr1_category</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#8848592016d1c94be2b36b727072e7e0"><span class="id" title="notation">⟹</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ReindexIsPB.H"><span class="id" title="variable">H</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#make_nat_trans"><span class="id" title="definition">make_nat_trans</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <span class="id" title="var">_</span><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#identity"><span class="id" title="definition">identity</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">abstract</span><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">f</span> ; <span class="id" title="var">cbn</span> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_left"><span class="id" title="definition">id_left</span></a>, <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_right"><span class="id" title="definition">id_right</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="reindex_pb_ump_1_pr1_nat_iso" class="idref" href="#reindex_pb_ump_1_pr1_nat_iso"><span class="id" title="definition">reindex_pb_ump_1_pr1_nat_iso</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_z_iso"><span class="id" title="definition">nat_z_iso</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_pb_ump_1"><span class="id" title="definition">reindex_pb_ump_1</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#938ca2d32d8c8186c2d73ab2872ae3c9"><span class="id" title="notation">∙</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Total.html#pr1_category"><span class="id" title="definition">pr1_category</span></a> <span class="id" title="var">_</span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ReindexIsPB.H"><span class="id" title="variable">H</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#make_nat_z_iso"><span class="id" title="definition">make_nat_z_iso</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_pb_ump_1_pr1"><span class="id" title="definition">reindex_pb_ump_1_pr1</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">intro</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#identity_is_z_iso"><span class="id" title="lemma">identity_is_z_iso</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="reindex_pb_ump_1_pr2_nat_z_iso_data" class="idref" href="#reindex_pb_ump_1_pr2_nat_z_iso_data"><span class="id" title="definition">reindex_pb_ump_1_pr2_nat_z_iso_data</span></a><br/>
@@ -1372,7 +1371,7 @@ Universal property for functors
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#is_nat_trans"><span class="id" title="definition">is_nat_trans</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">_</span> <span class="id" title="var">_</span><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_pb_ump_1_pr2_nat_z_iso_data"><span class="id" title="definition">reindex_pb_ump_1_pr2_nat_z_iso_data</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">f</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartA.html#total2_paths_f"><span class="id" title="lemma">total2_paths_f</span></a> ; <span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_trans_ax"><span class="id" title="definition">nat_trans_ax</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#c4960d79790e7a52cb3a1c6e1add2d5e"><span class="id" title="variable">α</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">f</span>).<br/>
@@ -1396,30 +1395,30 @@ Universal property for functors
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.Foundations.PartA.html#transport_f_f"><span class="id" title="definition">transport_f_f</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.MoreFoundations.PartA.html#transportf_set"><span class="id" title="lemma">transportf_set</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="reindex_pb_ump_1_pr2" class="idref" href="#reindex_pb_ump_1_pr2"><span class="id" title="definition">reindex_pb_ump_1_pr2</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_pb_ump_1"><span class="id" title="definition">reindex_pb_ump_1</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#938ca2d32d8c8186c2d73ab2872ae3c9"><span class="id" title="notation">∙</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Total.html#total_functor"><span class="id" title="definition">total_functor</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_disp_cat_disp_functor"><span class="id" title="definition">reindex_disp_cat_disp_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ReindexIsPB.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#d78c186f93962f4daead6c45ae56e938"><span class="id" title="variable">D₂</span></a>) <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#8848592016d1c94be2b36b727072e7e0"><span class="id" title="notation">⟹</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ReindexIsPB.G"><span class="id" title="variable">G</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#make_nat_trans"><span class="id" title="definition">make_nat_trans</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_pb_ump_1_pr2_nat_z_iso_data"><span class="id" title="definition">reindex_pb_ump_1_pr2_nat_z_iso_data</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_pb_ump_1_pr2_is_nat_trans"><span class="id" title="definition">reindex_pb_ump_1_pr2_is_nat_trans</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="reindex_pb_ump_1_pr2_nat_z_iso" class="idref" href="#reindex_pb_ump_1_pr2_nat_z_iso"><span class="id" title="definition">reindex_pb_ump_1_pr2_nat_z_iso</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_z_iso"><span class="id" title="definition">nat_z_iso</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_pb_ump_1"><span class="id" title="definition">reindex_pb_ump_1</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#938ca2d32d8c8186c2d73ab2872ae3c9"><span class="id" title="notation">∙</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Total.html#total_functor"><span class="id" title="definition">total_functor</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_disp_cat_disp_functor"><span class="id" title="definition">reindex_disp_cat_disp_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ReindexIsPB.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#d78c186f93962f4daead6c45ae56e938"><span class="id" title="variable">D₂</span></a>))<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ReindexIsPB.G"><span class="id" title="variable">G</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#make_nat_z_iso"><span class="id" title="definition">make_nat_z_iso</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_pb_ump_1_pr2"><span class="id" title="definition">reindex_pb_ump_1_pr2</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">intros</span> <span class="id" title="var">x</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Total.html#is_z_iso_total"><span class="id" title="definition">is_z_iso_total</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> (<a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_z_iso_pointwise_z_iso"><span class="id" title="definition">nat_z_iso_pointwise_z_iso</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#c4960d79790e7a52cb3a1c6e1add2d5e"><span class="id" title="variable">α</span></a> <span class="id" title="var">x</span>)).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr22'_x"><span class="id" title="notation">pr22</span></a> <a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr22'_x"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#e578e2b732527ecbe506076e901ac4c4"><span class="id" title="variable">HD₂</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> (<a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_z_iso_pointwise_z_iso"><span class="id" title="definition">nat_z_iso_pointwise_z_iso</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#c4960d79790e7a52cb3a1c6e1add2d5e"><span class="id" title="variable">α</span></a> <span class="id" title="var">x</span>) (<a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ReindexIsPB.G"><span class="id" title="variable">G</span></a> <span class="id" title="var">x</span>))<a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr22'_x"><span class="id" title="notation">)</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
@@ -1438,18 +1437,18 @@ Universal property for natural transformations
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="reindex_pb_ump_2_data" class="idref" href="#reindex_pb_ump_2_data"><span class="id" title="definition">reindex_pb_ump_2_data</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_trans_data"><span class="id" title="definition">nat_trans_data</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#3c1ce2d39f63cff16e5626dacf0ad533"><span class="id" title="variable">Φ₁</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#640c004929f1aac91cf09186c30e084f"><span class="id" title="variable">Φ₂</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="x:318" class="idref" href="#x:318"><span class="id" title="binder"><span id="x:319" class="id">x</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#9ec04217b142b5e56ee1701b425fd859"><span class="id" title="variable">τ</span></a><a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#9ec04217b142b5e56ee1701b425fd859"><span class="id" title="variable">₁</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#x:318"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.PartA.html#transportf"><span class="id" title="definition">transportf</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="z:320" class="idref" href="#z:320"><span class="id" title="binder"><span id="z:321" class="id">z</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">--&gt;[</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#z:320"><span class="id" title="variable">z</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">]</span></a> <span class="id" title="var">_</span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ReindexIsPB.p"><span class="id" title="variable">p</span></a> <span class="id" title="var">x</span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#9d630a74527a2e2232e1f35bc08da160"><span class="id" title="variable">τ</span></a><a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#9d630a74527a2e2232e1f35bc08da160"><span class="id" title="variable">₂</span></a> <span class="id" title="var">x</span>))).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="reindex_pb_ump_2_is_nat_trans" class="idref" href="#reindex_pb_ump_2_is_nat_trans"><span class="id" title="definition">reindex_pb_ump_2_is_nat_trans</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#is_nat_trans"><span class="id" title="definition">is_nat_trans</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#3c1ce2d39f63cff16e5626dacf0ad533"><span class="id" title="variable">Φ₁</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#640c004929f1aac91cf09186c30e084f"><span class="id" title="variable">Φ₂</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_pb_ump_2_data"><span class="id" title="definition">reindex_pb_ump_2_data</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">f</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartA.html#total2_paths_f"><span class="id" title="lemma">total2_paths_f</span></a> ; <span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_trans_ax"><span class="id" title="definition">nat_trans_ax</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#9ec04217b142b5e56ee1701b425fd859"><span class="id" title="variable">τ</span></a><a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#9ec04217b142b5e56ee1701b425fd859"><span class="id" title="variable">₁</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">f</span>).<br/>
@@ -1472,16 +1471,16 @@ Universal property for natural transformations
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.MoreFoundations.PartA.html#maponpaths_2"><span class="id" title="definition">maponpaths_2</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="reindex_pb_ump_2" class="idref" href="#reindex_pb_ump_2"><span class="id" title="definition">reindex_pb_ump_2</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#3c1ce2d39f63cff16e5626dacf0ad533"><span class="id" title="variable">Φ₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#8848592016d1c94be2b36b727072e7e0"><span class="id" title="notation">⟹</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#640c004929f1aac91cf09186c30e084f"><span class="id" title="variable">Φ₂</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#make_nat_trans"><span class="id" title="definition">make_nat_trans</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_pb_ump_2_data"><span class="id" title="definition">reindex_pb_ump_2_data</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_pb_ump_2_is_nat_trans"><span class="id" title="definition">reindex_pb_ump_2_is_nat_trans</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="reindex_pb_ump_2_pr1" class="idref" href="#reindex_pb_ump_2_pr1"><span class="id" title="definition">reindex_pb_ump_2_pr1</span></a><br/>
@@ -1490,14 +1489,14 @@ Universal property for natural transformations
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Total.html#pr1_category"><span class="id" title="definition">pr1_category</span></a> <span class="id" title="var">_</span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#9ec04217b142b5e56ee1701b425fd859"><span class="id" title="variable">τ</span></a><a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#9ec04217b142b5e56ee1701b425fd859"><span class="id" title="variable">₁</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_trans_eq"><span class="id" title="lemma">nat_trans_eq</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intro</span> ; <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">x</span> ; <span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="reindex_pb_ump_2_pr2" class="idref" href="#reindex_pb_ump_2_pr2"><span class="id" title="definition">reindex_pb_ump_2_pr2</span></a><br/>
@@ -1506,7 +1505,7 @@ Universal property for natural transformations
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Total.html#total_functor"><span class="id" title="definition">total_functor</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_disp_cat_disp_functor"><span class="id" title="definition">reindex_disp_cat_disp_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ReindexIsPB.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#d78c186f93962f4daead6c45ae56e938"><span class="id" title="variable">D₂</span></a>))<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#9d630a74527a2e2232e1f35bc08da160"><span class="id" title="variable">τ</span></a><a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#9d630a74527a2e2232e1f35bc08da160"><span class="id" title="variable">₂</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_trans_eq"><span class="id" title="lemma">nat_trans_eq</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intro</span> ; <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>.<br/>
@@ -1517,7 +1516,7 @@ Universal property for natural transformations
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.Foundations.PartA.html#transport_f_f"><span class="id" title="definition">transport_f_f</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.MoreFoundations.PartA.html#transportf_set"><span class="id" title="lemma">transportf_set</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 </div>
@@ -1543,7 +1542,7 @@ Universal property for equalities
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="reindex_pb_ump_eq" class="idref" href="#reindex_pb_ump_eq"><span class="id" title="definition">reindex_pb_ump_eq</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#581c209787271525186fa90d720100aa"><span class="id" title="variable">n₁</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#d6d7365d95983b004771c9e9759a589b"><span class="id" title="variable">n₂</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_trans_eq"><span class="id" title="lemma">nat_trans_eq</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>.<br/>
@@ -1566,7 +1565,7 @@ Universal property for equalities
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.MoreFoundations.PartA.html#maponpaths_2"><span class="id" title="definition">maponpaths_2</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 <span class="id" title="keyword">End</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ReindexIsPB"><span class="id" title="section">ReindexIsPB</span></a>.<br/>
 
 <br/>
@@ -1592,16 +1591,16 @@ Universal property for equalities
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_identity"><span class="id" title="definition">functor_identity</span></a> <span class="id" title="var">_</span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_disp_cat"><span class="id" title="definition">reindex_disp_cat</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ReindexOfDispFunctor.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#9a09317a5d5c78cdd292790a42de89cf"><span class="id" title="variable">D₁</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_disp_cat"><span class="id" title="definition">reindex_disp_cat</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ReindexOfDispFunctor.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#bc0ce20852ea2816a4b38b1fca322735"><span class="id" title="variable">D₂</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">simple</span> <span class="id" title="tactic">refine</span> (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="x:334" class="idref" href="#x:334"><span class="id" title="binder"><span id="x:336" class="id">x</span></span></a> <a id="xx:335" class="idref" href="#xx:335"><span class="id" title="binder"><span id="xx:337" class="id">xx</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ReindexOfDispFunctor.G"><span class="id" title="variable">G</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ReindexOfDispFunctor.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#x:334"><span class="id" title="variable">x</span></a>) <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#xx:335"><span class="id" title="variable">xx</span></a>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="x:338" class="idref" href="#x:338"><span class="id" title="binder"><span id="x:344" class="id">x</span></span></a> <a id="y:339" class="idref" href="#y:339"><span class="id" title="binder"><span id="y:345" class="id">y</span></span></a> <a id="xx:340" class="idref" href="#xx:340"><span class="id" title="binder"><span id="xx:346" class="id">xx</span></span></a> <a id="yy:341" class="idref" href="#yy:341"><span class="id" title="binder"><span id="yy:347" class="id">yy</span></span></a> <a id="f:342" class="idref" href="#f:342"><span class="id" title="binder"><span id="f:348" class="id">f</span></span></a> <a id="ff:343" class="idref" href="#ff:343"><span class="id" title="binder"><span id="ff:349" class="id">ff</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#20269cdb016356ce8ac5f6510b4e5a6a"><span class="id" title="notation">♯</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ReindexOfDispFunctor.G"><span class="id" title="variable">G</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#20269cdb016356ce8ac5f6510b4e5a6a"><span class="id" title="notation">ff</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="reindex_of_disp_functor_axioms" class="idref" href="#reindex_of_disp_functor_axioms"><span class="id" title="definition">reindex_of_disp_functor_axioms</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#disp_functor_axioms"><span class="id" title="definition">disp_functor_axioms</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_of_disp_functor_data"><span class="id" title="definition">reindex_of_disp_functor_data</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">split</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">xx</span> ; <span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <a class="idref" href="UniMath.Foundations.PartA.html#transportb"><span class="id" title="definition">transportb</span></a>.<br/>
@@ -1619,7 +1618,7 @@ Universal property for equalities
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.Foundations.PartA.html#transport_f_f"><span class="id" title="definition">transport_f_f</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.MoreFoundations.PartA.html#maponpaths_2"><span class="id" title="definition">maponpaths_2</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="reindex_of_disp_functor" class="idref" href="#reindex_of_disp_functor"><span class="id" title="definition">reindex_of_disp_functor</span></a><br/>
@@ -1627,39 +1626,39 @@ Universal property for equalities
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_identity"><span class="id" title="definition">functor_identity</span></a> <span class="id" title="var">_</span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_disp_cat"><span class="id" title="definition">reindex_disp_cat</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ReindexOfDispFunctor.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#9a09317a5d5c78cdd292790a42de89cf"><span class="id" title="variable">D₁</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_disp_cat"><span class="id" title="definition">reindex_disp_cat</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ReindexOfDispFunctor.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#bc0ce20852ea2816a4b38b1fca322735"><span class="id" title="variable">D₂</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">simple</span> <span class="id" title="tactic">refine</span> (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_of_disp_functor_data"><span class="id" title="definition">reindex_of_disp_functor_data</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_of_disp_functor_axioms"><span class="id" title="definition">reindex_of_disp_functor_axioms</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="reindex_of_disp_functor_is_cartesian_disp_functor" class="idref" href="#reindex_of_disp_functor_is_cartesian_disp_functor"><span class="id" title="definition">reindex_of_disp_functor_is_cartesian_disp_functor</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="58db005ee5236a37b7b10b747924c098" class="idref" href="#58db005ee5236a37b7b10b747924c098"><span class="id" title="binder">HD₁</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fibrations.html#cleaving"><span class="id" title="definition">cleaving</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#9a09317a5d5c78cdd292790a42de89cf"><span class="id" title="variable">D₁</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HG:351" class="idref" href="#HG:351"><span class="id" title="binder">HG</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fibrations.html#is_cartesian_disp_functor"><span class="id" title="definition">is_cartesian_disp_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ReindexOfDispFunctor.G"><span class="id" title="variable">G</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fibrations.html#is_cartesian_disp_functor"><span class="id" title="definition">is_cartesian_disp_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_of_disp_functor"><span class="id" title="definition">reindex_of_disp_functor</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">f</span> <span class="id" title="var">xx</span> <span class="id" title="var">yy</span> <span class="id" title="var">ff</span> <span class="id" title="var">Hff</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#is_cartesian_in_reindex_disp_cat"><span class="id" title="definition">is_cartesian_in_reindex_disp_cat</span></a> ; <span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <span class="id" title="var">HG</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#is_cartesian_from_reindex_disp_cat"><span class="id" title="definition">is_cartesian_from_reindex_disp_cat</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <span class="id" title="var">HD₁</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <span class="id" title="var">Hff</span>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="reindex_of_disp_functor_is_opcartesian_disp_functor" class="idref" href="#reindex_of_disp_functor_is_opcartesian_disp_functor"><span class="id" title="definition">reindex_of_disp_functor_is_opcartesian_disp_functor</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="7ae9abfe20a0eda1672a7510638e1c70" class="idref" href="#7ae9abfe20a0eda1672a7510638e1c70"><span class="id" title="binder">HD₁</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fibrations.html#opcleaving"><span class="id" title="definition">opcleaving</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#9a09317a5d5c78cdd292790a42de89cf"><span class="id" title="variable">D₁</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HG:353" class="idref" href="#HG:353"><span class="id" title="binder">HG</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fibrations.html#is_opcartesian_disp_functor"><span class="id" title="definition">is_opcartesian_disp_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ReindexOfDispFunctor.G"><span class="id" title="variable">G</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fibrations.html#is_opcartesian_disp_functor"><span class="id" title="definition">is_opcartesian_disp_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_of_disp_functor"><span class="id" title="definition">reindex_of_disp_functor</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">f</span> <span class="id" title="var">xx</span> <span class="id" title="var">yy</span> <span class="id" title="var">ff</span> <span class="id" title="var">Hff</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#is_opcartesian_in_reindex_disp_cat"><span class="id" title="definition">is_opcartesian_in_reindex_disp_cat</span></a> ; <span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <span class="id" title="var">HG</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#is_opcartesian_from_reindex_disp_cat"><span class="id" title="definition">is_opcartesian_from_reindex_disp_cat</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <span class="id" title="var">HD₁</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <span class="id" title="var">Hff</span>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 <span class="id" title="keyword">End</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ReindexOfDispFunctor"><span class="id" title="section">ReindexOfDispFunctor</span></a>.<br/>
 
 <br/>
@@ -1724,7 +1723,7 @@ Universal property for equalities
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="reindex_of_disp_nat_trans_axioms" class="idref" href="#reindex_of_disp_nat_trans_axioms"><span class="id" title="definition">reindex_of_disp_nat_trans_axioms</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.NaturalTransformations.html#disp_nat_trans_axioms"><span class="id" title="definition">disp_nat_trans_axioms</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ReindexOfDispNatTrans.reindex_of_disp_nat_trans_data"><span class="id" title="variable">reindex_of_disp_nat_trans_data</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">f</span> <span class="id" title="var">xx</span> <span class="id" title="var">yy</span> <span class="id" title="var">ff</span> ; <span class="id" title="var">cbn</span> ; <span class="id" title="tactic">unfold</span> <span class="id" title="var">reindex_of_disp_nat_trans_data</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <a class="idref" href="UniMath.Foundations.PartA.html#transportb"><span class="id" title="definition">transportb</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#mor_disp_transportf_prewhisker"><span class="id" title="lemma">mor_disp_transportf_prewhisker</span></a>.<br/>
@@ -1744,7 +1743,7 @@ Universal property for equalities
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> !<a class="idref" href="UniMath.Foundations.PartA.html#transport_f_f"><span class="id" title="definition">transport_f_f</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.MoreFoundations.PartA.html#maponpaths_2"><span class="id" title="definition">maponpaths_2</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="reindex_of_disp_nat_trans" class="idref" href="#reindex_of_disp_nat_trans"><span class="id" title="definition">reindex_of_disp_nat_trans</span></a><br/>
@@ -1752,11 +1751,11 @@ Universal property for equalities
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_trans_id"><span class="id" title="definition">nat_trans_id</span></a> <span class="id" title="var">_</span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_of_disp_functor"><span class="id" title="definition">reindex_of_disp_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ReindexOfDispNatTrans.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#b603e8a8b1449399eed0eee9776a38bb"><span class="id" title="variable">G₁</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_of_disp_functor"><span class="id" title="definition">reindex_of_disp_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ReindexOfDispNatTrans.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#0c5a476d33b2b349e126cb7f20950257"><span class="id" title="variable">G₂</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">simple</span> <span class="id" title="tactic">refine</span> (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ReindexOfDispNatTrans.reindex_of_disp_nat_trans_data"><span class="id" title="variable">reindex_of_disp_nat_trans_data</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_of_disp_nat_trans_axioms"><span class="id" title="definition">reindex_of_disp_nat_trans_axioms</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 <span class="id" title="keyword">End</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ReindexOfDispNatTrans"><span class="id" title="section">ReindexOfDispNatTrans</span></a>.<br/>
 
 <br/>
@@ -1787,7 +1786,7 @@ Universal property for equalities
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="reindex_of_disp_functor_identity_axioms" class="idref" href="#reindex_of_disp_functor_identity_axioms"><span class="id" title="definition">reindex_of_disp_functor_identity_axioms</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.NaturalTransformations.html#disp_nat_trans_axioms"><span class="id" title="definition">disp_nat_trans_axioms</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ReindexOfId.reindex_of_disp_functor_identity_data"><span class="id" title="variable">reindex_of_disp_functor_identity_data</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">f</span> <span class="id" title="var">xx</span> <span class="id" title="var">yy</span> <span class="id" title="var">ff</span> ; <span class="id" title="var">cbn</span> ; <span class="id" title="tactic">unfold</span> <span class="id" title="var">reindex_of_disp_functor_identity_data</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <a class="idref" href="UniMath.Foundations.PartA.html#transportb"><span class="id" title="definition">transportb</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#mor_disp_transportf_prewhisker"><span class="id" title="lemma">mor_disp_transportf_prewhisker</span></a>.<br/>
@@ -1803,7 +1802,7 @@ Universal property for equalities
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> !<a class="idref" href="UniMath.Foundations.PartA.html#transport_f_f"><span class="id" title="definition">transport_f_f</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.MoreFoundations.PartA.html#maponpaths_2"><span class="id" title="definition">maponpaths_2</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="reindex_of_disp_functor_identity" class="idref" href="#reindex_of_disp_functor_identity"><span class="id" title="definition">reindex_of_disp_functor_identity</span></a><br/>
@@ -1811,11 +1810,11 @@ Universal property for equalities
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_trans_id"><span class="id" title="definition">nat_trans_id</span></a> <span class="id" title="var">_</span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#disp_functor_identity"><span class="id" title="definition">disp_functor_identity</span></a> <span class="id" title="var">_</span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_of_disp_functor"><span class="id" title="definition">reindex_of_disp_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ReindexOfId.F"><span class="id" title="variable">F</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#disp_functor_identity"><span class="id" title="definition">disp_functor_identity</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ReindexOfId.D"><span class="id" title="variable">D</span></a>)).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">simple</span> <span class="id" title="tactic">refine</span> (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ReindexOfId.reindex_of_disp_functor_identity_data"><span class="id" title="variable">reindex_of_disp_functor_identity_data</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_of_disp_functor_identity_axioms"><span class="id" title="definition">reindex_of_disp_functor_identity_axioms</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 <span class="id" title="keyword">End</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ReindexOfId"><span class="id" title="section">ReindexOfId</span></a>.<br/>
 
 <br/>
@@ -1845,7 +1844,7 @@ Universal property for equalities
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="reindex_of_disp_functor_composite_axioms" class="idref" href="#reindex_of_disp_functor_composite_axioms"><span class="id" title="definition">reindex_of_disp_functor_composite_axioms</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.NaturalTransformations.html#disp_nat_trans_axioms"><span class="id" title="definition">disp_nat_trans_axioms</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ReindexOfComp.reindex_of_disp_functor_composite_data"><span class="id" title="variable">reindex_of_disp_functor_composite_data</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">f</span> <span class="id" title="var">xx</span> <span class="id" title="var">yy</span> <span class="id" title="var">ff</span> ; <span class="id" title="var">cbn</span> ; <span class="id" title="tactic">unfold</span> <span class="id" title="var">reindex_of_disp_functor_composite_data</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <a class="idref" href="UniMath.Foundations.PartA.html#transportb"><span class="id" title="definition">transportb</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#mor_disp_transportf_prewhisker"><span class="id" title="lemma">mor_disp_transportf_prewhisker</span></a>.<br/>
@@ -1861,7 +1860,7 @@ Universal property for equalities
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> !<a class="idref" href="UniMath.Foundations.PartA.html#transport_f_f"><span class="id" title="definition">transport_f_f</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.MoreFoundations.PartA.html#maponpaths_2"><span class="id" title="definition">maponpaths_2</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="reindex_of_disp_functor_composite" class="idref" href="#reindex_of_disp_functor_composite"><span class="id" title="definition">reindex_of_disp_functor_composite</span></a><br/>
@@ -1873,11 +1872,11 @@ Universal property for equalities
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_of_disp_functor"><span class="id" title="definition">reindex_of_disp_functor</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ReindexOfComp.F"><span class="id" title="variable">F</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#disp_functor_over_id_composite"><span class="id" title="definition">disp_functor_over_id_composite</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#3a03b9303e813c8749b3a9b19c547828"><span class="id" title="variable">G₁</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#e7906d721401238eae59804fe651ce12"><span class="id" title="variable">G₂</span></a>)).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">simple</span> <span class="id" title="tactic">refine</span> (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ReindexOfComp.reindex_of_disp_functor_composite_data"><span class="id" title="variable">reindex_of_disp_functor_composite_data</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#reindex_of_disp_functor_composite_axioms"><span class="id" title="definition">reindex_of_disp_functor_composite_axioms</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 <span class="id" title="keyword">End</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Reindexing.html#ReindexOfComp"><span class="id" title="section">ReindexOfComp</span></a>.<br/>
 </div>
 </div>

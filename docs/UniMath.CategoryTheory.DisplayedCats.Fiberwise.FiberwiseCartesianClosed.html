@@ -1,21 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="coqdoc.css" rel="stylesheet" type="text/css" />
-<title>UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseCartesianClosed</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link href="coqdoc.css" rel="stylesheet" type="text/css"/>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<script src="./proofs-toggle.js" type="text/javascript"></script>
+	<style>
+		div.proofcomment {
+			font-style: italic;
+		}
+	</style>
+	<title>Documentation</title>
 </head>
-
 <body>
-
 <div id="page">
-
-<div id="header">
-</div>
-
 <div id="main">
-
 <h1 class="libtitle">Library UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseCartesianClosed</h1>
 
 <div class="code">
@@ -42,7 +41,7 @@
 </div>
 
 <div class="doc">
-<a id="lab1390"></a><h1 class="section">1. Fiberwise exponentials</h1>
+<a id="lab1395"></a><h1 class="section">1. Fiberwise exponentials</h1>
 
 </div>
 <div class="code">
@@ -61,7 +60,7 @@
 </div>
 
 <div class="doc">
-<a id="lab1391"></a><h1 class="section">2, Accessors</h1>
+<a id="lab1396"></a><h1 class="section">2, Accessors</h1>
 
 </div>
 <div class="code">
@@ -117,7 +116,7 @@
 </div>
 
 <div class="doc">
-<a id="lab1392"></a><h1 class="section">3. Specialized builder for fibrations that land in posets</h1>
+<a id="lab1397"></a><h1 class="section">3. Specialized builder for fibrations that land in posets</h1>
 
 </div>
 <div class="code">
@@ -145,7 +144,7 @@
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="exp_in_fiber_locally_propositional" class="idref" href="#exp_in_fiber_locally_propositional"><span class="id" title="definition">exp_in_fiber_locally_propositional</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="9cd1870a4a886601ca6d9db2f5bb0b92" class="idref" href="#9cd1870a4a886601ca6d9db2f5bb0b92"><span class="id" title="binder">Γ</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseCartesianClosed.html#FiberwiseExponentialsPoset.C"><span class="id" title="variable">C</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.exponentials.html#Exponentials"><span class="id" title="definition">Exponentials</span></a> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseCartesianClosed.html#FiberwiseExponentialsPoset.P"><span class="id" title="variable">P</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseCartesianClosed.html#9cd1870a4a886601ca6d9db2f5bb0b92"><span class="id" title="variable">Γ</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> φ.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Adjunctions.Core.html#left_adjoint_from_partial"><span class="id" title="definition">left_adjoint_from_partial</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="4c45780c8cc019940d2d80f01c898c32" class="idref" href="#4c45780c8cc019940d2d80f01c898c32"><span class="id" title="binder"><span id="b9feb1ec9b78775a00b09c76c76166e8" class="id">ψ</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseCartesianClosed.html#FiberwiseExponentialsPoset.imp"><span class="id" title="variable">imp</span></a> <span class="id" title="var">_</span> φ <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseCartesianClosed.html#4c45780c8cc019940d2d80f01c898c32"><span class="id" title="variable">ψ</span></a>).<br/>
@@ -160,26 +159,26 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">simple</span> <span class="id" title="tactic">refine</span> (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>) ; [ | <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseCartesianClosed.html#FiberwiseExponentialsPoset.HD'"><span class="id" title="variable">HD'</span></a> ].<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseCartesianClosed.html#FiberwiseExponentialsPoset.imp_i"><span class="id" title="variable">imp_i</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">p</span>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="make_fiberwise_exponentials_locally_propositional" class="idref" href="#make_fiberwise_exponentials_locally_propositional"><span class="id" title="definition">make_fiberwise_exponentials_locally_propositional</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseCartesianClosed.html#fiberwise_exponentials"><span class="id" title="definition">fiberwise_exponentials</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseCartesianClosed.html#FiberwiseExponentialsPoset.P"><span class="id" title="variable">P</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">simple</span> <span class="id" title="tactic">refine</span> (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseCartesianClosed.html#exp_in_fiber_locally_propositional"><span class="id" title="definition">exp_in_fiber_locally_propositional</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">abstract</span><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">intros</span> <span class="id" title="var">Γ₁</span> <span class="id" title="var">Γ₂</span> <span class="id" title="var">s</span> φ ψ ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#make_is_z_isomorphism"><span class="id" title="definition">make_is_z_isomorphism</span></a> ; [ <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseCartesianClosed.html#FiberwiseExponentialsPoset.imp_sub"><span class="id" title="variable">imp_sub</span></a> | ] ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">split</span> ; <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseCartesianClosed.html#FiberwiseExponentialsPoset.HD'"><span class="id" title="variable">HD'</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 <span class="id" title="keyword">End</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseCartesianClosed.html#FiberwiseExponentialsPoset"><span class="id" title="section">FiberwiseExponentialsPoset</span></a>.<br/>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab1393"></a><h1 class="section">4. Distributivity of products and coproducts</h1>
+<a id="lab1398"></a><h1 class="section">4. Distributivity of products and coproducts</h1>
 
 </div>
 <div class="code">
@@ -213,7 +212,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseCartesianClosed.html#CP:83"><span class="id" title="variable">CP</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#BinProductObject"><span class="id" title="definition">BinProductObject</span></a> <span class="id" title="var">_</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseProducts.html#binprod_in_fib"><span class="id" title="definition">binprod_in_fib</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseCartesianClosed.html#P:82"><span class="id" title="variable">P</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseCartesianClosed.html#xx:86"><span class="id" title="variable">xx</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseCartesianClosed.html#yy:87"><span class="id" title="variable">yy</span></a>))<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#BinProductObject"><span class="id" title="definition">BinProductObject</span></a> <span class="id" title="var">_</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseProducts.html#binprod_in_fib"><span class="id" title="definition">binprod_in_fib</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseCartesianClosed.html#P:82"><span class="id" title="variable">P</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseCartesianClosed.html#xx:86"><span class="id" title="variable">xx</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseCartesianClosed.html#zz:88"><span class="id" title="variable">zz</span></a>))).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_bincoproduct_to_z_iso"><span class="id" title="definition">preserves_bincoproduct_to_z_iso</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">_</span><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseCartesianClosed.html#preserves_bincoproduct_constprod_fib"><span class="id" title="definition">preserves_bincoproduct_constprod_fib</span></a> <span class="id" title="var">E</span> <span class="id" title="var">xx</span>)<br/>
@@ -222,7 +221,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">CP</span><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#BinProductObject"><span class="id" title="definition">BinProductObject</span></a> <span class="id" title="var">_</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseProducts.html#binprod_in_fib"><span class="id" title="definition">binprod_in_fib</span></a> <span class="id" title="var">P</span> <span class="id" title="var">xx</span> <span class="id" title="var">yy</span>))<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#BinProductObject"><span class="id" title="definition">BinProductObject</span></a> <span class="id" title="var">_</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseProducts.html#binprod_in_fib"><span class="id" title="definition">binprod_in_fib</span></a> <span class="id" title="var">P</span> <span class="id" title="var">xx</span> <span class="id" title="var">zz</span>)))).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 </div>
 </div>
 

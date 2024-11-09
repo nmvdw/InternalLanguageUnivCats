@@ -1,21 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="coqdoc.css" rel="stylesheet" type="text/css" />
-<title>UniMath.CategoryTheory.CommaCategories</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link href="coqdoc.css" rel="stylesheet" type="text/css"/>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<script src="./proofs-toggle.js" type="text/javascript"></script>
+	<style>
+		div.proofcomment {
+			font-style: italic;
+		}
+	</style>
+	<title>Documentation</title>
 </head>
-
 <body>
-
 <div id="page">
-
-<div id="header">
-</div>
-
 <div id="main">
-
 <h1 class="libtitle">Library UniMath.CategoryTheory.CommaCategories</h1>
 
 <div class="code">
@@ -109,69 +108,69 @@ Contents :
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="isaset_ccomma_morphism" class="idref" href="#isaset_ccomma_morphism"><span class="id" title="definition">isaset_ccomma_morphism</span></a> <a id="a:9" class="idref" href="#a:9"><span class="id" title="binder">a</span></a> <a id="b:10" class="idref" href="#b:10"><span class="id" title="binder">b</span></a> : <a class="idref" href="UniMath.Foundations.PartB.html#isaset"><span class="id" title="definition">isaset</span></a> (<a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#ccomma_morphism"><span class="id" title="definition">ccomma_morphism</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#a:9"><span class="id" title="variable">a</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#b:10"><span class="id" title="variable">b</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.Foundations.PartB.html#isofhleveltotal2"><span class="id" title="lemma">isofhleveltotal2</span></a> 2).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">intro</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartB.html#hlevelntosn"><span class="id" title="lemma">hlevelntosn</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="cComma_mor_eq" class="idref" href="#cComma_mor_eq"><span class="id" title="definition">cComma_mor_eq</span></a> <a id="a:11" class="idref" href="#a:11"><span class="id" title="binder">a</span></a> <a id="b:12" class="idref" href="#b:12"><span class="id" title="binder">b</span></a> (<a id="f:13" class="idref" href="#f:13"><span class="id" title="binder">f</span></a> <a id="f':14" class="idref" href="#f':14"><span class="id" title="binder">f'</span></a> : <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#ccomma_morphism"><span class="id" title="definition">ccomma_morphism</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#a:11"><span class="id" title="variable">a</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#b:12"><span class="id" title="variable">b</span></a>)<br/>
-&nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#f:13"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#f':14"><span class="id" title="variable">f'</span></a> <a class="idref" href="UniMath.Foundations.Init.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">→</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#f:13"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#f':14"><span class="id" title="variable">f'</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#f:13"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#f':14"><span class="id" title="variable">f'</span></a> <a class="idref" href="UniMath.Foundations.Init.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">-&gt;</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#f:13"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#f':14"><span class="id" title="variable">f'</span></a>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">H</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartB.html#subtypePath"><span class="id" title="lemma">subtypePath</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">intro</span>. <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">H</span>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="ccomma_id" class="idref" href="#ccomma_id"><span class="id" title="definition">ccomma_id</span></a> <a id="a:15" class="idref" href="#a:15"><span class="id" title="binder">a</span></a> : <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#ccomma_morphism"><span class="id" title="definition">ccomma_morphism</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#a:15"><span class="id" title="variable">a</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#a:15"><span class="id" title="variable">a</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
-&nbsp;&nbsp;<span class="id" title="tactic">∃</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#identity"><span class="id" title="definition">identity</span></a> <span class="id" title="var">_</span> ).<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
+&nbsp;&nbsp;<span class="id" title="tactic">exists</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#identity"><span class="id" title="definition">identity</span></a> <span class="id" title="var">_</span> ).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">abstract</span> (<br/>
 &nbsp;&nbsp;<span class="id" title="var">intermediate_path</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> <span class="id" title="var">a</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#identity"><span class="id" title="definition">identity</span></a> <span class="id" title="var">_</span> );<br/>
 &nbsp;&nbsp;&nbsp;[ <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a>; <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_id"><span class="id" title="definition">functor_id</span></a> |];<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_right"><span class="id" title="definition">id_right</span></a><br/>
 &nbsp;&nbsp;).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="ccomma_comp" class="idref" href="#ccomma_comp"><span class="id" title="definition">ccomma_comp</span></a> <a id="a:16" class="idref" href="#a:16"><span class="id" title="binder">a</span></a> <a id="b:17" class="idref" href="#b:17"><span class="id" title="binder">b</span></a> <a id="d:18" class="idref" href="#d:18"><span class="id" title="binder">d</span></a> :<br/>
-&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#ccomma_morphism"><span class="id" title="definition">ccomma_morphism</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#a:16"><span class="id" title="variable">a</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#b:17"><span class="id" title="variable">b</span></a> <a class="idref" href="UniMath.Foundations.Init.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">→</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#ccomma_morphism"><span class="id" title="definition">ccomma_morphism</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#b:17"><span class="id" title="variable">b</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#d:18"><span class="id" title="variable">d</span></a> <a class="idref" href="UniMath.Foundations.Init.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">→</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#ccomma_morphism"><span class="id" title="definition">ccomma_morphism</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#a:16"><span class="id" title="variable">a</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#d:18"><span class="id" title="variable">d</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#ccomma_morphism"><span class="id" title="definition">ccomma_morphism</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#a:16"><span class="id" title="variable">a</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#b:17"><span class="id" title="variable">b</span></a> <a class="idref" href="UniMath.Foundations.Init.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">-&gt;</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#ccomma_morphism"><span class="id" title="definition">ccomma_morphism</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#b:17"><span class="id" title="variable">b</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#d:18"><span class="id" title="variable">d</span></a> <a class="idref" href="UniMath.Foundations.Init.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">-&gt;</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#ccomma_morphism"><span class="id" title="definition">ccomma_morphism</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#a:16"><span class="id" title="variable">a</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#d:18"><span class="id" title="variable">d</span></a>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">f</span> <span class="id" title="var">g</span>.<br/>
-&nbsp;&nbsp;<span class="id" title="tactic">∃</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <span class="id" title="var">f</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <span class="id" title="var">g</span>).<br/>
+&nbsp;&nbsp;<span class="id" title="tactic">exists</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <span class="id" title="var">f</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <span class="id" title="var">g</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">abstract</span> (<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_comp"><span class="id" title="definition">functor_comp</span></a>;<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc"><span class="id" title="definition">assoc</span></a>;<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> <span class="id" title="var">f</span>);<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> <span class="id" title="var">g</span>)<br/>
 &nbsp;&nbsp;&nbsp;).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="ccomma_precategory_ob_mor" class="idref" href="#ccomma_precategory_ob_mor"><span class="id" title="definition">ccomma_precategory_ob_mor</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#precategory_ob_mor"><span class="id" title="definition">precategory_ob_mor</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
-&nbsp;&nbsp;<span class="id" title="tactic">∃</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#ccomma_object"><span class="id" title="definition">ccomma_object</span></a>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
+&nbsp;&nbsp;<span class="id" title="tactic">exists</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#ccomma_object"><span class="id" title="definition">ccomma_object</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#ccomma_morphism"><span class="id" title="definition">ccomma_morphism</span></a>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="ccomma_precategory_data" class="idref" href="#ccomma_precategory_data"><span class="id" title="definition">ccomma_precategory_data</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#precategory_data"><span class="id" title="definition">precategory_data</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
-&nbsp;&nbsp;<span class="id" title="tactic">∃</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#ccomma_precategory_ob_mor"><span class="id" title="definition">ccomma_precategory_ob_mor</span></a>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
+&nbsp;&nbsp;<span class="id" title="tactic">exists</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#ccomma_precategory_ob_mor"><span class="id" title="definition">ccomma_precategory_ob_mor</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">split</span>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#ccomma_id"><span class="id" title="definition">ccomma_id</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#ccomma_comp"><span class="id" title="definition">ccomma_comp</span></a>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="is_precategory_ccomma_precategory_data" class="idref" href="#is_precategory_ccomma_precategory_data"><span class="id" title="definition">is_precategory_ccomma_precategory_data</span></a><br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#is_precategory"><span class="id" title="definition">is_precategory</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#ccomma_precategory_data"><span class="id" title="definition">ccomma_precategory_data</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">repeat</span> <span class="id" title="tactic">split</span>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">intros</span>. <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#cComma_mor_eq"><span class="id" title="definition">cComma_mor_eq</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">simpl</span>. <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_left"><span class="id" title="definition">id_left</span></a>.<br/>
@@ -181,18 +180,18 @@ Contents :
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">simpl</span>. <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc"><span class="id" title="definition">assoc</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">intros</span>. <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#cComma_mor_eq"><span class="id" title="definition">cComma_mor_eq</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">simpl</span>. <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc'"><span class="id" title="definition">assoc'</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="cComma_precat" class="idref" href="#cComma_precat"><span class="id" title="definition">cComma_precat</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#precategory"><span class="id" title="definition">precategory</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
-&nbsp;&nbsp;<span class="id" title="tactic">∃</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#ccomma_precategory_data"><span class="id" title="definition">ccomma_precategory_data</span></a>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
+&nbsp;&nbsp;<span class="id" title="tactic">exists</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#ccomma_precategory_data"><span class="id" title="definition">ccomma_precategory_data</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#is_precategory_ccomma_precategory_data"><span class="id" title="definition">is_precategory_ccomma_precategory_data</span></a>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Lemma</span> <a id="has_homsets_cComma_precat" class="idref" href="#has_homsets_cComma_precat"><span class="id" title="lemma">has_homsets_cComma_precat</span></a>: <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#has_homsets"><span class="id" title="definition">has_homsets</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#cComma_precat"><span class="id" title="definition">cComma_precat</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">red</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">a</span> <span class="id" title="var">b</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartB.html#isaset_total2"><span class="id" title="lemma">isaset_total2</span></a>.<br/>
@@ -200,25 +199,25 @@ Contents :
 &nbsp;&nbsp;- <span class="id" title="tactic">intro</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartB.html#hlevelntosn"><span class="id" title="lemma">hlevelntosn</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="cComma" class="idref" href="#cComma"><span class="id" title="definition">cComma</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#category"><span class="id" title="definition">category</span></a> := <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#cComma_precat"><span class="id" title="definition">cComma_precat</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#has_homsets_cComma_precat"><span class="id" title="lemma">has_homsets_cComma_precat</span></a>.<br/>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="ccomma_pr1_functor_data" class="idref" href="#ccomma_pr1_functor_data"><span class="id" title="definition">ccomma_pr1_functor_data</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_data"><span class="id" title="definition">functor_data</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#cComma"><span class="id" title="definition">cComma</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#const_comma_category_definition.M"><span class="id" title="variable">M</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
-&nbsp;&nbsp;<span class="id" title="tactic">∃</span> <a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
+&nbsp;&nbsp;<span class="id" title="tactic">exists</span> <a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">a</span> <span class="id" title="var">b</span> <span class="id" title="var">f</span>. <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <span class="id" title="var">f</span>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Lemma</span> <a id="is_functor_ccomma_pr1" class="idref" href="#is_functor_ccomma_pr1"><span class="id" title="lemma">is_functor_ccomma_pr1</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#is_functor"><span class="id" title="definition">is_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#ccomma_pr1_functor_data"><span class="id" title="definition">ccomma_pr1_functor_data</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">split</span>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">intro</span> <span class="id" title="var">a</span>. <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">intros</span> ? ? ? ? ?. <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="cComma_pr1" class="idref" href="#cComma_pr1"><span class="id" title="definition">cComma_pr1</span></a> : <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#cComma"><span class="id" title="definition">cComma</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#2e11fa34845c6475af27ac9ab3f166ed"><span class="id" title="notation">⟶</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#const_comma_category_definition.M"><span class="id" title="variable">M</span></a> := <a class="idref" href="UniMath.Foundations.Preamble.html#tpair"><span class="id" title="constructor">tpair</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#is_functor_ccomma_pr1"><span class="id" title="lemma">is_functor_ccomma_pr1</span></a>.<br/>
@@ -242,41 +241,41 @@ Contents :
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="cComma_mor_ob" class="idref" href="#cComma_mor_ob"><span class="id" title="definition">cComma_mor_ob</span></a> : <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#lemmas_on_const_comma_cats.c'"><span class="id" title="variable">c'</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#93380bf954703bfcda566a3fcfa1444d"><span class="id" title="notation">↓</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#lemmas_on_const_comma_cats.K"><span class="id" title="variable">K</span></a> <a class="idref" href="UniMath.Foundations.Init.html#c41c566ddac4c1298b9e7dd2bae1c794"><span class="id" title="notation">→</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#lemmas_on_const_comma_cats.c"><span class="id" title="variable">c</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#93380bf954703bfcda566a3fcfa1444d"><span class="id" title="notation">↓</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#lemmas_on_const_comma_cats.K"><span class="id" title="variable">K</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">af</span>.<br/>
-&nbsp;&nbsp;<span class="id" title="tactic">∃</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <span class="id" title="var">af</span>).<br/>
+&nbsp;&nbsp;<span class="id" title="tactic">exists</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <span class="id" title="var">af</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#lemmas_on_const_comma_cats.h"><span class="id" title="variable">h</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> <span class="id" title="var">af</span>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="cComma_mor_mor" class="idref" href="#cComma_mor_mor"><span class="id" title="definition">cComma_mor_mor</span></a> (<a id="af:25" class="idref" href="#af:25"><span class="id" title="binder">af</span></a> <a id="af':26" class="idref" href="#af':26"><span class="id" title="binder">af'</span></a> : <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#lemmas_on_const_comma_cats.c'"><span class="id" title="variable">c'</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#93380bf954703bfcda566a3fcfa1444d"><span class="id" title="notation">↓</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#lemmas_on_const_comma_cats.K"><span class="id" title="variable">K</span></a>) (<a id="g:27" class="idref" href="#g:27"><span class="id" title="binder">g</span></a> : <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#lemmas_on_const_comma_cats.c'"><span class="id" title="variable">c'</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#93380bf954703bfcda566a3fcfa1444d"><span class="id" title="notation">↓</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#lemmas_on_const_comma_cats.K"><span class="id" title="variable">K</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#d8ada6469fb541a06c26fd71a9ef7ac3"><span class="id" title="notation">⟦</span></a><a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#af:25"><span class="id" title="variable">af</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#d8ada6469fb541a06c26fd71a9ef7ac3"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#af':26"><span class="id" title="variable">af'</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#d8ada6469fb541a06c26fd71a9ef7ac3"><span class="id" title="notation">⟧</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#lemmas_on_const_comma_cats.c"><span class="id" title="variable">c</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#93380bf954703bfcda566a3fcfa1444d"><span class="id" title="notation">↓</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#lemmas_on_const_comma_cats.K"><span class="id" title="variable">K</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#d8ada6469fb541a06c26fd71a9ef7ac3"><span class="id" title="notation">⟦</span></a><a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#cComma_mor_ob"><span class="id" title="definition">cComma_mor_ob</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#af:25"><span class="id" title="variable">af</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#d8ada6469fb541a06c26fd71a9ef7ac3"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#cComma_mor_ob"><span class="id" title="definition">cComma_mor_ob</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#af':26"><span class="id" title="variable">af'</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#d8ada6469fb541a06c26fd71a9ef7ac3"><span class="id" title="notation">⟧</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
-&nbsp;&nbsp;<span class="id" title="tactic">∃</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <span class="id" title="var">g</span>).<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
+&nbsp;&nbsp;<span class="id" title="tactic">exists</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <span class="id" title="var">g</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">abstract</span> (<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">simpl</span>;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> &lt;- <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc"><span class="id" title="definition">assoc</span></a>;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> <span class="id" title="var">g</span>);<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="cComma_mor_functor_data" class="idref" href="#cComma_mor_functor_data"><span class="id" title="definition">cComma_mor_functor_data</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_data"><span class="id" title="definition">functor_data</span></a> (<a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#lemmas_on_const_comma_cats.c'"><span class="id" title="variable">c'</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#93380bf954703bfcda566a3fcfa1444d"><span class="id" title="notation">↓</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#lemmas_on_const_comma_cats.K"><span class="id" title="variable">K</span></a>) (<a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#lemmas_on_const_comma_cats.c"><span class="id" title="variable">c</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#93380bf954703bfcda566a3fcfa1444d"><span class="id" title="notation">↓</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#lemmas_on_const_comma_cats.K"><span class="id" title="variable">K</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
-&nbsp;&nbsp;<span class="id" title="tactic">∃</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#cComma_mor_ob"><span class="id" title="definition">cComma_mor_ob</span></a>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
+&nbsp;&nbsp;<span class="id" title="tactic">exists</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#cComma_mor_ob"><span class="id" title="definition">cComma_mor_ob</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#cComma_mor_mor"><span class="id" title="definition">cComma_mor_mor</span></a>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Lemma</span> <a id="is_functor_cComma_mor_functor_data" class="idref" href="#is_functor_cComma_mor_functor_data"><span class="id" title="lemma">is_functor_cComma_mor_functor_data</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#is_functor"><span class="id" title="definition">is_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#cComma_mor_functor_data"><span class="id" title="definition">cComma_mor_functor_data</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">split</span>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">intro</span>. <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#cComma_mor_eq"><span class="id" title="definition">cComma_mor_eq</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">intros</span> ? ? ? ? ?. <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#cComma_mor_eq"><span class="id" title="definition">cComma_mor_eq</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="functor_cComma_mor" class="idref" href="#functor_cComma_mor"><span class="id" title="definition">functor_cComma_mor</span></a> : <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#lemmas_on_const_comma_cats.c'"><span class="id" title="variable">c'</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#93380bf954703bfcda566a3fcfa1444d"><span class="id" title="notation">↓</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#lemmas_on_const_comma_cats.K"><span class="id" title="variable">K</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#2e11fa34845c6475af27ac9ab3f166ed"><span class="id" title="notation">⟶</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#lemmas_on_const_comma_cats.c"><span class="id" title="variable">c</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#93380bf954703bfcda566a3fcfa1444d"><span class="id" title="notation">↓</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#lemmas_on_const_comma_cats.K"><span class="id" title="variable">K</span></a> := <a class="idref" href="UniMath.Foundations.Preamble.html#tpair"><span class="id" title="constructor">tpair</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#is_functor_cComma_mor_functor_data"><span class="id" title="lemma">is_functor_cComma_mor_functor_data</span></a>.<br/>
@@ -307,16 +306,16 @@ Definition of comma categories via displayed categories
 <div class="code">
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="comma_disp_cat_ob_mor" class="idref" href="#comma_disp_cat_ob_mor"><span class="id" title="definition">comma_disp_cat_ob_mor</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#disp_cat_ob_mor"><span class="id" title="definition">disp_cat_ob_mor</span></a> (<a class="idref" href="UniMath.CategoryTheory.PrecategoryBinProduct.html#category_binproduct"><span class="id" title="definition">category_binproduct</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#c219d1a5ff6f7fe9d265533a61ce887d"><span class="id" title="variable">C₁</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#1049761b14ab0c56232e86da665023f6"><span class="id" title="variable">C₂</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.Preamble.html#tpair"><span class="id" title="constructor">tpair</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="x:33" class="idref" href="#x:33"><span class="id" title="binder"><span id="x:34" class="id">x</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#CommaCategory.F"><span class="id" title="variable">F</span></a> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#x:33"><span class="id" title="variable">x</span></a>) <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#CommaCategory.G"><span class="id" title="variable">G</span></a> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#x:33"><span class="id" title="variable">x</span></a>)).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="x:35" class="idref" href="#x:35"><span class="id" title="binder"><span id="x:40" class="id">x</span></span></a> <a id="y:36" class="idref" href="#y:36"><span class="id" title="binder"><span id="y:41" class="id">y</span></span></a> <a id="cc57168c840c3f034dc5df4bf0ee6cd4" class="idref" href="#cc57168c840c3f034dc5df4bf0ee6cd4"><span class="id" title="binder"><span id="fe62090874c217defba69b6d94e803a4" class="id">i₁</span></span></a> <a id="ae4c9dc0a629900b15bd21ee1d57d90e" class="idref" href="#ae4c9dc0a629900b15bd21ee1d57d90e"><span class="id" title="binder"><span id="1ae9ecc4c15dc5378ad4c0314f488d4b" class="id">i₂</span></span></a> <a id="f:39" class="idref" href="#f:39"><span class="id" title="binder"><span id="f:44" class="id">f</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#cc57168c840c3f034dc5df4bf0ee6cd4"><span class="id" title="variable">i₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a><a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#CommaCategory.G"><span class="id" title="variable">G</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">pr2</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">f</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a><a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#CommaCategory.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">pr1</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">f</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#ae4c9dc0a629900b15bd21ee1d57d90e"><span class="id" title="variable">i₂</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="comma_disp_cat_id_comp" class="idref" href="#comma_disp_cat_id_comp"><span class="id" title="definition">comma_disp_cat_id_comp</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#disp_cat_id_comp"><span class="id" title="definition">disp_cat_id_comp</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma_disp_cat_ob_mor"><span class="id" title="definition">comma_disp_cat_ob_mor</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.Preamble.html#tpair"><span class="id" title="constructor">tpair</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">i</span>; <span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> !<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_id"><span class="id" title="definition">functor_id</span></a>.<br/>
@@ -330,7 +329,7 @@ Definition of comma categories via displayed categories
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> !<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc"><span class="id" title="definition">assoc</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <span class="id" title="var">p</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="comma_disp_cat_data" class="idref" href="#comma_disp_cat_data"><span class="id" title="definition">comma_disp_cat_data</span></a><br/>
@@ -340,20 +339,20 @@ Definition of comma categories via displayed categories
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="comma_disp_cat_axioms" class="idref" href="#comma_disp_cat_axioms"><span class="id" title="definition">comma_disp_cat_axioms</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#disp_cat_axioms"><span class="id" title="definition">disp_cat_axioms</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma_disp_cat_data"><span class="id" title="definition">comma_disp_cat_data</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">repeat</span> <span class="id" title="tactic">split</span> ; <span class="id" title="tactic">intros</span> ; <span class="id" title="tactic">try</span> (<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartB.html#isasetaprop"><span class="id" title="lemma">isasetaprop</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="comma_disp_cat" class="idref" href="#comma_disp_cat"><span class="id" title="definition">comma_disp_cat</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#disp_cat"><span class="id" title="definition">disp_cat</span></a> (<a class="idref" href="UniMath.CategoryTheory.PrecategoryBinProduct.html#category_binproduct"><span class="id" title="definition">category_binproduct</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#c219d1a5ff6f7fe9d265533a61ce887d"><span class="id" title="variable">C₁</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#1049761b14ab0c56232e86da665023f6"><span class="id" title="variable">C₂</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.Preamble.html#tpair"><span class="id" title="constructor">tpair</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma_disp_cat_data"><span class="id" title="definition">comma_disp_cat_data</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma_disp_cat_axioms"><span class="id" title="definition">comma_disp_cat_axioms</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="comma" class="idref" href="#comma"><span class="id" title="definition">comma</span></a><br/>
@@ -370,7 +369,7 @@ Univalence of the comma category
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="is_univalent_disp_comma_disp_cat" class="idref" href="#is_univalent_disp_comma_disp_cat"><span class="id" title="definition">is_univalent_disp_comma_disp_cat</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="77f5238f4a548bfdfe7507fa58256ee3" class="idref" href="#77f5238f4a548bfdfe7507fa58256ee3"><span class="id" title="binder">HC₃</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Univalence.html#is_univalent"><span class="id" title="definition">is_univalent</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#723e1c5f8c2a209b3e1e2aab56f0e896"><span class="id" title="variable">C₃</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Univalence.html#is_univalent_disp"><span class="id" title="definition">is_univalent_disp</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma_disp_cat"><span class="id" title="definition">comma_disp_cat</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">p</span> <span class="id" title="var">i₁</span> <span class="id" title="var">i₂</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">induction</span> <span class="id" title="var">p</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartB.html#isweqimplimpl"><span class="id" title="lemma">isweqimplimpl</span></a>.<br/>
@@ -386,7 +385,7 @@ Univalence of the comma category
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Isos.html#isaprop_is_z_iso_disp"><span class="id" title="lemma">isaprop_is_z_iso_disp</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">intros</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="is_univalent_comma" class="idref" href="#is_univalent_comma"><span class="id" title="definition">is_univalent_comma</span></a><br/>
@@ -394,13 +393,13 @@ Univalence of the comma category
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="e6fcd00c91983084fd8030a941969269" class="idref" href="#e6fcd00c91983084fd8030a941969269"><span class="id" title="binder">HC₂</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Univalence.html#is_univalent"><span class="id" title="definition">is_univalent</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#1049761b14ab0c56232e86da665023f6"><span class="id" title="variable">C₂</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="61ee44cf0193965cc8222890dc945be1" class="idref" href="#61ee44cf0193965cc8222890dc945be1"><span class="id" title="binder">HC₃</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Univalence.html#is_univalent"><span class="id" title="definition">is_univalent</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#723e1c5f8c2a209b3e1e2aab56f0e896"><span class="id" title="variable">C₃</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Univalence.html#is_univalent"><span class="id" title="definition">is_univalent</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma"><span class="id" title="definition">comma</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Total.html#is_univalent_total_category"><span class="id" title="lemma">is_univalent_total_category</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.PrecategoryBinProduct.html#is_univalent_category_binproduct"><span class="id" title="definition">is_univalent_category_binproduct</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> <span class="id" title="var">HC₁</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> <span class="id" title="var">HC₂</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#is_univalent_disp_comma_disp_cat"><span class="id" title="definition">is_univalent_disp_comma_disp_cat</span></a> <span class="id" title="var">HC₃</span>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
@@ -418,7 +417,7 @@ Isos in comma
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="inv_comma" class="idref" href="#inv_comma"><span class="id" title="definition">inv_comma</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#CommaCategory.IsIsoComma.y"><span class="id" title="variable">y</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#CommaCategory.IsIsoComma.x"><span class="id" title="variable">x</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#inv_from_z_iso"><span class="id" title="definition">inv_from_z_iso</span></a> (<a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#make_z_iso'"><span class="id" title="definition">make_z_iso'</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#CommaCategory.IsIsoComma.Hf1"><span class="id" title="variable">Hf1</span></a>) <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#inv_from_z_iso"><span class="id" title="definition">inv_from_z_iso</span></a> (<a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#make_z_iso'"><span class="id" title="definition">make_z_iso'</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#CommaCategory.IsIsoComma.Hf2"><span class="id" title="variable">Hf2</span></a>)<a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">abstract</span><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="var">cbn</span>; <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#pathsinv0"><span class="id" title="definition">pathsinv0</span></a>;<br/>
@@ -429,12 +428,12 @@ Isos in comma
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#z_iso_inv_on_right"><span class="id" title="lemma">z_iso_inv_on_right</span></a>;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">cbn</span>;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#CommaCategory.IsIsoComma.f"><span class="id" title="variable">f</span></a>)).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Lemma</span> <a id="is_iso_comma_left_inv" class="idref" href="#is_iso_comma_left_inv"><span class="id" title="lemma">is_iso_comma_left_inv</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#CommaCategory.IsIsoComma.f"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#inv_comma"><span class="id" title="definition">inv_comma</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#identity"><span class="id" title="definition">identity</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#CommaCategory.IsIsoComma.x"><span class="id" title="variable">x</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartB.html#subtypePath"><span class="id" title="lemma">subtypePath</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intro</span>.<br/>
@@ -443,12 +442,12 @@ Isos in comma
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartA.html#pathsdirprod"><span class="id" title="definition">pathsdirprod</span></a>; <span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#z_iso_inv_after_z_iso"><span class="id" title="definition">z_iso_inv_after_z_iso</span></a> (<a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#make_z_iso'"><span class="id" title="definition">make_z_iso'</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#CommaCategory.IsIsoComma.Hf1"><span class="id" title="variable">Hf1</span></a>)).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#z_iso_inv_after_z_iso"><span class="id" title="definition">z_iso_inv_after_z_iso</span></a> (<a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#make_z_iso'"><span class="id" title="definition">make_z_iso'</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#CommaCategory.IsIsoComma.Hf2"><span class="id" title="variable">Hf2</span></a>)).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Lemma</span> <a id="is_iso_comma_right_inv" class="idref" href="#is_iso_comma_right_inv"><span class="id" title="lemma">is_iso_comma_right_inv</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#inv_comma"><span class="id" title="definition">inv_comma</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#CommaCategory.IsIsoComma.f"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#identity"><span class="id" title="definition">identity</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#CommaCategory.IsIsoComma.y"><span class="id" title="variable">y</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartB.html#subtypePath"><span class="id" title="lemma">subtypePath</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intro</span>.<br/>
@@ -457,17 +456,17 @@ Isos in comma
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartA.html#pathsdirprod"><span class="id" title="definition">pathsdirprod</span></a>; <span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#z_iso_after_z_iso_inv"><span class="id" title="definition">z_iso_after_z_iso_inv</span></a> (<a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#make_z_iso'"><span class="id" title="definition">make_z_iso'</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#CommaCategory.IsIsoComma.Hf1"><span class="id" title="variable">Hf1</span></a>)).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#z_iso_after_z_iso_inv"><span class="id" title="definition">z_iso_after_z_iso_inv</span></a> (<a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#make_z_iso'"><span class="id" title="definition">make_z_iso'</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#CommaCategory.IsIsoComma.Hf2"><span class="id" title="variable">Hf2</span></a>)).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="is_z_iso_comma" class="idref" href="#is_z_iso_comma"><span class="id" title="definition">is_z_iso_comma</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#is_z_isomorphism"><span class="id" title="definition">is_z_isomorphism</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#CommaCategory.IsIsoComma.f"><span class="id" title="variable">f</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">∃</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#inv_comma"><span class="id" title="definition">inv_comma</span></a>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exists</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#inv_comma"><span class="id" title="definition">inv_comma</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">split</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#is_iso_comma_left_inv"><span class="id" title="lemma">is_iso_comma_left_inv</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#is_iso_comma_right_inv"><span class="id" title="lemma">is_iso_comma_right_inv</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">End</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#CommaCategory.IsIsoComma"><span class="id" title="section">IsIsoComma</span></a>.<br/>
@@ -497,27 +496,27 @@ Natural isomorphism witnessing the commutation
 <div class="code">
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="comma_commute_nat_trans_data" class="idref" href="#comma_commute_nat_trans_data"><span class="id" title="definition">comma_commute_nat_trans_data</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_trans_data"><span class="id" title="definition">nat_trans_data</span></a> (<a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma_pr1"><span class="id" title="definition">comma_pr1</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#938ca2d32d8c8186c2d73ab2872ae3c9"><span class="id" title="notation">∙</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#CommaCategory.F"><span class="id" title="variable">F</span></a>) (<a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma_pr2"><span class="id" title="definition">comma_pr2</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#938ca2d32d8c8186c2d73ab2872ae3c9"><span class="id" title="notation">∙</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#CommaCategory.G"><span class="id" title="variable">G</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span>; <span class="id" title="var">cbn</span> <span class="id" title="tactic">in</span> <span class="id" title="var">x</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> <span class="id" title="var">x</span>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="comma_commute_is_nat_trans" class="idref" href="#comma_commute_is_nat_trans"><span class="id" title="definition">comma_commute_is_nat_trans</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#is_nat_trans"><span class="id" title="definition">is_nat_trans</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma_commute_nat_trans_data"><span class="id" title="definition">comma_commute_nat_trans_data</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">f</span>; <span class="id" title="tactic">unfold</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma_commute_nat_trans_data"><span class="id" title="definition">comma_commute_nat_trans_data</span></a>; <span class="id" title="var">cbn</span>; <span class="id" title="var">cbn</span> <span class="id" title="tactic">in</span> <span class="id" title="var">f</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">!(</span></a><a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> <span class="id" title="var">f</span><a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">)</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="comma_commute" class="idref" href="#comma_commute"><span class="id" title="definition">comma_commute</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma_pr1"><span class="id" title="definition">comma_pr1</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#938ca2d32d8c8186c2d73ab2872ae3c9"><span class="id" title="notation">∙</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#CommaCategory.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#8848592016d1c94be2b36b727072e7e0"><span class="id" title="notation">⟹</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma_pr2"><span class="id" title="definition">comma_pr2</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#938ca2d32d8c8186c2d73ab2872ae3c9"><span class="id" title="notation">∙</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#CommaCategory.G"><span class="id" title="variable">G</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#make_nat_trans"><span class="id" title="definition">make_nat_trans</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma_commute_nat_trans_data"><span class="id" title="definition">comma_commute_nat_trans_data</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma_commute_is_nat_trans"><span class="id" title="definition">comma_commute_is_nat_trans</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
@@ -558,16 +557,16 @@ The functor witnessing the universal property
 <div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="comma_ump1_data" class="idref" href="#comma_ump1_data"><span class="id" title="definition">comma_ump1_data</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_data"><span class="id" title="definition">functor_data</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#CommaCategory.UniversalMappingProperty.D"><span class="id" title="variable">D</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma"><span class="id" title="definition">comma</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#make_functor_data"><span class="id" title="definition">make_functor_data</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="d:58" class="idref" href="#d:58"><span class="id" title="binder"><span id="d:59" class="id">d</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#CommaCategory.UniversalMappingProperty.P"><span class="id" title="variable">P</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#d:58"><span class="id" title="variable">d</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#CommaCategory.UniversalMappingProperty.Q"><span class="id" title="variable">Q</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#d:58"><span class="id" title="variable">d</span></a><a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#22d614500fdc1ba7e9b9810b86d20e6e"><span class="id" title="variable">η</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#d:58"><span class="id" title="variable">d</span></a>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="36cda43656cc5a09062b231f85329436" class="idref" href="#36cda43656cc5a09062b231f85329436"><span class="id" title="binder"><span id="25e354fea9a68a18cc368c3a67307071" class="id">d₁</span></span></a> <a id="8bf492b85d462342dc16a8d87d84c348" class="idref" href="#8bf492b85d462342dc16a8d87d84c348"><span class="id" title="binder"><span id="e9c5a620834f1272baaf24f7b3ea59db" class="id">d₂</span></span></a> <a id="f:62" class="idref" href="#f:62"><span class="id" title="binder"><span id="f:65" class="id">f</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a><a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#CommaCategory.UniversalMappingProperty.P"><span class="id" title="variable">P</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">f</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a><a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#CommaCategory.UniversalMappingProperty.Q"><span class="id" title="variable">Q</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">f</span></a><a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">!(</span></a><a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_trans_ax"><span class="id" title="definition">nat_trans_ax</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#22d614500fdc1ba7e9b9810b86d20e6e"><span class="id" title="variable">η</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#f:62"><span class="id" title="variable">f</span></a><a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">)</span></a>).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="comma_ump1_is_functor" class="idref" href="#comma_ump1_is_functor"><span class="id" title="definition">comma_ump1_is_functor</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#is_functor"><span class="id" title="definition">is_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma_ump1_data"><span class="id" title="definition">comma_ump1_data</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">split</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">intro</span> <span class="id" title="var">x</span>; <span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartB.html#subtypePath"><span class="id" title="lemma">subtypePath</span></a>.<br/>
@@ -585,16 +584,16 @@ The functor witnessing the universal property
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> !<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_comp"><span class="id" title="definition">functor_comp</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="comma_ump1" class="idref" href="#comma_ump1"><span class="id" title="definition">comma_ump1</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#CommaCategory.UniversalMappingProperty.D"><span class="id" title="variable">D</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#2e11fa34845c6475af27ac9ab3f166ed"><span class="id" title="notation">⟶</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma"><span class="id" title="definition">comma</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#make_functor"><span class="id" title="definition">make_functor</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma_ump1_data"><span class="id" title="definition">comma_ump1_data</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma_ump1_is_functor"><span class="id" title="definition">comma_ump1_is_functor</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
@@ -610,20 +609,20 @@ The computation rules
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="comma_ump1_pr1_is_nat_trans" class="idref" href="#comma_ump1_pr1_is_nat_trans"><span class="id" title="definition">comma_ump1_pr1_is_nat_trans</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#is_nat_trans"><span class="id" title="definition">is_nat_trans</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma_ump1_pr1_nat_trans_data"><span class="id" title="definition">comma_ump1_pr1_nat_trans_data</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">f</span>; <span class="id" title="var">cbn</span>; <span class="id" title="tactic">unfold</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma_ump1_pr1_nat_trans_data"><span class="id" title="definition">comma_ump1_pr1_nat_trans_data</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_left"><span class="id" title="definition">id_left</span></a>, <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_right"><span class="id" title="definition">id_right</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="comma_ump1_pr1_nat_trans" class="idref" href="#comma_ump1_pr1_nat_trans"><span class="id" title="definition">comma_ump1_pr1_nat_trans</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma_ump1"><span class="id" title="definition">comma_ump1</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#938ca2d32d8c8186c2d73ab2872ae3c9"><span class="id" title="notation">∙</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma_pr1"><span class="id" title="definition">comma_pr1</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#8848592016d1c94be2b36b727072e7e0"><span class="id" title="notation">⟹</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#CommaCategory.UniversalMappingProperty.P"><span class="id" title="variable">P</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#make_nat_trans"><span class="id" title="definition">make_nat_trans</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma_ump1_pr1_nat_trans_data"><span class="id" title="definition">comma_ump1_pr1_nat_trans_data</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma_ump1_pr1_is_nat_trans"><span class="id" title="definition">comma_ump1_pr1_is_nat_trans</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
@@ -634,12 +633,12 @@ Computation rule for first projection
 <div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="comma_ump1_pr1" class="idref" href="#comma_ump1_pr1"><span class="id" title="definition">comma_ump1_pr1</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_z_iso"><span class="id" title="definition">nat_z_iso</span></a> (<a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma_ump1"><span class="id" title="definition">comma_ump1</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#938ca2d32d8c8186c2d73ab2872ae3c9"><span class="id" title="notation">∙</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma_pr1"><span class="id" title="definition">comma_pr1</span></a>) <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#CommaCategory.UniversalMappingProperty.P"><span class="id" title="variable">P</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#make_nat_z_iso"><span class="id" title="definition">make_nat_z_iso</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma_ump1_pr1_nat_trans"><span class="id" title="definition">comma_ump1_pr1_nat_trans</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">intro</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#identity_is_z_iso"><span class="id" title="lemma">identity_is_z_iso</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="comma_ump1_pr2_nat_trans_data" class="idref" href="#comma_ump1_pr2_nat_trans_data"><span class="id" title="definition">comma_ump1_pr2_nat_trans_data</span></a><br/>
@@ -649,20 +648,20 @@ Computation rule for first projection
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="comma_ump1_pr2_is_nat_trans" class="idref" href="#comma_ump1_pr2_is_nat_trans"><span class="id" title="definition">comma_ump1_pr2_is_nat_trans</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#is_nat_trans"><span class="id" title="definition">is_nat_trans</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma_ump1_pr2_nat_trans_data"><span class="id" title="definition">comma_ump1_pr2_nat_trans_data</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">f</span>; <span class="id" title="var">cbn</span>; <span class="id" title="tactic">unfold</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma_ump1_pr2_nat_trans_data"><span class="id" title="definition">comma_ump1_pr2_nat_trans_data</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_left"><span class="id" title="definition">id_left</span></a>, <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_right"><span class="id" title="definition">id_right</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="comma_ump1_pr2_nat_trans" class="idref" href="#comma_ump1_pr2_nat_trans"><span class="id" title="definition">comma_ump1_pr2_nat_trans</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma_ump1"><span class="id" title="definition">comma_ump1</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#938ca2d32d8c8186c2d73ab2872ae3c9"><span class="id" title="notation">∙</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma_pr2"><span class="id" title="definition">comma_pr2</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#8848592016d1c94be2b36b727072e7e0"><span class="id" title="notation">⟹</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#CommaCategory.UniversalMappingProperty.Q"><span class="id" title="variable">Q</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#make_nat_trans"><span class="id" title="definition">make_nat_trans</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma_ump1_pr2_nat_trans_data"><span class="id" title="definition">comma_ump1_pr2_nat_trans_data</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma_ump1_pr2_is_nat_trans"><span class="id" title="definition">comma_ump1_pr2_is_nat_trans</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
@@ -673,12 +672,12 @@ Computation rule for second projection
 <div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="comma_ump1_pr2" class="idref" href="#comma_ump1_pr2"><span class="id" title="definition">comma_ump1_pr2</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_z_iso"><span class="id" title="definition">nat_z_iso</span></a> (<a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma_ump1"><span class="id" title="definition">comma_ump1</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#938ca2d32d8c8186c2d73ab2872ae3c9"><span class="id" title="notation">∙</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma_pr2"><span class="id" title="definition">comma_pr2</span></a>) <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#CommaCategory.UniversalMappingProperty.Q"><span class="id" title="variable">Q</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#make_nat_z_iso"><span class="id" title="definition">make_nat_z_iso</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma_ump1_pr2_nat_trans"><span class="id" title="definition">comma_ump1_pr2_nat_trans</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">intro</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#identity_is_z_iso"><span class="id" title="lemma">identity_is_z_iso</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
@@ -703,7 +702,7 @@ Computation rule for natural iso
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.whiskering.html#post_whisker"><span class="id" title="definition">post_whisker</span></a> (<a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_z_iso_inv"><span class="id" title="definition">nat_z_iso_inv</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma_ump1_pr2"><span class="id" title="definition">comma_ump1_pr2</span></a>) <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#CommaCategory.G"><span class="id" title="variable">G</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_trans_functor_assoc"><span class="id" title="definition">nat_trans_functor_assoc</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span>)))).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_trans_eq"><span class="id" title="lemma">nat_trans_eq</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>.<br/>
@@ -713,7 +712,7 @@ Computation rule for natural iso
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> !<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_left"><span class="id" title="definition">id_left</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_right"><span class="id" title="definition">id_right</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 </div>
@@ -733,19 +732,19 @@ Now we look at the second universal mapping property
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="comma_ump2_nat_trans_data" class="idref" href="#comma_ump2_nat_trans_data"><span class="id" title="definition">comma_ump2_nat_trans_data</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_trans_data"><span class="id" title="definition">nat_trans_data</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#e779dda4dba14dba7da5119ff94632d2"><span class="id" title="variable">Φ₁</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#ac02275943e71c6ee17a1a6936b02ad6"><span class="id" title="variable">Φ₂</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">x</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">simple</span> <span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">(</span></a><span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span><a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>) ; <span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#3e4f70f45a2d84382f8b4c8286a76e57"><span class="id" title="variable">τ</span></a><a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#3e4f70f45a2d84382f8b4c8286a76e57"><span class="id" title="variable">₁</span></a> <span class="id" title="var">x</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#4abbf27b5a65d754b960e87ff829b568"><span class="id" title="variable">τ</span></a><a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#4abbf27b5a65d754b960e87ff829b568"><span class="id" title="variable">₂</span></a> <span class="id" title="var">x</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">abstract</span><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#CommaCategory.UniversalMappingProperty.p"><span class="id" title="variable">p</span></a> <span class="id" title="var">x</span>)).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="comma_ump2_is_nat_trans" class="idref" href="#comma_ump2_is_nat_trans"><span class="id" title="definition">comma_ump2_is_nat_trans</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#is_nat_trans"><span class="id" title="definition">is_nat_trans</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma_ump2_nat_trans_data"><span class="id" title="definition">comma_ump2_nat_trans_data</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">f</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartB.html#subtypePath"><span class="id" title="lemma">subtypePath</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
@@ -754,16 +753,16 @@ Now we look at the second universal mapping property
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartA.html#pathsdirprod"><span class="id" title="definition">pathsdirprod</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_trans_ax"><span class="id" title="definition">nat_trans_ax</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#3e4f70f45a2d84382f8b4c8286a76e57"><span class="id" title="variable">τ</span></a><a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#3e4f70f45a2d84382f8b4c8286a76e57"><span class="id" title="variable">₁</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">f</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_trans_ax"><span class="id" title="definition">nat_trans_ax</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#4abbf27b5a65d754b960e87ff829b568"><span class="id" title="variable">τ</span></a><a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#4abbf27b5a65d754b960e87ff829b568"><span class="id" title="variable">₂</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">f</span>).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="comma_ump2" class="idref" href="#comma_ump2"><span class="id" title="definition">comma_ump2</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#e779dda4dba14dba7da5119ff94632d2"><span class="id" title="variable">Φ₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#8848592016d1c94be2b36b727072e7e0"><span class="id" title="notation">⟹</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#ac02275943e71c6ee17a1a6936b02ad6"><span class="id" title="variable">Φ₂</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#make_nat_trans"><span class="id" title="definition">make_nat_trans</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma_ump2_nat_trans_data"><span class="id" title="definition">comma_ump2_nat_trans_data</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma_ump2_is_nat_trans"><span class="id" title="definition">comma_ump2_is_nat_trans</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
@@ -774,26 +773,26 @@ The computation rules
 <div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="comma_ump2_pr1" class="idref" href="#comma_ump2_pr1"><span class="id" title="definition">comma_ump2_pr1</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.whiskering.html#post_whisker"><span class="id" title="definition">post_whisker</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma_ump2"><span class="id" title="definition">comma_ump2</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma_pr1"><span class="id" title="definition">comma_pr1</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#3e4f70f45a2d84382f8b4c8286a76e57"><span class="id" title="variable">τ</span></a><a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#3e4f70f45a2d84382f8b4c8286a76e57"><span class="id" title="variable">₁</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_trans_eq"><span class="id" title="lemma">nat_trans_eq</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intro</span>; <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">x</span>; <span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="comma_ump2_pr2" class="idref" href="#comma_ump2_pr2"><span class="id" title="definition">comma_ump2_pr2</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.whiskering.html#post_whisker"><span class="id" title="definition">post_whisker</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma_ump2"><span class="id" title="definition">comma_ump2</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma_pr2"><span class="id" title="definition">comma_pr2</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#4abbf27b5a65d754b960e87ff829b568"><span class="id" title="variable">τ</span></a><a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#4abbf27b5a65d754b960e87ff829b568"><span class="id" title="variable">₂</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_trans_eq"><span class="id" title="lemma">nat_trans_eq</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intro</span>; <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">x</span>; <span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 </div>
@@ -811,7 +810,7 @@ The uniqueness
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="comma_ump_eq_nat_trans" class="idref" href="#comma_ump_eq_nat_trans"><span class="id" title="definition">comma_ump_eq_nat_trans</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#099972a92293dbe0a7dd92e02b9bae52"><span class="id" title="variable">n₁</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#507a3f3e10ebb1f4b188dd39108b6842"><span class="id" title="variable">n₂</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_trans_eq"><span class="id" title="lemma">nat_trans_eq</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>.<br/>
@@ -830,7 +829,7 @@ The uniqueness
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">pose</span> (<a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_trans_eq_pointwise"><span class="id" title="definition">nat_trans_eq_pointwise</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#c667ade01bdbf995000ea3c0da8231a7"><span class="id" title="variable">n₂_pr2</span></a> <span class="id" title="var">x</span>) <span class="id" title="keyword">as</span> <span class="id" title="var">q₂</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">cbn</span> <span class="id" title="tactic">in</span> <span class="id" title="var">q₁</span>, <span class="id" title="var">q₂</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<span class="id" title="var">q₁</span> <a class="idref" href="UniMath.Foundations.PartA.html#8b57b11be4275b47948f6caec264b70f"><span class="id" title="notation">@</span></a> <a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">!</span></a><span class="id" title="var">q₂</span>).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">End</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#CommaCategory.UniversalMappingProperty"><span class="id" title="section">UniversalMappingProperty</span></a>.<br/>
@@ -844,14 +843,14 @@ The uniqueness
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="F:83" class="idref" href="#F:83"><span class="id" title="binder">F</span></a> : <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#ba9f0c4537794c436ab7d0587d4a2886"><span class="id" title="variable">C₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#2e11fa34845c6475af27ac9ab3f166ed"><span class="id" title="notation">⟶</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#2aac17d27e301b72e913cc0b57469ed0"><span class="id" title="variable">C₃</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="G:84" class="idref" href="#G:84"><span class="id" title="binder">G</span></a> : <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#377e1d8f4f89f77c9c5348bc63609019"><span class="id" title="variable">C₂</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#2e11fa34845c6475af27ac9ab3f166ed"><span class="id" title="notation">⟶</span></a> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#2aac17d27e301b72e913cc0b57469ed0"><span class="id" title="variable">C₃</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Univalence.html#univalent_category"><span class="id" title="definition">univalent_category</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.Univalence.html#make_univalent_category"><span class="id" title="definition">make_univalent_category</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#comma"><span class="id" title="definition">comma</span></a> <span class="id" title="var">F</span> <span class="id" title="var">G</span>).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.CommaCategories.html#is_univalent_comma"><span class="id" title="definition">is_univalent_comma</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> <span class="id" title="var">C₁</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> <span class="id" title="var">C₂</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> <span class="id" title="var">C₃</span>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 </div>
 </div>
 

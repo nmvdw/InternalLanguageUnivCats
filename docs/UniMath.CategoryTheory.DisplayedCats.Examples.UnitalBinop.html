@@ -1,21 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="coqdoc.css" rel="stylesheet" type="text/css" />
-<title>UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link href="coqdoc.css" rel="stylesheet" type="text/css"/>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<script src="./proofs-toggle.js" type="text/javascript"></script>
+	<style>
+		div.proofcomment {
+			font-style: italic;
+		}
+	</style>
+	<title>Documentation</title>
 </head>
-
 <body>
-
 <div id="page">
-
-<div id="header">
-</div>
-
 <div id="main">
-
 <h1 class="libtitle">Library UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop</h1>
 
 <div class="code">
@@ -85,32 +84,32 @@ After that, we show we have a univalent category of sets with a binary operation
 <div class="code">
 <span class="id" title="keyword">Definition</span> <a id="diag" class="idref" href="#diag"><span class="id" title="definition">diag</span></a><br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#::cat:'HSET'"><span class="id" title="notation">HSET</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#2e11fa34845c6475af27ac9ab3f166ed"><span class="id" title="notation">⟶</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#::cat:'HSET'"><span class="id" title="notation">HSET</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.PrecategoryBinProduct.html#bindelta_functor"><span class="id" title="definition">bindelta_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#::cat:'HSET'"><span class="id" title="notation">HSET</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#938ca2d32d8c8186c2d73ab2872ae3c9"><span class="id" title="notation">∙</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#binproduct_functor"><span class="id" title="definition">binproduct_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Limits.html#BinProductsHSET"><span class="id" title="lemma">BinProductsHSET</span></a>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="binop_category" class="idref" href="#binop_category"><span class="id" title="definition">binop_category</span></a><br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#category"><span class="id" title="definition">category</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">simple</span> <span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.CategoryTheory.FunctorAlgebras.html#FunctorAlg"><span class="id" title="definition">FunctorAlg</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#diag"><span class="id" title="definition">diag</span></a>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="is_univalent_binop" class="idref" href="#is_univalent_binop"><span class="id" title="definition">is_univalent_binop</span></a><br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Univalence.html#is_univalent"><span class="id" title="definition">is_univalent</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#binop_category"><span class="id" title="definition">binop_category</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.FunctorAlgebras.html#is_univalent_FunctorAlg"><span class="id" title="lemma">is_univalent_FunctorAlg</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Univalence.html#is_univalent_HSET"><span class="id" title="lemma">is_univalent_HSET</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#diag"><span class="id" title="definition">diag</span></a>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="binop" class="idref" href="#binop"><span class="id" title="definition">binop</span></a><br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Univalence.html#univalent_category"><span class="id" title="definition">univalent_category</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.Univalence.html#make_univalent_category"><span class="id" title="definition">make_univalent_category</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#binop_category"><span class="id" title="definition">binop_category</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#is_univalent_binop"><span class="id" title="definition">is_univalent_binop</span></a>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
@@ -162,13 +161,13 @@ This gives rise to a univalent category since unit elements are unique.
 <span class="id" title="keyword">Definition</span> <a id="isaprop_has_unit" class="idref" href="#isaprop_has_unit"><span class="id" title="definition">isaprop_has_unit</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="m:11" class="idref" href="#m:11"><span class="id" title="binder">m</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#binop"><span class="id" title="definition">binop</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.PartB.html#isaprop"><span class="id" title="definition">isaprop</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#has_unit"><span class="id" title="definition">has_unit</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#m:11"><span class="id" title="variable">m</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartB.html#invproofirrelevance"><span class="id" title="lemma">invproofirrelevance</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">e₁</span> <span class="id" title="var">e₂</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartB.html#subtypePath"><span class="id" title="lemma">subtypePath</span></a>.<br/>
 &nbsp;&nbsp;{ <span class="id" title="tactic">intro</span> ; <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartB.html#isapropdirprod"><span class="id" title="definition">isapropdirprod</span></a> ; <span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartD.html#impred"><span class="id" title="lemma">impred</span></a> ; <span class="id" title="tactic">intro</span> ; <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Sets.html#setproperty"><span class="id" title="definition">setproperty</span></a>. }<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">!(</span></a><a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr22'_x"><span class="id" title="notation">pr22</span></a> <span class="id" title="var">e₂</span> <a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr22'_x"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr22'_x"><span class="id" title="notation">pr1</span></a> <a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr22'_x"><span class="id" title="notation">e₁</span></a><a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr22'_x"><span class="id" title="notation">)</span></a><a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.Foundations.PartA.html#8b57b11be4275b47948f6caec264b70f"><span class="id" title="notation">@</span></a> <a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr12'_x"><span class="id" title="notation">pr12</span></a> <span class="id" title="var">e₁</span> <a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr12'_x"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr12'_x"><span class="id" title="notation">pr1</span></a> <a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr12'_x"><span class="id" title="notation">e₂</span></a><a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr12'_x"><span class="id" title="notation">)</span></a>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="unit_binop_property_disp_cat" class="idref" href="#unit_binop_property_disp_cat"><span class="id" title="definition">unit_binop_property_disp_cat</span></a><br/>
@@ -183,21 +182,21 @@ This gives rise to a univalent category since unit elements are unique.
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="is_univalent_property_unit_binop" class="idref" href="#is_univalent_property_unit_binop"><span class="id" title="definition">is_univalent_property_unit_binop</span></a><br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Univalence.html#is_univalent"><span class="id" title="definition">is_univalent</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#unit_binop_property_cat"><span class="id" title="definition">unit_binop_property_cat</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Total.html#is_univalent_total_category"><span class="id" title="lemma">is_univalent_total_category</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#is_univalent_binop"><span class="id" title="definition">is_univalent_binop</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Constructions.FullSubcategory.html#disp_full_sub_univalent"><span class="id" title="lemma">disp_full_sub_univalent</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#isaprop_has_unit"><span class="id" title="definition">isaprop_has_unit</span></a>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="unit_binop_property" class="idref" href="#unit_binop_property"><span class="id" title="definition">unit_binop_property</span></a><br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Univalence.html#univalent_category"><span class="id" title="definition">univalent_category</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.Univalence.html#make_univalent_category"><span class="id" title="definition">make_univalent_category</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#unit_binop_property_cat"><span class="id" title="definition">unit_binop_property_cat</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#is_univalent_property_unit_binop"><span class="id" title="definition">is_univalent_property_unit_binop</span></a>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
@@ -219,11 +218,11 @@ Note that in this displayed category:
 <div class="code">
 <span class="id" title="keyword">Definition</span> <a id="forget_unit_property_adds_properties" class="idref" href="#forget_unit_property_adds_properties"><span class="id" title="definition">forget_unit_property_adds_properties</span></a><br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Projection.html#adds_properties"><span class="id" title="definition">adds_properties</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#unit_binop_property_disp_cat"><span class="id" title="definition">unit_binop_property_disp_cat</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Projection.html#pr1_category_fully_faithful"><span class="id" title="definition">pr1_category_fully_faithful</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">intro</span> ; <span class="id" title="tactic">intros</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#iscontrunit"><span class="id" title="lemma">iscontrunit</span></a>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
@@ -237,34 +236,34 @@ To prove univalence of the total category, we use displayed univalence.
 <div class="code">
 <span class="id" title="keyword">Definition</span> <a id="point_disp_cat_ob_mor" class="idref" href="#point_disp_cat_ob_mor"><span class="id" title="definition">point_disp_cat_ob_mor</span></a><br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#disp_cat_ob_mor"><span class="id" title="definition">disp_cat_ob_mor</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#binop"><span class="id" title="definition">binop</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#make_disp_cat_ob_mor"><span class="id" title="definition">make_disp_cat_ob_mor</span></a> ; <span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="X:12" class="idref" href="#X:12"><span class="id" title="binder"><span id="X:13" class="id">X</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#carrier"><span class="id" title="definition">carrier</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#X:12"><span class="id" title="variable">X</span></a>).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="X:14" class="idref" href="#X:14"><span class="id" title="binder"><span id="X:19" class="id">X</span></span></a> <a id="Y:15" class="idref" href="#Y:15"><span class="id" title="binder"><span id="Y:20" class="id">Y</span></span></a> <a id="x:16" class="idref" href="#x:16"><span class="id" title="binder"><span id="x:21" class="id">x</span></span></a> <a id="y:17" class="idref" href="#y:17"><span class="id" title="binder"><span id="y:22" class="id">y</span></span></a> <a id="f:18" class="idref" href="#f:18"><span class="id" title="binder"><span id="f:23" class="id">f</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#f:18"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#x:16"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#y:17"><span class="id" title="variable">y</span></a>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="point_disp_cat_id_comp" class="idref" href="#point_disp_cat_id_comp"><span class="id" title="definition">point_disp_cat_id_comp</span></a><br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#disp_cat_id_comp"><span class="id" title="definition">disp_cat_id_comp</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#binop"><span class="id" title="definition">binop</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#point_disp_cat_ob_mor"><span class="id" title="definition">point_disp_cat_ob_mor</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.Preamble.html#tpair"><span class="id" title="constructor">tpair</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="X:24" class="idref" href="#X:24"><span class="id" title="binder"><span id="X:34" class="id">X</span></span></a> <a id="Y:25" class="idref" href="#Y:25"><span class="id" title="binder"><span id="Y:35" class="id">Y</span></span></a> <a id="Z:26" class="idref" href="#Z:26"><span class="id" title="binder"><span id="Z:36" class="id">Z</span></span></a> <a id="f:27" class="idref" href="#f:27"><span class="id" title="binder"><span id="f:37" class="id">f</span></span></a> <a id="g:28" class="idref" href="#g:28"><span class="id" title="binder"><span id="g:38" class="id">g</span></span></a> <a id="x:29" class="idref" href="#x:29"><span class="id" title="binder"><span id="x:39" class="id">x</span></span></a> <a id="y:30" class="idref" href="#y:30"><span class="id" title="binder"><span id="y:40" class="id">y</span></span></a> <a id="z:31" class="idref" href="#z:31"><span class="id" title="binder"><span id="z:41" class="id">z</span></span></a> <a id="p:32" class="idref" href="#p:32"><span class="id" title="binder"><span id="p:42" class="id">p</span></span></a> <a id="q:33" class="idref" href="#q:33"><span class="id" title="binder"><span id="q:43" class="id">q</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#g:28"><span class="id" title="variable">g</span></a>) <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#p:32"><span class="id" title="variable">p</span></a> <a class="idref" href="UniMath.Foundations.PartA.html#8b57b11be4275b47948f6caec264b70f"><span class="id" title="notation">@</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#q:33"><span class="id" title="variable">q</span></a>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="point_disp_cat_data" class="idref" href="#point_disp_cat_data"><span class="id" title="definition">point_disp_cat_data</span></a><br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#disp_cat_data"><span class="id" title="definition">disp_cat_data</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#binop"><span class="id" title="definition">binop</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.Preamble.html#tpair"><span class="id" title="constructor">tpair</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#point_disp_cat_ob_mor"><span class="id" title="definition">point_disp_cat_ob_mor</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#point_disp_cat_id_comp"><span class="id" title="definition">point_disp_cat_id_comp</span></a>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="point_disp_cat_laws" class="idref" href="#point_disp_cat_laws"><span class="id" title="definition">point_disp_cat_laws</span></a><br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#disp_cat_axioms"><span class="id" title="definition">disp_cat_axioms</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#binop"><span class="id" title="definition">binop</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#point_disp_cat_data"><span class="id" title="definition">point_disp_cat_data</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">repeat</span> <span class="id" title="tactic">split</span>.<br/>
 &nbsp;&nbsp;- <span class="id" title="var">cbn</span> ; <span class="id" title="tactic">intros</span> ; <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Sets.html#setproperty"><span class="id" title="definition">setproperty</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="var">cbn</span> ; <span class="id" title="tactic">intros</span> ; <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Sets.html#setproperty"><span class="id" title="definition">setproperty</span></a>.<br/>
@@ -272,21 +271,21 @@ To prove univalence of the total category, we use displayed univalence.
 &nbsp;&nbsp;- <span class="id" title="var">cbn</span> ; <span class="id" title="tactic">intros</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartB.html#isasetaprop"><span class="id" title="lemma">isasetaprop</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Sets.html#setproperty"><span class="id" title="definition">setproperty</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="point_disp_cat" class="idref" href="#point_disp_cat"><span class="id" title="definition">point_disp_cat</span></a><br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#disp_cat"><span class="id" title="definition">disp_cat</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#binop"><span class="id" title="definition">binop</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.Preamble.html#tpair"><span class="id" title="constructor">tpair</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#point_disp_cat_data"><span class="id" title="definition">point_disp_cat_data</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#point_disp_cat_laws"><span class="id" title="definition">point_disp_cat_laws</span></a>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="point_disp_cat_disp_univalent" class="idref" href="#point_disp_cat_disp_univalent"><span class="id" title="definition">point_disp_cat_disp_univalent</span></a><br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Univalence.html#is_univalent_disp"><span class="id" title="definition">is_univalent_disp</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#point_disp_cat"><span class="id" title="definition">point_disp_cat</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Univalence.html#is_univalent_disp_from_fibers"><span class="id" title="lemma">is_univalent_disp_from_fibers</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">X</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartA.html#isweq_iso"><span class="id" title="lemma">isweq_iso</span></a>.<br/>
@@ -301,7 +300,7 @@ To prove univalence of the total category, we use displayed univalence.
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">induction</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <span class="id" title="var">e</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="pointed_binop_category" class="idref" href="#pointed_binop_category"><span class="id" title="definition">pointed_binop_category</span></a><br/>
@@ -311,14 +310,14 @@ To prove univalence of the total category, we use displayed univalence.
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="pointed_binop" class="idref" href="#pointed_binop"><span class="id" title="definition">pointed_binop</span></a><br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Univalence.html#univalent_category"><span class="id" title="definition">univalent_category</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">simple</span> <span class="id" title="tactic">refine</span> (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#pointed_binop_category"><span class="id" title="definition">pointed_binop_category</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Total.html#is_univalent_total_category"><span class="id" title="lemma">is_univalent_total_category</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">_</span><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#point_disp_cat_disp_univalent"><span class="id" title="definition">point_disp_cat_disp_univalent</span></a>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#is_univalent_binop"><span class="id" title="definition">is_univalent_binop</span></a>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
@@ -364,9 +363,9 @@ Beside that, we also need to add the necessary laws.
 <span class="id" title="keyword">Definition</span> <a id="isaprop_is_unit_point" class="idref" href="#isaprop_is_unit_point"><span class="id" title="definition">isaprop_is_unit_point</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="X:49" class="idref" href="#X:49"><span class="id" title="binder">X</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#pointed_binop"><span class="id" title="definition">pointed_binop</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.PartB.html#isaprop"><span class="id" title="definition">isaprop</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#is_unit_point"><span class="id" title="definition">is_unit_point</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#X:49"><span class="id" title="variable">X</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartB.html#isapropdirprod"><span class="id" title="definition">isapropdirprod</span></a> ; <span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartD.html#impred"><span class="id" title="lemma">impred</span></a> ; <span class="id" title="tactic">intro</span> ; <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Sets.html#setproperty"><span class="id" title="definition">setproperty</span></a>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="unit_binop_structure_disp_cat" class="idref" href="#unit_binop_structure_disp_cat"><span class="id" title="definition">unit_binop_structure_disp_cat</span></a><br/>
@@ -381,7 +380,7 @@ Beside that, we also need to add the necessary laws.
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="is_univalent_structure_unit_binop" class="idref" href="#is_univalent_structure_unit_binop"><span class="id" title="definition">is_univalent_structure_unit_binop</span></a><br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Univalence.html#is_univalent"><span class="id" title="definition">is_univalent</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#unit_binop_structure_cat"><span class="id" title="definition">unit_binop_structure_cat</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Total.html#is_univalent_total_category"><span class="id" title="lemma">is_univalent_total_category</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#binop"><span class="id" title="definition">binop</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Univalence.html#is_univalent_disp_from_fibers"><span class="id" title="lemma">is_univalent_disp_from_fibers</span></a>.<br/>
@@ -402,16 +401,16 @@ Beside that, we also need to add the necessary laws.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartB.html#subtypePath"><span class="id" title="lemma">subtypePath</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ <span class="id" title="tactic">intro</span> ; <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartB.html#isapropunit"><span class="id" title="definition">isapropunit</span></a>. }<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Sets.html#setproperty"><span class="id" title="definition">setproperty</span></a>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="unit_binop_structure" class="idref" href="#unit_binop_structure"><span class="id" title="definition">unit_binop_structure</span></a><br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Univalence.html#univalent_category"><span class="id" title="definition">univalent_category</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.Univalence.html#make_univalent_category"><span class="id" title="definition">make_univalent_category</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#unit_binop_structure_cat"><span class="id" title="definition">unit_binop_structure_cat</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#is_univalent_structure_unit_binop"><span class="id" title="definition">is_univalent_structure_unit_binop</span></a>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
@@ -424,14 +423,14 @@ To do so, we prove that the forgetful functor is faithful.
 <div class="code">
 <span class="id" title="keyword">Definition</span> <a id="forget_unit_structure_faithful" class="idref" href="#forget_unit_structure_faithful"><span class="id" title="definition">forget_unit_structure_faithful</span></a><br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Projection.html#adds_structure"><span class="id" title="definition">adds_structure</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#unit_binop_structure_disp_cat"><span class="id" title="definition">unit_binop_structure_disp_cat</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">m₁</span> <span class="id" title="var">m₂</span> <span class="id" title="var">f</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Projection.html#pr1_category_faithful"><span class="id" title="definition">pr1_category_faithful</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">intro</span> ; <span class="id" title="tactic">intros</span> ; <span class="id" title="tactic">simpl</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> (@<a class="idref" href="UniMath.Foundations.Propositions.html#isaprop_total2"><span class="id" title="lemma">isaprop_total2</span></a> (<a class="idref" href="UniMath.Foundations.Propositions.html#make_hProp"><span class="id" title="definition">make_hProp</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span>) (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <span class="id" title="var">_</span><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.Foundations.Propositions.html#make_hProp"><span class="id" title="definition">make_hProp</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span>)).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Sets.html#setproperty"><span class="id" title="definition">setproperty</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartB.html#isapropunit"><span class="id" title="definition">isapropunit</span></a>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
@@ -445,24 +444,24 @@ For that, we use the following example.
 <div class="code">
 <span class="id" title="keyword">Definition</span> <a id="nat_unit_binop_structure" class="idref" href="#nat_unit_binop_structure"><span class="id" title="definition">nat_unit_binop_structure</span></a><br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#unit_binop_structure"><span class="id" title="definition">unit_binop_structure</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">simple</span> <span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.Foundations.NaturalNumbers.html#natset"><span class="id" title="definition">natset</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span><a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>) ; <span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="n:50" class="idref" href="#n:50"><span class="id" title="binder"><span id="n:51" class="id">n</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#n:50"><span class="id" title="variable">n</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#0dacc1786c5ba797d47dd85006231633"><span class="id" title="notation">+</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#n:50"><span class="id" title="variable">n</span></a>).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> 0.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">split</span> ; <span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.NaturalNumbers.html#natplusr0"><span class="id" title="lemma">natplusr0</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.NaturalNumbers.html#natplusl0"><span class="id" title="lemma">natplusl0</span></a>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="bool_unit_binop_structure" class="idref" href="#bool_unit_binop_structure"><span class="id" title="definition">bool_unit_binop_structure</span></a><br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#unit_binop_structure"><span class="id" title="definition">unit_binop_structure</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">simple</span> <span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.Foundations.Sets.html#boolset"><span class="id" title="definition">boolset</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span><a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>) ; <span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="b:52" class="idref" href="#b:52"><span class="id" title="binder"><span id="b:53" class="id">b</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.MoreFoundations.Bool.html#orb"><span class="id" title="definition">orb</span></a> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#b:52"><span class="id" title="variable">b</span></a>) (<a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#b:52"><span class="id" title="variable">b</span></a>)).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Foundations.Preamble.html#false"><span class="id" title="constructor">false</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">split</span> ; <span class="id" title="var">cbn</span> ; <span class="id" title="tactic">intro</span> <span class="id" title="var">x</span> ; <span class="id" title="tactic">induction</span> <span class="id" title="var">x</span> ; <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="nat_to_bool" class="idref" href="#nat_to_bool"><span class="id" title="definition">nat_to_bool</span></a><br/>
@@ -474,16 +473,16 @@ For that, we use the following example.
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Total.html#pr1_category"><span class="id" title="definition">pr1_category</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#nat_unit_binop_structure"><span class="id" title="definition">nat_unit_binop_structure</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Total.html#pr1_category"><span class="id" title="definition">pr1_category</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#bool_unit_binop_structure"><span class="id" title="definition">bool_unit_binop_structure</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#nat_to_bool"><span class="id" title="definition">nat_to_bool</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.UnivalenceAxiom.html#funextsec"><span class="id" title="definition">funextsec</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">x</span> ; <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="unit_binop_structure_disp_cat_not_adds_properties" class="idref" href="#unit_binop_structure_disp_cat_not_adds_properties"><span class="id" title="definition">unit_binop_structure_disp_cat_not_adds_properties</span></a><br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.PartA.html#89335bb7773696a226bf41e8343e6c3f"><span class="id" title="notation">¬(</span></a><a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Projection.html#adds_properties"><span class="id" title="definition">adds_properties</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#unit_binop_structure_disp_cat"><span class="id" title="definition">unit_binop_structure_disp_cat</span></a><a class="idref" href="UniMath.Foundations.PartA.html#89335bb7773696a226bf41e8343e6c3f"><span class="id" title="notation">)</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">H</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">induction</span> <span class="id" title="var">H</span> <span class="id" title="keyword">as</span> [<span class="id" title="var">H₁</span> <span class="id" title="var">H₂</span>].<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">clear</span> <span class="id" title="var">H₂</span>.<br/>
@@ -498,7 +497,7 @@ For that, we use the following example.
 &nbsp;&nbsp;<span class="id" title="tactic">pose</span> (<a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">!</span></a><span class="id" title="var">q</span> <a class="idref" href="UniMath.Foundations.PartA.html#8b57b11be4275b47948f6caec264b70f"><span class="id" title="notation">@</span></a> <span class="id" title="var">p</span>) <span class="id" title="keyword">as</span> <span class="id" title="var">r</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#nat_to_bool"><span class="id" title="definition">nat_to_bool</span></a> <span class="id" title="tactic">in</span> <span class="id" title="var">r</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.PartA.html#nopathstruetofalse"><span class="id" title="lemma">nopathstruetofalse</span></a> <span class="id" title="var">r</span>).<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 </div>
@@ -511,28 +510,28 @@ More specifically, both the type of displayed objects and the type of displayed 
 <div class="code">
 <span class="id" title="keyword">Definition</span> <a id="unit_binop_structure_disp_cat_mor_prop" class="idref" href="#unit_binop_structure_disp_cat_mor_prop"><span class="id" title="definition">unit_binop_structure_disp_cat_mor_prop</span></a><br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#locally_propositional"><span class="id" title="definition">locally_propositional</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#unit_binop_structure_disp_cat"><span class="id" title="definition">unit_binop_structure_disp_cat</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Projection.html#disp_cat_is_locally_propositional"><span class="id" title="definition">disp_cat_is_locally_propositional</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#forget_unit_structure_faithful"><span class="id" title="definition">forget_unit_structure_faithful</span></a>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="unit_binop_structure_disp_cat_mor_not_contr" class="idref" href="#unit_binop_structure_disp_cat_mor_not_contr"><span class="id" title="definition">unit_binop_structure_disp_cat_mor_not_contr</span></a><br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.PartA.html#89335bb7773696a226bf41e8343e6c3f"><span class="id" title="notation">¬(</span></a><a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Projection.html#locally_contractible"><span class="id" title="definition">locally_contractible</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#unit_binop_structure_disp_cat"><span class="id" title="definition">unit_binop_structure_disp_cat</span></a><a class="idref" href="UniMath.Foundations.PartA.html#89335bb7773696a226bf41e8343e6c3f"><span class="id" title="notation">)</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">H</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#unit_binop_structure_disp_cat_not_adds_properties"><span class="id" title="definition">unit_binop_structure_disp_cat_not_adds_properties</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Projection.html#pr1_category_fully_faithful"><span class="id" title="definition">pr1_category_fully_faithful</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">H</span>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="unit_binop_structure_disp_cat_ob_prop" class="idref" href="#unit_binop_structure_disp_cat_ob_prop"><span class="id" title="definition">unit_binop_structure_disp_cat_ob_prop</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="X:54" class="idref" href="#X:54"><span class="id" title="binder">X</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#binop"><span class="id" title="definition">binop</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.PartB.html#isaprop"><span class="id" title="definition">isaprop</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#unit_binop_structure_disp_cat"><span class="id" title="definition">unit_binop_structure_disp_cat</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#X:54"><span class="id" title="variable">X</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.UnitalBinop.html#isaprop_has_unit"><span class="id" title="definition">isaprop_has_unit</span></a>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 </div>
 </div>
 

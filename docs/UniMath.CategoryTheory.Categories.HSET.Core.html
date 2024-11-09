@@ -1,28 +1,27 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="coqdoc.css" rel="stylesheet" type="text/css" />
-<title>UniMath.CategoryTheory.Categories.HSET.Core</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link href="coqdoc.css" rel="stylesheet" type="text/css"/>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<script src="./proofs-toggle.js" type="text/javascript"></script>
+	<style>
+		div.proofcomment {
+			font-style: italic;
+		}
+	</style>
+	<title>Documentation</title>
 </head>
-
 <body>
-
 <div id="page">
-
-<div id="header">
-</div>
-
 <div id="main">
-
 <h1 class="libtitle">Library UniMath.CategoryTheory.Categories.HSET.Core</h1>
 
 <div class="code">
 </div>
 
 <div class="doc">
-<a id="lab1068"></a><h1 class="section">Category of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#hSet"><span class="id" title="definition">hSet</span></a></span>s</h1>
+<a id="lab1072"></a><h1 class="section">Category of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#hSet"><span class="id" title="definition">hSet</span></a></span>s</h1>
 
 
 <div class="paragraph"> </div>
@@ -42,7 +41,7 @@ Extended by: Anders Mörtberg (October 2015)
 
 <div class="paragraph"> </div>
 
-<a id="lab1069"></a><h2 class="section">Contents:</h2>
+<a id="lab1073"></a><h2 class="section">Contents:</h2>
 
 
 <div class="paragraph"> </div>
@@ -87,7 +86,7 @@ Extended by: Anders Mörtberg (October 2015)
 </div>
 
 <div class="doc">
-<a id="lab1070"></a><h2 class="section">Category HSET of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#hSet"><span class="id" title="definition">hSet</span></a></span>s (<span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#hset_category"><span class="id" title="definition">hset_category</span></a></span>)</h2>
+<a id="lab1074"></a><h2 class="section">Category HSET of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#hSet"><span class="id" title="definition">hSet</span></a></span>s (<span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#hset_category"><span class="id" title="definition">hset_category</span></a></span>)</h2>
 
 </div>
 <div class="code">
@@ -97,19 +96,19 @@ Extended by: Anders Mörtberg (October 2015)
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="hset_precategory_ob_mor" class="idref" href="#hset_precategory_ob_mor"><span class="id" title="definition">hset_precategory_ob_mor</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#precategory_ob_mor"><span class="id" title="definition">precategory_ob_mor</span></a> :=<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#make_precategory_ob_mor"><span class="id" title="definition">make_precategory_ob_mor</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Foundations.Sets.html#hSet"><span class="id" title="definition">hSet</span></a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="A:1" class="idref" href="#A:1"><span class="id" title="binder">A</span></a> <a id="B:2" class="idref" href="#B:2"><span class="id" title="binder">B</span></a> : <a class="idref" href="UniMath.Foundations.Sets.html#hSet"><span class="id" title="definition">hSet</span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#A:1"><span class="id" title="variable">A</span></a> <a class="idref" href="UniMath.Foundations.Init.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">→</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#B:2"><span class="id" title="variable">B</span></a>).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="A:1" class="idref" href="#A:1"><span class="id" title="binder">A</span></a> <a id="B:2" class="idref" href="#B:2"><span class="id" title="binder">B</span></a> : <a class="idref" href="UniMath.Foundations.Sets.html#hSet"><span class="id" title="definition">hSet</span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#A:1"><span class="id" title="variable">A</span></a> <a class="idref" href="UniMath.Foundations.Init.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">-&gt;</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#B:2"><span class="id" title="variable">B</span></a>).<br/>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="hset_precategory_data" class="idref" href="#hset_precategory_data"><span class="id" title="definition">hset_precategory_data</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#precategory_data"><span class="id" title="definition">precategory_data</span></a> :=<br/>
-&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#make_precategory_data"><span class="id" title="definition">make_precategory_data</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#hset_precategory_ob_mor"><span class="id" title="definition">hset_precategory_ob_mor</span></a> (<span class="id" title="keyword">fun</span> (<a id="A:3" class="idref" href="#A:3"><span class="id" title="binder">A</span></a>:<a class="idref" href="UniMath.Foundations.Sets.html#hSet"><span class="id" title="definition">hSet</span></a>) (<a id="x:4" class="idref" href="#x:4"><span class="id" title="binder">x</span></a> : <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#A:3"><span class="id" title="variable">A</span></a>) ⇒ <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#x:4"><span class="id" title="variable">x</span></a>)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="keyword">fun</span> (<a id="A:5" class="idref" href="#A:5"><span class="id" title="binder">A</span></a> <a id="B:6" class="idref" href="#B:6"><span class="id" title="binder">B</span></a> <a id="C:7" class="idref" href="#C:7"><span class="id" title="binder">C</span></a> : <a class="idref" href="UniMath.Foundations.Sets.html#hSet"><span class="id" title="definition">hSet</span></a>) (<a id="f:8" class="idref" href="#f:8"><span class="id" title="binder">f</span></a> : <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#A:5"><span class="id" title="variable">A</span></a> <a class="idref" href="UniMath.Foundations.Init.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">→</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#B:6"><span class="id" title="variable">B</span></a>) (<a id="g:9" class="idref" href="#g:9"><span class="id" title="binder">g</span></a> : <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#B:6"><span class="id" title="variable">B</span></a> <a class="idref" href="UniMath.Foundations.Init.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">→</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#C:7"><span class="id" title="variable">C</span></a>) (<a id="x:10" class="idref" href="#x:10"><span class="id" title="binder">x</span></a> : <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#A:5"><span class="id" title="variable">A</span></a>) ⇒ <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#g:9"><span class="id" title="variable">g</span></a> (<a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#f:8"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#x:10"><span class="id" title="variable">x</span></a>)).<br/>
+&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#make_precategory_data"><span class="id" title="definition">make_precategory_data</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#hset_precategory_ob_mor"><span class="id" title="definition">hset_precategory_ob_mor</span></a> (<span class="id" title="keyword">fun</span> (<a id="A:3" class="idref" href="#A:3"><span class="id" title="binder">A</span></a>:<a class="idref" href="UniMath.Foundations.Sets.html#hSet"><span class="id" title="definition">hSet</span></a>) (<a id="x:4" class="idref" href="#x:4"><span class="id" title="binder">x</span></a> : <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#A:3"><span class="id" title="variable">A</span></a>) =&gt; <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#x:4"><span class="id" title="variable">x</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="keyword">fun</span> (<a id="A:5" class="idref" href="#A:5"><span class="id" title="binder">A</span></a> <a id="B:6" class="idref" href="#B:6"><span class="id" title="binder">B</span></a> <a id="C:7" class="idref" href="#C:7"><span class="id" title="binder">C</span></a> : <a class="idref" href="UniMath.Foundations.Sets.html#hSet"><span class="id" title="definition">hSet</span></a>) (<a id="f:8" class="idref" href="#f:8"><span class="id" title="binder">f</span></a> : <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#A:5"><span class="id" title="variable">A</span></a> <a class="idref" href="UniMath.Foundations.Init.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">-&gt;</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#B:6"><span class="id" title="variable">B</span></a>) (<a id="g:9" class="idref" href="#g:9"><span class="id" title="binder">g</span></a> : <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#B:6"><span class="id" title="variable">B</span></a> <a class="idref" href="UniMath.Foundations.Init.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">-&gt;</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#C:7"><span class="id" title="variable">C</span></a>) (<a id="x:10" class="idref" href="#x:10"><span class="id" title="binder">x</span></a> : <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#A:5"><span class="id" title="variable">A</span></a>) =&gt; <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#g:9"><span class="id" title="variable">g</span></a> (<a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#f:8"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#x:10"><span class="id" title="variable">x</span></a>)).<br/>
 
 <br/>
 <span class="id" title="keyword">Lemma</span> <a id="is_precategory_hset_precategory_data" class="idref" href="#is_precategory_hset_precategory_data"><span class="id" title="lemma">is_precategory_hset_precategory_data</span></a> :<br/>
 &nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#is_precategory"><span class="id" title="definition">is_precategory</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#hset_precategory_data"><span class="id" title="definition">hset_precategory_data</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 <span class="id" title="tactic">repeat</span> <span class="id" title="tactic">split</span>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="hset_precategory" class="idref" href="#hset_precategory"><span class="id" title="definition">hset_precategory</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#precategory"><span class="id" title="definition">precategory</span></a> :=<br/>
@@ -120,9 +119,9 @@ Extended by: Anders Mörtberg (October 2015)
 
 <br/>
 <span class="id" title="keyword">Lemma</span> <a id="has_homsets_HSET" class="idref" href="#has_homsets_HSET"><span class="id" title="lemma">has_homsets_HSET</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#has_homsets"><span class="id" title="definition">has_homsets</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#HSET_precategory.::cat:'HSET'"><span class="id" title="notation">HSET</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 <span class="id" title="tactic">intros</span> <span class="id" title="var">a</span> <span class="id" title="var">b</span>; <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Sets.html#isaset_set_fun_space"><span class="id" title="lemma">isaset_set_fun_space</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 
@@ -140,17 +139,17 @@ Extended by: Anders Mörtberg (October 2015)
 </div>
 
 <div class="doc">
-<a id="lab1071"></a><h2 class="section">Some particular HSETs</h2>
+<a id="lab1075"></a><h2 class="section">Some particular HSETs</h2>
 
 </div>
 <div class="code">
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="emptyHSET" class="idref" href="#emptyHSET"><span class="id" title="definition">emptyHSET</span></a> : <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#::cat:'HSET'"><span class="id" title="notation">HSET</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
-&nbsp;&nbsp;<span class="id" title="tactic">∃</span> <a class="idref" href="UniMath.Foundations.Preamble.html#empty"><span class="id" title="inductive">empty</span></a>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
+&nbsp;&nbsp;<span class="id" title="tactic">exists</span> <a class="idref" href="UniMath.Foundations.Preamble.html#empty"><span class="id" title="inductive">empty</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Foundations.PartB.html#isasetempty"><span class="id" title="lemma">isasetempty</span></a>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="unitHSET" class="idref" href="#unitHSET"><span class="id" title="definition">unitHSET</span></a> : <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#::cat:'HSET'"><span class="id" title="notation">HSET</span></a><br/>
@@ -169,7 +168,7 @@ Extended by: Anders Mörtberg (October 2015)
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="homSet_functor_data" class="idref" href="#homSet_functor_data"><span class="id" title="definition">homSet_functor_data</span></a> :<br/>
 &nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_data"><span class="id" title="definition">functor_data</span></a> (<a class="idref" href="UniMath.CategoryTheory.PrecategoryBinProduct.html#category_binproduct"><span class="id" title="definition">category_binproduct</span></a> (<a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#HomSetFunctors.C"><span class="id" title="variable">C</span></a><a class="idref" href="UniMath.CategoryTheory.opp_precat.html#3fe3b9c50e890a929497aff54b35977e"><span class="id" title="notation">^</span></a><a class="idref" href="UniMath.CategoryTheory.opp_precat.html#3fe3b9c50e890a929497aff54b35977e"><span class="id" title="notation">op</span></a>) <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#HomSetFunctors.C"><span class="id" title="variable">C</span></a>) <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#hset_category"><span class="id" title="definition">hset_category</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#make_functor_data"><span class="id" title="definition">make_functor_data</span></a>.<br/>
 &nbsp;&nbsp;+ <span class="id" title="tactic">intros</span> <span class="id" title="var">pair</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">induction</span> <span class="id" title="var">pair</span> <span class="id" title="keyword">as</span> (<span class="id" title="var">p1</span>, <span class="id" title="var">p2</span>).<br/>
@@ -180,11 +179,11 @@ Extended by: Anders Mörtberg (October 2015)
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">induction</span> <span class="id" title="var">fg</span> <span class="id" title="keyword">as</span> (<span class="id" title="var">fg1</span>, <span class="id" title="var">fg2</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">cbn</span> <span class="id" title="tactic">in</span> <span class="id" title="var">fg1</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<span class="id" title="var">fg1</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <span class="id" title="var">h</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <span class="id" title="var">fg2</span>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Lemma</span> <a id="is_functor_homSet_functor_type" class="idref" href="#is_functor_homSet_functor_type"><span class="id" title="lemma">is_functor_homSet_functor_type</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#is_functor"><span class="id" title="definition">is_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#homSet_functor_data"><span class="id" title="definition">homSet_functor_data</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartA.html#make_dirprod"><span class="id" title="definition">make_dirprod</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">intro</span>; <span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.UnivalenceAxiom.html#funextsec"><span class="id" title="definition">funextsec</span></a>; <span class="id" title="tactic">intro</span>.<br/>
@@ -194,7 +193,7 @@ Extended by: Anders Mörtberg (October 2015)
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.UnivalenceAxiom.html#funextsec"><span class="id" title="definition">funextsec</span></a>; <span class="id" title="tactic">intro</span>; <span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">do</span> 3 <span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc"><span class="id" title="definition">assoc</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">reflexivity</span>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="homSet_functor" class="idref" href="#homSet_functor"><span class="id" title="definition">homSet_functor</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor"><span class="id" title="definition">functor</span></a> (<a class="idref" href="UniMath.CategoryTheory.PrecategoryBinProduct.html#category_binproduct"><span class="id" title="definition">category_binproduct</span></a> (<a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#HomSetFunctors.C"><span class="id" title="variable">C</span></a><a class="idref" href="UniMath.CategoryTheory.opp_precat.html#3fe3b9c50e890a929497aff54b35977e"><span class="id" title="notation">^</span></a><a class="idref" href="UniMath.CategoryTheory.opp_precat.html#3fe3b9c50e890a929497aff54b35977e"><span class="id" title="notation">op</span></a>) <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#HomSetFunctors.C"><span class="id" title="variable">C</span></a>) <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#hset_category"><span class="id" title="definition">hset_category</span></a> :=<br/>

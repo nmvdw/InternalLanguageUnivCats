@@ -1,21 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="coqdoc.css" rel="stylesheet" type="text/css" />
-<title>UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link href="coqdoc.css" rel="stylesheet" type="text/css"/>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<script src="./proofs-toggle.js" type="text/javascript"></script>
+	<style>
+		div.proofcomment {
+			font-style: italic;
+		}
+	</style>
+	<title>Documentation</title>
 </head>
-
 <body>
-
 <div id="page">
-
-<div id="header">
-</div>
-
 <div id="main">
-
 <h1 class="libtitle">Library UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim</h1>
 
 <div class="code">
@@ -65,7 +64,7 @@
 </div>
 
 <div class="doc">
-<a id="lab3202"></a><h1 class="section">1. The action on objects</h1>
+<a id="lab3286"></a><h1 class="section">1. The action on objects</h1>
 
 </div>
 <div class="code">
@@ -75,40 +74,40 @@
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="binproducts_dfl_full_comp_cat" class="idref" href="#binproducts_dfl_full_comp_cat"><span class="id" title="definition">binproducts_dfl_full_comp_cat</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#BinProducts"><span class="id" title="definition">BinProducts</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#DFLFullCompCatLimits.C"><span class="id" title="variable">C</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.EquivalencePreservation.html#adj_equiv_preserves_binproducts_f"><span class="id" title="definition">adj_equiv_preserves_binproducts_f</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Bicategories.ComprehensionCat.DFLCompCat.html#dfl_full_comp_cat_adjequiv_base"><span class="id" title="definition">dfl_full_comp_cat_adjequiv_base</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#DFLFullCompCatLimits.C"><span class="id" title="variable">C</span></a>)).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.DFLCompCat.html#fiberwise_binproducts_dfl_full_comp_cat"><span class="id" title="definition">fiberwise_binproducts_dfl_full_comp_cat</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="equalizers_dfl_full_comp_cat" class="idref" href="#equalizers_dfl_full_comp_cat"><span class="id" title="definition">equalizers_dfl_full_comp_cat</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Equalizers.html#Equalizers"><span class="id" title="definition">Equalizers</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#DFLFullCompCatLimits.C"><span class="id" title="variable">C</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.EquivalencePreservation.html#adj_equiv_preserves_equalizers_f"><span class="id" title="definition">adj_equiv_preserves_equalizers_f</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Bicategories.ComprehensionCat.DFLCompCat.html#dfl_full_comp_cat_adjequiv_base"><span class="id" title="definition">dfl_full_comp_cat_adjequiv_base</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#DFLFullCompCatLimits.C"><span class="id" title="variable">C</span></a>)).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.DFLCompCat.html#fiberwise_equalizers_dfl_full_comp_cat"><span class="id" title="definition">fiberwise_equalizers_dfl_full_comp_cat</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 <span class="id" title="keyword">End</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#DFLFullCompCatLimits"><span class="id" title="section">DFLFullCompCatLimits</span></a>.<br/>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="dfl_full_comp_cat_to_finlim" class="idref" href="#dfl_full_comp_cat_to_finlim"><span class="id" title="definition">dfl_full_comp_cat_to_finlim</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="C:2" class="idref" href="#C:2"><span class="id" title="binder">C</span></a> : <a class="idref" href="UniMath.Bicategories.ComprehensionCat.DFLCompCat.html#dfl_full_comp_cat"><span class="id" title="definition">dfl_full_comp_cat</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.Core.Examples.StructuredCategories.html#univ_cat_with_finlim"><span class="id" title="definition">univ_cat_with_finlim</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.Core.Examples.StructuredCategories.html#make_univ_cat_with_finlim"><span class="id" title="definition">make_univ_cat_with_finlim</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <span class="id" title="var">C</span>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.CompCatNotations.html#ce535aefd13c296f3de573496b54417d"><span class="id" title="notation">[]</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#Pullbacks_from_Equalizers_BinProducts"><span class="id" title="definition">Pullbacks_from_Equalizers_BinProducts</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#binproducts_dfl_full_comp_cat"><span class="id" title="definition">binproducts_dfl_full_comp_cat</span></a> <span class="id" title="var">C</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#equalizers_dfl_full_comp_cat"><span class="id" title="definition">equalizers_dfl_full_comp_cat</span></a> <span class="id" title="var">C</span>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab3203"></a><h1 class="section">2. The action on morphisms</h1>
+<a id="lab3287"></a><h1 class="section">2. The action on morphisms</h1>
 
 </div>
 <div class="code">
@@ -174,7 +173,7 @@
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="preserves_binproduct_binproducts_dfl_functor" class="idref" href="#preserves_binproduct_binproducts_dfl_functor"><span class="id" title="definition">preserves_binproduct_binproducts_dfl_functor</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_binproduct"><span class="id" title="definition">preserves_binproduct</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#DFLFullCompCatLimitPreservation.F"><span class="id" title="variable">F</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.PreservationProperties.html#preserves_binproduct_equivalence_f"><span class="id" title="definition">preserves_binproduct_equivalence_f</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#42b85b52cf570976706f536167e599f4"><span class="id" title="variable">τ</span></a><a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#42b85b52cf570976706f536167e599f4"><span class="id" title="variable">θ</span></a>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Equivalences.CompositesAndInverses.html#comp_adj_equivalence_of_cats"><span class="id" title="definition">comp_adj_equivalence_of_cats</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.DFLCompCat.html#dfl_full_comp_cat_adjequiv_empty"><span class="id" title="definition">dfl_full_comp_cat_adjequiv_empty</span></a>.<br/>
@@ -183,12 +182,12 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Bicategories.ComprehensionCat.DFLCompCat.html#dfl_full_comp_cat_adjequiv_terminal"><span class="id" title="definition">dfl_full_comp_cat_adjequiv_terminal</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#c33e827e37d2ea18cbad0d792d90cfe7"><span class="id" title="variable">C₂</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#a13dc956c5991868dcd286051faeff27"><span class="id" title="variable">T₂</span></a>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.FiberCod.html#cod_fib_terminal"><span class="id" title="definition">cod_fib_terminal</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#a13dc956c5991868dcd286051faeff27"><span class="id" title="variable">T₂</span></a>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.DFLCompCat.html#preserves_binproducts_dfl_full_comp_cat_functor"><span class="id" title="definition">preserves_binproducts_dfl_full_comp_cat_functor</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="preserves_equalizer_binproducts_dfl_functor" class="idref" href="#preserves_equalizer_binproducts_dfl_functor"><span class="id" title="definition">preserves_equalizer_binproducts_dfl_functor</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_equalizer"><span class="id" title="definition">preserves_equalizer</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#DFLFullCompCatLimitPreservation.F"><span class="id" title="variable">F</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.PreservationProperties.html#preserves_equalizer_equivalence_f"><span class="id" title="definition">preserves_equalizer_equivalence_f</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#42b85b52cf570976706f536167e599f4"><span class="id" title="variable">τ</span></a><a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#42b85b52cf570976706f536167e599f4"><span class="id" title="variable">θ</span></a>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Equivalences.CompositesAndInverses.html#comp_adj_equivalence_of_cats"><span class="id" title="definition">comp_adj_equivalence_of_cats</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.DFLCompCat.html#dfl_full_comp_cat_adjequiv_empty"><span class="id" title="definition">dfl_full_comp_cat_adjequiv_empty</span></a>.<br/>
@@ -197,7 +196,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Bicategories.ComprehensionCat.DFLCompCat.html#dfl_full_comp_cat_adjequiv_terminal"><span class="id" title="definition">dfl_full_comp_cat_adjequiv_terminal</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#c33e827e37d2ea18cbad0d792d90cfe7"><span class="id" title="variable">C₂</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#a13dc956c5991868dcd286051faeff27"><span class="id" title="variable">T₂</span></a>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.FiberCod.html#cod_fib_terminal"><span class="id" title="definition">cod_fib_terminal</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#a13dc956c5991868dcd286051faeff27"><span class="id" title="variable">T₂</span></a>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.DFLCompCat.html#preserves_equalizers_dfl_full_comp_cat_functor"><span class="id" title="definition">preserves_equalizers_dfl_full_comp_cat_functor</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 <span class="id" title="keyword">End</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#DFLFullCompCatLimitPreservation"><span class="id" title="section">DFLFullCompCatLimitPreservation</span></a>.<br/>
 
 <br/>
@@ -207,7 +206,7 @@
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.Core.Examples.StructuredCategories.html#functor_finlim"><span class="id" title="definition">functor_finlim</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#dfl_full_comp_cat_to_finlim"><span class="id" title="definition">dfl_full_comp_cat_to_finlim</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#76e1f9925a9ad9d84996e267e763a1eb"><span class="id" title="variable">C₁</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#dfl_full_comp_cat_to_finlim"><span class="id" title="definition">dfl_full_comp_cat_to_finlim</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#fde53945968c556ab03330fe8455fe6b"><span class="id" title="variable">C₂</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.Core.Examples.StructuredCategories.html#make_functor_finlim"><span class="id" title="definition">make_functor_finlim</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <span class="id" title="var">F</span>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Bicategories.ComprehensionCat.BicatOfCompCat.DispCatTerminal.html#comp_cat_functor_terminal"><span class="id" title="definition">comp_cat_functor_terminal</span></a> <span class="id" title="var">F</span>).<br/>
@@ -216,13 +215,13 @@
 &nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#equalizers_dfl_full_comp_cat"><span class="id" title="definition">equalizers_dfl_full_comp_cat</span></a> <span class="id" title="var">C₁</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#preserves_binproduct_binproducts_dfl_functor"><span class="id" title="definition">preserves_binproduct_binproducts_dfl_functor</span></a> <span class="id" title="var">F</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#preserves_equalizer_binproducts_dfl_functor"><span class="id" title="definition">preserves_equalizer_binproducts_dfl_functor</span></a> <span class="id" title="var">F</span>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab3204"></a><h1 class="section">3. The action on 2-cells</h1>
+<a id="lab3288"></a><h1 class="section">3. The action on 2-cells</h1>
 
 </div>
 <div class="code">
@@ -233,16 +232,16 @@
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.Core.Examples.StructuredCategories.html#nat_trans_finlim"><span class="id" title="definition">nat_trans_finlim</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#dfl_functor_comp_cat_to_finlim_functor"><span class="id" title="definition">dfl_functor_comp_cat_to_finlim_functor</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#F:11"><span class="id" title="variable">F</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#dfl_functor_comp_cat_to_finlim_functor"><span class="id" title="definition">dfl_functor_comp_cat_to_finlim_functor</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#G:12"><span class="id" title="variable">G</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.Core.Examples.StructuredCategories.html#make_nat_trans_finlim"><span class="id" title="definition">make_nat_trans_finlim</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">exact</span> τ.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab3205"></a><h1 class="section">4. The identitor and compositor</h1>
+<a id="lab3289"></a><h1 class="section">4. The identitor and compositor</h1>
 
 </div>
 <div class="code">
@@ -251,10 +250,10 @@
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.Core.Bicat.html#46b41c79418eb42c47823c4a4ce2ccbd"><span class="id" title="notation">id₁</span></a> <a class="idref" href="UniMath.Bicategories.Core.Bicat.html#46b41c79418eb42c47823c4a4ce2ccbd"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.Bicategories.Core.Bicat.html#46b41c79418eb42c47823c4a4ce2ccbd"><span class="id" title="notation">dfl_full_comp_cat_to_finlim</span></a> <a class="idref" href="UniMath.Bicategories.Core.Bicat.html#46b41c79418eb42c47823c4a4ce2ccbd"><span class="id" title="notation">C</span></a><a class="idref" href="UniMath.Bicategories.Core.Bicat.html#46b41c79418eb42c47823c4a4ce2ccbd"><span class="id" title="notation">)</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Bicategories.Core.Bicat.html#28d17e2d9863b97d3e4250ecaac017ab"><span class="id" title="notation">==&gt;</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#dfl_functor_comp_cat_to_finlim_functor"><span class="id" title="definition">dfl_functor_comp_cat_to_finlim_functor</span></a> (<a class="idref" href="UniMath.Bicategories.Core.Bicat.html#46b41c79418eb42c47823c4a4ce2ccbd"><span class="id" title="notation">id₁</span></a> <a class="idref" href="UniMath.Bicategories.Core.Bicat.html#46b41c79418eb42c47823c4a4ce2ccbd"><span class="id" title="notation">C</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.Core.Examples.StructuredCategories.html#make_nat_trans_finlim"><span class="id" title="definition">make_nat_trans_finlim</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_trans_id"><span class="id" title="definition">nat_trans_id</span></a>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="dfl_functor_comp_cat_to_finlim_compositor" class="idref" href="#dfl_functor_comp_cat_to_finlim_compositor"><span class="id" title="definition">dfl_functor_comp_cat_to_finlim_compositor</span></a><br/>
@@ -264,16 +263,16 @@
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#dfl_functor_comp_cat_to_finlim_functor"><span class="id" title="definition">dfl_functor_comp_cat_to_finlim_functor</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#F:18"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#dfl_functor_comp_cat_to_finlim_functor"><span class="id" title="definition">dfl_functor_comp_cat_to_finlim_functor</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#G:19"><span class="id" title="variable">G</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Bicategories.Core.Bicat.html#28d17e2d9863b97d3e4250ecaac017ab"><span class="id" title="notation">==&gt;</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#dfl_functor_comp_cat_to_finlim_functor"><span class="id" title="definition">dfl_functor_comp_cat_to_finlim_functor</span></a> (<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#F:18"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#G:19"><span class="id" title="variable">G</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.Core.Examples.StructuredCategories.html#make_nat_trans_finlim"><span class="id" title="definition">make_nat_trans_finlim</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_trans_id"><span class="id" title="definition">nat_trans_id</span></a>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab3206"></a><h1 class="section">5. The data of the pseudofunctor</h1>
+<a id="lab3290"></a><h1 class="section">5. The data of the pseudofunctor</h1>
 
 </div>
 <div class="code">
@@ -281,26 +280,26 @@
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat.html#psfunctor_data"><span class="id" title="definition">psfunctor_data</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Bicategories.ComprehensionCat.DFLCompCat.html#bicat_of_dfl_full_comp_cat"><span class="id" title="definition">bicat_of_dfl_full_comp_cat</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Bicategories.Core.Examples.StructuredCategories.html#bicat_of_univ_cat_with_finlim"><span class="id" title="definition">bicat_of_univ_cat_with_finlim</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.PseudoFunctor.html#make_psfunctor_data"><span class="id" title="definition">make_psfunctor_data</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#dfl_full_comp_cat_to_finlim"><span class="id" title="definition">dfl_full_comp_cat_to_finlim</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <a id="F:20" class="idref" href="#F:20"><span class="id" title="binder"><span id="F:21" class="id">F</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#dfl_functor_comp_cat_to_finlim_functor"><span class="id" title="definition">dfl_functor_comp_cat_to_finlim_functor</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#F:20"><span class="id" title="variable">F</span></a>).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <a id="42bc3c211b83c217e7828dd92cc21cfb" class="idref" href="#42bc3c211b83c217e7828dd92cc21cfb"><span class="id" title="binder"><span id="5c168e95b99ef4dd6de1690e8b2fbebb" class="id">τ</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#dfl_functor_comp_cat_to_finlim_nat_trans"><span class="id" title="definition">dfl_functor_comp_cat_to_finlim_nat_trans</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#42bc3c211b83c217e7828dd92cc21cfb"><span class="id" title="variable">τ</span></a>).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#dfl_functor_comp_cat_to_finlim_identitor"><span class="id" title="definition">dfl_functor_comp_cat_to_finlim_identitor</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <a id="F:24" class="idref" href="#F:24"><span class="id" title="binder"><span id="F:26" class="id">F</span></span></a> <a id="G:25" class="idref" href="#G:25"><span class="id" title="binder"><span id="G:27" class="id">G</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#dfl_functor_comp_cat_to_finlim_compositor"><span class="id" title="definition">dfl_functor_comp_cat_to_finlim_compositor</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#F:24"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#G:25"><span class="id" title="variable">G</span></a>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab3207"></a><h1 class="section">6. The laws of the pseudofunctor</h1>
+<a id="lab3291"></a><h1 class="section">6. The laws of the pseudofunctor</h1>
 
 </div>
 <div class="code">
 <span class="id" title="keyword">Proposition</span> <a id="dfl_full_comp_cat_to_finlim_psfunctor_laws" class="idref" href="#dfl_full_comp_cat_to_finlim_psfunctor_laws"><span class="id" title="lemma">dfl_full_comp_cat_to_finlim_psfunctor_laws</span></a><br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat.html#psfunctor_laws"><span class="id" title="definition">psfunctor_laws</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#dfl_full_comp_cat_to_finlim_psfunctor_data"><span class="id" title="definition">dfl_full_comp_cat_to_finlim_psfunctor_data</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>) ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intro</span> ; <span class="id" title="tactic">intros</span> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.Core.Examples.StructuredCategories.html#nat_trans_finlim_eq"><span class="id" title="lemma">nat_trans_finlim_eq</span></a> ;<br/>
@@ -317,12 +316,12 @@
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">rewrite</span> !<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_left"><span class="id" title="definition">id_left</span></a>, !<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_right"><span class="id" title="definition">id_right</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="dfl_full_comp_cat_to_finlim_invertible_cells" class="idref" href="#dfl_full_comp_cat_to_finlim_invertible_cells"><span class="id" title="definition">dfl_full_comp_cat_to_finlim_invertible_cells</span></a><br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat.html#invertible_cells"><span class="id" title="definition">invertible_cells</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#dfl_full_comp_cat_to_finlim_psfunctor_data"><span class="id" title="definition">dfl_full_comp_cat_to_finlim_psfunctor_data</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">split</span>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">intro</span> <span class="id" title="var">C</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.Core.Examples.StructuredCategories.html#is_invertible_2cell_cat_with_finlim"><span class="id" title="definition">is_invertible_2cell_cat_with_finlim</span></a>.<br/>
@@ -330,13 +329,13 @@
 &nbsp;&nbsp;- <span class="id" title="tactic">intros</span> <span class="id" title="var">C₁</span> <span class="id" title="var">C₂</span> <span class="id" title="var">C₃</span> <span class="id" title="var">F</span> <span class="id" title="var">G</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.Core.Examples.StructuredCategories.html#is_invertible_2cell_cat_with_finlim"><span class="id" title="definition">is_invertible_2cell_cat_with_finlim</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#is_nat_z_iso_nat_trans_id"><span class="id" title="lemma">is_nat_z_iso_nat_trans_id</span></a>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab3208"></a><h1 class="section">7. The pseudofunctor from DFL comprehension categories to categories with finite limits</h1>
+<a id="lab3292"></a><h1 class="section">7. The pseudofunctor from DFL comprehension categories to categories with finite limits</h1>
 
 </div>
 <div class="code">
@@ -344,12 +343,12 @@
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.PseudoFunctors.PseudoFunctor.html#psfunctor"><span class="id" title="definition">psfunctor</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Bicategories.ComprehensionCat.DFLCompCat.html#bicat_of_dfl_full_comp_cat"><span class="id" title="definition">bicat_of_dfl_full_comp_cat</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Bicategories.Core.Examples.StructuredCategories.html#bicat_of_univ_cat_with_finlim"><span class="id" title="definition">bicat_of_univ_cat_with_finlim</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.PseudoFunctor.html#make_psfunctor"><span class="id" title="definition">make_psfunctor</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#dfl_full_comp_cat_to_finlim_psfunctor_data"><span class="id" title="definition">dfl_full_comp_cat_to_finlim_psfunctor_data</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#dfl_full_comp_cat_to_finlim_psfunctor_laws"><span class="id" title="lemma">dfl_full_comp_cat_to_finlim_psfunctor_laws</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#dfl_full_comp_cat_to_finlim_invertible_cells"><span class="id" title="definition">dfl_full_comp_cat_to_finlim_invertible_cells</span></a>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 </div>
 </div>
 

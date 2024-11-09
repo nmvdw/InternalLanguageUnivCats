@@ -1,21 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="coqdoc.css" rel="stylesheet" type="text/css" />
-<title>UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseSubobjectClassifier</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link href="coqdoc.css" rel="stylesheet" type="text/css"/>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<script src="./proofs-toggle.js" type="text/javascript"></script>
+	<style>
+		div.proofcomment {
+			font-style: italic;
+		}
+	</style>
+	<title>Documentation</title>
 </head>
-
 <body>
-
 <div id="page">
-
-<div id="header">
-</div>
-
 <div id="main">
-
 <h1 class="libtitle">Library UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseSubobjectClassifier</h1>
 
 <div class="code">
@@ -41,7 +40,7 @@
 </div>
 
 <div class="doc">
-<a id="lab1403"></a><h1 class="section">1. Fiberwise subobject classifiers</h1>
+<a id="lab1408"></a><h1 class="section">1. Fiberwise subobject classifiers</h1>
 
 </div>
 <div class="code">
@@ -95,7 +94,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="HD:25" class="idref" href="#HD:25"><span class="id" title="binder">HD</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fibrations.html#cleaving"><span class="id" title="definition">cleaving</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseSubobjectClassifier.html#D:24"><span class="id" title="variable">D</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="TD:26" class="idref" href="#TD:26"><span class="id" title="binder">TD</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#fiberwise_terminal"><span class="id" title="definition">fiberwise_terminal</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseSubobjectClassifier.html#HD:25"><span class="id" title="variable">HD</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.PartB.html#isaprop"><span class="id" title="definition">isaprop</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseSubobjectClassifier.html#fiberwise_subobject_classifier"><span class="id" title="definition">fiberwise_subobject_classifier</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseSubobjectClassifier.html#TD:26"><span class="id" title="variable">TD</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartB.html#isapropdirprod"><span class="id" title="definition">isapropdirprod</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartD.html#impred"><span class="id" title="lemma">impred</span></a> ; <span class="id" title="tactic">intro</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.SubobjectClassifierIso.html#isaprop_subobject_classifier'"><span class="id" title="definition">isaprop_subobject_classifier'</span></a>.<br/>
@@ -103,13 +102,13 @@
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Univalence.html#disp_univalent_category_is_univalent_disp"><span class="id" title="definition">disp_univalent_category_is_univalent_disp</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">do</span> 3 (<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartD.html#impred"><span class="id" title="lemma">impred</span></a> ; <span class="id" title="tactic">intro</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#isaprop_preserves_subobject_classifier"><span class="id" title="lemma">isaprop_preserves_subobject_classifier</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab1404"></a><h1 class="section">2. Preservation of fiberwise subobject classifiers</h1>
+<a id="lab1409"></a><h1 class="section">2. Preservation of fiberwise subobject classifiers</h1>
 
 </div>
 <div class="code">
@@ -145,10 +144,10 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="FF:48" class="idref" href="#FF:48"><span class="id" title="binder">FF</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#disp_functor"><span class="id" title="definition">disp_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseSubobjectClassifier.html#F:41"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseSubobjectClassifier.html#84d5ad9936399e53e8121df56fd8b582"><span class="id" title="variable">D₁</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseSubobjectClassifier.html#ba0ad502fcbd3e95187e2c59f9d1267e"><span class="id" title="variable">D₂</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HFF:49" class="idref" href="#HFF:49"><span class="id" title="binder">HFF</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#preserves_fiberwise_terminal"><span class="id" title="definition">preserves_fiberwise_terminal</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseSubobjectClassifier.html#FF:48"><span class="id" title="variable">FF</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.PartB.html#isaprop"><span class="id" title="definition">isaprop</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseSubobjectClassifier.html#preserves_fiberwise_subobject_classifier"><span class="id" title="definition">preserves_fiberwise_subobject_classifier</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseSubobjectClassifier.html#652a2a7eb04f75712b040a6af4d18dba"><span class="id" title="variable">TD₁</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseSubobjectClassifier.html#8aeaad2559c0c34d15e7f7ec09ab180e"><span class="id" title="variable">TD₂</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseSubobjectClassifier.html#FF:48"><span class="id" title="variable">FF</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseSubobjectClassifier.html#HFF:49"><span class="id" title="variable">HFF</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartD.html#impred"><span class="id" title="lemma">impred</span></a> ; <span class="id" title="tactic">intro</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#isaprop_preserves_subobject_classifier"><span class="id" title="lemma">isaprop_preserves_subobject_classifier</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="id_preserves_fiberwise_subobject_classifier" class="idref" href="#id_preserves_fiberwise_subobject_classifier"><span class="id" title="definition">id_preserves_fiberwise_subobject_classifier</span></a><br/>
@@ -160,7 +159,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseSubobjectClassifier.html#TD:53"><span class="id" title="variable">TD</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseSubobjectClassifier.html#TD:53"><span class="id" title="variable">TD</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#disp_functor_identity"><span class="id" title="definition">disp_functor_identity</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseSubobjectClassifier.html#D:51"><span class="id" title="variable">D</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#id_preserves_fiberwise_terminal"><span class="id" title="definition">id_preserves_fiberwise_terminal</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseSubobjectClassifier.html#D:51"><span class="id" title="variable">D</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">xx</span> <span class="id" title="var">t</span> <span class="id" title="var">H</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.PartA.html#transportf"><span class="id" title="definition">transportf</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.SubobjectClassifier.html#is_subobject_classifier"><span class="id" title="definition">is_subobject_classifier</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span>)<br/>
@@ -169,7 +168,7 @@
 &nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">!(</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_left"><span class="id" title="definition">id_left</span></a> <span class="id" title="var">_</span><a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.Foundations.PartA.html#8b57b11be4275b47948f6caec264b70f"><span class="id" title="notation">@</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.MoreFoundations.PartA.html#maponpaths_2"><span class="id" title="definition">maponpaths_2</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Terminal.html#TerminalArrowEq"><span class="id" title="lemma">TerminalArrowEq</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="comp_preserves_fiberwise_subobject_classifier" class="idref" href="#comp_preserves_fiberwise_subobject_classifier"><span class="id" title="definition">comp_preserves_fiberwise_subobject_classifier</span></a><br/>
@@ -201,7 +200,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseSubobjectClassifier.html#dd392f74d699cfd8c7e540d5a8c75a90"><span class="id" title="variable">TD₁</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseSubobjectClassifier.html#02ba440d8c6ff7397f1a9107e335ec46"><span class="id" title="variable">TD₃</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#disp_functor_composite"><span class="id" title="definition">disp_functor_composite</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseSubobjectClassifier.html#FF:68"><span class="id" title="variable">FF</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseSubobjectClassifier.html#GG:71"><span class="id" title="variable">GG</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#comp_preserves_fiberwise_terminal"><span class="id" title="definition">comp_preserves_fiberwise_terminal</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseSubobjectClassifier.html#8e98c4e57c9d584ef3cd3e6b7a1e5a62"><span class="id" title="variable">HFF₁</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseSubobjectClassifier.html#e4dbd33e9c7c0d752a24f5846014ca5c"><span class="id" title="variable">HGG₁</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">xx</span> <span class="id" title="var">t</span> <span class="id" title="var">H</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.PartA.html#transportf"><span class="id" title="definition">transportf</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.SubobjectClassifier.html#is_subobject_classifier"><span class="id" title="definition">is_subobject_classifier</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span>)<br/>
@@ -230,7 +229,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiber.html#fiber_functor"><span class="id" title="definition">fiber_functor</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#disp_functor_composite"><span class="id" title="definition">disp_functor_composite</span></a> <span class="id" title="var">FF</span> <span class="id" title="var">GG</span>) <span class="id" title="var">x</span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#comp_preserves_fiberwise_terminal"><span class="id" title="definition">comp_preserves_fiberwise_terminal</span></a> <span class="id" title="var">HFF₁</span> <span class="id" title="var">HGG₁</span> <span class="id" title="var">x</span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#terminal_in_fib"><span class="id" title="definition">terminal_in_fib</span></a> <span class="id" title="var">TD₁</span> <span class="id" title="var">x</span>))).<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 </div>
 </div>
 

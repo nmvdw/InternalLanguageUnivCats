@@ -1,21 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="coqdoc.css" rel="stylesheet" type="text/css" />
-<title>UniMath.CategoryTheory.Limits.EquivalencePreservation</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link href="coqdoc.css" rel="stylesheet" type="text/css"/>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<script src="./proofs-toggle.js" type="text/javascript"></script>
+	<style>
+		div.proofcomment {
+			font-style: italic;
+		}
+	</style>
+	<title>Documentation</title>
 </head>
-
 <body>
-
 <div id="page">
-
-<div id="header">
-</div>
-
 <div id="main">
-
 <h1 class="libtitle">Library UniMath.CategoryTheory.Limits.EquivalencePreservation</h1>
 
 <div class="code">
@@ -57,7 +56,7 @@
 </div>
 
 <div class="doc">
-<a id="lab1336"></a><h1 class="section">1. Equivalences and limits (backward preservation)</h1>
+<a id="lab1341"></a><h1 class="section">1. Equivalences and limits (backward preservation)</h1>
 
 </div>
 <div class="code">
@@ -72,7 +71,7 @@
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="adj_equiv_preserves_binproducts_b" class="idref" href="#adj_equiv_preserves_binproducts_b"><span class="id" title="definition">adj_equiv_preserves_binproducts_b</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="P:6" class="idref" href="#P:6"><span class="id" title="binder">P</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#BinProducts"><span class="id" title="definition">BinProducts</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.EquivalencePreservation.html#54dc0f84f6d5fc7de51e50fd74bd5f4a"><span class="id" title="variable">C₂</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#BinProducts"><span class="id" title="definition">BinProducts</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.EquivalencePreservation.html#3939a467e47281577ded46ea04b1fe1d"><span class="id" title="variable">C₁</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">pose</span> (<span class="id" title="var">H</span> := <a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> (<span class="id" title="var">P</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.EquivalencePreservation.html#Equivalence.L"><span class="id" title="variable">L</span></a> <span class="id" title="var">x</span>) (<a class="idref" href="UniMath.CategoryTheory.Limits.EquivalencePreservation.html#Equivalence.L"><span class="id" title="variable">L</span></a> <span class="id" title="var">y</span>))).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">pose</span> (<span class="id" title="var">prod</span> := <a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#make_BinProduct"><span class="id" title="definition">make_BinProduct</span></a><br/>
@@ -81,13 +80,13 @@
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.LimitIso.html#BinProduct_z_iso_lr"><span class="id" title="definition">BinProduct_z_iso_lr</span></a> <span class="id" title="var">prod</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_z_iso_pointwise_z_iso"><span class="id" title="definition">nat_z_iso_pointwise_z_iso</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.EquivalencePreservation.html#92cf18799201ae1dfeb32a2d3bcd7569"><span class="id" title="variable">η</span></a>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_z_iso_pointwise_z_iso"><span class="id" title="definition">nat_z_iso_pointwise_z_iso</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.EquivalencePreservation.html#92cf18799201ae1dfeb32a2d3bcd7569"><span class="id" title="variable">η</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="adj_equiv_preserves_equalizers_b" class="idref" href="#adj_equiv_preserves_equalizers_b"><span class="id" title="definition">adj_equiv_preserves_equalizers_b</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="E:7" class="idref" href="#E:7"><span class="id" title="binder">E</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Equalizers.html#Equalizers"><span class="id" title="definition">Equalizers</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.EquivalencePreservation.html#54dc0f84f6d5fc7de51e50fd74bd5f4a"><span class="id" title="variable">C₂</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Equalizers.html#Equalizers"><span class="id" title="definition">Equalizers</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.EquivalencePreservation.html#3939a467e47281577ded46ea04b1fe1d"><span class="id" title="variable">C₁</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">f</span> <span class="id" title="var">g</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.LimitIso.html#Equalizer_z_iso_lr"><span class="id" title="definition">Equalizer_z_iso_lr</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.Limits.Equalizers.html#make_Equalizer"><span class="id" title="definition">make_Equalizer</span></a><br/>
@@ -105,13 +104,13 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">!(</span></a><a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_trans_ax"><span class="id" title="definition">nat_trans_ax</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.EquivalencePreservation.html#92cf18799201ae1dfeb32a2d3bcd7569"><span class="id" title="variable">η</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">f</span><a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">)</span></a>)).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">abstract</span><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">!(</span></a><a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_trans_ax"><span class="id" title="definition">nat_trans_ax</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.EquivalencePreservation.html#92cf18799201ae1dfeb32a2d3bcd7569"><span class="id" title="variable">η</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">g</span><a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">)</span></a>)).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab1337"></a><h1 class="section">2. Equivalences and colimits (forward preservation)</h1>
+<a id="lab1342"></a><h1 class="section">2. Equivalences and colimits (forward preservation)</h1>
 
 </div>
 <div class="code">
@@ -126,7 +125,7 @@
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="adj_equiv_preserves_bincoproducts_f" class="idref" href="#adj_equiv_preserves_bincoproducts_f"><span class="id" title="definition">adj_equiv_preserves_bincoproducts_f</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="P:9" class="idref" href="#P:9"><span class="id" title="binder">P</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.BinCoproducts.html#BinCoproducts"><span class="id" title="definition">BinCoproducts</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.EquivalencePreservation.html#3939a467e47281577ded46ea04b1fe1d"><span class="id" title="variable">C₁</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.BinCoproducts.html#BinCoproducts"><span class="id" title="definition">BinCoproducts</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.EquivalencePreservation.html#54dc0f84f6d5fc7de51e50fd74bd5f4a"><span class="id" title="variable">C₂</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">pose</span> (<span class="id" title="var">H</span> := <a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> (<span class="id" title="var">P</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.EquivalencePreservation.html#Equivalence.R"><span class="id" title="variable">R</span></a> <span class="id" title="var">x</span>) (<a class="idref" href="UniMath.CategoryTheory.Limits.EquivalencePreservation.html#Equivalence.R"><span class="id" title="variable">R</span></a> <span class="id" title="var">y</span>))).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">pose</span> (<span class="id" title="var">prod</span> := <a class="idref" href="UniMath.CategoryTheory.Limits.BinCoproducts.html#make_BinCoproduct"><span class="id" title="definition">make_BinCoproduct</span></a><br/>
@@ -135,7 +134,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.LimitIso.html#BinCoproduct_z_iso_lr"><span class="id" title="definition">BinCoproduct_z_iso_lr</span></a> <span class="id" title="var">prod</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_z_iso_pointwise_z_iso"><span class="id" title="definition">nat_z_iso_pointwise_z_iso</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.EquivalencePreservation.html#d834eaeacacae4667561f36cb1fc0d53"><span class="id" title="variable">ε</span></a>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_z_iso_pointwise_z_iso"><span class="id" title="definition">nat_z_iso_pointwise_z_iso</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.EquivalencePreservation.html#d834eaeacacae4667561f36cb1fc0d53"><span class="id" title="variable">ε</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 <span class="id" title="keyword">End</span> <a class="idref" href="UniMath.CategoryTheory.Limits.EquivalencePreservation.html#Equivalence"><span class="id" title="section">Equivalence</span></a>.<br/>
 
 <br/>
@@ -148,7 +147,7 @@
 </div>
 
 <div class="doc">
-<a id="lab1338"></a><h1 class="section">3. Equivalences and limits (forward preservation)</h1>
+<a id="lab1343"></a><h1 class="section">3. Equivalences and limits (forward preservation)</h1>
 
 </div>
 <div class="code">
@@ -179,7 +178,7 @@
 </div>
 
 <div class="doc">
-<a id="lab1339"></a><h1 class="section">4. Equivalences and colimits (backward preservation)</h1>
+<a id="lab1344"></a><h1 class="section">4. Equivalences and colimits (backward preservation)</h1>
 
 </div>
 <div class="code">

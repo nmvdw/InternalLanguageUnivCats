@@ -1,21 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="coqdoc.css" rel="stylesheet" type="text/css" />
-<title>UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link href="coqdoc.css" rel="stylesheet" type="text/css"/>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<script src="./proofs-toggle.js" type="text/javascript"></script>
+	<style>
+		div.proofcomment {
+			font-style: italic;
+		}
+	</style>
+	<title>Documentation</title>
 </head>
-
 <body>
-
 <div id="page">
-
-<div id="header">
-</div>
-
 <div id="main">
-
 <h1 class="libtitle">Library UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat</h1>
 
 <div class="code">
@@ -48,25 +47,25 @@
 </div>
 
 <div class="doc">
-<a id="lab2561"></a><h1 class="section">1. The data of the displayed category of 2-sided displayed categories</h1>
+<a id="lab2638"></a><h1 class="section">1. The data of the displayed category of 2-sided displayed categories</h1>
 
 </div>
 <div class="code">
 <span class="id" title="keyword">Definition</span> <a id="disp_cat_ob_mor_of_strict_twosided_disp_cat" class="idref" href="#disp_cat_ob_mor_of_strict_twosided_disp_cat"><span class="id" title="definition">disp_cat_ob_mor_of_strict_twosided_disp_cat</span></a><br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#disp_cat_ob_mor"><span class="id" title="definition">disp_cat_ob_mor</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.CategoryOfSetCategories.html#cat_of_setcategory"><span class="id" title="definition">cat_of_setcategory</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">simple</span> <span class="id" title="tactic">refine</span> (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">(</span></a><a id="C:1" class="idref" href="#C:1"><span class="id" title="binder"><span id="C:2" class="id">C</span></span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Setcategories.html#setcategory"><span class="id" title="definition">setcategory</span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">),</span></a> <a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.Strictness.html#strict_twosided_disp_cat"><span class="id" title="definition">strict_twosided_disp_cat</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#C:1"><span class="id" title="variable">C</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#C:1"><span class="id" title="variable">C</span></a>).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">(</span></a><a id="b2d8592180c922f2169090977ff2d515" class="idref" href="#b2d8592180c922f2169090977ff2d515"><span class="id" title="binder"><span id="b69a70cca6d041d490243057ada1ee99" class="id">C₁</span></span></a> <a id="c49d9ab8623990e6dc8065c23347922b" class="idref" href="#c49d9ab8623990e6dc8065c23347922b"><span class="id" title="binder"><span id="654cd8b2ff6092a671957e7e198f778d" class="id">C₂</span></span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Setcategories.html#setcategory"><span class="id" title="definition">setcategory</span></a>) <a id="ac278ac7b69685ca4974e46dfcbb1c7c" class="idref" href="#ac278ac7b69685ca4974e46dfcbb1c7c"><span class="id" title="binder"><span id="5537f9feecf2f744b4effdd48c6c21b0" class="id">D₁</span></span></a> <a id="b2378e6fa5a8a736213702c2c904a86e" class="idref" href="#b2378e6fa5a8a736213702c2c904a86e"><span class="id" title="binder"><span id="cd621f79783c30b01040391c49a14ad3" class="id">D₂</span></span></a> (<a id="F:7" class="idref" href="#F:7"><span class="id" title="binder"><span id="F:12" class="id">F</span></span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#b2d8592180c922f2169090977ff2d515"><span class="id" title="variable">C₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#2e11fa34845c6475af27ac9ab3f166ed"><span class="id" title="notation">⟶</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#c49d9ab8623990e6dc8065c23347922b"><span class="id" title="variable">C₂</span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">),</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.DisplayedFunctor.html#twosided_disp_functor"><span class="id" title="definition">twosided_disp_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#F:7"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#F:7"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#ac278ac7b69685ca4974e46dfcbb1c7c"><span class="id" title="variable">D₁</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#b2378e6fa5a8a736213702c2c904a86e"><span class="id" title="variable">D₂</span></a>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="disp_cat_id_comp_of_strict_twosided_disp_cat" class="idref" href="#disp_cat_id_comp_of_strict_twosided_disp_cat"><span class="id" title="definition">disp_cat_id_comp_of_strict_twosided_disp_cat</span></a><br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#disp_cat_id_comp"><span class="id" title="definition">disp_cat_id_comp</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.Categories.CategoryOfSetCategories.html#cat_of_setcategory"><span class="id" title="definition">cat_of_setcategory</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#disp_cat_ob_mor_of_strict_twosided_disp_cat"><span class="id" title="definition">disp_cat_ob_mor_of_strict_twosided_disp_cat</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">split</span>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">(</span></a><a id="C:13" class="idref" href="#C:13"><span class="id" title="binder"><span id="C:15" class="id">C</span></span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Setcategories.html#setcategory"><span class="id" title="definition">setcategory</span></a>) (<a id="D:14" class="idref" href="#D:14"><span class="id" title="binder"><span id="D:16" class="id">D</span></span></a> : <a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.Strictness.html#strict_twosided_disp_cat"><span class="id" title="definition">strict_twosided_disp_cat</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#C:13"><span class="id" title="variable">C</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#C:13"><span class="id" title="variable">C</span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">),</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.DisplayedFunctor.html#twosided_disp_functor_identity"><span class="id" title="definition">twosided_disp_functor_identity</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#D:14"><span class="id" title="variable">D</span></a>).<br/>
@@ -79,22 +78,22 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="FF:25" class="idref" href="#FF:25"><span class="id" title="binder"><span id="FF:35" class="id">FF</span></span></a> : <a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.DisplayedFunctor.html#twosided_disp_functor"><span class="id" title="definition">twosided_disp_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#F:20"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#F:20"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#139b113ca888c6b46763ab2da4fe154e"><span class="id" title="variable">D₁</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#4937bc12dcc52ec9e2f0aba96b238745"><span class="id" title="variable">D₂</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="GG:26" class="idref" href="#GG:26"><span class="id" title="binder"><span id="GG:36" class="id">GG</span></span></a> : <a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.DisplayedFunctor.html#twosided_disp_functor"><span class="id" title="definition">twosided_disp_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#G:21"><span class="id" title="variable">G</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#G:21"><span class="id" title="variable">G</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#4937bc12dcc52ec9e2f0aba96b238745"><span class="id" title="variable">D₂</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#b18d6d1c91eec546ade1c825823d2106"><span class="id" title="variable">D₃</span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">),</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.DisplayedFunctor.html#comp_twosided_disp_functor"><span class="id" title="definition">comp_twosided_disp_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#FF:25"><span class="id" title="variable">FF</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#GG:26"><span class="id" title="variable">GG</span></a>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="disp_cat_data_of_strict_twosided_disp_cat" class="idref" href="#disp_cat_data_of_strict_twosided_disp_cat"><span class="id" title="definition">disp_cat_data_of_strict_twosided_disp_cat</span></a><br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#disp_cat_data"><span class="id" title="definition">disp_cat_data</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.CategoryOfSetCategories.html#cat_of_setcategory"><span class="id" title="definition">cat_of_setcategory</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">simple</span> <span class="id" title="tactic">refine</span> (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#disp_cat_ob_mor_of_strict_twosided_disp_cat"><span class="id" title="definition">disp_cat_ob_mor_of_strict_twosided_disp_cat</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#disp_cat_id_comp_of_strict_twosided_disp_cat"><span class="id" title="definition">disp_cat_id_comp_of_strict_twosided_disp_cat</span></a>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab2562"></a><h1 class="section">2. Transport lemmas for this displayed category</h1>
+<a id="lab2639"></a><h1 class="section">2. Transport lemmas for this displayed category</h1>
 
 </div>
 <div class="code">
@@ -119,10 +118,10 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#path_functor_ob"><span class="id" title="definition">path_functor_ob</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#p:43"><span class="id" title="variable">p</span></a> <span class="id" title="var">_</span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#path_functor_ob"><span class="id" title="definition">path_functor_ob</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#p:43"><span class="id" title="variable">p</span></a> <span class="id" title="var">_</span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#GG:44"><span class="id" title="variable">GG</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#x:45"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#y:46"><span class="id" title="variable">y</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#xy:47"><span class="id" title="variable">xy</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">induction</span> <span class="id" title="var">p</span> ; <span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Proposition</span> <a id="transportb_disp_cat_of_strict_twosided_disp_cat_ob" class="idref" href="#transportb_disp_cat_of_strict_twosided_disp_cat_ob"><span class="id" title="lemma">transportb_disp_cat_of_strict_twosided_disp_cat_ob</span></a><br/>
@@ -146,7 +145,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#xy:62"><span class="id" title="variable">xy</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#GG:59"><span class="id" title="variable">GG</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#x:60"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#y:61"><span class="id" title="variable">y</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#xy:62"><span class="id" title="variable">xy</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">etrans</span>.<br/>
 &nbsp;&nbsp;{<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#transportb_disp_cat_of_strict_twosided_disp_cat_ob_help"><span class="id" title="lemma">transportb_disp_cat_of_strict_twosided_disp_cat_ob_help</span></a>.<br/>
@@ -162,7 +161,7 @@
 &nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <span class="id" title="var">r₁</span>, <span class="id" title="var">r₂</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Proposition</span> <a id="transportb_disp_cat_of_strict_twosided_disp_cat_mor_path" class="idref" href="#transportb_disp_cat_of_strict_twosided_disp_cat_mor_path"><span class="id" title="lemma">transportb_disp_cat_of_strict_twosided_disp_cat_mor_path</span></a><br/>
@@ -178,12 +177,12 @@
 &nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Univalence.html#idtoiso"><span class="id" title="definition">idtoiso</span></a> (<a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#F:66"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#1d0c4a744f3e99d68529932096970976"><span class="id" title="variable">x₂</span></a>))<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#F:66"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">f</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">induction</span> <span class="id" title="var">p</span> ; <span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> !<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_left"><span class="id" title="definition">id_left</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> !<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_right"><span class="id" title="definition">id_right</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Proposition</span> <a id="transportb_disp_cat_of_strict_twosided_disp_cat_mor_help" class="idref" href="#transportb_disp_cat_of_strict_twosided_disp_cat_mor_help"><span class="id" title="lemma">transportb_disp_cat_of_strict_twosided_disp_cat_mor_help</span></a><br/>
@@ -217,7 +216,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.TwoSidedDispCat.html#8fbacd646084fc1261f0db1a1475fbcf"><span class="id" title="notation">;;2</span></a> <a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.Univalence.html#idtoiso_twosided_disp"><span class="id" title="definition">idtoiso_twosided_disp</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a> <span class="id" title="var">_</span>) (<a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a> <span class="id" title="var">_</span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">!</span></a><a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#transportb_disp_cat_of_strict_twosided_disp_cat_ob_help"><span class="id" title="lemma">transportb_disp_cat_of_strict_twosided_disp_cat_ob_help</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#5dda9714d83d38fc0b10c097ff4c44e1"><span class="id" title="variable">D₁</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#11e6295d9c7667b0fbf00a079e7e7276"><span class="id" title="variable">D₂</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#p:78"><span class="id" title="variable">p</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#GG:79"><span class="id" title="variable">GG</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#681b496407435f3e2abe984e174036d7"><span class="id" title="variable">xy₂</span></a>)).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">induction</span> <span class="id" title="var">p</span> ; <span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> !(<a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.TwoSidedDispCat.html#id_two_disp_left"><span class="id" title="definition">id_two_disp_left</span></a> (<span class="id" title="var">D</span> := <span class="id" title="var">D₂</span>)).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> !(<a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.TwoSidedDispCat.html#id_two_disp_right"><span class="id" title="definition">id_two_disp_right</span></a> (<span class="id" title="var">D</span> := <span class="id" title="var">D₂</span>)).<br/>
@@ -228,7 +227,7 @@
 &nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> !<a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.TwoSidedDispCat.html#transport_f_f_disp_mor2"><span class="id" title="lemma">transport_f_f_disp_mor2</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">!</span></a><span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.TwoSidedDispCat.html#transportf_disp_mor2_idpath"><span class="id" title="lemma">transportf_disp_mor2_idpath</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Proposition</span> <a id="transportb_disp_cat_of_strict_twosided_disp_cat_mor" class="idref" href="#transportb_disp_cat_of_strict_twosided_disp_cat_mor"><span class="id" title="lemma">transportb_disp_cat_of_strict_twosided_disp_cat_mor</span></a><br/>
@@ -263,7 +262,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.TwoSidedDispCat.html#8fbacd646084fc1261f0db1a1475fbcf"><span class="id" title="notation">;;2</span></a> <a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.Univalence.html#idtoiso_twosided_disp"><span class="id" title="definition">idtoiso_twosided_disp</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a> <span class="id" title="var">_</span>) (<a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a> <span class="id" title="var">_</span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">!(</span></a><a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#transportb_disp_cat_of_strict_twosided_disp_cat_ob"><span class="id" title="lemma">transportb_disp_cat_of_strict_twosided_disp_cat_ob</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#F:97"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#1916fb5cd0b0818dbda092201a1e4e4a"><span class="id" title="variable">HF₁</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#a459e02cb180d9370fb0a37295c120b9"><span class="id" title="variable">HF₂</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#p:99"><span class="id" title="variable">p</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#GG:100"><span class="id" title="variable">GG</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#ea8ec9fa05716ca5baeda303b749810b"><span class="id" title="variable">xy₂</span></a><a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">)</span></a>)).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#transportb_disp_cat_of_strict_twosided_disp_cat_mor_help"><span class="id" title="lemma">transportb_disp_cat_of_strict_twosided_disp_cat_mor_help</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.TransportLaws.html#transportb_disp_ob2_mor"><span class="id" title="definition">transportb_disp_ob2_mor</span></a>, <a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.TransportLaws.html#transportb_disp_ob2_inv"><span class="id" title="definition">transportb_disp_ob2_inv</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="var">etrans</span>.<br/>
@@ -287,13 +286,13 @@
 &nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.TwoSidedDispCat.html#transport_f_f_disp_mor2"><span class="id" title="lemma">transport_f_f_disp_mor2</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.TwoSidedDispCat.html#transportf_disp_mor2_eq"><span class="id" title="lemma">transportf_disp_mor2_eq</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.TransportLaws.html#idtoiso_twosided_disp_triple_concat"><span class="id" title="lemma">idtoiso_twosided_disp_triple_concat</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab2563"></a><h1 class="section">3. The laws</h1>
+<a id="lab2640"></a><h1 class="section">3. The laws</h1>
 
 </div>
 <div class="code">
@@ -301,7 +300,7 @@
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#disp_cat_axioms"><span class="id" title="definition">disp_cat_axioms</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.Categories.CategoryOfSetCategories.html#cat_of_setcategory"><span class="id" title="definition">cat_of_setcategory</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#disp_cat_data_of_strict_twosided_disp_cat"><span class="id" title="definition">disp_cat_data_of_strict_twosided_disp_cat</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">repeat</span> <span class="id" title="tactic">split</span>.<br/>
 &nbsp;&nbsp;- <span class="id" title="var">cbn</span> ; <span class="id" title="tactic">intros</span> <span class="id" title="var">C₁</span> <span class="id" title="var">C₂</span> <span class="id" title="var">F</span> <span class="id" title="var">D₁</span> <span class="id" title="var">D₂</span> <span class="id" title="var">FF</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.Strictness.html#eq_twosided_disp_functor"><span class="id" title="lemma">eq_twosided_disp_functor</span></a>.<br/>
@@ -469,23 +468,23 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.TwoSidedDispCat.html#transportf_disp_mor2_idpath"><span class="id" title="lemma">transportf_disp_mor2_idpath</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">intros</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.Strictness.html#isaset_twosided_disp_functor"><span class="id" title="lemma">isaset_twosided_disp_functor</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab2564"></a><h1 class="section">4. The displayed category of strict 2-sided displayed categories</h1>
+<a id="lab2641"></a><h1 class="section">4. The displayed category of strict 2-sided displayed categories</h1>
 
 </div>
 <div class="code">
 <span class="id" title="keyword">Definition</span> <a id="disp_cat_of_strict_twosided_disp_cat" class="idref" href="#disp_cat_of_strict_twosided_disp_cat"><span class="id" title="definition">disp_cat_of_strict_twosided_disp_cat</span></a><br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#disp_cat"><span class="id" title="definition">disp_cat</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.CategoryOfSetCategories.html#cat_of_setcategory"><span class="id" title="definition">cat_of_setcategory</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">simple</span> <span class="id" title="tactic">refine</span> (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#disp_cat_data_of_strict_twosided_disp_cat"><span class="id" title="definition">disp_cat_data_of_strict_twosided_disp_cat</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#disp_cat_axioms_of_strict_twosided_disp_cat"><span class="id" title="lemma">disp_cat_axioms_of_strict_twosided_disp_cat</span></a>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="cat_of_strict_twosided_disp_cat" class="idref" href="#cat_of_strict_twosided_disp_cat"><span class="id" title="definition">cat_of_strict_twosided_disp_cat</span></a><br/>
@@ -496,7 +495,7 @@
 </div>
 
 <div class="doc">
-<a id="lab2565"></a><h1 class="section">5. The proof that it is univalent</h1>
+<a id="lab2642"></a><h1 class="section">5. The proof that it is univalent</h1>
 
 </div>
 <div class="code">
@@ -512,10 +511,10 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="y:123" class="idref" href="#y:123"><span class="id" title="binder">y</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#97b65f9f3a3b57544a1ed2161261e1c5"><span class="id" title="variable">C₂</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="xy:124" class="idref" href="#xy:124"><span class="id" title="binder">xy</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#D:117"><span class="id" title="variable">D</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#x:122"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#y:123"><span class="id" title="variable">y</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#FG:119"><span class="id" title="variable">FG</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#x:122"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#y:123"><span class="id" title="variable">y</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#xy:124"><span class="id" title="variable">xy</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#FG':120"><span class="id" title="variable">FG'</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#x:122"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#y:123"><span class="id" title="variable">y</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#xy:124"><span class="id" title="variable">xy</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">induction</span> <span class="id" title="var">p</span> ; <span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="path_twosided_disp_functor_mor" class="idref" href="#path_twosided_disp_functor_mor"><span class="id" title="definition">path_twosided_disp_functor_mor</span></a><br/>
@@ -545,7 +544,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.TwoSidedDispCat.html#8fbacd646084fc1261f0db1a1475fbcf"><span class="id" title="notation">;;2</span></a> <a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.Univalence.html#idtoiso_twosided_disp"><span class="id" title="definition">idtoiso_twosided_disp</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a> <span class="id" title="var">_</span>) (<a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a> <span class="id" title="var">_</span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">!(</span></a><a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#path_twosided_disp_functor_ob"><span class="id" title="definition">path_twosided_disp_functor_ob</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#p:135"><span class="id" title="variable">p</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#5186659ec545d68142e5565052d19c93"><span class="id" title="variable">xy₂</span></a><a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">)</span></a>)).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">induction</span> <span class="id" title="var">p</span> ; <span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.TwoSidedDispCat.html#id_two_disp_right"><span class="id" title="definition">id_two_disp_right</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.TwoSidedDispCat.html#id_two_disp_left"><span class="id" title="definition">id_two_disp_left</span></a>.<br/>
@@ -553,7 +552,7 @@
 &nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> !<a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.TwoSidedDispCat.html#transport_f_f_disp_mor2"><span class="id" title="lemma">transport_f_f_disp_mor2</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">!</span></a><span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.TwoSidedDispCat.html#transportf_disp_mor2_idpath"><span class="id" title="lemma">transportf_disp_mor2_idpath</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Section</span> <a id="StrictTwosidedDispCatIso" class="idref" href="#StrictTwosidedDispCatIso"><span class="id" title="section">StrictTwosidedDispCatIso</span></a>.<br/>
@@ -568,7 +567,7 @@
 </div>
 
 <div class="doc">
-<a id="lab2566"></a><h2 class="section">5.1. Characterization of the isomorphisms</h2>
+<a id="lab2643"></a><h2 class="section">5.1. Characterization of the isomorphisms</h2>
 
 </div>
 <div class="code">
@@ -588,7 +587,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="x:150" class="idref" href="#x:150"><span class="id" title="binder">x</span></a> <a id="y:151" class="idref" href="#y:151"><span class="id" title="binder">y</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#StrictTwosidedDispCatIso.C"><span class="id" title="variable">C</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="xy:152" class="idref" href="#xy:152"><span class="id" title="binder">xy</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#7d8a30b9b9d27cbf010a27a930511690"><span class="id" title="variable">D₁</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#x:150"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#y:151"><span class="id" title="variable">y</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#StrictTwosidedDispCatIso.FromIso.G"><span class="id" title="variable">G</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#x:150"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#y:151"><span class="id" title="variable">y</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#StrictTwosidedDispCatIso.F"><span class="id" title="variable">F</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#x:150"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#y:151"><span class="id" title="variable">y</span></a>) <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#xy:152"><span class="id" title="variable">xy</span></a>) <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#xy:152"><span class="id" title="variable">xy</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">pose</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#path_twosided_disp_functor_ob"><span class="id" title="definition">path_twosided_disp_functor_ob</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Isos.html#inv_mor_after_z_iso_disp"><span class="id" title="definition">inv_mor_after_z_iso_disp</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#StrictTwosidedDispCatIso.FromIso.HF"><span class="id" title="variable">HF</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">xy</span>)<br/>
@@ -597,14 +596,14 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<span class="id" title="var">p</span> <a class="idref" href="UniMath.Foundations.PartA.html#8b57b11be4275b47948f6caec264b70f"><span class="id" title="notation">@</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#transportb_disp_cat_of_strict_twosided_disp_cat_ob"><span class="id" title="lemma">transportb_disp_cat_of_strict_twosided_disp_cat_ob</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_identity"><span class="id" title="definition">functor_identity</span></a> <span class="id" title="var">_</span>)).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Lemma</span> <a id="two_sided_disp_cat_iso_path_ob_alt" class="idref" href="#two_sided_disp_cat_iso_path_ob_alt"><span class="id" title="lemma">two_sided_disp_cat_iso_path_ob_alt</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="x:153" class="idref" href="#x:153"><span class="id" title="binder">x</span></a> <a id="y:154" class="idref" href="#y:154"><span class="id" title="binder">y</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#StrictTwosidedDispCatIso.C"><span class="id" title="variable">C</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="xy:155" class="idref" href="#xy:155"><span class="id" title="binder">xy</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#dcf91be3390fa6e681e03cc1bf2845e8"><span class="id" title="variable">D₂</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#x:153"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#y:154"><span class="id" title="variable">y</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#StrictTwosidedDispCatIso.F"><span class="id" title="variable">F</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#x:153"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#y:154"><span class="id" title="variable">y</span></a>) (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#StrictTwosidedDispCatIso.FromIso.G"><span class="id" title="variable">G</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#x:153"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#y:154"><span class="id" title="variable">y</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#xy:155"><span class="id" title="variable">xy</span></a>) <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#xy:155"><span class="id" title="variable">xy</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">pose</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#path_twosided_disp_functor_ob"><span class="id" title="definition">path_twosided_disp_functor_ob</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Isos.html#z_iso_disp_after_inv_mor"><span class="id" title="definition">z_iso_disp_after_inv_mor</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#StrictTwosidedDispCatIso.FromIso.HF"><span class="id" title="variable">HF</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">xy</span>)<br/>
@@ -613,7 +612,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<span class="id" title="var">p</span> <a class="idref" href="UniMath.Foundations.PartA.html#8b57b11be4275b47948f6caec264b70f"><span class="id" title="notation">@</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#transportb_disp_cat_of_strict_twosided_disp_cat_ob"><span class="id" title="lemma">transportb_disp_cat_of_strict_twosided_disp_cat_ob</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_identity"><span class="id" title="definition">functor_identity</span></a> <span class="id" title="var">_</span>)).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 </div>
@@ -654,7 +653,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.TwoSidedDispCat.html#8fbacd646084fc1261f0db1a1475fbcf"><span class="id" title="notation">;;2</span></a> <a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.Univalence.html#idtoiso_twosided_disp"><span class="id" title="definition">idtoiso_twosided_disp</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a> <span class="id" title="var">_</span>) (<a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a> <span class="id" title="var">_</span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">!(</span></a><a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#two_sided_disp_cat_iso_path_ob"><span class="id" title="lemma">two_sided_disp_cat_iso_path_ob</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#344dc3c5b957f9c4d8aa3b5cb38f0fea"><span class="id" title="variable">xy₂</span></a><a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">)</span></a>)).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">etrans</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#path_twosided_disp_functor_mor"><span class="id" title="definition">path_twosided_disp_functor_mor</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Isos.html#inv_mor_after_z_iso_disp"><span class="id" title="definition">inv_mor_after_z_iso_disp</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#StrictTwosidedDispCatIso.FromIso.HF"><span class="id" title="variable">HF</span></a>)).<br/>
@@ -699,7 +698,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.TwoSidedDispCat.html#transport_f_f_disp_mor2"><span class="id" title="lemma">transport_f_f_disp_mor2</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.TwoSidedDispCat.html#transportf_disp_mor2_eq"><span class="id" title="lemma">transportf_disp_mor2_eq</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.TransportLaws.html#idtoiso_twosided_disp_triple_concat"><span class="id" title="lemma">idtoiso_twosided_disp_triple_concat</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Lemma</span> <a id="two_sided_disp_cat_iso_path_mor_alt" class="idref" href="#two_sided_disp_cat_iso_path_mor_alt"><span class="id" title="lemma">two_sided_disp_cat_iso_path_mor_alt</span></a><br/>
@@ -732,7 +731,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a> <span class="id" title="var">_</span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a> <span class="id" title="var">_</span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">!(</span></a><a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#two_sided_disp_cat_iso_path_ob_alt"><span class="id" title="lemma">two_sided_disp_cat_iso_path_ob_alt</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#11ae829a6e246608fc356aa85ed9eab9"><span class="id" title="variable">xy₂</span></a><a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">)</span></a>)))%<span class="id" title="var">mor_disp</span>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">etrans</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#path_twosided_disp_functor_mor"><span class="id" title="definition">path_twosided_disp_functor_mor</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Isos.html#z_iso_disp_after_inv_mor"><span class="id" title="definition">z_iso_disp_after_inv_mor</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#StrictTwosidedDispCatIso.FromIso.HF"><span class="id" title="variable">HF</span></a>)).<br/>
@@ -777,7 +776,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.TwoSidedDispCat.html#transport_f_f_disp_mor2"><span class="id" title="lemma">transport_f_f_disp_mor2</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.TwoSidedDispCat.html#transportf_disp_mor2_eq"><span class="id" title="lemma">transportf_disp_mor2_eq</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.TransportLaws.html#idtoiso_twosided_disp_triple_concat"><span class="id" title="lemma">idtoiso_twosided_disp_triple_concat</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Lemma</span> <a id="disp_functor_comp_two_disp" class="idref" href="#disp_functor_comp_two_disp"><span class="id" title="lemma">disp_functor_comp_two_disp</span></a><br/>
@@ -813,9 +812,9 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#20269cdb016356ce8ac5f6510b4e5a6a"><span class="id" title="notation">♯</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#StrictTwosidedDispCatIso.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#20269cdb016356ce8ac5f6510b4e5a6a"><span class="id" title="notation">h</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#20269cdb016356ce8ac5f6510b4e5a6a"><span class="id" title="notation">♯</span></a><a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#StrictTwosidedDispCatIso.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#20269cdb016356ce8ac5f6510b4e5a6a"><span class="id" title="notation">fg₁'</span></a> <a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.TwoSidedDispCat.html#8fbacd646084fc1261f0db1a1475fbcf"><span class="id" title="notation">;;2</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#20269cdb016356ce8ac5f6510b4e5a6a"><span class="id" title="notation">♯</span></a><a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#StrictTwosidedDispCatIso.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#20269cdb016356ce8ac5f6510b4e5a6a"><span class="id" title="notation">fg₂'</span></a>)%<span class="id" title="var">mor_disp</span>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#disp_functor_comp"><span class="id" title="definition">disp_functor_comp</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#StrictTwosidedDispCatIso.F"><span class="id" title="variable">F</span></a> <span class="id" title="var">fg₁'</span> <span class="id" title="var">fg₂'</span>).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Lemma</span> <a id="disp_functor_transportf_disp_mor2" class="idref" href="#disp_functor_transportf_disp_mor2"><span class="id" title="lemma">disp_functor_transportf_disp_mor2</span></a><br/>
@@ -847,11 +846,11 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#p:212"><span class="id" title="variable">p</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#q:213"><span class="id" title="variable">q</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#20269cdb016356ce8ac5f6510b4e5a6a"><span class="id" title="notation">♯</span></a><a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#StrictTwosidedDispCatIso.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#20269cdb016356ce8ac5f6510b4e5a6a"><span class="id" title="notation">fg'</span></a>))%<span class="id" title="var">mor_disp</span>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">induction</span> <span class="id" title="var">p</span>, <span class="id" title="var">q</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">!</span></a><span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.TwoSidedDispCat.html#transportf_disp_mor2_idpath"><span class="id" title="lemma">transportf_disp_mor2_idpath</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Lemma</span> <a id="disp_functor_idtoiso_twosided_disp" class="idref" href="#disp_functor_idtoiso_twosided_disp"><span class="id" title="lemma">disp_functor_idtoiso_twosided_disp</span></a><br/>
@@ -874,15 +873,15 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#StrictTwosidedDispCatIso.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#xx:221"><span class="id" title="variable">xx</span></a>) <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#p:224"><span class="id" title="variable">p</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#StrictTwosidedDispCatIso.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#xx:221"><span class="id" title="variable">xx</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#180e1bc5560232fefed5300478a8b3d2"><span class="id" title="variable">xy₁</span></a> <a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.TwoSidedDispCat.html#966e6360149bed1927c240782d407d6c"><span class="id" title="notation">--&gt;[</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#identity"><span class="id" title="definition">identity</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.TwoSidedDispCat.html#966e6360149bed1927c240782d407d6c"><span class="id" title="notation">][</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#identity"><span class="id" title="definition">identity</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.TwoSidedDispCat.html#966e6360149bed1927c240782d407d6c"><span class="id" title="notation">]</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#StrictTwosidedDispCatIso.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#xx:221"><span class="id" title="variable">xx</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#dc977d1b4378184da765b514c5967a81"><span class="id" title="variable">xy₂</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#20269cdb016356ce8ac5f6510b4e5a6a"><span class="id" title="notation">♯</span></a><a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#StrictTwosidedDispCatIso.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#20269cdb016356ce8ac5f6510b4e5a6a"><span class="id" title="notation">φ</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#5af658faaaa6ff799428cca361e27cac"><span class="id" title="variable">ψ</span></a>)%<span class="id" title="var">mor_disp</span>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">induction</span> <span class="id" title="var">p</span> ; <span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#disp_functor_id"><span class="id" title="definition">disp_functor_id</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#StrictTwosidedDispCatIso.F"><span class="id" title="variable">F</span></a> (<span class="id" title="var">x</span> := <span class="id" title="var">xx</span>) <span class="id" title="var">xy₁</span>).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proposition</span> <a id="is_z_iso_disp_strict_twosided_disp_cat_to_ff" class="idref" href="#is_z_iso_disp_strict_twosided_disp_cat_to_ff"><span class="id" title="lemma">is_z_iso_disp_strict_twosided_disp_cat_to_ff</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#disp_functor_ff"><span class="id" title="definition">disp_functor_ff</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#StrictTwosidedDispCatIso.F"><span class="id" title="variable">F</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">xx</span> <span class="id" title="var">yy</span> <span class="id" title="var">f</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartA.html#isweq_iso"><span class="id" title="lemma">isweq_iso</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="ff:228" class="idref" href="#ff:228"><span class="id" title="binder"><span id="ff:229" class="id">ff</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a><br/>
@@ -1011,13 +1010,13 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.TwoSidedDispCat.html#transportb_disp_mor2"><span class="id" title="definition">transportb_disp_mor2</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> !<a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.TwoSidedDispCat.html#transport_f_f_disp_mor2"><span class="id" title="lemma">transport_f_f_disp_mor2</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.TwoSidedDispCat.html#transportf_disp_mor2_idpath"><span class="id" title="lemma">transportf_disp_mor2_idpath</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proposition</span> <a id="is_z_iso_disp_strict_twosided_disp_cat_to_ob_weq" class="idref" href="#is_z_iso_disp_strict_twosided_disp_cat_to_ob_weq"><span class="id" title="lemma">is_z_iso_disp_strict_twosided_disp_cat_to_ob_weq</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="x:230" class="idref" href="#x:230"><span class="id" title="binder">x</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#StrictTwosidedDispCatIso.C"><span class="id" title="variable">C</span></a> <a class="idref" href="UniMath.Foundations.PartA.html#57f4926fe686c2f5c985fad93ee01cfb"><span class="id" title="notation">×</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#StrictTwosidedDispCatIso.C"><span class="id" title="variable">C</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.PartA.html#isweq"><span class="id" title="definition">isweq</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#StrictTwosidedDispCatIso.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#x:230"><span class="id" title="variable">x</span></a>).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartA.html#isweq_iso"><span class="id" title="lemma">isweq_iso</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="xx:231" class="idref" href="#xx:231"><span class="id" title="binder"><span id="xx:232" class="id">xx</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#StrictTwosidedDispCatIso.FromIso.G"><span class="id" title="variable">G</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#xx:231"><span class="id" title="variable">xx</span></a>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">intro</span> <span class="id" title="var">xx</span> ; <span class="id" title="var">cbn</span>.<br/>
@@ -1031,7 +1030,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<span class="id" title="var">p</span> <a class="idref" href="UniMath.Foundations.PartA.html#8b57b11be4275b47948f6caec264b70f"><span class="id" title="notation">@</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#transportb_disp_cat_of_strict_twosided_disp_cat_ob"><span class="id" title="lemma">transportb_disp_cat_of_strict_twosided_disp_cat_ob</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_identity"><span class="id" title="definition">functor_identity</span></a> <span class="id" title="var">_</span>)).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 &nbsp;&nbsp;<span class="id" title="keyword">End</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#StrictTwosidedDispCatIso.FromIso"><span class="id" title="section">FromIso</span></a>.<br/>
 
 <br/>
@@ -1056,7 +1055,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.DisplayedFunctor.html#twosided_disp_functor_data"><span class="id" title="definition">twosided_disp_functor_data</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_identity"><span class="id" title="definition">functor_identity</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#StrictTwosidedDispCatIso.C"><span class="id" title="variable">C</span></a>) (<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_identity"><span class="id" title="definition">functor_identity</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#StrictTwosidedDispCatIso.C"><span class="id" title="variable">C</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#dcf91be3390fa6e681e03cc1bf2845e8"><span class="id" title="variable">D₂</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#7d8a30b9b9d27cbf010a27a930511690"><span class="id" title="variable">D₁</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">simple</span> <span class="id" title="tactic">refine</span> (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="x:256" class="idref" href="#x:256"><span class="id" title="binder"><span id="x:259" class="id">x</span></span></a> <a id="y:257" class="idref" href="#y:257"><span class="id" title="binder"><span id="y:260" class="id">y</span></span></a> <a id="xy:258" class="idref" href="#xy:258"><span class="id" title="binder"><span id="xy:261" class="id">xy</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.Foundations.PartA.html#invmap"><span class="id" title="definition">invmap</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#d10d62df09fe091e98f038e5b72961a5"><span class="id" title="variable">φ</span></a><a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#d10d62df09fe091e98f038e5b72961a5"><span class="id" title="variable">₀</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#x:256"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#y:257"><span class="id" title="variable">y</span></a>) <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#xy:258"><span class="id" title="variable">xy</span></a>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="df712aa3ef9ef418623778283ff48fd5" class="idref" href="#df712aa3ef9ef418623778283ff48fd5"><span class="id" title="binder"><span id="28576f50e53e2e1f86c200375413db77" class="id">x₁</span></span></a> <a id="382ab9a418c284e2f5712ad1aed95af3" class="idref" href="#382ab9a418c284e2f5712ad1aed95af3"><span class="id" title="binder"><span id="98ea26f191bf009d7b681a529c38fedf" class="id">x₂</span></span></a> <a id="d9c9bd87447f00df0a993c9188f5cca2" class="idref" href="#d9c9bd87447f00df0a993c9188f5cca2"><span class="id" title="binder"><span id="55638c0c7be3d445007c86793be7f51e" class="id">y₁</span></span></a> <a id="ae5ec95a3227cae213f7c08bf6512f9e" class="idref" href="#ae5ec95a3227cae213f7c08bf6512f9e"><span class="id" title="binder"><span id="3d4e6e9979e784baabc3e9a429c9e107" class="id">y₂</span></span></a> <a id="445a0590de24efc81667e79b3dd7d1cd" class="idref" href="#445a0590de24efc81667e79b3dd7d1cd"><span class="id" title="binder"><span id="1c7066a1df3c7c5b47cdac3a9cf2ab0d" class="id">xy₁</span></span></a> <a id="e389a74b84f88ec9b103900432929927" class="idref" href="#e389a74b84f88ec9b103900432929927"><span class="id" title="binder"><span id="c17698271caed6114eda1d452c48f26d" class="id">xy₂</span></span></a> <a id="f:268" class="idref" href="#f:268"><span class="id" title="binder"><span id="f:277" class="id">f</span></span></a> <a id="g:269" class="idref" href="#g:269"><span class="id" title="binder"><span id="g:278" class="id">g</span></span></a> <a id="fg:270" class="idref" href="#fg:270"><span class="id" title="binder"><span id="fg:279" class="id">fg</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a><br/>
@@ -1072,7 +1071,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.TwoSidedDispCat.html#8fbacd646084fc1261f0db1a1475fbcf"><span class="id" title="notation">;;2</span></a> <a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.Univalence.html#idtoiso_twosided_disp"><span class="id" title="definition">idtoiso_twosided_disp</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a> <span class="id" title="var">_</span>) (<a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a> <span class="id" title="var">_</span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">!</span></a>(<a class="idref" href="UniMath.Foundations.PartA.html#homotweqinvweq"><span class="id" title="definition">homotweqinvweq</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#d10d62df09fe091e98f038e5b72961a5"><span class="id" title="variable">φ</span></a><a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#d10d62df09fe091e98f038e5b72961a5"><span class="id" title="variable">₀</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#382ab9a418c284e2f5712ad1aed95af3"><span class="id" title="variable">x₂</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#ae5ec95a3227cae213f7c08bf6512f9e"><span class="id" title="variable">y₂</span></a>)) <span class="id" title="var">_</span>)))).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proposition</span> <a id="to_is_z_iso_disp_strict_twosided_disp_cat_inv_laws" class="idref" href="#to_is_z_iso_disp_strict_twosided_disp_cat_inv_laws"><span class="id" title="lemma">to_is_z_iso_disp_strict_twosided_disp_cat_inv_laws</span></a><br/>
@@ -1080,7 +1079,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_identity"><span class="id" title="definition">functor_identity</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#StrictTwosidedDispCatIso.C"><span class="id" title="variable">C</span></a>) (<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_identity"><span class="id" title="definition">functor_identity</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#StrictTwosidedDispCatIso.C"><span class="id" title="variable">C</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#dcf91be3390fa6e681e03cc1bf2845e8"><span class="id" title="variable">D₂</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#7d8a30b9b9d27cbf010a27a930511690"><span class="id" title="variable">D₁</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#to_is_z_iso_disp_strict_twosided_disp_cat_inv_data"><span class="id" title="definition">to_is_z_iso_disp_strict_twosided_disp_cat_inv_data</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">split</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">xy</span> ; <span class="id" title="var">cbn</span> -[<a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.Univalence.html#idtoiso_twosided_disp"><span class="id" title="definition">idtoiso_twosided_disp</span></a>].<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.Foundations.PartA.html#invmaponpathsweq"><span class="id" title="definition">invmaponpathsweq</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#8cb2e9acd9719afaf730e7b2c8b5aeaa"><span class="id" title="variable">φ</span></a><a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#8cb2e9acd9719afaf730e7b2c8b5aeaa"><span class="id" title="variable">₁</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span>)).<br/>
@@ -1164,18 +1163,18 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> !<a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.TwoSidedDispCat.html#transport_f_f_disp_mor2"><span class="id" title="lemma">transport_f_f_disp_mor2</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.TwoSidedDispCat.html#transportf_disp_mor2_eq"><span class="id" title="lemma">transportf_disp_mor2_eq</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="to_is_z_iso_disp_strict_twosided_disp_cat_inv" class="idref" href="#to_is_z_iso_disp_strict_twosided_disp_cat_inv"><span class="id" title="definition">to_is_z_iso_disp_strict_twosided_disp_cat_inv</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.DisplayedFunctor.html#twosided_disp_functor"><span class="id" title="definition">twosided_disp_functor</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_identity"><span class="id" title="definition">functor_identity</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#StrictTwosidedDispCatIso.C"><span class="id" title="variable">C</span></a>) (<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_identity"><span class="id" title="definition">functor_identity</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#StrictTwosidedDispCatIso.C"><span class="id" title="variable">C</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#dcf91be3390fa6e681e03cc1bf2845e8"><span class="id" title="variable">D₂</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#7d8a30b9b9d27cbf010a27a930511690"><span class="id" title="variable">D₁</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">simple</span> <span class="id" title="tactic">refine</span> (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#to_is_z_iso_disp_strict_twosided_disp_cat_inv_data"><span class="id" title="definition">to_is_z_iso_disp_strict_twosided_disp_cat_inv_data</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#to_is_z_iso_disp_strict_twosided_disp_cat_inv_laws"><span class="id" title="lemma">to_is_z_iso_disp_strict_twosided_disp_cat_inv_laws</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Let</span> <a id="StrictTwosidedDispCatIso.ToIso.G" class="idref" href="#StrictTwosidedDispCatIso.ToIso.G"><span class="id" title="variable">G</span></a> := <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#to_is_z_iso_disp_strict_twosided_disp_cat_inv"><span class="id" title="definition">to_is_z_iso_disp_strict_twosided_disp_cat_inv</span></a>.<br/>
@@ -1190,7 +1189,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#identity_z_iso"><span class="id" title="definition">identity_z_iso</span></a> <span class="id" title="var">_</span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.DisplayedFunctor.html#disp_functor_to_two_sided_disp_functor"><span class="id" title="definition">disp_functor_to_two_sided_disp_functor</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.DispFunctorPair.html#disp_functor_over_pair"><span class="id" title="definition">disp_functor_over_pair</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#StrictTwosidedDispCatIso.F"><span class="id" title="variable">F</span></a>))<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#StrictTwosidedDispCatIso.ToIso.G"><span class="id" title="variable">G</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">split</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.Strictness.html#eq_twosided_disp_functor"><span class="id" title="lemma">eq_twosided_disp_functor</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">abstract</span><br/>
@@ -1339,7 +1338,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.TwoSidedDispCat.html#transport_f_f_disp_mor2"><span class="id" title="lemma">transport_f_f_disp_mor2</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.TwoSidedDispCat.html#transportf_disp_mor2_eq"><span class="id" title="lemma">transportf_disp_mor2_eq</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.TransportLaws.html#idtoiso_twosided_disp_triple_concat"><span class="id" title="lemma">idtoiso_twosided_disp_triple_concat</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="to_is_z_iso_disp_strict_twosided_disp_cat" class="idref" href="#to_is_z_iso_disp_strict_twosided_disp_cat"><span class="id" title="definition">to_is_z_iso_disp_strict_twosided_disp_cat</span></a><br/>
@@ -1347,11 +1346,11 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="var">D</span> := <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#disp_cat_of_strict_twosided_disp_cat"><span class="id" title="definition">disp_cat_of_strict_twosided_disp_cat</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(@<a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#identity_z_iso"><span class="id" title="definition">identity_z_iso</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.CategoryOfSetCategories.html#cat_of_setcategory"><span class="id" title="definition">cat_of_setcategory</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#StrictTwosidedDispCatIso.C"><span class="id" title="variable">C</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.DisplayedFunctor.html#disp_functor_to_two_sided_disp_functor"><span class="id" title="definition">disp_functor_to_two_sided_disp_functor</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.DispFunctorPair.html#disp_functor_over_pair"><span class="id" title="definition">disp_functor_over_pair</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#StrictTwosidedDispCatIso.F"><span class="id" title="variable">F</span></a>)).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">simple</span> <span class="id" title="tactic">refine</span> (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#StrictTwosidedDispCatIso.ToIso.G"><span class="id" title="variable">G</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#to_is_z_iso_disp_strict_twosided_disp_cat_laws"><span class="id" title="lemma">to_is_z_iso_disp_strict_twosided_disp_cat_laws</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 &nbsp;&nbsp;<span class="id" title="keyword">End</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#StrictTwosidedDispCatIso.ToIso"><span class="id" title="section">ToIso</span></a>.<br/>
 
 <br/>
@@ -1362,7 +1361,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="var">D</span> := <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#disp_cat_of_strict_twosided_disp_cat"><span class="id" title="definition">disp_cat_of_strict_twosided_disp_cat</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(@<a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#identity_z_iso"><span class="id" title="definition">identity_z_iso</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.CategoryOfSetCategories.html#cat_of_setcategory"><span class="id" title="definition">cat_of_setcategory</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#StrictTwosidedDispCatIso.C"><span class="id" title="variable">C</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.DisplayedFunctor.html#disp_functor_to_two_sided_disp_functor"><span class="id" title="definition">disp_functor_to_two_sided_disp_functor</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.DispFunctorPair.html#disp_functor_over_pair"><span class="id" title="definition">disp_functor_over_pair</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#StrictTwosidedDispCatIso.F"><span class="id" title="variable">F</span></a>)).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartB.html#weqimplimpl"><span class="id" title="definition">weqimplimpl</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">intros</span> <span class="id" title="var">HF</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">induction</span> <span class="id" title="var">HF</span> <span class="id" title="keyword">as</span> [ <span class="id" title="var">HF_weq</span> <span class="id" title="var">HF_ff</span> ].<br/>
@@ -1376,20 +1375,20 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartD.html#isapropisweq"><span class="id" title="lemma">isapropisweq</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#isaprop_disp_functor_ff"><span class="id" title="lemma">isaprop_disp_functor_ff</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Isos.html#isaprop_is_z_iso_disp"><span class="id" title="lemma">isaprop_is_z_iso_disp</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 <span class="id" title="keyword">End</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#StrictTwosidedDispCatIso"><span class="id" title="section">StrictTwosidedDispCatIso</span></a>.<br/>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab2567"></a><h2 class="section">5.2. The actual proof of univalence</h2>
+<a id="lab2644"></a><h2 class="section">5.2. The actual proof of univalence</h2>
 
 </div>
 <div class="code">
 <span class="id" title="keyword">Proposition</span> <a id="is_univalent_disp_disp_cat_of_strict_twosided_disp_cat" class="idref" href="#is_univalent_disp_disp_cat_of_strict_twosided_disp_cat"><span class="id" title="lemma">is_univalent_disp_disp_cat_of_strict_twosided_disp_cat</span></a><br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Univalence.html#is_univalent_disp"><span class="id" title="definition">is_univalent_disp</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#disp_cat_of_strict_twosided_disp_cat"><span class="id" title="definition">disp_cat_of_strict_twosided_disp_cat</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Univalence.html#is_univalent_disp_from_fibers"><span class="id" title="lemma">is_univalent_disp_from_fibers</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">C</span> <span class="id" title="var">D₁</span> <span class="id" title="var">D₂</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="var">cbn</span> <span class="id" title="tactic">in</span> <span class="id" title="var">C</span>, <span class="id" title="var">D₁</span>, <span class="id" title="var">D₂</span>.<br/>
@@ -1418,16 +1417,16 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.TwoSidedDisplayedCats.DisplayedFunctor.html#isaprop_twosided_disp_functor_laws"><span class="id" title="lemma">isaprop_twosided_disp_functor_laws</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Proposition</span> <a id="is_univalent_cat_of_strict_twosided_disp_cat" class="idref" href="#is_univalent_cat_of_strict_twosided_disp_cat"><span class="id" title="lemma">is_univalent_cat_of_strict_twosided_disp_cat</span></a><br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Univalence.html#is_univalent"><span class="id" title="definition">is_univalent</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#cat_of_strict_twosided_disp_cat"><span class="id" title="definition">cat_of_strict_twosided_disp_cat</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Total.html#is_univalent_total_category"><span class="id" title="lemma">is_univalent_total_category</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.Categories.CategoryOfSetCategories.html#is_univalent_cat_of_setcategory"><span class="id" title="lemma">is_univalent_cat_of_setcategory</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.StrictTwoSidedDispCat.html#is_univalent_disp_disp_cat_of_strict_twosided_disp_cat"><span class="id" title="lemma">is_univalent_disp_disp_cat_of_strict_twosided_disp_cat</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 </div>
 </div>
 

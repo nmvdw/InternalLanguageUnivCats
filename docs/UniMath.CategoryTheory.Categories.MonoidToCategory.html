@@ -1,21 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="coqdoc.css" rel="stylesheet" type="text/css" />
-<title>UniMath.CategoryTheory.Categories.MonoidToCategory</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link href="coqdoc.css" rel="stylesheet" type="text/css"/>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<script src="./proofs-toggle.js" type="text/javascript"></script>
+	<style>
+		div.proofcomment {
+			font-style: italic;
+		}
+	</style>
+	<title>Documentation</title>
 </head>
-
 <body>
-
 <div id="page">
-
-<div id="header">
-</div>
-
 <div id="main">
-
 <h1 class="libtitle">Library UniMath.CategoryTheory.Categories.MonoidToCategory</h1>
 
 <div class="code">
@@ -45,7 +44,7 @@
 </div>
 
 <div class="doc">
-<a id="lab2003"></a><h1 class="section">1. The functor from monoids to categories</h1>
+<a id="lab2055"></a><h1 class="section">1. The functor from monoids to categories</h1>
 
 </div>
 <div class="code">
@@ -59,7 +58,7 @@
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="monoid_to_category_ob_data" class="idref" href="#monoid_to_category_ob_data"><span class="id" title="definition">monoid_to_category_ob_data</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#precategory_data"><span class="id" title="definition">precategory_data</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#make_precategory_data"><span class="id" title="definition">make_precategory_data</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#make_precategory_ob_mor"><span class="id" title="definition">make_precategory_ob_mor</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Foundations.Preamble.html#unit"><span class="id" title="inductive">unit</span></a>.<br/>
@@ -68,13 +67,13 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">intro</span> <span class="id" title="var">c</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> 1.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">intros</span> <span class="id" title="var">a</span> <span class="id" title="var">b</span> <span class="id" title="var">c</span> <span class="id" title="var">m</span> <span class="id" title="var">m'</span>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<span class="id" title="var">m'</span> <a class="idref" href="UniMath.Algebra.Monoids2.html#b294152879929cb855a59dae19645b45"><span class="id" title="notation">×</span></a> <span class="id" title="var">m</span>).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<span class="id" title="var">m'</span> <a class="idref" href="UniMath.Algebra.Monoids2.html#b294152879929cb855a59dae19645b45"><span class="id" title="notation">*</span></a> <span class="id" title="var">m</span>).<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Lemma</span> <a id="monoid_to_category_ob_is_precategory" class="idref" href="#monoid_to_category_ob_is_precategory"><span class="id" title="lemma">monoid_to_category_ob_is_precategory</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#is_precategory_one_assoc"><span class="id" title="definition">is_precategory_one_assoc</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#monoid_to_category_ob_data"><span class="id" title="definition">monoid_to_category_ob_data</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">repeat</span> <span class="id" title="tactic">split</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">intros</span> <span class="id" title="var">a</span> <span class="id" title="var">b</span> <span class="id" title="var">f</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Algebra.Monoids2.html#runax"><span class="id" title="definition">runax</span></a>.<br/>
@@ -82,7 +81,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Algebra.Monoids2.html#lunax"><span class="id" title="definition">lunax</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">intros</span> <span class="id" title="var">t</span> <span class="id" title="var">t'</span> <span class="id" title="var">t''</span> <span class="id" title="var">t'''</span> <span class="id" title="var">f</span> <span class="id" title="var">g</span> <span class="id" title="var">h</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Algebra.Monoids2.html#assocax"><span class="id" title="definition">assocax</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="monoid_to_category_ob_precategory" class="idref" href="#monoid_to_category_ob_precategory"><span class="id" title="definition">monoid_to_category_ob_precategory</span></a><br/>
@@ -94,12 +93,12 @@
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Lemma</span> <a id="monoid_to_category_is_setcategory" class="idref" href="#monoid_to_category_is_setcategory"><span class="id" title="lemma">monoid_to_category_is_setcategory</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Setcategories.html#is_setcategory"><span class="id" title="definition">is_setcategory</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#monoid_to_category_ob_precategory"><span class="id" title="definition">monoid_to_category_ob_precategory</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">split</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartB.html#isasetunit"><span class="id" title="lemma">isasetunit</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">intros</span> <span class="id" title="var">t</span> <span class="id" title="var">t'</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Sets.html#setproperty"><span class="id" title="definition">setproperty</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="monoid_to_category_ob" class="idref" href="#monoid_to_category_ob"><span class="id" title="definition">monoid_to_category_ob</span></a><br/>
@@ -119,23 +118,23 @@
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="monoid_to_category_mor_data" class="idref" href="#monoid_to_category_mor_data"><span class="id" title="definition">monoid_to_category_mor_data</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_data"><span class="id" title="definition">functor_data</span></a> (<a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#monoid_to_category_ob"><span class="id" title="definition">monoid_to_category_ob</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#MonoidToCategory.Mor.M"><span class="id" title="variable">M</span></a>) (<a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#monoid_to_category_ob"><span class="id" title="definition">monoid_to_category_ob</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#MonoidToCategory.Mor.M'"><span class="id" title="variable">M'</span></a>).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#make_functor_data"><span class="id" title="definition">make_functor_data</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.PartA.html#idfun"><span class="id" title="definition">idfun</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">intros</span> <span class="id" title="var">t</span> <span class="id" title="var">t'</span> <span class="id" title="var">m</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#MonoidToCategory.Mor.f"><span class="id" title="variable">f</span></a> <span class="id" title="var">m</span>).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Lemma</span> <a id="monoid_to_category_mor_is_functor" class="idref" href="#monoid_to_category_mor_is_functor"><span class="id" title="lemma">monoid_to_category_mor_is_functor</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#is_functor"><span class="id" title="definition">is_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#monoid_to_category_mor_data"><span class="id" title="definition">monoid_to_category_mor_data</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">split</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">intro</span> <span class="id" title="var">t</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Algebra.Monoids2.html#monoidfununel"><span class="id" title="definition">monoidfununel</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">intros</span> <span class="id" title="var">t</span> <span class="id" title="var">t'</span> <span class="id" title="var">t''</span> <span class="id" title="var">m</span> <span class="id" title="var">m'</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Algebra.Monoids2.html#monoidfunmul"><span class="id" title="definition">monoidfunmul</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="monoid_to_category_mor" class="idref" href="#monoid_to_category_mor"><span class="id" title="definition">monoid_to_category_mor</span></a><br/>
@@ -155,11 +154,11 @@
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Lemma</span> <a id="monoid_to_category_is_functor" class="idref" href="#monoid_to_category_is_functor"><span class="id" title="lemma">monoid_to_category_is_functor</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#is_functor"><span class="id" title="definition">is_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#monoid_to_category_data"><span class="id" title="definition">monoid_to_category_data</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">now</span> <span class="id" title="tactic">split</span>;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">repeat</span> <span class="id" title="tactic">intro</span>;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_eq"><span class="id" title="lemma">functor_eq</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a> <span class="id" title="var">_</span>)).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="monoid_to_category" class="idref" href="#monoid_to_category"><span class="id" title="definition">monoid_to_category</span></a><br/>
@@ -172,7 +171,7 @@
 </div>
 
 <div class="doc">
-<a id="lab2004"></a><h2 class="section">1.2. Fully faithful</h2>
+<a id="lab2056"></a><h2 class="section">1.2. Fully faithful</h2>
 
 </div>
 <div class="code">
@@ -192,20 +191,20 @@
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="functor_to_monoidfun_data" class="idref" href="#functor_to_monoidfun_data"><span class="id" title="definition">functor_to_monoidfun_data</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#MonoidToCategory.FullyFaithful.M"><span class="id" title="variable">M</span></a> <a class="idref" href="UniMath.Foundations.Init.html#c41c566ddac4c1298b9e7dd2bae1c794"><span class="id" title="notation">→</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#MonoidToCategory.FullyFaithful.M'"><span class="id" title="variable">M'</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">m</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a><a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#MonoidToCategory.FullyFaithful.Mor.f"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">m</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">:</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">monoid_to_category_ob</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">M</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">⟦</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">tt</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">tt</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">⟧)</span></a>).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Lemma</span> <a id="functor_to_is_monoidfun" class="idref" href="#functor_to_is_monoidfun"><span class="id" title="lemma">functor_to_is_monoidfun</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.Algebra.Monoids2.html#ismonoidfun"><span class="id" title="definition">ismonoidfun</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#functor_to_monoidfun_data"><span class="id" title="definition">functor_to_monoidfun_data</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Algebra.Monoids2.html#make_ismonoidfun"><span class="id" title="definition">make_ismonoidfun</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">intros</span> <span class="id" title="var">m</span> <span class="id" title="var">m'</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_comp"><span class="id" title="definition">functor_comp</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#MonoidToCategory.FullyFaithful.Mor.f"><span class="id" title="variable">f</span></a>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_id"><span class="id" title="definition">functor_id</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#MonoidToCategory.FullyFaithful.Mor.f"><span class="id" title="variable">f</span></a>).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="functor_to_monoidfun" class="idref" href="#functor_to_monoidfun"><span class="id" title="definition">functor_to_monoidfun</span></a><br/>
@@ -219,20 +218,20 @@
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Lemma</span> <a id="monoid_to_category_fully_faithful_monoidfun_iso" class="idref" href="#monoid_to_category_fully_faithful_monoidfun_iso"><span class="id" title="lemma">monoid_to_category_fully_faithful_monoidfun_iso</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="f:8" class="idref" href="#f:8"><span class="id" title="binder">f</span></a> : <a class="idref" href="UniMath.Algebra.Monoids2.html#monoidfun"><span class="id" title="definition">monoidfun</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#MonoidToCategory.FullyFaithful.M"><span class="id" title="variable">M</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#MonoidToCategory.FullyFaithful.M'"><span class="id" title="variable">M'</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#functor_to_monoidfun"><span class="id" title="definition">functor_to_monoidfun</span></a> (<a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#monoid_to_category_mor"><span class="id" title="definition">monoid_to_category_mor</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#f:8"><span class="id" title="variable">f</span></a>) <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#f:8"><span class="id" title="variable">f</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartB.html#subtypePath"><span class="id" title="lemma">subtypePath</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intro</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Algebra.Monoids2.html#isapropismonoidfun"><span class="id" title="lemma">isapropismonoidfun</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Lemma</span> <a id="monoid_to_category_fully_faithful_functor_iso" class="idref" href="#monoid_to_category_fully_faithful_functor_iso"><span class="id" title="lemma">monoid_to_category_fully_faithful_functor_iso</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="f:9" class="idref" href="#f:9"><span class="id" title="binder">f</span></a> : <a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#monoid_to_category_ob"><span class="id" title="definition">monoid_to_category_ob</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#MonoidToCategory.FullyFaithful.M"><span class="id" title="variable">M</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#2e11fa34845c6475af27ac9ab3f166ed"><span class="id" title="notation">⟶</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#monoid_to_category_ob"><span class="id" title="definition">monoid_to_category_ob</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#MonoidToCategory.FullyFaithful.M'"><span class="id" title="variable">M'</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#monoid_to_category_mor"><span class="id" title="definition">monoid_to_category_mor</span></a> (<a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#functor_to_monoidfun"><span class="id" title="definition">functor_to_monoidfun</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#f:9"><span class="id" title="variable">f</span></a>) <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#f:9"><span class="id" title="variable">f</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_eq"><span class="id" title="lemma">functor_eq</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a> <span class="id" title="var">_</span>)).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_data_eq"><span class="id" title="lemma">functor_data_eq</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">intro</span> <span class="id" title="var">t</span>.<br/>
@@ -240,7 +239,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">intros</span> <span class="id" title="var">t</span> <span class="id" title="var">t'</span> <span class="id" title="var">m</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">do</span> 2 <span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.PartA.html#eqtohomot"><span class="id" title="definition">eqtohomot</span></a> (<a class="idref" href="UniMath.Foundations.PartA.html#transportf_const"><span class="id" title="definition">transportf_const</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span>) <span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.PartA.html#8b57b11be4275b47948f6caec264b70f"><span class="id" title="notation">@</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">now</span> <span class="id" title="tactic">induction</span> <span class="id" title="var">t</span>, <span class="id" title="var">t'</span>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">End</span> <a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#MonoidToCategory.FullyFaithful"><span class="id" title="section">FullyFaithful</span></a>.<br/>
@@ -248,13 +247,13 @@
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="monoid_to_cat_fully_faithful" class="idref" href="#monoid_to_cat_fully_faithful"><span class="id" title="definition">monoid_to_cat_fully_faithful</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#fully_faithful"><span class="id" title="definition">fully_faithful</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#monoid_to_category"><span class="id" title="definition">monoid_to_category</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">m</span> <span class="id" title="var">m'</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartA.html#isweq_iso"><span class="id" title="lemma">isweq_iso</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#functor_to_monoidfun"><span class="id" title="definition">functor_to_monoidfun</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#monoid_to_category_fully_faithful_monoidfun_iso"><span class="id" title="lemma">monoid_to_category_fully_faithful_monoidfun_iso</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#monoid_to_category_fully_faithful_functor_iso"><span class="id" title="lemma">monoid_to_category_fully_faithful_functor_iso</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="monoid_iso_weq_monoid_category_equiv" class="idref" href="#monoid_iso_weq_monoid_category_equiv"><span class="id" title="definition">monoid_iso_weq_monoid_category_equiv</span></a><br/>
@@ -270,7 +269,7 @@
 </div>
 
 <div class="doc">
-<a id="lab2005"></a><h1 class="section">2. The equivalence between presheaves and monoid actions</h1>
+<a id="lab2057"></a><h1 class="section">2. The equivalence between presheaves and monoid actions</h1>
 
 </div>
 <div class="code">
@@ -284,35 +283,35 @@
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="monoid_presheaf_to_action" class="idref" href="#monoid_presheaf_to_action"><span class="id" title="definition">monoid_presheaf_to_action</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Presheaf.html#::cat:'PreShv'_x"><span class="id" title="notation">PreShv</span></a> <a class="idref" href="UniMath.CategoryTheory.Presheaf.html#::cat:'PreShv'_x"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#monoid_to_category_ob"><span class="id" title="definition">monoid_to_category_ob</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#MonoidCategoryPresheaf.M"><span class="id" title="variable">M</span></a><a class="idref" href="UniMath.CategoryTheory.Presheaf.html#::cat:'PreShv'_x"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#2e11fa34845c6475af27ac9ab3f166ed"><span class="id" title="notation">⟶</span></a> <a class="idref" href="UniMath.AlgebraicTheories.FundamentalTheorem.CommonUtilities.MonoidActions.html#monoid_action_cat"><span class="id" title="definition">monoid_action_cat</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#MonoidCategoryPresheaf.M"><span class="id" title="variable">M</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#make_functor"><span class="id" title="definition">make_functor</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#make_functor_data"><span class="id" title="definition">make_functor_data</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">intro</span> <span class="id" title="var">P</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.AlgebraicTheories.FundamentalTheorem.CommonUtilities.MonoidActions.html#make_monoid_action"><span class="id" title="definition">make_monoid_action</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;× <span class="id" title="var">use</span> <a class="idref" href="UniMath.AlgebraicTheories.FundamentalTheorem.CommonUtilities.MonoidActions.html#make_monoid_action_data"><span class="id" title="definition">make_monoid_action_data</span></a>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="var">use</span> <a class="idref" href="UniMath.AlgebraicTheories.FundamentalTheorem.CommonUtilities.MonoidActions.html#make_monoid_action_data"><span class="id" title="definition">make_monoid_action_data</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- <span class="id" title="tactic">exact</span> ((<span class="id" title="var">P</span> : <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#2e11fa34845c6475af27ac9ab3f166ed"><span class="id" title="notation">⟶</span></a> <span class="id" title="var">_</span>) <a class="idref" href="UniMath.Foundations.Preamble.html#tt"><span class="id" title="constructor">tt</span></a>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- <span class="id" title="tactic">intros</span> <span class="id" title="var">p</span> <span class="id" title="var">m</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">(</span></a><span class="id" title="var">P</span> : <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#2e11fa34845c6475af27ac9ab3f166ed"><span class="id" title="notation">⟶</span></a> <span class="id" title="var">_</span><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">m</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">p</span></a>).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;× <span class="id" title="var">use</span> <a class="idref" href="UniMath.AlgebraicTheories.FundamentalTheorem.CommonUtilities.MonoidActions.html#make_is_monoid_action"><span class="id" title="definition">make_is_monoid_action</span></a>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="var">use</span> <a class="idref" href="UniMath.AlgebraicTheories.FundamentalTheorem.CommonUtilities.MonoidActions.html#make_is_monoid_action"><span class="id" title="definition">make_is_monoid_action</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- <span class="id" title="tactic">intro</span> <span class="id" title="var">x</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.PartA.html#eqtohomot"><span class="id" title="definition">eqtohomot</span></a> (<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_id"><span class="id" title="definition">functor_id</span></a> <span class="id" title="var">P</span> <span class="id" title="var">_</span>) <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- <span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">m</span> <span class="id" title="var">m'</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.PartA.html#eqtohomot"><span class="id" title="definition">eqtohomot</span></a> (<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_comp"><span class="id" title="definition">functor_comp</span></a> <span class="id" title="var">P</span> <span class="id" title="var">m</span> <span class="id" title="var">m'</span>) <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">intros</span> <span class="id" title="var">P</span> <span class="id" title="var">P'</span> <span class="id" title="var">F</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.AlgebraicTheories.FundamentalTheorem.CommonUtilities.MonoidActions.html#make_monoid_action_morphism"><span class="id" title="definition">make_monoid_action_morphism</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;× <span class="id" title="tactic">exact</span> ((<span class="id" title="var">F</span> : <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#8848592016d1c94be2b36b727072e7e0"><span class="id" title="notation">⟹</span></a> <span class="id" title="var">_</span>) <a class="idref" href="UniMath.Foundations.Preamble.html#tt"><span class="id" title="constructor">tt</span></a>).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;× <span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">m</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="tactic">exact</span> ((<span class="id" title="var">F</span> : <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#8848592016d1c94be2b36b727072e7e0"><span class="id" title="notation">⟹</span></a> <span class="id" title="var">_</span>) <a class="idref" href="UniMath.Foundations.Preamble.html#tt"><span class="id" title="constructor">tt</span></a>).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">m</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.Foundations.PartA.html#eqtohomot"><span class="id" title="definition">eqtohomot</span></a> (<a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_trans_ax"><span class="id" title="definition">nat_trans_ax</span></a> <span class="id" title="var">F</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span>)).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">abstract</span> <span class="id" title="var">now</span> <span class="id" title="tactic">split</span>;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">repeat</span> <span class="id" title="tactic">intro</span>;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.AlgebraicTheories.FundamentalTheorem.CommonUtilities.MonoidActions.html#monoid_action_morphism_eq"><span class="id" title="lemma">monoid_action_morphism_eq</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="monoid_action_to_presheaf_ob" class="idref" href="#monoid_action_to_presheaf_ob"><span class="id" title="definition">monoid_action_to_presheaf_ob</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;(<a id="X:13" class="idref" href="#X:13"><span class="id" title="binder">X</span></a> : <a class="idref" href="UniMath.AlgebraicTheories.FundamentalTheorem.CommonUtilities.MonoidActions.html#monoid_action"><span class="id" title="definition">monoid_action</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#MonoidCategoryPresheaf.M"><span class="id" title="variable">M</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Presheaf.html#::cat:'PreShv'_x"><span class="id" title="notation">PreShv</span></a> <a class="idref" href="UniMath.CategoryTheory.Presheaf.html#::cat:'PreShv'_x"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#monoid_to_category_ob"><span class="id" title="definition">monoid_to_category_ob</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#MonoidCategoryPresheaf.M"><span class="id" title="variable">M</span></a><a class="idref" href="UniMath.CategoryTheory.Presheaf.html#::cat:'PreShv'_x"><span class="id" title="notation">)</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#make_functor"><span class="id" title="definition">make_functor</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#make_functor_data"><span class="id" title="definition">make_functor_data</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">intro</span>.<br/>
@@ -330,12 +329,12 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">x</span>;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.AlgebraicTheories.FundamentalTheorem.CommonUtilities.MonoidActions.html#action_op"><span class="id" title="definition">action_op</span></a> ]<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="monoid_presheaf_action_equivalence" class="idref" href="#monoid_presheaf_action_equivalence"><span class="id" title="definition">monoid_presheaf_action_equivalence</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Equivalences.Core.html#adj_equivalence_of_cats"><span class="id" title="definition">adj_equivalence_of_cats</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#monoid_presheaf_to_action"><span class="id" title="definition">monoid_presheaf_to_action</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Equivalences.Core.html#rad_equivalence_of_cats"><span class="id" title="lemma">rad_equivalence_of_cats</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.FunctorCategory.html#is_univalent_functor_category"><span class="id" title="lemma">is_univalent_functor_category</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Univalence.html#is_univalent_HSET"><span class="id" title="lemma">is_univalent_HSET</span></a>.<br/>
@@ -343,10 +342,10 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartA.html#isweq_iso"><span class="id" title="lemma">isweq_iso</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">intro</span> <span class="id" title="var">f</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#make_nat_trans"><span class="id" title="definition">make_nat_trans</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;× <span class="id" title="tactic">intros</span> <span class="id" title="var">t</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="tactic">intros</span> <span class="id" title="var">t</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">induction</span> <span class="id" title="var">t</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<span class="id" title="var">f</span> : <a class="idref" href="UniMath.AlgebraicTheories.FundamentalTheorem.CommonUtilities.MonoidActions.html#monoid_action_morphism"><span class="id" title="definition">monoid_action_morphism</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span>).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;× <span class="id" title="tactic">abstract</span> (<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="tactic">abstract</span> (<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">t</span> <span class="id" title="var">t'</span>;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">induction</span> <span class="id" title="var">t</span>, <span class="id" title="var">t'</span>;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">m</span>;<br/>
@@ -366,7 +365,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">intro</span> <span class="id" title="var">X</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Propositions.html#hinhpr"><span class="id" title="definition">hinhpr</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">∃</span> (<a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#monoid_action_to_presheaf_ob"><span class="id" title="definition">monoid_action_to_presheaf_ob</span></a> <span class="id" title="var">X</span>).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exists</span> (<a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#monoid_action_to_presheaf_ob"><span class="id" title="definition">monoid_action_to_presheaf_ob</span></a> <span class="id" title="var">X</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#make_z_iso"><span class="id" title="definition">make_z_iso</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#identity"><span class="id" title="definition">identity</span></a> <span class="id" title="var">X</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#identity"><span class="id" title="definition">identity</span></a> <span class="id" title="var">X</span>).<br/>
@@ -374,7 +373,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">split</span>;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">now</span> <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.AlgebraicTheories.FundamentalTheorem.CommonUtilities.MonoidActions.html#monoid_action_morphism_eq"><span class="id" title="lemma">monoid_action_morphism_eq</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">End</span> <a class="idref" href="UniMath.CategoryTheory.Categories.MonoidToCategory.html#MonoidCategoryPresheaf"><span class="id" title="section">MonoidCategoryPresheaf</span></a>.<br/>

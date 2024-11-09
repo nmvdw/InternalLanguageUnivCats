@@ -1,21 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="coqdoc.css" rel="stylesheet" type="text/css" />
-<title>UniMath.Bicategories.DisplayedBicats.DispModification</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link href="coqdoc.css" rel="stylesheet" type="text/css"/>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<script src="./proofs-toggle.js" type="text/javascript"></script>
+	<style>
+		div.proofcomment {
+			font-style: italic;
+		}
+	</style>
+	<title>Documentation</title>
 </head>
-
 <body>
-
 <div id="page">
-
-<div id="header">
-</div>
-
 <div id="main">
-
 <h1 class="libtitle">Library UniMath.Bicategories.DisplayedBicats.DispModification</h1>
 
 <div class="code">
@@ -70,7 +69,7 @@ Displayed modifications.
 </div>
 
 <div class="doc">
-<a id="lab2704"></a><h2 class="section">Definition of displayed modifications</h2>
+<a id="lab2781"></a><h2 class="section">Definition of displayed modifications</h2>
 
 </div>
 <div class="code">
@@ -93,7 +92,7 @@ Displayed modifications.
 </div>
 
 <div class="doc">
-<a id="lab2705"></a><h3 class="section">Data</h3>
+<a id="lab2782"></a><h3 class="section">Data</h3>
 
 </div>
 <div class="code">
@@ -131,7 +130,7 @@ Displayed modifications.
 <br/>
 <span class="id" title="keyword">Lemma</span> <a id="is_disp_modification_from_total" class="idref" href="#is_disp_modification_from_total"><span class="id" title="lemma">is_disp_modification_from_total</span></a> (<a id="mm:28" class="idref" href="#mm:28"><span class="id" title="binder">mm</span></a> : <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#disp_modification_data"><span class="id" title="definition">disp_modification_data</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.Modifications.Modification.html#is_modification"><span class="id" title="definition">is_modification</span></a> (<a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#total_modification_data"><span class="id" title="definition">total_modification_data</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#mm:28"><span class="id" title="variable">mm</span></a>) <a class="idref" href="UniMath.Foundations.Init.html#c41c566ddac4c1298b9e7dd2bae1c794"><span class="id" title="notation">→</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#is_disp_modification"><span class="id" title="definition">is_disp_modification</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#mm:28"><span class="id" title="variable">mm</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">Hmm</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">pose</span> (<span class="id" title="var">Em</span> := <a class="idref" href="UniMath.Bicategories.Modifications.Modification.html#make_modification"><span class="id" title="definition">make_modification</span></a> <span class="id" title="var">_</span> <span class="id" title="var">Hmm</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">f</span> <span class="id" title="var">xx</span> <span class="id" title="var">yy</span> <span class="id" title="var">ff</span>.<br/>
@@ -141,19 +140,19 @@ Displayed modifications.
 &nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <a class="idref" href="UniMath.Foundations.PartA.html#transportb"><span class="id" title="definition">transportb</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.Foundations.PartA.html#transport_f_f"><span class="id" title="definition">transport_f_f</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.MoreFoundations.PartA.html#transportf_set"><span class="id" title="lemma">transportf_set</span></a>.<br/>
-&nbsp;&nbsp;× <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>.<br/>
-&nbsp;&nbsp;× <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#bad17efedf4fdbd38bc221cebcecde12"><span class="id" title="variable">B₂</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+&nbsp;&nbsp;* <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>.<br/>
+&nbsp;&nbsp;* <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#bad17efedf4fdbd38bc221cebcecde12"><span class="id" title="variable">B₂</span></a>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Lemma</span> <a id="total_modification_laws" class="idref" href="#total_modification_laws"><span class="id" title="lemma">total_modification_laws</span></a> (<a id="mm:29" class="idref" href="#mm:29"><span class="id" title="binder">mm</span></a> : <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#disp_modification"><span class="id" title="definition">disp_modification</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.Modifications.Modification.html#is_modification"><span class="id" title="definition">is_modification</span></a> (<a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#total_modification_data"><span class="id" title="definition">total_modification_data</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#mm:29"><span class="id" title="variable">mm</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">f</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartA.html#total2_paths_b"><span class="id" title="lemma">total2_paths_b</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.Bicategories.Modifications.Modification.html#modnaturality_of"><span class="id" title="definition">modnaturality_of</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#DispModification.m"><span class="id" title="variable">m</span></a> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <span class="id" title="var">x</span>) (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <span class="id" title="var">y</span>) (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <span class="id" title="var">f</span>)).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <span class="id" title="var">mm</span>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="is_invertible_disp_modification" class="idref" href="#is_invertible_disp_modification"><span class="id" title="definition">is_invertible_disp_modification</span></a> (<a id="mm:30" class="idref" href="#mm:30"><span class="id" title="binder">mm</span></a> : <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#disp_modification"><span class="id" title="definition">disp_modification</span></a>) : <a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a><br/>
@@ -190,7 +189,7 @@ Invertible displayed modifications
 </div>
 
 <div class="doc">
-<a id="lab2706"></a><h3 class="section">Data</h3>
+<a id="lab2783"></a><h3 class="section">Data</h3>
 
 </div>
 <div class="code">
@@ -231,26 +230,26 @@ Invertible displayed modifications
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="disp_modification_of_invmodification" class="idref" href="#disp_modification_of_invmodification"><span class="id" title="definition">disp_modification_of_invmodification</span></a> (<a id="mm:61" class="idref" href="#mm:61"><span class="id" title="binder">mm</span></a> : <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#disp_invmodification"><span class="id" title="definition">disp_invmodification</span></a>) :<br/>
 &nbsp;&nbsp;<a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#disp_modification"><span class="id" title="definition">disp_modification</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#2eceb2c8ce500a615abf2f7d1d2a6a86"><span class="id" title="variable">α</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#d39e46ba7700e60f8b1412ec8ea71b2a"><span class="id" title="variable">β</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#ea8f49d358fb4d5c8e7b8d488ae37677"><span class="id" title="variable">FF₁</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#ca7d285c90d716c772322156e790638c"><span class="id" title="variable">FF₂</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#446b1b8a47ded8908aa288006d80b3e4"><span class="id" title="variable">αα</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#074d8c9cc639af21877318aee96c9734"><span class="id" title="variable">ββ</span></a> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#DispInvModification.m"><span class="id" title="variable">m</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.Preamble.html#tpair"><span class="id" title="constructor">tpair</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">xx</span>. <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <span class="id" title="var">mm</span> <span class="id" title="var">x</span> <span class="id" title="var">xx</span>).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">simpl</span>. <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> <span class="id" title="var">mm</span>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Lemma</span> <a id="is_invertible_disp_invmodification" class="idref" href="#is_invertible_disp_invmodification"><span class="id" title="lemma">is_invertible_disp_invmodification</span></a> (<a id="mm:62" class="idref" href="#mm:62"><span class="id" title="binder">mm</span></a> : <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#disp_invmodification"><span class="id" title="definition">disp_invmodification</span></a>) :<br/>
 &nbsp;&nbsp;<a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#is_invertible_disp_modification"><span class="id" title="definition">is_invertible_disp_modification</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> (<a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#disp_modification_of_invmodification"><span class="id" title="definition">disp_modification_of_invmodification</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#mm:62"><span class="id" title="variable">mm</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.Preamble.html#tpair"><span class="id" title="constructor">tpair</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#DispInvModification.m"><span class="id" title="variable">m</span></a>).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">simpl</span>. <span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">xx</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <span class="id" title="var">mm</span> <span class="id" title="var">x</span> <span class="id" title="var">xx</span>)).<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Lemma</span> <a id="is_disp_invmodification_from_total" class="idref" href="#is_disp_invmodification_from_total"><span class="id" title="lemma">is_disp_invmodification_from_total</span></a> (<a id="mm:63" class="idref" href="#mm:63"><span class="id" title="binder">mm</span></a> : <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#disp_invmodification_data"><span class="id" title="definition">disp_invmodification_data</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.Modifications.Modification.html#is_modification"><span class="id" title="definition">is_modification</span></a> (<a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#total_invmodification_data"><span class="id" title="definition">total_invmodification_data</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#mm:63"><span class="id" title="variable">mm</span></a>) <a class="idref" href="UniMath.Foundations.Init.html#c41c566ddac4c1298b9e7dd2bae1c794"><span class="id" title="notation">→</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#is_disp_invmodification"><span class="id" title="definition">is_disp_invmodification</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#mm:63"><span class="id" title="variable">mm</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">Hmm</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">pose</span> (<span class="id" title="var">Em</span> := <a class="idref" href="UniMath.Bicategories.Modifications.Modification.html#make_modification"><span class="id" title="definition">make_modification</span></a> <span class="id" title="var">_</span> <span class="id" title="var">Hmm</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">f</span> <span class="id" title="var">xx</span> <span class="id" title="var">yy</span> <span class="id" title="var">ff</span>.<br/>
@@ -260,28 +259,28 @@ Invertible displayed modifications
 &nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <a class="idref" href="UniMath.Foundations.PartA.html#transportb"><span class="id" title="definition">transportb</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.Foundations.PartA.html#transport_f_f"><span class="id" title="definition">transport_f_f</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.MoreFoundations.PartA.html#transportf_set"><span class="id" title="lemma">transportf_set</span></a>.<br/>
-&nbsp;&nbsp;× <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>.<br/>
-&nbsp;&nbsp;× <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#6433dcf9cfd00efe729d6080b9ae970a"><span class="id" title="variable">B₂</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+&nbsp;&nbsp;* <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>.<br/>
+&nbsp;&nbsp;* <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#6433dcf9cfd00efe729d6080b9ae970a"><span class="id" title="variable">B₂</span></a>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Lemma</span> <a id="total_invmodification_laws" class="idref" href="#total_invmodification_laws"><span class="id" title="lemma">total_invmodification_laws</span></a> (<a id="mm:64" class="idref" href="#mm:64"><span class="id" title="binder">mm</span></a> : <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#disp_invmodification"><span class="id" title="definition">disp_invmodification</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.Modifications.Modification.html#is_modification"><span class="id" title="definition">is_modification</span></a> (<a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#total_invmodification_data"><span class="id" title="definition">total_invmodification_data</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#mm:64"><span class="id" title="variable">mm</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">f</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartA.html#total2_paths_b"><span class="id" title="lemma">total2_paths_b</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.Bicategories.Modifications.Modification.html#modnaturality_of"><span class="id" title="definition">modnaturality_of</span></a> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#DispInvModification.m"><span class="id" title="variable">m</span></a>) (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <span class="id" title="var">x</span>) (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <span class="id" title="var">y</span>) (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <span class="id" title="var">f</span>)).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <span class="id" title="var">mm</span>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="total_invmodification" class="idref" href="#total_invmodification"><span class="id" title="definition">total_invmodification</span></a> (<a id="mm:65" class="idref" href="#mm:65"><span class="id" title="binder">mm</span></a> : <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#disp_invmodification"><span class="id" title="definition">disp_invmodification</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.Modifications.Modification.html#invertible_modification"><span class="id" title="definition">invertible_modification</span></a> (<a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispTransformation.html#total_pstrans"><span class="id" title="definition">total_pstrans</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#446b1b8a47ded8908aa288006d80b3e4"><span class="id" title="variable">αα</span></a>) (<a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispTransformation.html#total_pstrans"><span class="id" title="definition">total_pstrans</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#074d8c9cc639af21877318aee96c9734"><span class="id" title="variable">ββ</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.Modifications.Modification.html#make_invertible_modification"><span class="id" title="definition">make_invertible_modification</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#total_invmodification_data"><span class="id" title="definition">total_invmodification_data</span></a> <span class="id" title="var">mm</span>).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#total_invmodification_laws"><span class="id" title="lemma">total_invmodification_laws</span></a> <span class="id" title="var">mm</span>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">End</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#DispInvModification"><span class="id" title="section">DispInvModification</span></a>.<br/>

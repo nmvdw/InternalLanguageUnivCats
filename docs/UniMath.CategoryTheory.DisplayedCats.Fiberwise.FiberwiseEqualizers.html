@@ -1,21 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="coqdoc.css" rel="stylesheet" type="text/css" />
-<title>UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseEqualizers</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link href="coqdoc.css" rel="stylesheet" type="text/css"/>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<script src="./proofs-toggle.js" type="text/javascript"></script>
+	<style>
+		div.proofcomment {
+			font-style: italic;
+		}
+	</style>
+	<title>Documentation</title>
 </head>
-
 <body>
-
 <div id="page">
-
-<div id="header">
-</div>
-
 <div id="main">
-
 <h1 class="libtitle">Library UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseEqualizers</h1>
 
 <div class="code">
@@ -37,7 +36,7 @@
 </div>
 
 <div class="doc">
-<a id="lab1388"></a><h1 class="section">1. Fiberwise products</h1>
+<a id="lab1393"></a><h1 class="section">1. Fiberwise products</h1>
 
 </div>
 <div class="code">
@@ -82,7 +81,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="D:25" class="idref" href="#D:25"><span class="id" title="binder">D</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Univalence.html#disp_univalent_category"><span class="id" title="definition">disp_univalent_category</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseEqualizers.html#C:24"><span class="id" title="variable">C</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HD:26" class="idref" href="#HD:26"><span class="id" title="binder">HD</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fibrations.html#cleaving"><span class="id" title="definition">cleaving</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseEqualizers.html#D:25"><span class="id" title="variable">D</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.PartB.html#isaprop"><span class="id" title="definition">isaprop</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseEqualizers.html#fiberwise_equalizers"><span class="id" title="definition">fiberwise_equalizers</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseEqualizers.html#HD:26"><span class="id" title="variable">HD</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartB.html#isapropdirprod"><span class="id" title="definition">isapropdirprod</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">do</span> 5 (<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartD.html#impred"><span class="id" title="lemma">impred</span></a> ; <span class="id" title="tactic">intro</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Equalizers.html#isaprop_Equalizer"><span class="id" title="lemma">isaprop_Equalizer</span></a>.<br/>
@@ -90,13 +89,13 @@
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Univalence.html#disp_univalent_category_is_univalent_disp"><span class="id" title="definition">disp_univalent_category_is_univalent_disp</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">do</span> 3 (<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartD.html#impred"><span class="id" title="lemma">impred</span></a> ; <span class="id" title="tactic">intro</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#isaprop_preserves_equalizer"><span class="id" title="definition">isaprop_preserves_equalizer</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab1389"></a><h1 class="section">2. Preservation of fiberwise equalizers</h1>
+<a id="lab1394"></a><h1 class="section">2. Preservation of fiberwise equalizers</h1>
 
 </div>
 <div class="code">
@@ -118,20 +117,20 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="ecd0c8f42446984cdec962472812ad73" class="idref" href="#ecd0c8f42446984cdec962472812ad73"><span class="id" title="binder">D₂</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#disp_cat"><span class="id" title="definition">disp_cat</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseEqualizers.html#274ae6a439eb32e1cb6f90ce4559d11a"><span class="id" title="variable">C₂</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="FF:39" class="idref" href="#FF:39"><span class="id" title="binder">FF</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#disp_functor"><span class="id" title="definition">disp_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseEqualizers.html#F:36"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseEqualizers.html#1711775db5992625bed678647b09ded0"><span class="id" title="variable">D₁</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseEqualizers.html#ecd0c8f42446984cdec962472812ad73"><span class="id" title="variable">D₂</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.PartB.html#isaprop"><span class="id" title="definition">isaprop</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseEqualizers.html#preserves_fiberwise_binproducts"><span class="id" title="definition">preserves_fiberwise_binproducts</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseEqualizers.html#FF:39"><span class="id" title="variable">FF</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartD.html#impred"><span class="id" title="lemma">impred</span></a> ; <span class="id" title="tactic">intro</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#isaprop_preserves_equalizer"><span class="id" title="definition">isaprop_preserves_equalizer</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="id_preserves_fiberwise_binproducts" class="idref" href="#id_preserves_fiberwise_binproducts"><span class="id" title="definition">id_preserves_fiberwise_binproducts</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="C:40" class="idref" href="#C:40"><span class="id" title="binder">C</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#category"><span class="id" title="definition">category</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="D:41" class="idref" href="#D:41"><span class="id" title="binder">D</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#disp_cat"><span class="id" title="definition">disp_cat</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseEqualizers.html#C:40"><span class="id" title="variable">C</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseEqualizers.html#preserves_fiberwise_binproducts"><span class="id" title="definition">preserves_fiberwise_binproducts</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#disp_functor_identity"><span class="id" title="definition">disp_functor_identity</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseEqualizers.html#D:41"><span class="id" title="variable">D</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y₁</span> <span class="id" title="var">y₂</span> <span class="id" title="var">e</span> <span class="id" title="var">f</span> <span class="id" title="var">g</span> <span class="id" title="var">h</span> <span class="id" title="var">p</span> <span class="id" title="var">q</span> <span class="id" title="var">H</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">H</span>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="comp_preserves_fiberwise_binproducts" class="idref" href="#comp_preserves_fiberwise_binproducts"><span class="id" title="definition">comp_preserves_fiberwise_binproducts</span></a><br/>
@@ -146,7 +145,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="GG:52" class="idref" href="#GG:52"><span class="id" title="binder">GG</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#disp_functor"><span class="id" title="definition">disp_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseEqualizers.html#G:46"><span class="id" title="variable">G</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseEqualizers.html#f802652f1f8ea85ace2f41d616022dad"><span class="id" title="variable">D₂</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseEqualizers.html#02efff6c733794b56751cd12c0e03965"><span class="id" title="variable">D₃</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HGG:53" class="idref" href="#HGG:53"><span class="id" title="binder">HGG</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseEqualizers.html#preserves_fiberwise_binproducts"><span class="id" title="definition">preserves_fiberwise_binproducts</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseEqualizers.html#GG:52"><span class="id" title="variable">GG</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseEqualizers.html#preserves_fiberwise_binproducts"><span class="id" title="definition">preserves_fiberwise_binproducts</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#disp_functor_composite"><span class="id" title="definition">disp_functor_composite</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseEqualizers.html#FF:50"><span class="id" title="variable">FF</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseEqualizers.html#GG:52"><span class="id" title="variable">GG</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y₁</span> <span class="id" title="var">y₂</span> <span class="id" title="var">e</span> <span class="id" title="var">f</span> <span class="id" title="var">g</span> <span class="id" title="var">h</span> <span class="id" title="var">p</span> <span class="id" title="var">q</span> <span class="id" title="var">H</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Equalizers.html#isEqualizer_eq"><span class="id" title="definition">isEqualizer_eq</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> (<span class="id" title="var">HGG</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> (<span class="id" title="var">HFF</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">H</span>))).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">abstract</span><br/>
@@ -186,7 +185,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">cbn</span> <span class="id" title="tactic">in</span> <span class="id" title="var">p</span> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">!</span></a><span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.PartA.html#8b57b11be4275b47948f6caec264b70f"><span class="id" title="notation">@</span></a> <a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="z:54" class="idref" href="#z:54"><span class="id" title="binder"><span id="z:56" class="id">z</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.Foundations.PartA.html#transportb"><span class="id" title="definition">transportb</span></a> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="f:55" class="idref" href="#f:55"><span class="id" title="binder"><span id="f:57" class="id">f</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">--&gt;[</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseEqualizers.html#f:55"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">]</span></a> <span class="id" title="var">_</span>) <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseEqualizers.html#z:54"><span class="id" title="variable">z</span></a>) <span class="id" title="var">p</span> <a class="idref" href="UniMath.Foundations.PartA.html#8b57b11be4275b47948f6caec264b70f"><span class="id" title="notation">@</span></a> <span class="id" title="var">_</span>) ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#transportbfinv"><span class="id" title="definition">transportbfinv</span></a>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 </div>
 </div>
 

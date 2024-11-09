@@ -1,21 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="coqdoc.css" rel="stylesheet" type="text/css" />
-<title>UniMath.CategoryTheory.Limits.PullbackConstructions</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link href="coqdoc.css" rel="stylesheet" type="text/css"/>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<script src="./proofs-toggle.js" type="text/javascript"></script>
+	<style>
+		div.proofcomment {
+			font-style: italic;
+		}
+	</style>
+	<title>Documentation</title>
 </head>
-
 <body>
-
 <div id="page">
-
-<div id="header">
-</div>
-
 <div id="main">
-
 <h1 class="libtitle">Library UniMath.CategoryTheory.Limits.PullbackConstructions</h1>
 
 <div class="code">
@@ -34,7 +33,7 @@
 </div>
 
 <div class="doc">
-<a id="lab1348"></a><h1 class="section">1. Equalizers from pullbacks and products</h1>
+<a id="lab1353"></a><h1 class="section">1. Equalizers from pullbacks and products</h1>
 
 </div>
 <div class="code">
@@ -59,7 +58,7 @@
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proposition</span> <a id="equalizer_from_pb_prod_eq" class="idref" href="#equalizer_from_pb_prod_eq"><span class="id" title="lemma">equalizer_from_pb_prod_eq</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#EqualizersFromPullbackProducts.EqualizerConstruction.i"><span class="id" title="variable">i</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#EqualizersFromPullbackProducts.EqualizerConstruction.f"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#EqualizersFromPullbackProducts.EqualizerConstruction.i"><span class="id" title="variable">i</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#EqualizersFromPullbackProducts.EqualizerConstruction.g"><span class="id" title="variable">g</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">pose</span> (<a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="z:8" class="idref" href="#z:8"><span class="id" title="binder"><span id="z:9" class="id">z</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#z:8"><span class="id" title="variable">z</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#BinProductPr1"><span class="id" title="definition">BinProductPr1</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span>) (<a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#PullbackSqrCommutes"><span class="id" title="definition">PullbackSqrCommutes</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#EqualizersFromPullbackProducts.EqualizerConstruction.e"><span class="id" title="variable">e</span></a>)) <span class="id" title="keyword">as</span> <span class="id" title="var">p</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">cbn</span> <span class="id" title="tactic">in</span> <span class="id" title="var">p</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> !<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc'"><span class="id" title="definition">assoc'</span></a> <span class="id" title="tactic">in</span> <span class="id" title="var">p</span>.<br/>
@@ -75,7 +74,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> !<a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#BinProductPr2Commutes"><span class="id" title="lemma">BinProductPr2Commutes</span></a> <span class="id" title="tactic">in</span> <span class="id" title="var">p</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_right"><span class="id" title="definition">id_right</span></a> <span class="id" title="tactic">in</span> <span class="id" title="var">p</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">p</span>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Section</span> <a id="EqualizersFromPullbackProducts.EqualizerConstruction.UMP" class="idref" href="#EqualizersFromPullbackProducts.EqualizerConstruction.UMP"><span class="id" title="section">UMP</span></a>.<br/>
@@ -86,7 +85,7 @@
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proposition</span> <a id="equalizer_from_pb_prod_map_eq" class="idref" href="#equalizer_from_pb_prod_map_eq"><span class="id" title="lemma">equalizer_from_pb_prod_map_eq</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#EqualizersFromPullbackProducts.EqualizerConstruction.UMP.h"><span class="id" title="variable">h</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#EqualizersFromPullbackProducts.EqualizerConstruction.f"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#14de19aa04da9bc79c1dc4dbd7e31722"><span class="id" title="variable">Δ</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#EqualizersFromPullbackProducts.EqualizerConstruction.UMP.h"><span class="id" title="variable">h</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#056566206204b6f349f1278eebe5bd3b"><span class="id" title="variable">φ</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <span class="id" title="var">Δ</span>, <a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#diagonalMap'"><span class="id" title="definition">diagonalMap'</span></a>, φ.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#BinProductArrowsEq"><span class="id" title="lemma">BinProductArrowsEq</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">rewrite</span> !<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc'"><span class="id" title="definition">assoc'</span></a>.<br/>
@@ -97,12 +96,12 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> !<a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#BinProductPr2Commutes"><span class="id" title="lemma">BinProductPr2Commutes</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_right"><span class="id" title="definition">id_right</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#EqualizersFromPullbackProducts.EqualizerConstruction.UMP.p"><span class="id" title="variable">p</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proposition</span> <a id="equalizer_from_pb_prod_unique" class="idref" href="#equalizer_from_pb_prod_unique"><span class="id" title="lemma">equalizer_from_pb_prod_unique</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.PartB.html#isaprop"><span class="id" title="definition">isaprop</span></a> (<a class="idref" href="UniMath.Foundations.Preamble.html#cd4bc1b07c8b3bdc9f3bbc7941b56107"><span class="id" title="notation">∑</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#cd4bc1b07c8b3bdc9f3bbc7941b56107"><span class="id" title="notation">(</span></a><a id="23fca037e707526d83b97f165568e385" class="idref" href="#23fca037e707526d83b97f165568e385"><span class="id" title="binder">ζ</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#EqualizersFromPullbackProducts.EqualizerConstruction.UMP.w"><span class="id" title="variable">w</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#EqualizersFromPullbackProducts.EqualizerConstruction.e"><span class="id" title="variable">e</span></a><a class="idref" href="UniMath.Foundations.Preamble.html#cd4bc1b07c8b3bdc9f3bbc7941b56107"><span class="id" title="notation">),</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#23fca037e707526d83b97f165568e385"><span class="id" title="variable">ζ</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#EqualizersFromPullbackProducts.EqualizerConstruction.i"><span class="id" title="variable">i</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#EqualizersFromPullbackProducts.EqualizerConstruction.UMP.h"><span class="id" title="variable">h</span></a>).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartB.html#invproofirrelevance"><span class="id" title="lemma">invproofirrelevance</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">ζ₁</span> <span class="id" title="var">ζ₂</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartB.html#subtypePath"><span class="id" title="lemma">subtypePath</span></a>.<br/>
@@ -139,28 +138,28 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> <span class="id" title="var">ζ₁</span> <a class="idref" href="UniMath.Foundations.PartA.html#8b57b11be4275b47948f6caec264b70f"><span class="id" title="notation">@</span></a> <a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">!(</span></a><a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> <span class="id" title="var">ζ₂</span><a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">)</span></a>).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="equalizer_from_pb_prod_map" class="idref" href="#equalizer_from_pb_prod_map"><span class="id" title="definition">equalizer_from_pb_prod_map</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#EqualizersFromPullbackProducts.EqualizerConstruction.UMP.w"><span class="id" title="variable">w</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#EqualizersFromPullbackProducts.EqualizerConstruction.e"><span class="id" title="variable">e</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#PullbackArrow"><span class="id" title="definition">PullbackArrow</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#EqualizersFromPullbackProducts.EqualizerConstruction.e"><span class="id" title="variable">e</span></a> <span class="id" title="var">_</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#EqualizersFromPullbackProducts.EqualizerConstruction.UMP.h"><span class="id" title="variable">h</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#EqualizersFromPullbackProducts.EqualizerConstruction.f"><span class="id" title="variable">f</span></a>) <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#EqualizersFromPullbackProducts.EqualizerConstruction.UMP.h"><span class="id" title="variable">h</span></a>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#equalizer_from_pb_prod_map_eq"><span class="id" title="lemma">equalizer_from_pb_prod_map_eq</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proposition</span> <a id="equalizer_from_pb_prod_comm" class="idref" href="#equalizer_from_pb_prod_comm"><span class="id" title="lemma">equalizer_from_pb_prod_comm</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#equalizer_from_pb_prod_map"><span class="id" title="definition">equalizer_from_pb_prod_map</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#EqualizersFromPullbackProducts.EqualizerConstruction.i"><span class="id" title="variable">i</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#EqualizersFromPullbackProducts.EqualizerConstruction.UMP.h"><span class="id" title="variable">h</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#PullbackArrow_PullbackPr2"><span class="id" title="lemma">PullbackArrow_PullbackPr2</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#EqualizersFromPullbackProducts.EqualizerConstruction.e"><span class="id" title="variable">e</span></a> <span class="id" title="var">_</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#EqualizersFromPullbackProducts.EqualizerConstruction.UMP.h"><span class="id" title="variable">h</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#EqualizersFromPullbackProducts.EqualizerConstruction.f"><span class="id" title="variable">f</span></a>) <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#EqualizersFromPullbackProducts.EqualizerConstruction.UMP.h"><span class="id" title="variable">h</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#equalizer_from_pb_prod_map_eq"><span class="id" title="lemma">equalizer_from_pb_prod_map_eq</span></a>).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">End</span> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#EqualizersFromPullbackProducts.EqualizerConstruction.UMP"><span class="id" title="section">UMP</span></a>.<br/>
 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="equalizer_from_pb_prod" class="idref" href="#equalizer_from_pb_prod"><span class="id" title="definition">equalizer_from_pb_prod</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Equalizers.html#Equalizer"><span class="id" title="definition">Equalizer</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#EqualizersFromPullbackProducts.EqualizerConstruction.f"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#EqualizersFromPullbackProducts.EqualizerConstruction.g"><span class="id" title="variable">g</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Equalizers.html#make_Equalizer"><span class="id" title="definition">make_Equalizer</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#EqualizersFromPullbackProducts.EqualizerConstruction.e"><span class="id" title="variable">e</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#EqualizersFromPullbackProducts.EqualizerConstruction.i"><span class="id" title="variable">i</span></a>.<br/>
@@ -170,23 +169,23 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#equalizer_from_pb_prod_unique"><span class="id" title="lemma">equalizer_from_pb_prod_unique</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#equalizer_from_pb_prod_map"><span class="id" title="definition">equalizer_from_pb_prod_map</span></a> <span class="id" title="var">p</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#equalizer_from_pb_prod_comm"><span class="id" title="lemma">equalizer_from_pb_prod_comm</span></a> <span class="id" title="var">p</span>).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 &nbsp;&nbsp;<span class="id" title="keyword">End</span> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#EqualizersFromPullbackProducts.EqualizerConstruction"><span class="id" title="section">EqualizerConstruction</span></a>.<br/>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="equalizers_from_pullbacks_prods" class="idref" href="#equalizers_from_pullbacks_prods"><span class="id" title="definition">equalizers_from_pullbacks_prods</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Equalizers.html#Equalizers"><span class="id" title="definition">Equalizers</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#EqualizersFromPullbackProducts.C"><span class="id" title="variable">C</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">f</span> <span class="id" title="var">g</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#equalizer_from_pb_prod"><span class="id" title="definition">equalizer_from_pb_prod</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 <span class="id" title="keyword">End</span> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#EqualizersFromPullbackProducts"><span class="id" title="section">EqualizersFromPullbackProducts</span></a>.<br/>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab1349"></a><h1 class="section">2. Equalizers from pullbacks and a terminal object</h1>
+<a id="lab1354"></a><h1 class="section">2. Equalizers from pullbacks and a terminal object</h1>
 
 </div>
 <div class="code">
@@ -195,17 +194,17 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="PB:17" class="idref" href="#PB:17"><span class="id" title="binder">PB</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#Pullbacks"><span class="id" title="definition">Pullbacks</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#C:16"><span class="id" title="variable">C</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="T:18" class="idref" href="#T:18"><span class="id" title="binder">T</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Terminal.html#Terminal"><span class="id" title="definition">Terminal</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#C:16"><span class="id" title="variable">C</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Equalizers.html#Equalizers"><span class="id" title="definition">Equalizers</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#C:16"><span class="id" title="variable">C</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#equalizers_from_pullbacks_prods"><span class="id" title="definition">equalizers_from_pullbacks_prods</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <span class="id" title="var">PB</span>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#BinProductsFromPullbacks"><span class="id" title="definition">BinProductsFromPullbacks</span></a> <span class="id" title="var">PB</span> <span class="id" title="var">T</span>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab1350"></a><h1 class="section">3. Pullback of a product</h1>
+<a id="lab1355"></a><h1 class="section">3. Pullback of a product</h1>
 
 </div>
 <div class="code">
@@ -233,16 +232,16 @@
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="map_from_pb_prod" class="idref" href="#map_from_pb_prod"><span class="id" title="definition">map_from_pb_prod</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#PullbackProduct.pb"><span class="id" title="variable">pb</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#386085b4290ca95464a44ae48eae57fc"><span class="id" title="variable">xy₁</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#BinProductArrow"><span class="id" title="definition">BinProductArrow</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#PullbackPr2"><span class="id" title="definition">PullbackPr2</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#PullbackProduct.pb"><span class="id" title="variable">pb</span></a>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#PullbackPr1"><span class="id" title="definition">PullbackPr1</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#PullbackProduct.pb"><span class="id" title="variable">pb</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#7877247b8cf0a17a1461fb71ef5945a0"><span class="id" title="variable">ρ</span></a><a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#7877247b8cf0a17a1461fb71ef5945a0"><span class="id" title="variable">₂</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="map_to_pb_prod" class="idref" href="#map_to_pb_prod"><span class="id" title="definition">map_to_pb_prod</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#386085b4290ca95464a44ae48eae57fc"><span class="id" title="variable">xy₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#PullbackProduct.pb"><span class="id" title="variable">pb</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#PullbackArrow"><span class="id" title="definition">PullbackArrow</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#BinProductArrow"><span class="id" title="definition">BinProductArrow</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#a041997e6594f612b6a3bb924e532f0b"><span class="id" title="variable">π</span></a><a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#a041997e6594f612b6a3bb924e532f0b"><span class="id" title="variable">₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#PullbackProduct.f"><span class="id" title="variable">f</span></a>).<br/>
@@ -250,14 +249,14 @@
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#a041997e6594f612b6a3bb924e532f0b"><span class="id" title="variable">π</span></a><a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#a041997e6594f612b6a3bb924e532f0b"><span class="id" title="variable">₁</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">abstract</span><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#BinProductPr1Commutes"><span class="id" title="lemma">BinProductPr1Commutes</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span>)).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Proposition</span> <a id="pb_prod_is_inverse" class="idref" href="#pb_prod_is_inverse"><span class="id" title="lemma">pb_prod_is_inverse</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#is_inverse_in_precat"><span class="id" title="definition">is_inverse_in_precat</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#map_from_pb_prod"><span class="id" title="definition">map_from_pb_prod</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#map_to_pb_prod"><span class="id" title="definition">map_to_pb_prod</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#map_from_pb_prod"><span class="id" title="definition">map_from_pb_prod</span></a>, <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#map_to_pb_prod"><span class="id" title="definition">map_to_pb_prod</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">split</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="var">use</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#MorphismsIntoPullbackEqual"><span class="id" title="lemma">MorphismsIntoPullbackEqual</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#isPullback_Pullback"><span class="id" title="definition">isPullback_Pullback</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#PullbackProduct.pb"><span class="id" title="variable">pb</span></a>)).<br/>
@@ -265,7 +264,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#PullbackArrow_PullbackPr1"><span class="id" title="lemma">PullbackArrow_PullbackPr1</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_left"><span class="id" title="definition">id_left</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#BinProductArrowsEq"><span class="id" title="lemma">BinProductArrowsEq</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;× <span class="id" title="tactic">rewrite</span> !<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc'"><span class="id" title="definition">assoc'</span></a>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="tactic">rewrite</span> !<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc'"><span class="id" title="definition">assoc'</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#BinProductPr1Commutes"><span class="id" title="lemma">BinProductPr1Commutes</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> !<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc"><span class="id" title="definition">assoc</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">etrans</span>.<br/>
@@ -275,7 +274,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">!</span></a><span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#PullbackSqrCommutes"><span class="id" title="definition">PullbackSqrCommutes</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;× <span class="id" title="tactic">rewrite</span> !<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc'"><span class="id" title="definition">assoc'</span></a>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="tactic">rewrite</span> !<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc'"><span class="id" title="definition">assoc'</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#BinProductPr2Commutes"><span class="id" title="lemma">BinProductPr2Commutes</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#BinProductPr2Commutes"><span class="id" title="lemma">BinProductPr2Commutes</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">rewrite</span> !<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc'"><span class="id" title="definition">assoc'</span></a>.<br/>
@@ -294,17 +293,17 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#PullbackArrow_PullbackPr1"><span class="id" title="lemma">PullbackArrow_PullbackPr1</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_left"><span class="id" title="definition">id_left</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#BinProductPr2Commutes"><span class="id" title="lemma">BinProductPr2Commutes</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="pb_prod_z_iso" class="idref" href="#pb_prod_z_iso"><span class="id" title="definition">pb_prod_z_iso</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#z_iso"><span class="id" title="definition">z_iso</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#PullbackProduct.pb"><span class="id" title="variable">pb</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#386085b4290ca95464a44ae48eae57fc"><span class="id" title="variable">xy₁</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#make_z_iso"><span class="id" title="definition">make_z_iso</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#map_from_pb_prod"><span class="id" title="definition">map_from_pb_prod</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#map_to_pb_prod"><span class="id" title="definition">map_to_pb_prod</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#pb_prod_is_inverse"><span class="id" title="lemma">pb_prod_is_inverse</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 <span class="id" title="keyword">End</span> <a class="idref" href="UniMath.CategoryTheory.Limits.PullbackConstructions.html#PullbackProduct"><span class="id" title="section">PullbackProduct</span></a>.<br/>
 </div>
 </div>

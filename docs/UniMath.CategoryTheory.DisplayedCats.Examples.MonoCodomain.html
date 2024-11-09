@@ -1,21 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="coqdoc.css" rel="stylesheet" type="text/css" />
-<title>UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link href="coqdoc.css" rel="stylesheet" type="text/css"/>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<script src="./proofs-toggle.js" type="text/javascript"></script>
+	<style>
+		div.proofcomment {
+			font-style: italic;
+		}
+	</style>
+	<title>Documentation</title>
 </head>
-
 <body>
-
 <div id="page">
-
-<div id="header">
-</div>
-
 <div id="main">
-
 <h1 class="libtitle">Library UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain</h1>
 
 <div class="code">
@@ -41,7 +40,7 @@
 </div>
 
 <div class="doc">
-<a id="lab2251"></a><h1 class="section">1. The displayed category of monomorphisms</h1>
+<a id="lab2328"></a><h1 class="section">1. The displayed category of monomorphisms</h1>
 
 </div>
 <div class="code">
@@ -58,7 +57,7 @@
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="locally_propositional_mono_cod_disp_cat" class="idref" href="#locally_propositional_mono_cod_disp_cat"><span class="id" title="definition">locally_propositional_mono_cod_disp_cat</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#locally_propositional"><span class="id" title="definition">locally_propositional</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#disp_mono_codomain"><span class="id" title="definition">disp_mono_codomain</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x₁</span> <span class="id" title="var">x₂</span> <span class="id" title="var">f</span> <span class="id" title="var">m₁</span> <span class="id" title="var">m₂</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">induction</span> <span class="id" title="var">m₁</span> <span class="id" title="keyword">as</span> [ <span class="id" title="var">y₁</span> <span class="id" title="var">m₁</span> ].<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">induction</span> <span class="id" title="var">m₂</span> <span class="id" title="keyword">as</span> [ <span class="id" title="var">y₂</span> <span class="id" title="var">m₂</span> ].<br/>
@@ -76,7 +75,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.CategoryTheory.Monics.html#MonicisMonic"><span class="id" title="definition">MonicisMonic</span></a> <span class="id" title="var">_</span> (<a class="idref" href="UniMath.CategoryTheory.Monics.html#make_Monic"><span class="id" title="definition">make_Monic</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">m₂</span>)).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr21'_x"><span class="id" title="notation">pr21</span></a> <span class="id" title="var">ff</span> <a class="idref" href="UniMath.Foundations.PartA.html#8b57b11be4275b47948f6caec264b70f"><span class="id" title="notation">@</span></a> <a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">!(</span></a><a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr21'_x"><span class="id" title="notation">pr21</span></a> <span class="id" title="var">gg</span><a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">)</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Proposition</span> <a id="transportf_mono_cod_disp" class="idref" href="#transportf_mono_cod_disp"><span class="id" title="lemma">transportf_mono_cod_disp</span></a><br/>
@@ -92,10 +91,10 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#ff:10"><span class="id" title="variable">ff</span></a><a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr11'_x"><span class="id" title="notation">)</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr11'_x"><span class="id" title="notation">pr11</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#ff:10"><span class="id" title="variable">ff</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">induction</span> <span class="id" title="var">p</span> ; <span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Proposition</span> <a id="transportb_mono_cod_disp" class="idref" href="#transportb_mono_cod_disp"><span class="id" title="lemma">transportb_mono_cod_disp</span></a><br/>
@@ -111,16 +110,16 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#ff:18"><span class="id" title="variable">ff</span></a><a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr11'_x"><span class="id" title="notation">)</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr11'_x"><span class="id" title="notation">pr11</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#ff:18"><span class="id" title="variable">ff</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#transportf_mono_cod_disp"><span class="id" title="lemma">transportf_mono_cod_disp</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 <span class="id" title="keyword">End</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#MonoCodomain"><span class="id" title="section">MonoCodomain</span></a>.<br/>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab2252"></a><h1 class="section">2. Pullback squares are cartesian</h1>
+<a id="lab2329"></a><h1 class="section">2. Pullback squares are cartesian</h1>
 
 </div>
 <div class="code">
@@ -153,7 +152,7 @@
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Proposition</span> <a id="cartesian_mono_cod_disp_unique" class="idref" href="#cartesian_mono_cod_disp_unique"><span class="id" title="lemma">cartesian_mono_cod_disp_unique</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.PartB.html#isaprop"><span class="id" title="definition">isaprop</span></a> (<a class="idref" href="UniMath.Foundations.Preamble.html#cd4bc1b07c8b3bdc9f3bbc7941b56107"><span class="id" title="notation">∑</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#cd4bc1b07c8b3bdc9f3bbc7941b56107"><span class="id" title="notation">(</span></a><a id="gg:31" class="idref" href="#gg:31"><span class="id" title="binder">gg</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#c4a9a4e7104c061f79865a74ffa12cdd"><span class="id" title="variable">v</span></a><a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#c4a9a4e7104c061f79865a74ffa12cdd"><span class="id" title="variable">ψ</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">--&gt;[</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#7cf1234a4615355447721dbfc8b0c82c"><span class="id" title="variable">φ</span></a><a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">]</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#3a323716704dc15d0206019e4ea280c2"><span class="id" title="variable">gy₁</span></a><a class="idref" href="UniMath.Foundations.Preamble.html#cd4bc1b07c8b3bdc9f3bbc7941b56107"><span class="id" title="notation">),</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#gg:31"><span class="id" title="variable">gg</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#8735f787ddf36c3591f69d28c3fbee50"><span class="id" title="notation">;;</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#PullbackToCartesian.ff"><span class="id" title="variable">ff</span></a>)%<span class="id" title="var">mor_disp</span> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#PullbackToCartesian.kp"><span class="id" title="variable">kp</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartB.html#invproofirrelevance"><span class="id" title="lemma">invproofirrelevance</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">ζ₁</span> <span class="id" title="var">ζ₂</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartB.html#subtypePath"><span class="id" title="lemma">subtypePath</span></a>.<br/>
@@ -162,31 +161,31 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#disp_mono_codomain"><span class="id" title="definition">disp_mono_codomain</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#locally_propositional_mono_cod_disp_cat"><span class="id" title="definition">locally_propositional_mono_cod_disp_cat</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="cartesian_mono_cod_disp_map" class="idref" href="#cartesian_mono_cod_disp_map"><span class="id" title="definition">cartesian_mono_cod_disp_map</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#PullbackToCartesian.v"><span class="id" title="variable">v</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#238452cf05a07aa62be93ee1b30200e9"><span class="id" title="variable">y₁</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#PullbackArrow"><span class="id" title="definition">PullbackArrow</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#PullbackToCartesian.P"><span class="id" title="variable">P</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#PullbackToCartesian.v"><span class="id" title="variable">v</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#PullbackToCartesian.k"><span class="id" title="variable">k</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#30670160aa17c345c22c0195b4fa22e3"><span class="id" title="variable">ψ</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#7cf1234a4615355447721dbfc8b0c82c"><span class="id" title="variable">φ</span></a>) <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">abstract</span><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr21'_x"><span class="id" title="notation">pr21</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#PullbackToCartesian.kp"><span class="id" title="variable">kp</span></a> <a class="idref" href="UniMath.Foundations.PartA.html#8b57b11be4275b47948f6caec264b70f"><span class="id" title="notation">@</span></a> <span class="id" title="var">_</span>) ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc"><span class="id" title="definition">assoc</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Proposition</span> <a id="cartesian_mono_cod_disp_comm_pr1" class="idref" href="#cartesian_mono_cod_disp_comm_pr1"><span class="id" title="lemma">cartesian_mono_cod_disp_comm_pr1</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#cartesian_mono_cod_disp_map"><span class="id" title="definition">cartesian_mono_cod_disp_map</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#PullbackToCartesian.l"><span class="id" title="variable">l</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#PullbackToCartesian.k"><span class="id" title="variable">k</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#PullbackArrow_PullbackPr1"><span class="id" title="lemma">PullbackArrow_PullbackPr1</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#PullbackToCartesian.P"><span class="id" title="variable">P</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Proposition</span> <a id="cartesian_mono_cod_disp_comm_pr2" class="idref" href="#cartesian_mono_cod_disp_comm_pr2"><span class="id" title="lemma">cartesian_mono_cod_disp_comm_pr2</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#cartesian_mono_cod_disp_map"><span class="id" title="definition">cartesian_mono_cod_disp_map</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#PullbackToCartesian.g"><span class="id" title="variable">g</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#30670160aa17c345c22c0195b4fa22e3"><span class="id" title="variable">ψ</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#7cf1234a4615355447721dbfc8b0c82c"><span class="id" title="variable">φ</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#PullbackArrow_PullbackPr2"><span class="id" title="lemma">PullbackArrow_PullbackPr2</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#PullbackToCartesian.P"><span class="id" title="variable">P</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 <span class="id" title="keyword">End</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#PullbackToCartesian"><span class="id" title="section">PullbackToCartesian</span></a>.<br/>
 
 <br/>
@@ -199,7 +198,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="ff:38" class="idref" href="#ff:38"><span class="id" title="binder">ff</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#f97a128b62ae9fc75c87044604ad22da"><span class="id" title="variable">gy₁</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">--&gt;[</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#f:35"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">]</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#9bbcbe4a58edc932bf8919f5553892de"><span class="id" title="variable">hy₂</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="H:39" class="idref" href="#H:39"><span class="id" title="binder">H</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#isPullback"><span class="id" title="definition">isPullback</span></a> (<a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr21'_x"><span class="id" title="notation">pr21</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#ff:38"><span class="id" title="variable">ff</span></a>))<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fibrations.html#is_cartesian"><span class="id" title="definition">is_cartesian</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#ff:38"><span class="id" title="variable">ff</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">w</span> φ <span class="id" title="var">v</span>ψ <span class="id" title="var">kp</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartB.html#iscontraprop1"><span class="id" title="lemma">iscontraprop1</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#cartesian_mono_cod_disp_unique"><span class="id" title="lemma">cartesian_mono_cod_disp_unique</span></a> <span class="id" title="var">ff</span> φ <span class="id" title="var">v</span>ψ <span class="id" title="var">kp</span>).<br/>
@@ -209,13 +208,13 @@
 &nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartB.html#subtypePath"><span class="id" title="lemma">subtypePath</span></a> ; [ <span class="id" title="tactic">intro</span> ; <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartB.html#isapropunit"><span class="id" title="definition">isapropunit</span></a> | ].<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartB.html#subtypePath"><span class="id" title="lemma">subtypePath</span></a> ; [ <span class="id" title="tactic">intro</span> ; <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a> | ].<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#cartesian_mono_cod_disp_comm_pr1"><span class="id" title="lemma">cartesian_mono_cod_disp_comm_pr1</span></a> <span class="id" title="var">ff</span> <span class="id" title="var">H</span> φ <span class="id" title="var">v</span>ψ <span class="id" title="var">kp</span>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab2253"></a><h1 class="section">3. Cleaving for codomain of monomorphisms</h1>
+<a id="lab2330"></a><h1 class="section">3. Cleaving for codomain of monomorphisms</h1>
 
 </div>
 <div class="code">
@@ -223,7 +222,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="C:40" class="idref" href="#C:40"><span class="id" title="binder">C</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#category"><span class="id" title="definition">category</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="H:41" class="idref" href="#H:41"><span class="id" title="binder">H</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#Pullbacks"><span class="id" title="definition">Pullbacks</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#C:40"><span class="id" title="variable">C</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fibrations.html#cleaving"><span class="id" title="definition">cleaving</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#disp_mono_codomain"><span class="id" title="definition">disp_mono_codomain</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#C:40"><span class="id" title="variable">C</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x₁</span> <span class="id" title="var">x₂</span> <span class="id" title="var">f</span> <span class="id" title="var">yg</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">pose</span> (<span class="id" title="var">y</span> := <a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr11'_x"><span class="id" title="notation">pr11</span></a> <span class="id" title="var">yg</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">pose</span> (<span class="id" title="var">g</span> := <a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr21'_x"><span class="id" title="notation">pr21</span></a> <span class="id" title="var">yg</span>).<br/>
@@ -236,13 +235,13 @@
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#PullbackSqrCommutes"><span class="id" title="definition">PullbackSqrCommutes</span></a> <span class="id" title="var">P</span>).<br/>
 &nbsp;&nbsp;- <span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#isPullback_cartesian_in_mono_cod_disp"><span class="id" title="definition">isPullback_cartesian_in_mono_cod_disp</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <span class="id" title="var">P</span>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab2254"></a><h1 class="section">4. Isos in the codomain</h1>
+<a id="lab2331"></a><h1 class="section">4. Isos in the codomain</h1>
 
 </div>
 <div class="code">
@@ -262,7 +261,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="h:46" class="idref" href="#h:46"><span class="id" title="binder">h</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#z_iso"><span class="id" title="definition">z_iso</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#IsosCodomain.y"><span class="id" title="variable">y</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#IsosCodomain.z"><span class="id" title="variable">z</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="p:47" class="idref" href="#p:47"><span class="id" title="binder">p</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#IsosCodomain.f"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#h:46"><span class="id" title="variable">h</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#IsosCodomain.g"><span class="id" title="variable">g</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Isos.html#z_iso_disp"><span class="id" title="definition">z_iso_disp</span></a> (<a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#identity_z_iso"><span class="id" title="definition">identity_z_iso</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#IsosCodomain.x"><span class="id" title="variable">x</span></a>) <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#IsosCodomain.fy"><span class="id" title="variable">fy</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#IsosCodomain.gz"><span class="id" title="variable">gz</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Isos.html#make_z_iso_disp"><span class="id" title="definition">make_z_iso_disp</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <span class="id" title="var">h</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span><a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#tt"><span class="id" title="constructor">tt</span></a>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">abstract</span><br/>
@@ -278,37 +277,37 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">p</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#locally_propositional_mono_cod_disp_cat"><span class="id" title="definition">locally_propositional_mono_cod_disp_cat</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#locally_propositional_mono_cod_disp_cat"><span class="id" title="definition">locally_propositional_mono_cod_disp_cat</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="disp_iso_to_iso_mono_cod" class="idref" href="#disp_iso_to_iso_mono_cod"><span class="id" title="definition">disp_iso_to_iso_mono_cod</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="ff:48" class="idref" href="#ff:48"><span class="id" title="binder">ff</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Isos.html#z_iso_disp"><span class="id" title="definition">z_iso_disp</span></a> (<a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#identity_z_iso"><span class="id" title="definition">identity_z_iso</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#IsosCodomain.x"><span class="id" title="variable">x</span></a>) <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#IsosCodomain.fy"><span class="id" title="variable">fy</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#IsosCodomain.gz"><span class="id" title="variable">gz</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.Preamble.html#cd4bc1b07c8b3bdc9f3bbc7941b56107"><span class="id" title="notation">∑</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#cd4bc1b07c8b3bdc9f3bbc7941b56107"><span class="id" title="notation">(</span></a><a id="h:49" class="idref" href="#h:49"><span class="id" title="binder">h</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#z_iso"><span class="id" title="definition">z_iso</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#IsosCodomain.y"><span class="id" title="variable">y</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#IsosCodomain.z"><span class="id" title="variable">z</span></a><a class="idref" href="UniMath.Foundations.Preamble.html#cd4bc1b07c8b3bdc9f3bbc7941b56107"><span class="id" title="notation">),</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#IsosCodomain.f"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#h:49"><span class="id" title="variable">h</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#IsosCodomain.g"><span class="id" title="variable">g</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">simple</span> <span class="id" title="tactic">refine</span> (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#make_z_iso"><span class="id" title="definition">make_z_iso</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr111'_x"><span class="id" title="notation">pr111</span></a> <span class="id" title="var">ff</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr11'_x"><span class="id" title="notation">pr11</span></a> <a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr11'_x"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Isos.html#inv_mor_disp_from_z_iso"><span class="id" title="definition">inv_mor_disp_from_z_iso</span></a> <span class="id" title="var">ff</span><a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr11'_x"><span class="id" title="notation">)</span></a>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">split</span>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;× <span class="id" title="tactic">abstract</span><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="tactic">abstract</span><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="z:50" class="idref" href="#z:50"><span class="id" title="binder"><span id="z:51" class="id">z</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr11'_x"><span class="id" title="notation">pr11</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#z:50"><span class="id" title="variable">z</span></a>) (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Isos.html#inv_mor_after_z_iso_disp"><span class="id" title="definition">inv_mor_after_z_iso_disp</span></a> <span class="id" title="var">ff</span>) <a class="idref" href="UniMath.Foundations.PartA.html#8b57b11be4275b47948f6caec264b70f"><span class="id" title="notation">@</span></a> <span class="id" title="var">_</span>) ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#transportb_mono_cod_disp"><span class="id" title="lemma">transportb_mono_cod_disp</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;× <span class="id" title="tactic">abstract</span><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="tactic">abstract</span><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="z:52" class="idref" href="#z:52"><span class="id" title="binder"><span id="z:53" class="id">z</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr11'_x"><span class="id" title="notation">pr11</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#z:52"><span class="id" title="variable">z</span></a>) (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Isos.html#z_iso_disp_after_inv_mor"><span class="id" title="definition">z_iso_disp_after_inv_mor</span></a> <span class="id" title="var">ff</span>) <a class="idref" href="UniMath.Foundations.PartA.html#8b57b11be4275b47948f6caec264b70f"><span class="id" title="notation">@</span></a> <span class="id" title="var">_</span>) ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#transportb_mono_cod_disp"><span class="id" title="lemma">transportb_mono_cod_disp</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">abstract</span><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">!(</span></a><a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr211'_x"><span class="id" title="notation">pr211</span></a> <span class="id" title="var">ff</span> <a class="idref" href="UniMath.Foundations.PartA.html#8b57b11be4275b47948f6caec264b70f"><span class="id" title="notation">@</span></a> <span class="id" title="var">_</span><a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">)</span></a>) ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_right"><span class="id" title="definition">id_right</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="disp_iso_weq_iso_mono_cod" class="idref" href="#disp_iso_weq_iso_mono_cod"><span class="id" title="definition">disp_iso_weq_iso_mono_cod</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.PartA.html#dd7277d0940f85bc9f30edc592228b3b"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.Foundations.Preamble.html#cd4bc1b07c8b3bdc9f3bbc7941b56107"><span class="id" title="notation">∑</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#cd4bc1b07c8b3bdc9f3bbc7941b56107"><span class="id" title="notation">(</span></a><a id="h:54" class="idref" href="#h:54"><span class="id" title="binder">h</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#z_iso"><span class="id" title="definition">z_iso</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#IsosCodomain.y"><span class="id" title="variable">y</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#IsosCodomain.z"><span class="id" title="variable">z</span></a><a class="idref" href="UniMath.Foundations.Preamble.html#cd4bc1b07c8b3bdc9f3bbc7941b56107"><span class="id" title="notation">),</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#IsosCodomain.f"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#h:54"><span class="id" title="variable">h</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#IsosCodomain.g"><span class="id" title="variable">g</span></a><a class="idref" href="UniMath.Foundations.PartA.html#dd7277d0940f85bc9f30edc592228b3b"><span class="id" title="notation">)</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Foundations.PartA.html#dd7277d0940f85bc9f30edc592228b3b"><span class="id" title="notation">≃</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Isos.html#z_iso_disp"><span class="id" title="definition">z_iso_disp</span></a> (<a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#identity_z_iso"><span class="id" title="definition">identity_z_iso</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#IsosCodomain.x"><span class="id" title="variable">x</span></a>) <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#IsosCodomain.fy"><span class="id" title="variable">fy</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#IsosCodomain.gz"><span class="id" title="variable">gz</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartA.html#weq_iso"><span class="id" title="definition">weq_iso</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="h:55" class="idref" href="#h:55"><span class="id" title="binder"><span id="h:56" class="id">h</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#iso_to_disp_iso_mono_cod"><span class="id" title="definition">iso_to_disp_iso_mono_cod</span></a> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#h:55"><span class="id" title="variable">h</span></a>) (<a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#h:55"><span class="id" title="variable">h</span></a>)).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#disp_iso_to_iso_mono_cod"><span class="id" title="definition">disp_iso_to_iso_mono_cod</span></a>.<br/>
@@ -321,7 +320,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">intro</span> <span class="id" title="var">ff</span> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartB.html#subtypePath"><span class="id" title="lemma">subtypePath</span></a> ; [ <span class="id" title="tactic">intro</span> ; <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Isos.html#isaprop_is_z_iso_disp"><span class="id" title="lemma">isaprop_is_z_iso_disp</span></a> | ] ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#locally_propositional_mono_cod_disp_cat"><span class="id" title="definition">locally_propositional_mono_cod_disp_cat</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 <span class="id" title="keyword">End</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#IsosCodomain"><span class="id" title="section">IsosCodomain</span></a>.<br/>
 
 <br/>
@@ -332,7 +331,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="12e9ce8cd99d00a79562a0f4779695b1" class="idref" href="#12e9ce8cd99d00a79562a0f4779695b1"><span class="id" title="binder">φ</span></a><a id="12e9ce8cd99d00a79562a0f4779695b1" class="idref" href="#12e9ce8cd99d00a79562a0f4779695b1"><span class="id" title="binder">p</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#fy:59"><span class="id" title="variable">fy</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">--&gt;[</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#identity"><span class="id" title="definition">identity</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#x:58"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">]</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#gz:60"><span class="id" title="variable">gz</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="H:62" class="idref" href="#H:62"><span class="id" title="binder">H</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#is_z_isomorphism"><span class="id" title="definition">is_z_isomorphism</span></a> (<a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr11'_x"><span class="id" title="notation">pr11</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#12e9ce8cd99d00a79562a0f4779695b1"><span class="id" title="variable">φ</span></a><a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#12e9ce8cd99d00a79562a0f4779695b1"><span class="id" title="variable">p</span></a>))<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Isos.html#is_z_iso_disp"><span class="id" title="definition">is_z_iso_disp</span></a> (<a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#identity_z_iso"><span class="id" title="definition">identity_z_iso</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#x:58"><span class="id" title="variable">x</span></a>) <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#12e9ce8cd99d00a79562a0f4779695b1"><span class="id" title="variable">φ</span></a><a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#12e9ce8cd99d00a79562a0f4779695b1"><span class="id" title="variable">p</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">pose</span> (<span class="id" title="var">h</span> := (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">H</span>) : <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#z_iso"><span class="id" title="definition">z_iso</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">simple</span> <span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">(</span></a><span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#tt"><span class="id" title="constructor">tt</span></a><a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#inv_from_z_iso"><span class="id" title="definition">inv_from_z_iso</span></a> <span class="id" title="var">h</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
@@ -345,7 +344,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#locally_propositional_mono_cod_disp_cat"><span class="id" title="definition">locally_propositional_mono_cod_disp_cat</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#locally_propositional_mono_cod_disp_cat"><span class="id" title="definition">locally_propositional_mono_cod_disp_cat</span></a>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="is_z_iso_disp_mono_codomain'" class="idref" href="#is_z_iso_disp_mono_codomain'"><span class="id" title="definition">is_z_iso_disp_mono_codomain'</span></a><br/>
@@ -357,7 +356,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="92a72e0c78ce3af6969ca12d7cce7218" class="idref" href="#92a72e0c78ce3af6969ca12d7cce7218"><span class="id" title="binder">φ</span></a><a id="92a72e0c78ce3af6969ca12d7cce7218" class="idref" href="#92a72e0c78ce3af6969ca12d7cce7218"><span class="id" title="binder">p</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#fz:67"><span class="id" title="variable">fz</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">--&gt;[</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#h:66"><span class="id" title="variable">h</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">]</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#fz':68"><span class="id" title="variable">fz'</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="H:70" class="idref" href="#H:70"><span class="id" title="binder">H</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#is_z_isomorphism"><span class="id" title="definition">is_z_isomorphism</span></a> (<a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr11'_x"><span class="id" title="notation">pr11</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#92a72e0c78ce3af6969ca12d7cce7218"><span class="id" title="variable">φ</span></a><a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#92a72e0c78ce3af6969ca12d7cce7218"><span class="id" title="variable">p</span></a>))<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Isos.html#is_z_iso_disp"><span class="id" title="definition">is_z_iso_disp</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#h:66"><span class="id" title="variable">h</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#92a72e0c78ce3af6969ca12d7cce7218"><span class="id" title="variable">φ</span></a><a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#92a72e0c78ce3af6969ca12d7cce7218"><span class="id" title="variable">p</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">pose</span> (<span class="id" title="var">l</span> := (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">H</span>) : <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#z_iso"><span class="id" title="definition">z_iso</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">simple</span> <span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">(</span></a><span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#tt"><span class="id" title="constructor">tt</span></a><a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#inv_from_z_iso"><span class="id" title="definition">inv_from_z_iso</span></a> <span class="id" title="var">l</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
@@ -372,7 +371,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#locally_propositional_mono_cod_disp_cat"><span class="id" title="definition">locally_propositional_mono_cod_disp_cat</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#locally_propositional_mono_cod_disp_cat"><span class="id" title="definition">locally_propositional_mono_cod_disp_cat</span></a>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="z_iso_disp_mono_codomain" class="idref" href="#z_iso_disp_mono_codomain"><span class="id" title="definition">z_iso_disp_mono_codomain</span></a><br/>
@@ -384,7 +383,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="g:79" class="idref" href="#g:79"><span class="id" title="binder">g</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#z_iso"><span class="id" title="definition">z_iso</span></a> (<a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr11'_x"><span class="id" title="notation">pr11</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#fcb888fd4e1f3cfdbda22c422bf70f32"><span class="id" title="variable">h₁</span></a>) (<a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr11'_x"><span class="id" title="notation">pr11</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#38dcd3decc9343963cee6d69fe26f388"><span class="id" title="variable">h₂</span></a>))<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="p:80" class="idref" href="#p:80"><span class="id" title="binder">p</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#g:79"><span class="id" title="variable">g</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr21'_x"><span class="id" title="notation">pr21</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#38dcd3decc9343963cee6d69fe26f388"><span class="id" title="variable">h₂</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr21'_x"><span class="id" title="notation">pr21</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#fcb888fd4e1f3cfdbda22c422bf70f32"><span class="id" title="variable">h₁</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#f:76"><span class="id" title="variable">f</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Isos.html#z_iso_disp"><span class="id" title="definition">z_iso_disp</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#f:76"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#fcb888fd4e1f3cfdbda22c422bf70f32"><span class="id" title="variable">h₁</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#38dcd3decc9343963cee6d69fe26f388"><span class="id" title="variable">h₂</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Isos.html#make_z_iso_disp"><span class="id" title="definition">make_z_iso_disp</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <span class="id" title="var">g</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">p</span><a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#tt"><span class="id" title="constructor">tt</span></a>).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">simple</span> <span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">(</span></a><span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#tt"><span class="id" title="constructor">tt</span></a><a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
@@ -396,7 +395,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">p</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#locally_propositional_mono_cod_disp_cat"><span class="id" title="definition">locally_propositional_mono_cod_disp_cat</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#locally_propositional_mono_cod_disp_cat"><span class="id" title="definition">locally_propositional_mono_cod_disp_cat</span></a>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="from_z_iso_disp_mono_codomain" class="idref" href="#from_z_iso_disp_mono_codomain"><span class="id" title="definition">from_z_iso_disp_mono_codomain</span></a><br/>
@@ -407,7 +406,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="0aa075b6f5c9e03965df5442511497c4" class="idref" href="#0aa075b6f5c9e03965df5442511497c4"><span class="id" title="binder">h₂</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#disp_mono_codomain"><span class="id" title="definition">disp_mono_codomain</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#C:81"><span class="id" title="variable">C</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#y:83"><span class="id" title="variable">y</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="ff:87" class="idref" href="#ff:87"><span class="id" title="binder">ff</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Isos.html#z_iso_disp"><span class="id" title="definition">z_iso_disp</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#f:84"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#8d0de7c3cd38b6b88cbcc855674f8cfd"><span class="id" title="variable">h₁</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#0aa075b6f5c9e03965df5442511497c4"><span class="id" title="variable">h₂</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#z_iso"><span class="id" title="definition">z_iso</span></a> (<a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr11'_x"><span class="id" title="notation">pr11</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#8d0de7c3cd38b6b88cbcc855674f8cfd"><span class="id" title="variable">h₁</span></a>) (<a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr11'_x"><span class="id" title="notation">pr11</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#0aa075b6f5c9e03965df5442511497c4"><span class="id" title="variable">h₂</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#make_z_iso"><span class="id" title="definition">make_z_iso</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr111'_x"><span class="id" title="notation">pr111</span></a> <span class="id" title="var">ff</span>).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> (<a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr112'_x"><span class="id" title="notation">pr112</span></a> <span class="id" title="var">ff</span>)).<br/>
@@ -420,42 +419,42 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="z:90" class="idref" href="#z:90"><span class="id" title="binder"><span id="z:91" class="id">z</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr11'_x"><span class="id" title="notation">pr11</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#z:90"><span class="id" title="variable">z</span></a>) (<a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr122'_x"><span class="id" title="notation">pr122</span></a> <span class="id" title="var">ff</span>) <a class="idref" href="UniMath.Foundations.PartA.html#8b57b11be4275b47948f6caec264b70f"><span class="id" title="notation">@</span></a> <span class="id" title="var">_</span>) ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#transportb_mono_cod_disp"><span class="id" title="lemma">transportb_mono_cod_disp</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab2255"></a><h1 class="section">5. The univalence</h1>
+<a id="lab2332"></a><h1 class="section">5. The univalence</h1>
 
 </div>
 <div class="code">
 <span class="id" title="keyword">Proposition</span> <a id="disp_univalent_disp_mono_codomain" class="idref" href="#disp_univalent_disp_mono_codomain"><span class="id" title="lemma">disp_univalent_disp_mono_codomain</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="C:92" class="idref" href="#C:92"><span class="id" title="binder">C</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Univalence.html#univalent_category"><span class="id" title="definition">univalent_category</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Univalence.html#is_univalent_disp"><span class="id" title="definition">is_univalent_disp</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#disp_mono_codomain"><span class="id" title="definition">disp_mono_codomain</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#C:92"><span class="id" title="variable">C</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Sigma.html#is_univalent_sigma_disp"><span class="id" title="lemma">is_univalent_sigma_disp</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.html#disp_univalent_disp_codomain"><span class="id" title="lemma">disp_univalent_disp_codomain</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Constructions.FullSubcategory.html#disp_full_sub_univalent"><span class="id" title="lemma">disp_full_sub_univalent</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intro</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Monics.html#isapropisMonic"><span class="id" title="lemma">isapropisMonic</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="univalent_disp_mono_codomain" class="idref" href="#univalent_disp_mono_codomain"><span class="id" title="definition">univalent_disp_mono_codomain</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="C:93" class="idref" href="#C:93"><span class="id" title="binder">C</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Univalence.html#univalent_category"><span class="id" title="definition">univalent_category</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Univalence.html#disp_univalent_category"><span class="id" title="definition">disp_univalent_category</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#C:93"><span class="id" title="variable">C</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Univalence.html#make_disp_univalent_category"><span class="id" title="definition">make_disp_univalent_category</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#disp_mono_codomain"><span class="id" title="definition">disp_mono_codomain</span></a> <span class="id" title="var">C</span>).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#disp_univalent_disp_mono_codomain"><span class="id" title="lemma">disp_univalent_disp_mono_codomain</span></a>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab2256"></a><h1 class="section">6. Accessors for monomorphisms</h1>
+<a id="lab2333"></a><h1 class="section">6. Accessors for monomorphisms</h1>
 
 </div>
 <div class="code">
@@ -471,9 +470,9 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="x:97" class="idref" href="#x:97"><span class="id" title="binder">x</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#C:96"><span class="id" title="variable">C</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="y:98" class="idref" href="#y:98"><span class="id" title="binder">y</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#mono_in_cat"><span class="id" title="definition">mono_in_cat</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#x:97"><span class="id" title="variable">x</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#C:96"><span class="id" title="variable">C</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr11'_x"><span class="id" title="notation">pr11</span></a> <span class="id" title="var">y</span>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="monic_of_mono_in_cat" class="idref" href="#monic_of_mono_in_cat"><span class="id" title="definition">monic_of_mono_in_cat</span></a><br/>
@@ -499,20 +498,20 @@
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="isaset_subobject_univ_cat" class="idref" href="#isaset_subobject_univ_cat"><span class="id" title="definition">isaset_subobject_univ_cat</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.PartB.html#isaset"><span class="id" title="definition">isaset</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#mono_in_cat"><span class="id" title="definition">mono_in_cat</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#Subobjects.x"><span class="id" title="variable">x</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">m₁</span> <span class="id" title="var">m₂</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Univalence.html#isaset_disp_ob"><span class="id" title="definition">isaset_disp_ob</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#univalent_disp_mono_codomain"><span class="id" title="definition">univalent_disp_mono_codomain</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#Subobjects.C"><span class="id" title="variable">C</span></a>)).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#locally_propositional_mono_cod_disp_cat"><span class="id" title="definition">locally_propositional_mono_cod_disp_cat</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="set_of_subobject_univ_cat" class="idref" href="#set_of_subobject_univ_cat"><span class="id" title="definition">set_of_subobject_univ_cat</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.Sets.html#hSet"><span class="id" title="definition">hSet</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.Sets.html#make_hSet"><span class="id" title="definition">make_hSet</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#mono_in_cat"><span class="id" title="definition">mono_in_cat</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#Subobjects.x"><span class="id" title="variable">x</span></a>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#isaset_subobject_univ_cat"><span class="id" title="definition">isaset_subobject_univ_cat</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Proposition</span> <a id="eq_subobject_univ_cat" class="idref" href="#eq_subobject_univ_cat"><span class="id" title="lemma">eq_subobject_univ_cat</span></a><br/>
@@ -522,14 +521,14 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#monic_of_mono_in_cat"><span class="id" title="definition">monic_of_mono_in_cat</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#b191edb53c38e808d51c2192fb09c255"><span class="id" title="variable">y₁</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#b191edb53c38e808d51c2192fb09c255"><span class="id" title="variable">y₁</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#9de76f37627cc1e211740ac14b8d031d"><span class="id" title="variable">y₂</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Univalence.html#isotoid_disp"><span class="id" title="definition">isotoid_disp</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#univalent_disp_mono_codomain"><span class="id" title="definition">univalent_disp_mono_codomain</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#Subobjects.C"><span class="id" title="variable">C</span></a>) (<a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a> <span class="id" title="var">_</span>)).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#z_iso_disp_mono_codomain"><span class="id" title="definition">z_iso_disp_mono_codomain</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <span class="id" title="var">f</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_right"><span class="id" title="definition">id_right</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">p</span>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 <span class="id" title="keyword">End</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.MonoCodomain.html#Subobjects"><span class="id" title="section">Subobjects</span></a>.<br/>
 
 <br/>

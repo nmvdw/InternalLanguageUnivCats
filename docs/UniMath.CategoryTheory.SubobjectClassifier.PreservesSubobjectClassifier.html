@@ -1,21 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="coqdoc.css" rel="stylesheet" type="text/css" />
-<title>UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link href="coqdoc.css" rel="stylesheet" type="text/css"/>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<script src="./proofs-toggle.js" type="text/javascript"></script>
+	<style>
+		div.proofcomment {
+			font-style: italic;
+		}
+	</style>
+	<title>Documentation</title>
 </head>
-
 <body>
-
 <div id="page">
-
-<div id="header">
-</div>
-
 <div id="main">
-
 <h1 class="libtitle">Library UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier</h1>
 
 <div class="code">
@@ -36,7 +35,7 @@
 </div>
 
 <div class="doc">
-<a id="lab1375"></a><h1 class="section">1. Preserving subobject classifiers</h1>
+<a id="lab1380"></a><h1 class="section">1. Preserving subobject classifiers</h1>
 
 </div>
 <div class="code">
@@ -63,10 +62,10 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="f251fea29c9808b431508351b89a7d03" class="idref" href="#f251fea29c9808b431508351b89a7d03"><span class="id" title="binder">T₂</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Terminal.html#Terminal"><span class="id" title="definition">Terminal</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#fac20af712cc0c8374543dcdfdb71a00"><span class="id" title="variable">C₂</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HF:14" class="idref" href="#HF:14"><span class="id" title="binder">HF</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_terminal"><span class="id" title="definition">preserves_terminal</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#F:11"><span class="id" title="variable">F</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.PartB.html#isaprop"><span class="id" title="definition">isaprop</span></a> (<a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#preserves_subobject_classifier"><span class="id" title="definition">preserves_subobject_classifier</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#F:11"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#81a1ce3a7e800dcd32e479f25e44d38a"><span class="id" title="variable">T₁</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#f251fea29c9808b431508351b89a7d03"><span class="id" title="variable">T₂</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#HF:14"><span class="id" title="variable">HF</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">do</span> 3 (<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartD.html#impred"><span class="id" title="lemma">impred</span></a> ; <span class="id" title="tactic">intro</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.SubobjectClassifier.html#isaprop_is_subobject_classifier"><span class="id" title="lemma">isaprop_is_subobject_classifier</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="preserves_subobject_classifier_on_ob" class="idref" href="#preserves_subobject_classifier_on_ob"><span class="id" title="definition">preserves_subobject_classifier_on_ob</span></a><br/>
@@ -101,7 +100,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_identity"><span class="id" title="definition">functor_identity</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#C:32"><span class="id" title="variable">C</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#T:33"><span class="id" title="variable">T</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#T:33"><span class="id" title="variable">T</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#identity_preserves_terminal"><span class="id" title="definition">identity_preserves_terminal</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#C:32"><span class="id" title="variable">C</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">Ω</span> <span class="id" title="var">t</span> <span class="id" title="var">H</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.SubobjectClassifier.html#is_subobject_classifier_eq_ar"><span class="id" title="lemma">is_subobject_classifier_eq_ar</span></a> <span class="id" title="var">_</span> <span class="id" title="var">H</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">abstract</span><br/>
@@ -109,7 +108,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">!(</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_left"><span class="id" title="definition">id_left</span></a> <span class="id" title="var">_</span><a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.Foundations.PartA.html#8b57b11be4275b47948f6caec264b70f"><span class="id" title="notation">@</span></a> <span class="id" title="var">_</span>) ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.MoreFoundations.PartA.html#maponpaths_2"><span class="id" title="definition">maponpaths_2</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Terminal.html#TerminalArrowEq"><span class="id" title="lemma">TerminalArrowEq</span></a>).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="comp_preserves_subobject_classifier" class="idref" href="#comp_preserves_subobject_classifier"><span class="id" title="definition">comp_preserves_subobject_classifier</span></a><br/>
@@ -127,7 +126,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#F:37"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#938ca2d32d8c8186c2d73ab2872ae3c9"><span class="id" title="notation">∙</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#G:38"><span class="id" title="variable">G</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#db8480b1b0963af67cacb54883f482b3"><span class="id" title="variable">T₁</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#530c6bc52dd80dd05443827f848a9c0f"><span class="id" title="variable">T₃</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#composition_preserves_terminal"><span class="id" title="definition">composition_preserves_terminal</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#HF:42"><span class="id" title="variable">HF</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#HG:43"><span class="id" title="variable">HG</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">Ω</span> <span class="id" title="var">t</span> <span class="id" title="var">H</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">pose</span> (<span class="id" title="var">HG'</span> (<span class="id" title="var">F</span> <span class="id" title="var">Ω</span>) (<a class="idref" href="UniMath.CategoryTheory.Limits.Terminal.html#TerminalArrow"><span class="id" title="definition">TerminalArrow</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_terminal_to_terminal"><span class="id" title="definition">preserves_terminal_to_terminal</span></a> <span class="id" title="var">F</span> <span class="id" title="var">HF</span> <span class="id" title="var">T₁</span>) <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a><span class="id" title="var">F</span> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">t</span></a>) (<span class="id" title="var">HF'</span> <span class="id" title="var">Ω</span> <span class="id" title="var">t</span> <span class="id" title="var">H</span>))<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">as</span> <span class="id" title="var">H'</span>.<br/>
@@ -141,13 +140,13 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="var">T</span> := <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_terminal_to_terminal"><span class="id" title="definition">preserves_terminal_to_terminal</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">_</span><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#composition_preserves_terminal"><span class="id" title="definition">composition_preserves_terminal</span></a> <span class="id" title="var">HF</span> <span class="id" title="var">HG</span>) <span class="id" title="var">T₁</span>))).<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab1376"></a><h1 class="section">2. Preservation of chosen subobject classifiers</h1>
+<a id="lab1381"></a><h1 class="section">2. Preservation of chosen subobject classifiers</h1>
 
 </div>
 <div class="code">
@@ -174,7 +173,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="1c9ad69572e9085656702eda1aed9195" class="idref" href="#1c9ad69572e9085656702eda1aed9195"><span class="id" title="binder">Ω</span></a> : <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.SubobjectClassifier.html#subobject_classifier"><span class="id" title="definition">subobject_classifier</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#b6d89da93d8653161a05eec2db5fceeb"><span class="id" title="variable">T₁</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HF':60" class="idref" href="#HF':60"><span class="id" title="binder">HF'</span></a> : <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#preserves_chosen_subobject_classifier"><span class="id" title="definition">preserves_chosen_subobject_classifier</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#F:55"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#b6d89da93d8653161a05eec2db5fceeb"><span class="id" title="variable">T₁</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#9ae915de6c155ebc73403b8c500aa603"><span class="id" title="variable">T₂</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#HF:58"><span class="id" title="variable">HF</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#1c9ad69572e9085656702eda1aed9195"><span class="id" title="variable">Ω</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#preserves_subobject_classifier"><span class="id" title="definition">preserves_subobject_classifier</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#F:55"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#b6d89da93d8653161a05eec2db5fceeb"><span class="id" title="variable">T₁</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#9ae915de6c155ebc73403b8c500aa603"><span class="id" title="variable">T₂</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#HF:58"><span class="id" title="variable">HF</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">O'</span> <span class="id" title="var">t</span> <span class="id" title="var">H</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">pose</span> (<span class="id" title="var">Ω'</span> := (<span class="id" title="var">O'</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">t</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">H</span>) : <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.SubobjectClassifier.html#subobject_classifier"><span class="id" title="definition">subobject_classifier</span></a> <span class="id" title="var">T₁</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">pose</span> (<span class="id" title="var">f</span> := <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.SubobjectClassifierIso.html#z_iso_subobject_classifier"><span class="id" title="definition">z_iso_subobject_classifier</span></a> <span class="id" title="var">Ω</span> <span class="id" title="var">Ω'</span>).<br/>
@@ -198,7 +197,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> !<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc"><span class="id" title="definition">assoc</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.MoreFoundations.PartA.html#maponpaths_2"><span class="id" title="definition">maponpaths_2</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Terminal.html#TerminalArrowEq"><span class="id" title="lemma">TerminalArrowEq</span></a> (<span class="id" title="var">T</span> := <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#preserves_terminal_to_terminal"><span class="id" title="definition">preserves_terminal_to_terminal</span></a> <span class="id" title="var">F</span> <span class="id" title="var">HF</span> <span class="id" title="var">T₁</span>)).<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Proposition</span> <a id="preserves_chosen_to_preserves_subobject_classifier'" class="idref" href="#preserves_chosen_to_preserves_subobject_classifier'"><span class="id" title="lemma">preserves_chosen_to_preserves_subobject_classifier'</span></a><br/>
@@ -212,18 +211,18 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="2a067083192e43e0dad57fcfa7d36b42" class="idref" href="#2a067083192e43e0dad57fcfa7d36b42"><span class="id" title="binder">Ω</span></a> : <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.SubobjectClassifier.html#subobject_classifier"><span class="id" title="definition">subobject_classifier</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#9299afdf74200bed1fb45e2399d232be"><span class="id" title="variable">T₁</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HF':70" class="idref" href="#HF':70"><span class="id" title="binder">HF'</span></a> : <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#preserves_chosen_subobject_classifier"><span class="id" title="definition">preserves_chosen_subobject_classifier</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#F:65"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#9299afdf74200bed1fb45e2399d232be"><span class="id" title="variable">T₁</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#4408d5b24b351f4277e953239a29dafb"><span class="id" title="variable">T₂</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#HF:68"><span class="id" title="variable">HF</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#2a067083192e43e0dad57fcfa7d36b42"><span class="id" title="variable">Ω</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#preserves_subobject_classifier"><span class="id" title="definition">preserves_subobject_classifier</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#F:65"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#9299afdf74200bed1fb45e2399d232be"><span class="id" title="variable">T₁</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#4408d5b24b351f4277e953239a29dafb"><span class="id" title="variable">T₂</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#HF:68"><span class="id" title="variable">HF</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#preserves_chosen_to_preserves_subobject_classifier"><span class="id" title="lemma">preserves_chosen_to_preserves_subobject_classifier</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="var">C₁</span> := <a class="idref" href="UniMath.CategoryTheory.Core.Univalence.html#make_univalent_category"><span class="id" title="definition">make_univalent_category</span></a> <span class="id" title="var">C₁</span> <span class="id" title="var">HC₁</span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="var">C₂</span> := <a class="idref" href="UniMath.CategoryTheory.Core.Univalence.html#make_univalent_category"><span class="id" title="definition">make_univalent_category</span></a> <span class="id" title="var">C₂</span> <span class="id" title="var">HC₂</span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">HF'</span>).<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab1377"></a><h1 class="section">3. Preservation of subobject classifiers via isomorphisms</h1>
+<a id="lab1382"></a><h1 class="section">3. Preservation of subobject classifiers via isomorphisms</h1>
 
 </div>
 <div class="code">
@@ -252,7 +251,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="c481ac14e79892a46df3fd65b9f91e8e" class="idref" href="#c481ac14e79892a46df3fd65b9f91e8e"><span class="id" title="binder">Ω₂</span></a> : <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.SubobjectClassifier.html#subobject_classifier"><span class="id" title="definition">subobject_classifier</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#c27355f8869845f1e0e94e7bd1d5608b"><span class="id" title="variable">T₂</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HF':88" class="idref" href="#HF':88"><span class="id" title="binder">HF'</span></a> : <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#preserves_chosen_to_chosen_subobject_classifier"><span class="id" title="definition">preserves_chosen_to_chosen_subobject_classifier</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#HF:85"><span class="id" title="variable">HF</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#993eb73617d425ff9bc0977697d12f1c"><span class="id" title="variable">Ω₁</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#c481ac14e79892a46df3fd65b9f91e8e"><span class="id" title="variable">Ω₂</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#preserves_chosen_subobject_classifier"><span class="id" title="definition">preserves_chosen_subobject_classifier</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#F:82"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#6763688f34999c07abff6db2b9fc9a82"><span class="id" title="variable">T₁</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#c27355f8869845f1e0e94e7bd1d5608b"><span class="id" title="variable">T₂</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#HF:85"><span class="id" title="variable">HF</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#993eb73617d425ff9bc0977697d12f1c"><span class="id" title="variable">Ω₁</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.SubobjectClassifierIso.html#z_iso_to_is_subobject_classifier"><span class="id" title="lemma">z_iso_to_is_subobject_classifier</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <span class="id" title="var">Ω₂</span>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#z_iso_inv"><span class="id" title="definition">z_iso_inv</span></a> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <span class="id" title="var">HF'</span>)).<br/>
@@ -271,7 +270,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.PartA.html#8b57b11be4275b47948f6caec264b70f"><span class="id" title="notation">@</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_left"><span class="id" title="definition">id_left</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.MoreFoundations.PartA.html#maponpaths_2"><span class="id" title="definition">maponpaths_2</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Terminal.html#TerminalArrowEq"><span class="id" title="lemma">TerminalArrowEq</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Proposition</span> <a id="preserves_chosen_to_preserves_chosen_subobject_classifier'" class="idref" href="#preserves_chosen_to_preserves_chosen_subobject_classifier'"><span class="id" title="lemma">preserves_chosen_to_preserves_chosen_subobject_classifier'</span></a><br/>
@@ -286,12 +285,12 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="bd618bc79fe53dc246cbbb5d6732f520" class="idref" href="#bd618bc79fe53dc246cbbb5d6732f520"><span class="id" title="binder">Ω₂</span></a> : <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.SubobjectClassifier.html#subobject_classifier"><span class="id" title="definition">subobject_classifier</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#1ddd20eac60128271ac8382ab4f60ba4"><span class="id" title="variable">T₂</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HF':99" class="idref" href="#HF':99"><span class="id" title="binder">HF'</span></a> : <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#preserves_chosen_to_chosen_subobject_classifier"><span class="id" title="definition">preserves_chosen_to_chosen_subobject_classifier</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#HF:96"><span class="id" title="variable">HF</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#901cf3dd9849c056c97501301fac1719"><span class="id" title="variable">Ω₁</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#bd618bc79fe53dc246cbbb5d6732f520"><span class="id" title="variable">Ω₂</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#preserves_chosen_subobject_classifier"><span class="id" title="definition">preserves_chosen_subobject_classifier</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#F:93"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#725a7309bd2d37429c9ef6578eb8040e"><span class="id" title="variable">T₁</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#1ddd20eac60128271ac8382ab4f60ba4"><span class="id" title="variable">T₂</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#HF:96"><span class="id" title="variable">HF</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#901cf3dd9849c056c97501301fac1719"><span class="id" title="variable">Ω₁</span></a>.<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.PreservesSubobjectClassifier.html#preserves_chosen_to_preserves_chosen_subobject_classifier"><span class="id" title="lemma">preserves_chosen_to_preserves_chosen_subobject_classifier</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="var">C₁</span> := <a class="idref" href="UniMath.CategoryTheory.Core.Univalence.html#make_univalent_category"><span class="id" title="definition">make_univalent_category</span></a> <span class="id" title="var">C₁</span> <span class="id" title="var">HC₁</span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="var">C₂</span> := <a class="idref" href="UniMath.CategoryTheory.Core.Univalence.html#make_univalent_category"><span class="id" title="definition">make_univalent_category</span></a> <span class="id" title="var">C₂</span> <span class="id" title="var">HC₂</span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">HF'</span>).<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 </div>
 </div>
 

@@ -1,21 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="coqdoc.css" rel="stylesheet" type="text/css" />
-<title>UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link href="coqdoc.css" rel="stylesheet" type="text/css"/>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<script src="./proofs-toggle.js" type="text/javascript"></script>
+	<style>
+		div.proofcomment {
+			font-style: italic;
+		}
+	</style>
+	<title>Documentation</title>
 </head>
-
 <body>
-
 <div id="page">
-
-<div id="header">
-</div>
-
 <div id="main">
-
 <h1 class="libtitle">Library UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat</h1>
 
 <div class="code">
@@ -77,7 +76,7 @@ This is the third and final layer of the construction of the bicategory of pseud
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="psfunctor_data_is_univalent_2_1" class="idref" href="#psfunctor_data_is_univalent_2_1"><span class="id" title="definition">psfunctor_data_is_univalent_2_1</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HD_2_1:5" class="idref" href="#HD_2_1:5"><span class="id" title="binder">HD_2_1</span></a> : <a class="idref" href="UniMath.Bicategories.Core.Univalence.html#is_univalent_2_1"><span class="id" title="definition">is_univalent_2_1</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat.html#PseudoFunctorData.D"><span class="id" title="variable">D</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.Core.Univalence.html#is_univalent_2_1"><span class="id" title="definition">is_univalent_2_1</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat.html#psfunctor_data_bicat"><span class="id" title="definition">psfunctor_data_bicat</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.Examples.Prod.html#is_univalent_2_1_total_dirprod"><span class="id" title="definition">is_univalent_2_1_total_dirprod</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.Map1Cells.html#map1cells_is_univalent_2_1"><span class="id" title="definition">map1cells_is_univalent_2_1</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">HD_2_1</span>.<br/>
@@ -85,13 +84,13 @@ This is the third and final layer of the construction of the bicategory of pseud
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.Examples.Prod.html#is_univalent_2_1_dirprod_bicat"><span class="id" title="definition">is_univalent_2_1_dirprod_bicat</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.Identitor.html#identitor_is_disp_univalent_2_1"><span class="id" title="definition">identitor_is_disp_univalent_2_1</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.Compositor.html#compositor_is_disp_univalent_2_1"><span class="id" title="definition">compositor_is_disp_univalent_2_1</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="psfunctor_data_is_univalent_2_0" class="idref" href="#psfunctor_data_is_univalent_2_0"><span class="id" title="definition">psfunctor_data_is_univalent_2_0</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HD:6" class="idref" href="#HD:6"><span class="id" title="binder">HD</span></a> : <a class="idref" href="UniMath.Bicategories.Core.Univalence.html#is_univalent_2"><span class="id" title="definition">is_univalent_2</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat.html#PseudoFunctorData.D"><span class="id" title="variable">D</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.Core.Univalence.html#is_univalent_2_0"><span class="id" title="definition">is_univalent_2_0</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat.html#psfunctor_data_bicat"><span class="id" title="definition">psfunctor_data_bicat</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">pose</span> (<span class="id" title="var">HD_2_1</span> := <a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> <span class="id" title="var">HD</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.Examples.Prod.html#is_univalent_2_0_total_dirprod"><span class="id" title="definition">is_univalent_2_0_total_dirprod</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.Map1Cells.html#map1cells_is_univalent_2"><span class="id" title="definition">map1cells_is_univalent_2</span></a>; <span class="id" title="tactic">assumption</span>.<br/>
@@ -100,18 +99,18 @@ This is the third and final layer of the construction of the bicategory of pseud
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.Map1Cells.html#map1cells_is_univalent_2_1"><span class="id" title="definition">map1cells_is_univalent_2_1</span></a>; <span class="id" title="tactic">assumption</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.Identitor.html#identitor_is_disp_univalent_2"><span class="id" title="definition">identitor_is_disp_univalent_2</span></a>; <span class="id" title="tactic">assumption</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.Compositor.html#compositor_is_disp_univalent_2"><span class="id" title="definition">compositor_is_disp_univalent_2</span></a>; <span class="id" title="tactic">assumption</span>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="psfunctor_data_is_univalent_2" class="idref" href="#psfunctor_data_is_univalent_2"><span class="id" title="definition">psfunctor_data_is_univalent_2</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HD:7" class="idref" href="#HD:7"><span class="id" title="binder">HD</span></a> : <a class="idref" href="UniMath.Bicategories.Core.Univalence.html#is_univalent_2"><span class="id" title="definition">is_univalent_2</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat.html#PseudoFunctorData.D"><span class="id" title="variable">D</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.Core.Univalence.html#is_univalent_2"><span class="id" title="definition">is_univalent_2</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat.html#psfunctor_data_bicat"><span class="id" title="definition">psfunctor_data_bicat</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">split</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat.html#psfunctor_data_is_univalent_2_0"><span class="id" title="definition">psfunctor_data_is_univalent_2_0</span></a>; <span class="id" title="tactic">assumption</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat.html#psfunctor_data_is_univalent_2_1"><span class="id" title="definition">psfunctor_data_is_univalent_2_1</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> <span class="id" title="var">HD</span>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">End</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat.html#PseudoFunctorData"><span class="id" title="section">PseudoFunctorData</span></a>.<br/>
@@ -238,10 +237,10 @@ This is the third and final layer of the construction of the bicategory of pseud
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="is_psfunctor_isaprop" class="idref" href="#is_psfunctor_isaprop"><span class="id" title="definition">is_psfunctor_isaprop</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.PartB.html#isaprop"><span class="id" title="definition">isaprop</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat.html#is_psfunctor"><span class="id" title="definition">is_psfunctor</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">repeat</span> (<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartB.html#isapropdirprod"><span class="id" title="definition">isapropdirprod</span></a>) ; <span class="id" title="tactic">repeat</span> (<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartD.html#impred"><span class="id" title="lemma">impred</span></a> ; <span class="id" title="tactic">intro</span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;; <span class="id" title="tactic">try</span> (<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat.html#FunctorLaws.D"><span class="id" title="variable">D</span></a>) ; <span class="id" title="tactic">try</span> (<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.Core.Bicat.html#isaprop_is_invertible_2cell"><span class="id" title="lemma">isaprop_is_invertible_2cell</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 <span class="id" title="keyword">End</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat.html#FunctorLaws"><span class="id" title="section">FunctorLaws</span></a>.<br/>
 
 <br/>
@@ -257,34 +256,34 @@ This is the third and final layer of the construction of the bicategory of pseud
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="laxfunctor_bicat_is_univalent_2_1" class="idref" href="#laxfunctor_bicat_is_univalent_2_1"><span class="id" title="definition">laxfunctor_bicat_is_univalent_2_1</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HD_2_1:82" class="idref" href="#HD_2_1:82"><span class="id" title="binder">HD_2_1</span></a> : <a class="idref" href="UniMath.Bicategories.Core.Univalence.html#is_univalent_2_1"><span class="id" title="definition">is_univalent_2_1</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat.html#LaxFunctorBicat.D"><span class="id" title="variable">D</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.Core.Univalence.html#is_univalent_2_1"><span class="id" title="definition">is_univalent_2_1</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat.html#laxfunctor_bicat"><span class="id" title="definition">laxfunctor_bicat</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.Examples.FullSub.html#is_univalent_2_1_fullsubbicat"><span class="id" title="definition">is_univalent_2_1_fullsubbicat</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat.html#psfunctor_data_is_univalent_2_1"><span class="id" title="definition">psfunctor_data_is_univalent_2_1</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">HD_2_1</span>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="laxfunctor_bicat_is_univalent_2_0" class="idref" href="#laxfunctor_bicat_is_univalent_2_0"><span class="id" title="definition">laxfunctor_bicat_is_univalent_2_0</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HD:83" class="idref" href="#HD:83"><span class="id" title="binder">HD</span></a> : <a class="idref" href="UniMath.Bicategories.Core.Univalence.html#is_univalent_2"><span class="id" title="definition">is_univalent_2</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat.html#LaxFunctorBicat.D"><span class="id" title="variable">D</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.Core.Univalence.html#is_univalent_2_0"><span class="id" title="definition">is_univalent_2_0</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat.html#laxfunctor_bicat"><span class="id" title="definition">laxfunctor_bicat</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.Examples.FullSub.html#is_univalent_2_0_fullsubbicat"><span class="id" title="definition">is_univalent_2_0_fullsubbicat</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat.html#psfunctor_data_is_univalent_2"><span class="id" title="definition">psfunctor_data_is_univalent_2</span></a>; <span class="id" title="tactic">assumption</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">intro</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">repeat</span> (<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartB.html#isapropdirprod"><span class="id" title="definition">isapropdirprod</span></a>) ; <span class="id" title="tactic">repeat</span> (<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartD.html#impred"><span class="id" title="lemma">impred</span></a> ; <span class="id" title="tactic">intro</span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;; <span class="id" title="tactic">try</span> (<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat.html#LaxFunctorBicat.D"><span class="id" title="variable">D</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="laxfunctor_bicat_is_univalent_2" class="idref" href="#laxfunctor_bicat_is_univalent_2"><span class="id" title="definition">laxfunctor_bicat_is_univalent_2</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HD:84" class="idref" href="#HD:84"><span class="id" title="binder">HD</span></a> : <a class="idref" href="UniMath.Bicategories.Core.Univalence.html#is_univalent_2"><span class="id" title="definition">is_univalent_2</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat.html#LaxFunctorBicat.D"><span class="id" title="variable">D</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.Core.Univalence.html#is_univalent_2"><span class="id" title="definition">is_univalent_2</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat.html#laxfunctor_bicat"><span class="id" title="definition">laxfunctor_bicat</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">split</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat.html#laxfunctor_bicat_is_univalent_2_0"><span class="id" title="definition">laxfunctor_bicat_is_univalent_2_0</span></a>; <span class="id" title="tactic">assumption</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat.html#laxfunctor_bicat_is_univalent_2_1"><span class="id" title="definition">laxfunctor_bicat_is_univalent_2_1</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> <span class="id" title="var">HD</span>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">End</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat.html#LaxFunctorBicat"><span class="id" title="section">LaxFunctorBicat</span></a>.<br/>
@@ -302,33 +301,33 @@ This is the third and final layer of the construction of the bicategory of pseud
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="psfunctor_bicat_is_univalent_2_1" class="idref" href="#psfunctor_bicat_is_univalent_2_1"><span class="id" title="definition">psfunctor_bicat_is_univalent_2_1</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HD_2_1:89" class="idref" href="#HD_2_1:89"><span class="id" title="binder">HD_2_1</span></a> : <a class="idref" href="UniMath.Bicategories.Core.Univalence.html#is_univalent_2_1"><span class="id" title="definition">is_univalent_2_1</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat.html#PseudoFunctorBicat.D"><span class="id" title="variable">D</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.Core.Univalence.html#is_univalent_2_1"><span class="id" title="definition">is_univalent_2_1</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat.html#psfunctor_bicat"><span class="id" title="definition">psfunctor_bicat</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.Examples.FullSub.html#is_univalent_2_1_fullsubbicat"><span class="id" title="definition">is_univalent_2_1_fullsubbicat</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat.html#psfunctor_data_is_univalent_2_1"><span class="id" title="definition">psfunctor_data_is_univalent_2_1</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">HD_2_1</span>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="psfunctor_bicat_is_univalent_2_0" class="idref" href="#psfunctor_bicat_is_univalent_2_0"><span class="id" title="definition">psfunctor_bicat_is_univalent_2_0</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HD:90" class="idref" href="#HD:90"><span class="id" title="binder">HD</span></a> : <a class="idref" href="UniMath.Bicategories.Core.Univalence.html#is_univalent_2"><span class="id" title="definition">is_univalent_2</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat.html#PseudoFunctorBicat.D"><span class="id" title="variable">D</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.Core.Univalence.html#is_univalent_2_0"><span class="id" title="definition">is_univalent_2_0</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat.html#psfunctor_bicat"><span class="id" title="definition">psfunctor_bicat</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.Examples.FullSub.html#is_univalent_2_0_fullsubbicat"><span class="id" title="definition">is_univalent_2_0_fullsubbicat</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat.html#psfunctor_data_is_univalent_2"><span class="id" title="definition">psfunctor_data_is_univalent_2</span></a>; <span class="id" title="tactic">assumption</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">intro</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat.html#is_psfunctor_isaprop"><span class="id" title="definition">is_psfunctor_isaprop</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="psfunctor_bicat_is_univalent_2" class="idref" href="#psfunctor_bicat_is_univalent_2"><span class="id" title="definition">psfunctor_bicat_is_univalent_2</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HD:91" class="idref" href="#HD:91"><span class="id" title="binder">HD</span></a> : <a class="idref" href="UniMath.Bicategories.Core.Univalence.html#is_univalent_2"><span class="id" title="definition">is_univalent_2</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat.html#PseudoFunctorBicat.D"><span class="id" title="variable">D</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.Core.Univalence.html#is_univalent_2"><span class="id" title="definition">is_univalent_2</span></a> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat.html#psfunctor_bicat"><span class="id" title="definition">psfunctor_bicat</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">split</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat.html#psfunctor_bicat_is_univalent_2_0"><span class="id" title="definition">psfunctor_bicat_is_univalent_2_0</span></a>; <span class="id" title="tactic">assumption</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat.html#psfunctor_bicat_is_univalent_2_1"><span class="id" title="definition">psfunctor_bicat_is_univalent_2_1</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> <span class="id" title="var">HD</span>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">End</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat.html#PseudoFunctorBicat"><span class="id" title="section">PseudoFunctorBicat</span></a>.<br/>

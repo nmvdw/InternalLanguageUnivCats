@@ -1,21 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="coqdoc.css" rel="stylesheet" type="text/css" />
-<title>UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link href="coqdoc.css" rel="stylesheet" type="text/css"/>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<script src="./proofs-toggle.js" type="text/javascript"></script>
+	<style>
+		div.proofcomment {
+			font-style: italic;
+		}
+	</style>
+	<title>Documentation</title>
 </head>
-
 <body>
-
 <div id="page">
-
-<div id="header">
-</div>
-
 <div id="main">
-
 <h1 class="libtitle">Library UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal</h1>
 
 <div class="code">
@@ -40,7 +39,7 @@
 </div>
 
 <div class="doc">
-<a id="lab1379"></a><h1 class="section">1. Fiberwise terminal objects</h1>
+<a id="lab1384"></a><h1 class="section">1. Fiberwise terminal objects</h1>
 
 </div>
 <div class="code">
@@ -116,7 +115,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="D:38" class="idref" href="#D:38"><span class="id" title="binder">D</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Univalence.html#disp_univalent_category"><span class="id" title="definition">disp_univalent_category</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#C:37"><span class="id" title="variable">C</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HD:39" class="idref" href="#HD:39"><span class="id" title="binder">HD</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fibrations.html#cleaving"><span class="id" title="definition">cleaving</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#D:38"><span class="id" title="variable">D</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.PartB.html#isaprop"><span class="id" title="definition">isaprop</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#fiberwise_terminal"><span class="id" title="definition">fiberwise_terminal</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#HD:39"><span class="id" title="variable">HD</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartB.html#isapropdirprod"><span class="id" title="definition">isapropdirprod</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartD.html#impred"><span class="id" title="lemma">impred</span></a> ; <span class="id" title="tactic">intro</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Terminal.html#isaprop_Terminal"><span class="id" title="lemma">isaprop_Terminal</span></a>.<br/>
@@ -124,7 +123,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Univalence.html#disp_univalent_category_is_univalent_disp"><span class="id" title="definition">disp_univalent_category_is_univalent_disp</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">do</span> 3 (<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartD.html#impred"><span class="id" title="lemma">impred</span></a> ; <span class="id" title="tactic">intro</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#isaprop_preserves_terminal"><span class="id" title="definition">isaprop_preserves_terminal</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Section</span> <a id="FiberwiseTerminalPoset" class="idref" href="#FiberwiseTerminalPoset"><span class="id" title="section">FiberwiseTerminalPoset</span></a>.<br/>
@@ -141,19 +140,19 @@
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="make_terminal_fiber_locally_propositional" class="idref" href="#make_terminal_fiber_locally_propositional"><span class="id" title="definition">make_terminal_fiber_locally_propositional</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="6c48d2981cee562ec855ecfa4a686fde" class="idref" href="#6c48d2981cee562ec855ecfa4a686fde"><span class="id" title="binder">Γ</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#FiberwiseTerminalPoset.C"><span class="id" title="variable">C</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Limits.Terminal.html#Terminal"><span class="id" title="definition">Terminal</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#FiberwiseTerminalPoset.D"><span class="id" title="variable">D</span></a><a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiber.html#9fb98d533bf1a83883f724f8d08887c1"><span class="id" title="notation">[{</span></a><a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#6c48d2981cee562ec855ecfa4a686fde"><span class="id" title="variable">Γ</span></a><a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiber.html#9fb98d533bf1a83883f724f8d08887c1"><span class="id" title="notation">}]</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Terminal.html#make_Terminal"><span class="id" title="definition">make_Terminal</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#FiberwiseTerminalPoset.truth"><span class="id" title="variable">truth</span></a> <span class="id" title="var">Γ</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">intros</span> φ.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartB.html#iscontraprop1"><span class="id" title="lemma">iscontraprop1</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#FiberwiseTerminalPoset.HD'"><span class="id" title="variable">HD'</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#FiberwiseTerminalPoset.truth_in"><span class="id" title="variable">truth_in</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="make_fiberwise_terminal_locally_propositional" class="idref" href="#make_fiberwise_terminal_locally_propositional"><span class="id" title="definition">make_fiberwise_terminal_locally_propositional</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#fiberwise_terminal"><span class="id" title="definition">fiberwise_terminal</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#FiberwiseTerminalPoset.HD"><span class="id" title="variable">HD</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">split</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#make_terminal_fiber_locally_propositional"><span class="id" title="definition">make_terminal_fiber_locally_propositional</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">intros</span> <span class="id" title="var">Γ₁</span> <span class="id" title="var">Γ₂</span> <span class="id" title="var">s</span>.<br/>
@@ -165,14 +164,14 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#make_terminal_fiber_locally_propositional"><span class="id" title="definition">make_terminal_fiber_locally_propositional</span></a> <span class="id" title="var">Γ₁</span>)) ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#make_z_iso"><span class="id" title="definition">make_z_iso</span></a> ; [ <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#FiberwiseTerminalPoset.truth_sub"><span class="id" title="variable">truth_sub</span></a> | <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Terminal.html#TerminalArrow"><span class="id" title="definition">TerminalArrow</span></a> | ] ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">split</span> ; <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#FiberwiseTerminalPoset.HD'"><span class="id" title="variable">HD'</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 <span class="id" title="keyword">End</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#FiberwiseTerminalPoset"><span class="id" title="section">FiberwiseTerminalPoset</span></a>.<br/>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab1380"></a><h1 class="section">2. Right adjoint from fiberwise terminal objects</h1>
+<a id="lab1385"></a><h1 class="section">2. Right adjoint from fiberwise terminal objects</h1>
 
 </div>
 <div class="code">
@@ -214,7 +213,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="z:72" class="idref" href="#z:72"><span class="id" title="binder">z</span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">--&gt;[</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#z:72"><span class="id" title="variable">z</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">]</span></a> <span class="id" title="var">_</span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="z:71" class="idref" href="#z:71"><span class="id" title="binder">z</span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#z:71"><span class="id" title="variable">z</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <span class="id" title="var">_</span>) (<a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">!</span></a><a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#p:64"><span class="id" title="variable">p</span></a>) <a class="idref" href="UniMath.Foundations.PartA.html#8b57b11be4275b47948f6caec264b70f"><span class="id" title="notation">@</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_left"><span class="id" title="definition">id_left</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.PartA.html#8b57b11be4275b47948f6caec264b70f"><span class="id" title="notation">@</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#q:67"><span class="id" title="variable">q</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#gg:70"><span class="id" title="variable">gg</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">induction</span> <span class="id" title="var">p</span>, <span class="id" title="var">q</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.PartA.html#8b57b11be4275b47948f6caec264b70f"><span class="id" title="notation">@</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fibrations.html#cartesian_factorisation_commutes"><span class="id" title="definition">cartesian_factorisation_commutes</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr22'_x"><span class="id" title="notation">pr22</span></a> <a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr22'_x"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#RightAdjointFromTerminal.HD"><span class="id" title="variable">HD</span></a> <span class="id" title="var">y</span> <span class="id" title="var">x</span> <span class="id" title="var">g</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#terminal_obj_in_fib"><span class="id" title="definition">terminal_obj_in_fib</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#RightAdjointFromTerminal.T"><span class="id" title="variable">T</span></a> <span class="id" title="var">y</span>)<a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr22'_x"><span class="id" title="notation">)</span></a>)<br/>
@@ -222,21 +221,21 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.MoreFoundations.PartA.html#maponpaths_2"><span class="id" title="definition">maponpaths_2</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Terminal.html#TerminalArrowEq"><span class="id" title="lemma">TerminalArrowEq</span></a> (<span class="id" title="var">T</span> := <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#lift_terminal_in_fib"><span class="id" title="definition">lift_terminal_in_fib</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#RightAdjointFromTerminal.T"><span class="id" title="variable">T</span></a> <span class="id" title="var">g</span>)).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="terminal_functor_data" class="idref" href="#terminal_functor_data"><span class="id" title="definition">terminal_functor_data</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_data"><span class="id" title="definition">functor_data</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#RightAdjointFromTerminal.C"><span class="id" title="variable">C</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#RightAdjointFromTerminal.E"><span class="id" title="variable">E</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#make_functor_data"><span class="id" title="definition">make_functor_data</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="x:73" class="idref" href="#x:73"><span class="id" title="binder"><span id="x:74" class="id">x</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#x:73"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#terminal_obj_in_fib"><span class="id" title="definition">terminal_obj_in_fib</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#RightAdjointFromTerminal.T"><span class="id" title="variable">T</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#x:73"><span class="id" title="variable">x</span></a>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="x:75" class="idref" href="#x:75"><span class="id" title="binder"><span id="x:78" class="id">x</span></span></a> <a id="y:76" class="idref" href="#y:76"><span class="id" title="binder"><span id="y:79" class="id">y</span></span></a> <a id="f:77" class="idref" href="#f:77"><span class="id" title="binder"><span id="f:80" class="id">f</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#f:77"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#terminal_mor_lift"><span class="id" title="definition">terminal_mor_lift</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#f:77"><span class="id" title="variable">f</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Proposition</span> <a id="is_functor_terminal_functor" class="idref" href="#is_functor_terminal_functor"><span class="id" title="lemma">is_functor_terminal_functor</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#is_functor"><span class="id" title="definition">is_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#terminal_functor_data"><span class="id" title="definition">terminal_functor_data</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">split</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> ; <span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a>.<br/>
@@ -269,16 +268,16 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.Foundations.PartA.html#transport_f_f"><span class="id" title="definition">transport_f_f</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.MoreFoundations.PartA.html#maponpaths_2"><span class="id" title="definition">maponpaths_2</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="terminal_functor" class="idref" href="#terminal_functor"><span class="id" title="definition">terminal_functor</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#RightAdjointFromTerminal.C"><span class="id" title="variable">C</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#2e11fa34845c6475af27ac9ab3f166ed"><span class="id" title="notation">⟶</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#RightAdjointFromTerminal.E"><span class="id" title="variable">E</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#make_functor"><span class="id" title="definition">make_functor</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#terminal_functor_data"><span class="id" title="definition">terminal_functor_data</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#is_functor_terminal_functor"><span class="id" title="lemma">is_functor_terminal_functor</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="terminal_functor_unit_data" class="idref" href="#terminal_functor_unit_data"><span class="id" title="definition">terminal_functor_unit_data</span></a><br/>
@@ -288,7 +287,7 @@
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Proposition</span> <a id="terminal_functor_unit_laws" class="idref" href="#terminal_functor_unit_laws"><span class="id" title="lemma">terminal_functor_unit_laws</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#is_nat_trans"><span class="id" title="definition">is_nat_trans</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#terminal_functor_unit_data"><span class="id" title="definition">terminal_functor_unit_data</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">f</span> ; <span class="id" title="tactic">unfold</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#terminal_functor_unit_data"><span class="id" title="definition">terminal_functor_unit_data</span></a> ; <span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartA.html#total2_paths_f"><span class="id" title="lemma">total2_paths_f</span></a> ; <span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_right"><span class="id" title="definition">id_right</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.PartA.html#8b57b11be4275b47948f6caec264b70f"><span class="id" title="notation">@</span></a> <a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">!(</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_left"><span class="id" title="definition">id_left</span></a> <span class="id" title="var">_</span><a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">)</span></a>).<br/>
@@ -311,28 +310,28 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.Foundations.PartA.html#transport_f_f"><span class="id" title="definition">transport_f_f</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.MoreFoundations.PartA.html#maponpaths_2"><span class="id" title="definition">maponpaths_2</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="terminal_functor_unit" class="idref" href="#terminal_functor_unit"><span class="id" title="definition">terminal_functor_unit</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_identity"><span class="id" title="definition">functor_identity</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#RightAdjointFromTerminal.E"><span class="id" title="variable">E</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#8848592016d1c94be2b36b727072e7e0"><span class="id" title="notation">⟹</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#1430877ebf5dbc935dc0c150075f5f8a"><span class="id" title="variable">π</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#938ca2d32d8c8186c2d73ab2872ae3c9"><span class="id" title="notation">∙</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#terminal_functor"><span class="id" title="definition">terminal_functor</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#make_nat_trans"><span class="id" title="definition">make_nat_trans</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#terminal_functor_unit_data"><span class="id" title="definition">terminal_functor_unit_data</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#terminal_functor_unit_laws"><span class="id" title="lemma">terminal_functor_unit_laws</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="terminal_functor_counit" class="idref" href="#terminal_functor_counit"><span class="id" title="definition">terminal_functor_counit</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#terminal_functor"><span class="id" title="definition">terminal_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#938ca2d32d8c8186c2d73ab2872ae3c9"><span class="id" title="notation">∙</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#1430877ebf5dbc935dc0c150075f5f8a"><span class="id" title="variable">π</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#8848592016d1c94be2b36b727072e7e0"><span class="id" title="notation">⟹</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_identity"><span class="id" title="definition">functor_identity</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#RightAdjointFromTerminal.C"><span class="id" title="variable">C</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#make_nat_trans"><span class="id" title="definition">make_nat_trans</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="x:84" class="idref" href="#x:84"><span class="id" title="binder"><span id="x:85" class="id">x</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#identity"><span class="id" title="definition">identity</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">abstract</span><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">f</span> ; <span class="id" title="var">cbn</span> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_left"><span class="id" title="definition">id_left</span></a>, <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_right"><span class="id" title="definition">id_right</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Proposition</span> <a id="pr1_category_form_adjunction" class="idref" href="#pr1_category_form_adjunction"><span class="id" title="lemma">pr1_category_form_adjunction</span></a><br/>
@@ -341,7 +340,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#terminal_functor"><span class="id" title="definition">terminal_functor</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#terminal_functor_unit"><span class="id" title="definition">terminal_functor_unit</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#terminal_functor_counit"><span class="id" title="definition">terminal_functor_counit</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">split</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> ; <span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_left"><span class="id" title="definition">id_left</span></a>.<br/>
@@ -349,26 +348,26 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartA.html#total2_paths_f"><span class="id" title="lemma">total2_paths_f</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_left"><span class="id" title="definition">id_left</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="var">use</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Terminal.html#TerminalArrowEq"><span class="id" title="lemma">TerminalArrowEq</span></a> (<span class="id" title="var">T</span> := <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#terminal_in_fib"><span class="id" title="definition">terminal_in_fib</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#RightAdjointFromTerminal.T"><span class="id" title="variable">T</span></a> <span class="id" title="var">x</span>)).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="is_left_adjoint_pr1_category" class="idref" href="#is_left_adjoint_pr1_category"><span class="id" title="definition">is_left_adjoint_pr1_category</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Adjunctions.Core.html#is_left_adjoint"><span class="id" title="definition">is_left_adjoint</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#1430877ebf5dbc935dc0c150075f5f8a"><span class="id" title="variable">π</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Adjunctions.Core.html#are_adjoints_to_is_left_adjoint"><span class="id" title="definition">are_adjoints_to_is_left_adjoint</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#terminal_functor"><span class="id" title="definition">terminal_functor</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Adjunctions.Core.html#make_are_adjoints"><span class="id" title="definition">make_are_adjoints</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#terminal_functor_unit"><span class="id" title="definition">terminal_functor_unit</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#terminal_functor_counit"><span class="id" title="definition">terminal_functor_counit</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#pr1_category_form_adjunction"><span class="id" title="lemma">pr1_category_form_adjunction</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 <span class="id" title="keyword">End</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#RightAdjointFromTerminal"><span class="id" title="section">RightAdjointFromTerminal</span></a>.<br/>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab1381"></a><h1 class="section">3. Preservation of fiberwise terminal objects</h1>
+<a id="lab1386"></a><h1 class="section">3. Preservation of fiberwise terminal objects</h1>
 
 </div>
 <div class="code">
@@ -390,20 +389,20 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="b4ce89cf531dc4a70183dbfd8a1ef6f1" class="idref" href="#b4ce89cf531dc4a70183dbfd8a1ef6f1"><span class="id" title="binder">D₂</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#disp_cat"><span class="id" title="definition">disp_cat</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#5de1e60a5f48afabba0938019bd27f20"><span class="id" title="variable">C₂</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="FF:98" class="idref" href="#FF:98"><span class="id" title="binder">FF</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#disp_functor"><span class="id" title="definition">disp_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#F:95"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#9be0adbd9183742769172f558d9fd6c5"><span class="id" title="variable">D₁</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#b4ce89cf531dc4a70183dbfd8a1ef6f1"><span class="id" title="variable">D₂</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.PartB.html#isaprop"><span class="id" title="definition">isaprop</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#preserves_fiberwise_terminal"><span class="id" title="definition">preserves_fiberwise_terminal</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#FF:98"><span class="id" title="variable">FF</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartD.html#impred"><span class="id" title="lemma">impred</span></a> ; <span class="id" title="tactic">intro</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#isaprop_preserves_terminal"><span class="id" title="definition">isaprop_preserves_terminal</span></a>.<br/>
-<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="id_preserves_fiberwise_terminal" class="idref" href="#id_preserves_fiberwise_terminal"><span class="id" title="definition">id_preserves_fiberwise_terminal</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="C:99" class="idref" href="#C:99"><span class="id" title="binder">C</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#category"><span class="id" title="definition">category</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="D:100" class="idref" href="#D:100"><span class="id" title="binder">D</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#disp_cat"><span class="id" title="definition">disp_cat</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#C:99"><span class="id" title="variable">C</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#preserves_fiberwise_terminal"><span class="id" title="definition">preserves_fiberwise_terminal</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#disp_functor_identity"><span class="id" title="definition">disp_functor_identity</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#D:100"><span class="id" title="variable">D</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">Hy</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">Hy</span>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="comp_preserves_fiberwise_terminal" class="idref" href="#comp_preserves_fiberwise_terminal"><span class="id" title="definition">comp_preserves_fiberwise_terminal</span></a><br/>
@@ -418,12 +417,12 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="GG:111" class="idref" href="#GG:111"><span class="id" title="binder">GG</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#disp_functor"><span class="id" title="definition">disp_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#G:105"><span class="id" title="variable">G</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#73c5b74e5af733b7d3b987d79146ab0d"><span class="id" title="variable">D₂</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#9c2899c3f30811b70e38a34d138a54a9"><span class="id" title="variable">D₃</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HGG:112" class="idref" href="#HGG:112"><span class="id" title="binder">HGG</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#preserves_fiberwise_terminal"><span class="id" title="definition">preserves_fiberwise_terminal</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#GG:111"><span class="id" title="variable">GG</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#preserves_fiberwise_terminal"><span class="id" title="definition">preserves_fiberwise_terminal</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Functors.html#disp_functor_composite"><span class="id" title="definition">disp_functor_composite</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#FF:109"><span class="id" title="variable">FF</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#GG:111"><span class="id" title="variable">GG</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">Hy</span> ; <span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <span class="id" title="var">HGG</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <span class="id" title="var">HFF</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">Hy</span>.<br/>
-<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 </div>
 </div>
 

@@ -1,21 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="coqdoc.css" rel="stylesheet" type="text/css" />
-<title>UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link href="coqdoc.css" rel="stylesheet" type="text/css"/>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<script src="./proofs-toggle.js" type="text/javascript"></script>
+	<style>
+		div.proofcomment {
+			font-style: italic;
+		}
+	</style>
+	<title>Documentation</title>
 </head>
-
 <body>
-
 <div id="page">
-
-<div id="header">
-</div>
-
 <div id="main">
-
 <h1 class="libtitle">Library UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates</h1>
 
 <div class="code">
@@ -56,13 +55,13 @@
 </div>
 
 <div class="doc">
-<a id="lab1542"></a><h1 class="section">1. The displayed category of H-valued predicates</h1>
+<a id="lab1571"></a><h1 class="section">1. The displayed category of H-valued predicates</h1>
 
 </div>
 <div class="code">
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="disp_cat_ob_mor_h_valued_sets" class="idref" href="#disp_cat_ob_mor_h_valued_sets"><span class="id" title="definition">disp_cat_ob_mor_h_valued_sets</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#disp_cat_ob_mor"><span class="id" title="definition">disp_cat_ob_mor</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#::cat:'SET'"><span class="id" title="notation">SET</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">simple</span> <span class="id" title="tactic">refine</span> (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">(</span></a><a id="X:2" class="idref" href="#X:2"><span class="id" title="binder"><span id="X:3" class="id">X</span></span></a> : <a class="idref" href="UniMath.Foundations.Sets.html#hSet"><span class="id" title="definition">hSet</span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">),</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#X:2"><span class="id" title="variable">X</span></a> <a class="idref" href="UniMath.Foundations.Init.html#c41c566ddac4c1298b9e7dd2bae1c794"><span class="id" title="notation">→</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#HValuedSets.H"><span class="id" title="variable">H</span></a>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">(</span></a><a id="X:4" class="idref" href="#X:4"><span class="id" title="binder"><span id="X:10" class="id">X</span></span></a> <a id="Y:5" class="idref" href="#Y:5"><span class="id" title="binder"><span id="Y:11" class="id">Y</span></span></a> : <a class="idref" href="UniMath.Foundations.Sets.html#hSet"><span class="id" title="definition">hSet</span></a>)<br/>
@@ -70,75 +69,75 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="Q:7" class="idref" href="#Q:7"><span class="id" title="binder"><span id="Q:13" class="id">Q</span></span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#Y:5"><span class="id" title="variable">Y</span></a> <a class="idref" href="UniMath.Foundations.Init.html#c41c566ddac4c1298b9e7dd2bae1c794"><span class="id" title="notation">→</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#HValuedSets.H"><span class="id" title="variable">H</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="f:8" class="idref" href="#f:8"><span class="id" title="binder"><span id="f:14" class="id">f</span></span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#X:4"><span class="id" title="variable">X</span></a> <a class="idref" href="UniMath.Foundations.Init.html#c41c566ddac4c1298b9e7dd2bae1c794"><span class="id" title="notation">→</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#Y:5"><span class="id" title="variable">Y</span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">),</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Foundations.Init.html#dff69deb40f49011cdae37d20690a136"><span class="id" title="notation">∏</span></a> <a class="idref" href="UniMath.Foundations.Init.html#dff69deb40f49011cdae37d20690a136"><span class="id" title="notation">(</span></a><a id="x:9" class="idref" href="#x:9"><span class="id" title="binder"><span id="x:15" class="id">x</span></span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#X:4"><span class="id" title="variable">X</span></a><a class="idref" href="UniMath.Foundations.Init.html#dff69deb40f49011cdae37d20690a136"><span class="id" title="notation">),</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#P:6"><span class="id" title="variable">P</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#x:9"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#b63df858715992b403fb52b48405cce3"><span class="id" title="notation">≤</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#Q:7"><span class="id" title="variable">Q</span></a>(<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#f:8"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#x:9"><span class="id" title="variable">x</span></a>)).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Proposition</span> <a id="disp_cat_id_comp_h_valued_sets" class="idref" href="#disp_cat_id_comp_h_valued_sets"><span class="id" title="lemma">disp_cat_id_comp_h_valued_sets</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#disp_cat_id_comp"><span class="id" title="definition">disp_cat_id_comp</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#::cat:'SET'"><span class="id" title="notation">SET</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#disp_cat_ob_mor_h_valued_sets"><span class="id" title="definition">disp_cat_ob_mor_h_valued_sets</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">split</span>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">intros</span> <span class="id" title="var">X</span> <span class="id" title="var">P</span> <span class="id" title="var">x</span> ; <span class="id" title="var">cbn</span> <span class="id" title="tactic">in</span> ×.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">intros</span> <span class="id" title="var">X</span> <span class="id" title="var">P</span> <span class="id" title="var">x</span> ; <span class="id" title="var">cbn</span> <span class="id" title="tactic">in</span> *.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#cha_le_refl"><span class="id" title="lemma">cha_le_refl</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">intros</span> <span class="id" title="var">X</span> <span class="id" title="var">Y</span> <span class="id" title="var">Z</span> <span class="id" title="var">f</span> <span class="id" title="var">g</span> <span class="id" title="var">P</span> <span class="id" title="var">Q</span> <span class="id" title="var">R</span> <span class="id" title="var">p</span> <span class="id" title="var">q</span> <span class="id" title="var">x</span> ; <span class="id" title="var">cbn</span> <span class="id" title="tactic">in</span> ×.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">intros</span> <span class="id" title="var">X</span> <span class="id" title="var">Y</span> <span class="id" title="var">Z</span> <span class="id" title="var">f</span> <span class="id" title="var">g</span> <span class="id" title="var">P</span> <span class="id" title="var">Q</span> <span class="id" title="var">R</span> <span class="id" title="var">p</span> <span class="id" title="var">q</span> <span class="id" title="var">x</span> ; <span class="id" title="var">cbn</span> <span class="id" title="tactic">in</span> *.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#cha_le_trans"><span class="id" title="lemma">cha_le_trans</span></a> (<span class="id" title="var">p</span> <span class="id" title="var">x</span>) <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <span class="id" title="var">q</span>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="disp_cat_data_h_valued_sets" class="idref" href="#disp_cat_data_h_valued_sets"><span class="id" title="definition">disp_cat_data_h_valued_sets</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#disp_cat_data"><span class="id" title="definition">disp_cat_data</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#::cat:'SET'"><span class="id" title="notation">SET</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">simple</span> <span class="id" title="tactic">refine</span> (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#disp_cat_ob_mor_h_valued_sets"><span class="id" title="definition">disp_cat_ob_mor_h_valued_sets</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#disp_cat_id_comp_h_valued_sets"><span class="id" title="lemma">disp_cat_id_comp_h_valued_sets</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Proposition</span> <a id="locally_propositional_h_valued_sets" class="idref" href="#locally_propositional_h_valued_sets"><span class="id" title="lemma">locally_propositional_h_valued_sets</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#locally_propositional"><span class="id" title="definition">locally_propositional</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#disp_cat_data_h_valued_sets"><span class="id" title="definition">disp_cat_data_h_valued_sets</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intro</span> ; <span class="id" title="tactic">intros</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartD.html#impred"><span class="id" title="lemma">impred</span></a> ; <span class="id" title="tactic">intro</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Propositions.html#propproperty"><span class="id" title="definition">propproperty</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Proposition</span> <a id="disp_cat_axioms_h_valued_sets" class="idref" href="#disp_cat_axioms_h_valued_sets"><span class="id" title="lemma">disp_cat_axioms_h_valued_sets</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#disp_cat_axioms"><span class="id" title="definition">disp_cat_axioms</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#::cat:'SET'"><span class="id" title="notation">SET</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#disp_cat_data_h_valued_sets"><span class="id" title="definition">disp_cat_data_h_valued_sets</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">repeat</span> <span class="id" title="tactic">split</span> ; <span class="id" title="tactic">intros</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#locally_propositional_h_valued_sets"><span class="id" title="lemma">locally_propositional_h_valued_sets</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#locally_propositional_h_valued_sets"><span class="id" title="lemma">locally_propositional_h_valued_sets</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#locally_propositional_h_valued_sets"><span class="id" title="lemma">locally_propositional_h_valued_sets</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartB.html#isasetaprop"><span class="id" title="lemma">isasetaprop</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#locally_propositional_h_valued_sets"><span class="id" title="lemma">locally_propositional_h_valued_sets</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="disp_cat_h_valued_sets" class="idref" href="#disp_cat_h_valued_sets"><span class="id" title="definition">disp_cat_h_valued_sets</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#disp_cat"><span class="id" title="definition">disp_cat</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#::cat:'SET'"><span class="id" title="notation">SET</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">simple</span> <span class="id" title="tactic">refine</span> (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#disp_cat_data_h_valued_sets"><span class="id" title="definition">disp_cat_data_h_valued_sets</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#disp_cat_axioms_h_valued_sets"><span class="id" title="lemma">disp_cat_axioms_h_valued_sets</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab1543"></a><h1 class="section">2. Properties of this displayed category</h1>
+<a id="lab1572"></a><h1 class="section">2. Properties of this displayed category</h1>
 
 </div>
 <div class="code">
 &nbsp;&nbsp;<span class="id" title="keyword">Proposition</span> <a id="is_univalent_disp_h_valued_sets" class="idref" href="#is_univalent_disp_h_valued_sets"><span class="id" title="lemma">is_univalent_disp_h_valued_sets</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Univalence.html#is_univalent_disp"><span class="id" title="definition">is_univalent_disp</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#disp_cat_h_valued_sets"><span class="id" title="definition">disp_cat_h_valued_sets</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Univalence.html#is_univalent_disp_from_fibers"><span class="id" title="lemma">is_univalent_disp_from_fibers</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">X</span> <span class="id" title="var">P</span> <span class="id" title="var">Q</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartB.html#isweqimplimpl"><span class="id" title="lemma">isweqimplimpl</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="var">cbn</span> <span class="id" title="tactic">in</span> ×.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="var">cbn</span> <span class="id" title="tactic">in</span> *.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">p</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.UnivalenceAxiom.html#funextsec"><span class="id" title="definition">funextsec</span></a> ; <span class="id" title="tactic">intro</span> <span class="id" title="var">x</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#cha_le_antisymm"><span class="id" title="lemma">cha_le_antisymm</span></a>.<br/>
@@ -151,12 +150,12 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Isos.html#isaprop_is_z_iso_disp"><span class="id" title="lemma">isaprop_is_z_iso_disp</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">intros</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#locally_propositional_h_valued_sets"><span class="id" title="lemma">locally_propositional_h_valued_sets</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="cleaving_h_valued_sets" class="idref" href="#cleaving_h_valued_sets"><span class="id" title="definition">cleaving_h_valued_sets</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fibrations.html#cleaving"><span class="id" title="definition">cleaving</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#disp_cat_h_valued_sets"><span class="id" title="definition">disp_cat_h_valued_sets</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">Y</span> <span class="id" title="var">X</span> <span class="id" title="var">f</span> <span class="id" title="var">Q</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">simple</span> <span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="x:16" class="idref" href="#x:16"><span class="id" title="binder"><span id="x:17" class="id">x</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <span class="id" title="var">Q</span>(<span class="id" title="var">f</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#x:16"><span class="id" title="variable">x</span></a>)<a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">abstract</span><br/>
@@ -171,19 +170,19 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">abstract</span><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">refine</span> (<span class="id" title="var">p</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>) ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#locally_propositional_h_valued_sets"><span class="id" title="lemma">locally_propositional_h_valued_sets</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab1544"></a><h1 class="section">3. The hyperdoctrine of H-valued predicates</h1>
+<a id="lab1573"></a><h1 class="section">3. The hyperdoctrine of H-valued predicates</h1>
 
 </div>
 <div class="code">
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="h_valued_sets_hyperdoctrine" class="idref" href="#h_valued_sets_hyperdoctrine"><span class="id" title="definition">h_valued_sets_hyperdoctrine</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Hyperdoctrines.Hyperdoctrine.html#hyperdoctrine"><span class="id" title="definition">hyperdoctrine</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Hyperdoctrines.Hyperdoctrine.html#make_hyperdoctrine"><span class="id" title="definition">make_hyperdoctrine</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#::cat:'SET'"><span class="id" title="notation">SET</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#disp_cat_h_valued_sets"><span class="id" title="definition">disp_cat_h_valued_sets</span></a>.<br/>
@@ -192,23 +191,23 @@
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#cleaving_h_valued_sets"><span class="id" title="definition">cleaving_h_valued_sets</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#locally_propositional_h_valued_sets"><span class="id" title="lemma">locally_propositional_h_valued_sets</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#is_univalent_disp_h_valued_sets"><span class="id" title="lemma">is_univalent_disp_h_valued_sets</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab1545"></a><h1 class="section">4. Logic of H-valued predicates</h1>
+<a id="lab1574"></a><h1 class="section">4. Logic of H-valued predicates</h1>
 
 <div class="paragraph"> </div>
 
-<a id="lab1546"></a><h1 class="section">4.1. Fiberwise terminal object</h1>
+<a id="lab1575"></a><h1 class="section">4.1. Fiberwise terminal object</h1>
 
 </div>
 <div class="code">
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="fiberwise_terminal_h_valued_sets" class="idref" href="#fiberwise_terminal_h_valued_sets"><span class="id" title="definition">fiberwise_terminal_h_valued_sets</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#fiberwise_terminal"><span class="id" title="definition">fiberwise_terminal</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#cleaving_h_valued_sets"><span class="id" title="definition">cleaving_h_valued_sets</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseTerminal.html#make_fiberwise_terminal_locally_propositional"><span class="id" title="definition">make_fiberwise_terminal_locally_propositional</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#locally_propositional_h_valued_sets"><span class="id" title="lemma">locally_propositional_h_valued_sets</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">(</span></a><a id="X:18" class="idref" href="#X:18"><span class="id" title="binder"><span id="X:20" class="id">X</span></span></a> : <a class="idref" href="UniMath.Foundations.Sets.html#hSet"><span class="id" title="definition">hSet</span></a>) (<a id="x:19" class="idref" href="#x:19"><span class="id" title="binder"><span id="x:21" class="id">x</span></span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#X:18"><span class="id" title="variable">X</span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">),</span></a> <a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#dc4b557df203ef665648abca9ba386e6"><span class="id" title="notation">⊤</span></a>).<br/>
@@ -220,19 +219,19 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="var">cbn</span> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">X</span> <span class="id" title="var">Y</span> <span class="id" title="var">f</span> <span class="id" title="var">x</span> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#cha_le_refl"><span class="id" title="lemma">cha_le_refl</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab1547"></a><h1 class="section">4.2. Fiberwise initial object</h1>
+<a id="lab1576"></a><h1 class="section">4.2. Fiberwise initial object</h1>
 
 </div>
 <div class="code">
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="fiberwise_initial_h_valued_sets" class="idref" href="#fiberwise_initial_h_valued_sets"><span class="id" title="definition">fiberwise_initial_h_valued_sets</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseInitial.html#fiberwise_initial"><span class="id" title="definition">fiberwise_initial</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#cleaving_h_valued_sets"><span class="id" title="definition">cleaving_h_valued_sets</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseInitial.html#make_fiberwise_initial_locally_propositional"><span class="id" title="definition">make_fiberwise_initial_locally_propositional</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#locally_propositional_h_valued_sets"><span class="id" title="lemma">locally_propositional_h_valued_sets</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">(</span></a><a id="X:22" class="idref" href="#X:22"><span class="id" title="binder"><span id="X:24" class="id">X</span></span></a> : <a class="idref" href="UniMath.Foundations.Sets.html#hSet"><span class="id" title="definition">hSet</span></a>) (<a id="x:23" class="idref" href="#x:23"><span class="id" title="binder"><span id="x:25" class="id">x</span></span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#X:22"><span class="id" title="variable">X</span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">),</span></a> <a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#fcfa42c79e6a390cf35fd4fc09b942e7"><span class="id" title="notation">⊥</span></a>).<br/>
@@ -244,19 +243,19 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="var">cbn</span> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">X</span> <span class="id" title="var">Y</span> <span class="id" title="var">f</span> <span class="id" title="var">x</span> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#cha_le_refl"><span class="id" title="lemma">cha_le_refl</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab1548"></a><h1 class="section">4.3. Fiberwise binary products</h1>
+<a id="lab1577"></a><h1 class="section">4.3. Fiberwise binary products</h1>
 
 </div>
 <div class="code">
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="fiberwise_binproducts_h_valued_sets" class="idref" href="#fiberwise_binproducts_h_valued_sets"><span class="id" title="definition">fiberwise_binproducts_h_valued_sets</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseProducts.html#fiberwise_binproducts"><span class="id" title="definition">fiberwise_binproducts</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#cleaving_h_valued_sets"><span class="id" title="definition">cleaving_h_valued_sets</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseProducts.html#make_fiberwise_binproducts_locally_propositional"><span class="id" title="definition">make_fiberwise_binproducts_locally_propositional</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#locally_propositional_h_valued_sets"><span class="id" title="lemma">locally_propositional_h_valued_sets</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">(</span></a><a id="X:26" class="idref" href="#X:26"><span class="id" title="binder"><span id="X:30" class="id">X</span></span></a> : <a class="idref" href="UniMath.Foundations.Sets.html#hSet"><span class="id" title="definition">hSet</span></a>) (<a id="P:27" class="idref" href="#P:27"><span class="id" title="binder"><span id="P:31" class="id">P</span></span></a> <a id="Q:28" class="idref" href="#Q:28"><span class="id" title="binder"><span id="Q:32" class="id">Q</span></span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#X:26"><span class="id" title="variable">X</span></a> <a class="idref" href="UniMath.Foundations.Init.html#c41c566ddac4c1298b9e7dd2bae1c794"><span class="id" title="notation">→</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#HValuedSets.H"><span class="id" title="variable">H</span></a>) (<a id="x:29" class="idref" href="#x:29"><span class="id" title="binder"><span id="x:33" class="id">x</span></span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#X:26"><span class="id" title="variable">X</span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">),</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#P:27"><span class="id" title="variable">P</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#x:29"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#bfde1ec02ab6eaa3a500efe8a6a6b1c0"><span class="id" title="notation">∧</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#Q:28"><span class="id" title="variable">Q</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#x:29"><span class="id" title="variable">x</span></a>).<br/>
@@ -270,19 +269,19 @@
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">abstract</span><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">intros</span> <span class="id" title="var">X</span> <span class="id" title="var">Y</span> <span class="id" title="var">f</span> <span class="id" title="var">P</span> <span class="id" title="var">Q</span> <span class="id" title="var">x</span> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#cha_le_refl"><span class="id" title="lemma">cha_le_refl</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab1549"></a><h1 class="section">4.4. Fiberwise binary coproducts</h1>
+<a id="lab1578"></a><h1 class="section">4.4. Fiberwise binary coproducts</h1>
 
 </div>
 <div class="code">
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="fiberwise_bincoproducts_h_valued_sets" class="idref" href="#fiberwise_bincoproducts_h_valued_sets"><span class="id" title="definition">fiberwise_bincoproducts_h_valued_sets</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseCoproducts.html#fiberwise_bincoproducts"><span class="id" title="definition">fiberwise_bincoproducts</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#cleaving_h_valued_sets"><span class="id" title="definition">cleaving_h_valued_sets</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseCoproducts.html#make_fiberwise_bincoproducts_locally_propositional"><span class="id" title="definition">make_fiberwise_bincoproducts_locally_propositional</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#locally_propositional_h_valued_sets"><span class="id" title="lemma">locally_propositional_h_valued_sets</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">(</span></a><a id="X:34" class="idref" href="#X:34"><span class="id" title="binder"><span id="X:38" class="id">X</span></span></a> : <a class="idref" href="UniMath.Foundations.Sets.html#hSet"><span class="id" title="definition">hSet</span></a>) (<a id="P:35" class="idref" href="#P:35"><span class="id" title="binder"><span id="P:39" class="id">P</span></span></a> <a id="Q:36" class="idref" href="#Q:36"><span class="id" title="binder"><span id="Q:40" class="id">Q</span></span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#X:34"><span class="id" title="variable">X</span></a> <a class="idref" href="UniMath.Foundations.Init.html#c41c566ddac4c1298b9e7dd2bae1c794"><span class="id" title="notation">→</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#HValuedSets.H"><span class="id" title="variable">H</span></a>) (<a id="x:37" class="idref" href="#x:37"><span class="id" title="binder"><span id="x:41" class="id">x</span></span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#X:34"><span class="id" title="variable">X</span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">),</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#P:35"><span class="id" title="variable">P</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#x:37"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#c0824c6f6b9e15f4caac58557209fc55"><span class="id" title="notation">∨</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#Q:36"><span class="id" title="variable">Q</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#x:37"><span class="id" title="variable">x</span></a>).<br/>
@@ -296,19 +295,19 @@
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">abstract</span><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">intros</span> <span class="id" title="var">X</span> <span class="id" title="var">Y</span> <span class="id" title="var">f</span> <span class="id" title="var">P</span> <span class="id" title="var">Q</span> <span class="id" title="var">x</span> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#cha_le_refl"><span class="id" title="lemma">cha_le_refl</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab1550"></a><h1 class="section">4.5. Fiberwise exponentials</h1>
+<a id="lab1579"></a><h1 class="section">4.5. Fiberwise exponentials</h1>
 
 </div>
 <div class="code">
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="fiberwise_exponentials_h_valued_sets" class="idref" href="#fiberwise_exponentials_h_valued_sets"><span class="id" title="definition">fiberwise_exponentials_h_valued_sets</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseCartesianClosed.html#fiberwise_exponentials"><span class="id" title="definition">fiberwise_exponentials</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#fiberwise_binproducts_h_valued_sets"><span class="id" title="definition">fiberwise_binproducts_h_valued_sets</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.FiberwiseCartesianClosed.html#make_fiberwise_exponentials_locally_propositional"><span class="id" title="definition">make_fiberwise_exponentials_locally_propositional</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#locally_propositional_h_valued_sets"><span class="id" title="lemma">locally_propositional_h_valued_sets</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">(</span></a><a id="X:42" class="idref" href="#X:42"><span class="id" title="binder"><span id="X:46" class="id">X</span></span></a> : <a class="idref" href="UniMath.Foundations.Sets.html#hSet"><span class="id" title="definition">hSet</span></a>) (<a id="P:43" class="idref" href="#P:43"><span class="id" title="binder"><span id="P:47" class="id">P</span></span></a> <a id="Q:44" class="idref" href="#Q:44"><span class="id" title="binder"><span id="Q:48" class="id">Q</span></span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#X:42"><span class="id" title="variable">X</span></a> <a class="idref" href="UniMath.Foundations.Init.html#c41c566ddac4c1298b9e7dd2bae1c794"><span class="id" title="notation">→</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#HValuedSets.H"><span class="id" title="variable">H</span></a>) (<a id="x:45" class="idref" href="#x:45"><span class="id" title="binder"><span id="x:49" class="id">x</span></span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#X:42"><span class="id" title="variable">X</span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">),</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#P:43"><span class="id" title="variable">P</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#x:45"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#7f4fd8c50c6040d85cce96b9a495ea84"><span class="id" title="notation">⇒</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#Q:44"><span class="id" title="variable">Q</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#x:45"><span class="id" title="variable">x</span></a>).<br/>
@@ -317,47 +316,47 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#cha_min_comm"><span class="id" title="lemma">cha_min_comm</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#cha_exp_eval"><span class="id" title="lemma">cha_exp_eval</span></a>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">abstract</span><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">intros</span> <span class="id" title="var">X</span> <span class="id" title="var">P</span> <span class="id" title="var">Q</span> <span class="id" title="var">R</span> <span class="id" title="var">p</span> <span class="id" title="var">x</span> ; <span class="id" title="var">cbn</span> <span class="id" title="tactic">in</span> × ;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">intros</span> <span class="id" title="var">X</span> <span class="id" title="var">P</span> <span class="id" title="var">Q</span> <span class="id" title="var">R</span> <span class="id" title="var">p</span> <span class="id" title="var">x</span> ; <span class="id" title="var">cbn</span> <span class="id" title="tactic">in</span> * ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#cha_to_le_exp"><span class="id" title="lemma">cha_to_le_exp</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#cha_min_comm"><span class="id" title="lemma">cha_min_comm</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<span class="id" title="var">p</span> <span class="id" title="var">x</span>)).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">abstract</span><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">intros</span> <span class="id" title="var">X</span> <span class="id" title="var">Y</span> <span class="id" title="var">f</span> <span class="id" title="var">P</span> <span class="id" title="var">Q</span> <span class="id" title="var">x</span> ; <span class="id" title="var">cbn</span> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#cha_le_refl"><span class="id" title="lemma">cha_le_refl</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab1551"></a><h1 class="section">4.6. Dependent products</h1>
+<a id="lab1580"></a><h1 class="section">4.6. Dependent products</h1>
 
 </div>
 <div class="code">
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="has_dependent_products_h_valued_sets" class="idref" href="#has_dependent_products_h_valued_sets"><span class="id" title="definition">has_dependent_products_h_valued_sets</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.DependentProducts.html#has_dependent_products"><span class="id" title="definition">has_dependent_products</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#cleaving_h_valued_sets"><span class="id" title="definition">cleaving_h_valued_sets</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.DependentProducts.html#make_has_dependent_products_poset"><span class="id" title="definition">make_has_dependent_products_poset</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#locally_propositional_h_valued_sets"><span class="id" title="lemma">locally_propositional_h_valued_sets</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">(</span></a><a id="X:50" class="idref" href="#X:50"><span class="id" title="binder"><span id="X:59" class="id">X</span></span></a> <a id="Y:51" class="idref" href="#Y:51"><span class="id" title="binder"><span id="Y:60" class="id">Y</span></span></a> : <a class="idref" href="UniMath.Foundations.Sets.html#hSet"><span class="id" title="definition">hSet</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="f:52" class="idref" href="#f:52"><span class="id" title="binder"><span id="f:61" class="id">f</span></span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#X:50"><span class="id" title="variable">X</span></a> <a class="idref" href="UniMath.Foundations.Init.html#c41c566ddac4c1298b9e7dd2bae1c794"><span class="id" title="notation">→</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#Y:51"><span class="id" title="variable">Y</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="P:53" class="idref" href="#P:53"><span class="id" title="binder"><span id="P:62" class="id">P</span></span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#X:50"><span class="id" title="variable">X</span></a> <a class="idref" href="UniMath.Foundations.Init.html#c41c566ddac4c1298b9e7dd2bae1c794"><span class="id" title="notation">→</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#HValuedSets.H"><span class="id" title="variable">H</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="y:54" class="idref" href="#y:54"><span class="id" title="binder"><span id="y:63" class="id">y</span></span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#Y:51"><span class="id" title="variable">Y</span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">),</span></a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#1a2d6b62c18b938a088e91fa1b6892e3"><span class="id" title="notation">∧</span></a><a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#1a2d6b62c18b938a088e91fa1b6892e3"><span class="id" title="notation">_</span></a><a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#1a2d6b62c18b938a088e91fa1b6892e3"><span class="id" title="notation">{</span></a> <a id="z:56" class="idref" href="#z:56"><span class="id" title="binder"><span id="z:58" class="id"><span id="z:65" class="id"><span id="z:67" class="id">z</span></span></span></span></a> <a id="z:58" class="idref" href="#z:58"><span class="id" title="binder"><span id="z:67" class="id">:</span></span></a> <a id="z:58" class="idref" href="#z:58"><span class="id" title="binder"><span id="z:67" class="id">∑</span></span></a> <a id="z:58" class="idref" href="#z:58"><span class="id" title="binder"><span id="z:67" class="id">(</span></span></a><a id="x:55" class="idref" href="#x:55"><span class="id" title="binder"><span id="x:57" class="id"><span id="z:58" class="id"><span id="x:64" class="id"><span id="x:66" class="id"><span id="z:67" class="id">x</span></span></span></span></span></span></a> <a id="z:58" class="idref" href="#z:58"><span class="id" title="binder"><span id="z:67" class="id">:</span></span></a> <a id="z:58" class="idref" href="#z:58"><span class="id" title="binder"><span id="z:67" class="id">X</span></span></a><a id="z:58" class="idref" href="#z:58"><span class="id" title="binder"><span id="z:67" class="id">),</span></span></a> <a id="z:58" class="idref" href="#z:58"><span class="id" title="binder"><span id="z:67" class="id">f</span></span></a> <a id="z:58" class="idref" href="#z:58"><span class="id" title="binder"><span id="z:67" class="id">x</span></span></a> <a id="z:58" class="idref" href="#z:58"><span class="id" title="binder"><span id="z:67" class="id">=</span></span></a> <a id="z:58" class="idref" href="#z:58"><span class="id" title="binder"><span id="z:67" class="id">y</span></span></a> <a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#1a2d6b62c18b938a088e91fa1b6892e3"><span class="id" title="notation">}</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#P:53"><span class="id" title="variable">P</span></a> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#z:56"><span class="id" title="variable">z</span></a>)).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#1a2d6b62c18b938a088e91fa1b6892e3"><span class="id" title="notation">/\</span></a><a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#1a2d6b62c18b938a088e91fa1b6892e3"><span class="id" title="notation">_</span></a><a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#1a2d6b62c18b938a088e91fa1b6892e3"><span class="id" title="notation">{</span></a> <a id="z:56" class="idref" href="#z:56"><span class="id" title="binder"><span id="z:58" class="id"><span id="z:65" class="id"><span id="z:67" class="id">z</span></span></span></span></a> <a id="z:58" class="idref" href="#z:58"><span class="id" title="binder"><span id="z:67" class="id">:</span></span></a> <a id="z:58" class="idref" href="#z:58"><span class="id" title="binder"><span id="z:67" class="id">∑</span></span></a> <a id="z:58" class="idref" href="#z:58"><span class="id" title="binder"><span id="z:67" class="id">(</span></span></a><a id="x:55" class="idref" href="#x:55"><span class="id" title="binder"><span id="x:57" class="id"><span id="z:58" class="id"><span id="x:64" class="id"><span id="x:66" class="id"><span id="z:67" class="id">x</span></span></span></span></span></span></a> <a id="z:58" class="idref" href="#z:58"><span class="id" title="binder"><span id="z:67" class="id">:</span></span></a> <a id="z:58" class="idref" href="#z:58"><span class="id" title="binder"><span id="z:67" class="id">X</span></span></a><a id="z:58" class="idref" href="#z:58"><span class="id" title="binder"><span id="z:67" class="id">),</span></span></a> <a id="z:58" class="idref" href="#z:58"><span class="id" title="binder"><span id="z:67" class="id">f</span></span></a> <a id="z:58" class="idref" href="#z:58"><span class="id" title="binder"><span id="z:67" class="id">x</span></span></a> <a id="z:58" class="idref" href="#z:58"><span class="id" title="binder"><span id="z:67" class="id">=</span></span></a> <a id="z:58" class="idref" href="#z:58"><span class="id" title="binder"><span id="z:67" class="id">y</span></span></a> <a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#1a2d6b62c18b938a088e91fa1b6892e3"><span class="id" title="notation">}</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#P:53"><span class="id" title="variable">P</span></a> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#z:56"><span class="id" title="variable">z</span></a>)).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">abstract</span><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">intros</span> <span class="id" title="var">X</span> <span class="id" title="var">Y</span> <span class="id" title="var">f</span> <span class="id" title="var">P</span> <span class="id" title="var">x</span> ; <span class="id" title="var">cbn</span> <span class="id" title="tactic">in</span> × ;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">intros</span> <span class="id" title="var">X</span> <span class="id" title="var">Y</span> <span class="id" title="var">f</span> <span class="id" title="var">P</span> <span class="id" title="var">x</span> ; <span class="id" title="var">cbn</span> <span class="id" title="tactic">in</span> * ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#cha_glb_le"><span class="id" title="lemma">cha_glb_le</span></a> ; [ <span class="id" title="tactic">exact</span> (<span class="id" title="var">x</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a> <span class="id" title="var">_</span>) | ] ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">cbn</span> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#cha_le_refl"><span class="id" title="lemma">cha_le_refl</span></a>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">abstract</span><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">intros</span> <span class="id" title="var">X</span> <span class="id" title="var">Y</span> <span class="id" title="var">f</span> <span class="id" title="var">P</span> <span class="id" title="var">Q</span> <span class="id" title="var">p</span> <span class="id" title="var">y</span> ; <span class="id" title="var">cbn</span> <span class="id" title="tactic">in</span> × ;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">intros</span> <span class="id" title="var">X</span> <span class="id" title="var">Y</span> <span class="id" title="var">f</span> <span class="id" title="var">P</span> <span class="id" title="var">Q</span> <span class="id" title="var">p</span> <span class="id" title="var">y</span> ; <span class="id" title="var">cbn</span> <span class="id" title="tactic">in</span> * ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#cha_le_glb"><span class="id" title="lemma">cha_le_glb</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">z</span> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">induction</span> <span class="id" title="var">z</span> <span class="id" title="keyword">as</span> [ <span class="id" title="var">x</span> <span class="id" title="var">q</span> ] ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">induction</span> <span class="id" title="var">q</span> ; <span class="id" title="var">cbn</span> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <span class="id" title="var">p</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">abstract</span><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">intros</span> <span class="id" title="var">Y₂</span> <span class="id" title="var">Y₁</span> <span class="id" title="var">X₂</span> <span class="id" title="var">X₁</span> <span class="id" title="var">f₁</span> <span class="id" title="var">f₂</span> <span class="id" title="var">g₁</span> <span class="id" title="var">g₂</span> <span class="id" title="var">p</span> <span class="id" title="var">Hp</span> <span class="id" title="var">P</span> <span class="id" title="var">y</span> ; <span class="id" title="var">cbn</span> <span class="id" title="tactic">in</span> × ;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">intros</span> <span class="id" title="var">Y₂</span> <span class="id" title="var">Y₁</span> <span class="id" title="var">X₂</span> <span class="id" title="var">X₁</span> <span class="id" title="var">f₁</span> <span class="id" title="var">f₂</span> <span class="id" title="var">g₁</span> <span class="id" title="var">g₂</span> <span class="id" title="var">p</span> <span class="id" title="var">Hp</span> <span class="id" title="var">P</span> <span class="id" title="var">y</span> ; <span class="id" title="var">cbn</span> <span class="id" title="tactic">in</span> * ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#cha_le_glb"><span class="id" title="lemma">cha_le_glb</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">z</span> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">induction</span> <span class="id" title="var">z</span> <span class="id" title="keyword">as</span> [ <span class="id" title="var">z</span> <span class="id" title="var">zp</span> ] ;<br/>
@@ -367,40 +366,40 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">cbn</span> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Limits.html#el_pullback_set_pr1"><span class="id" title="lemma">el_pullback_set_pr1</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#cha_le_refl"><span class="id" title="lemma">cha_le_refl</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab1552"></a><h1 class="section">4.7. Dependent sums</h1>
+<a id="lab1581"></a><h1 class="section">4.7. Dependent sums</h1>
 
 </div>
 <div class="code">
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="has_dependent_sums_h_valued_sets" class="idref" href="#has_dependent_sums_h_valued_sets"><span class="id" title="definition">has_dependent_sums_h_valued_sets</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.DependentSums.html#has_dependent_sums"><span class="id" title="definition">has_dependent_sums</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#cleaving_h_valued_sets"><span class="id" title="definition">cleaving_h_valued_sets</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Fiberwise.DependentSums.html#make_has_dependent_sums_poset"><span class="id" title="definition">make_has_dependent_sums_poset</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#locally_propositional_h_valued_sets"><span class="id" title="lemma">locally_propositional_h_valued_sets</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">(</span></a><a id="X:68" class="idref" href="#X:68"><span class="id" title="binder"><span id="X:77" class="id">X</span></span></a> <a id="Y:69" class="idref" href="#Y:69"><span class="id" title="binder"><span id="Y:78" class="id">Y</span></span></a> : <a class="idref" href="UniMath.Foundations.Sets.html#hSet"><span class="id" title="definition">hSet</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="f:70" class="idref" href="#f:70"><span class="id" title="binder"><span id="f:79" class="id">f</span></span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#X:68"><span class="id" title="variable">X</span></a> <a class="idref" href="UniMath.Foundations.Init.html#c41c566ddac4c1298b9e7dd2bae1c794"><span class="id" title="notation">→</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#Y:69"><span class="id" title="variable">Y</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="P:71" class="idref" href="#P:71"><span class="id" title="binder"><span id="P:80" class="id">P</span></span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#X:68"><span class="id" title="variable">X</span></a> <a class="idref" href="UniMath.Foundations.Init.html#c41c566ddac4c1298b9e7dd2bae1c794"><span class="id" title="notation">→</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#HValuedSets.H"><span class="id" title="variable">H</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="y:72" class="idref" href="#y:72"><span class="id" title="binder"><span id="y:81" class="id">y</span></span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#Y:69"><span class="id" title="variable">Y</span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">),</span></a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#2765bfe183f78b559110444d9917e74b"><span class="id" title="notation">∨</span></a><a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#2765bfe183f78b559110444d9917e74b"><span class="id" title="notation">_</span></a><a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#2765bfe183f78b559110444d9917e74b"><span class="id" title="notation">{</span></a> <a id="z:74" class="idref" href="#z:74"><span class="id" title="binder"><span id="z:76" class="id"><span id="z:83" class="id"><span id="z:85" class="id">z</span></span></span></span></a> <a id="z:76" class="idref" href="#z:76"><span class="id" title="binder"><span id="z:85" class="id">:</span></span></a> <a id="z:76" class="idref" href="#z:76"><span class="id" title="binder"><span id="z:85" class="id">∑</span></span></a> <a id="z:76" class="idref" href="#z:76"><span class="id" title="binder"><span id="z:85" class="id">(</span></span></a><a id="x:73" class="idref" href="#x:73"><span class="id" title="binder"><span id="x:75" class="id"><span id="z:76" class="id"><span id="x:82" class="id"><span id="x:84" class="id"><span id="z:85" class="id">x</span></span></span></span></span></span></a> <a id="z:76" class="idref" href="#z:76"><span class="id" title="binder"><span id="z:85" class="id">:</span></span></a> <a id="z:76" class="idref" href="#z:76"><span class="id" title="binder"><span id="z:85" class="id">X</span></span></a><a id="z:76" class="idref" href="#z:76"><span class="id" title="binder"><span id="z:85" class="id">),</span></span></a> <a id="z:76" class="idref" href="#z:76"><span class="id" title="binder"><span id="z:85" class="id">f</span></span></a> <a id="z:76" class="idref" href="#z:76"><span class="id" title="binder"><span id="z:85" class="id">x</span></span></a> <a id="z:76" class="idref" href="#z:76"><span class="id" title="binder"><span id="z:85" class="id">=</span></span></a> <a id="z:76" class="idref" href="#z:76"><span class="id" title="binder"><span id="z:85" class="id">y</span></span></a> <a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#2765bfe183f78b559110444d9917e74b"><span class="id" title="notation">}</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#P:71"><span class="id" title="variable">P</span></a> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#z:74"><span class="id" title="variable">z</span></a>)).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#2765bfe183f78b559110444d9917e74b"><span class="id" title="notation">\/</span></a><a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#2765bfe183f78b559110444d9917e74b"><span class="id" title="notation">_</span></a><a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#2765bfe183f78b559110444d9917e74b"><span class="id" title="notation">{</span></a> <a id="z:74" class="idref" href="#z:74"><span class="id" title="binder"><span id="z:76" class="id"><span id="z:83" class="id"><span id="z:85" class="id">z</span></span></span></span></a> <a id="z:76" class="idref" href="#z:76"><span class="id" title="binder"><span id="z:85" class="id">:</span></span></a> <a id="z:76" class="idref" href="#z:76"><span class="id" title="binder"><span id="z:85" class="id">∑</span></span></a> <a id="z:76" class="idref" href="#z:76"><span class="id" title="binder"><span id="z:85" class="id">(</span></span></a><a id="x:73" class="idref" href="#x:73"><span class="id" title="binder"><span id="x:75" class="id"><span id="z:76" class="id"><span id="x:82" class="id"><span id="x:84" class="id"><span id="z:85" class="id">x</span></span></span></span></span></span></a> <a id="z:76" class="idref" href="#z:76"><span class="id" title="binder"><span id="z:85" class="id">:</span></span></a> <a id="z:76" class="idref" href="#z:76"><span class="id" title="binder"><span id="z:85" class="id">X</span></span></a><a id="z:76" class="idref" href="#z:76"><span class="id" title="binder"><span id="z:85" class="id">),</span></span></a> <a id="z:76" class="idref" href="#z:76"><span class="id" title="binder"><span id="z:85" class="id">f</span></span></a> <a id="z:76" class="idref" href="#z:76"><span class="id" title="binder"><span id="z:85" class="id">x</span></span></a> <a id="z:76" class="idref" href="#z:76"><span class="id" title="binder"><span id="z:85" class="id">=</span></span></a> <a id="z:76" class="idref" href="#z:76"><span class="id" title="binder"><span id="z:85" class="id">y</span></span></a> <a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#2765bfe183f78b559110444d9917e74b"><span class="id" title="notation">}</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#P:71"><span class="id" title="variable">P</span></a> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#z:74"><span class="id" title="variable">z</span></a>)).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">abstract</span><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">intros</span> <span class="id" title="var">X</span> <span class="id" title="var">Y</span> <span class="id" title="var">f</span> <span class="id" title="var">P</span> <span class="id" title="var">x</span> ; <span class="id" title="var">cbn</span> <span class="id" title="tactic">in</span> × ;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">intros</span> <span class="id" title="var">X</span> <span class="id" title="var">Y</span> <span class="id" title="var">f</span> <span class="id" title="var">P</span> <span class="id" title="var">x</span> ; <span class="id" title="var">cbn</span> <span class="id" title="tactic">in</span> * ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#cha_le_lub"><span class="id" title="lemma">cha_le_lub</span></a>  ; [ <span class="id" title="tactic">exact</span> (<span class="id" title="var">x</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a> <span class="id" title="var">_</span>) | ] ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">cbn</span> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#cha_le_refl"><span class="id" title="lemma">cha_le_refl</span></a>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">abstract</span><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">intros</span> <span class="id" title="var">X</span> <span class="id" title="var">Y</span> <span class="id" title="var">f</span> <span class="id" title="var">P</span> <span class="id" title="var">Q</span> <span class="id" title="var">p</span> <span class="id" title="var">y</span> ; <span class="id" title="var">cbn</span> <span class="id" title="tactic">in</span> × ;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">intros</span> <span class="id" title="var">X</span> <span class="id" title="var">Y</span> <span class="id" title="var">f</span> <span class="id" title="var">P</span> <span class="id" title="var">Q</span> <span class="id" title="var">p</span> <span class="id" title="var">y</span> ; <span class="id" title="var">cbn</span> <span class="id" title="tactic">in</span> * ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#cha_lub_le"><span class="id" title="lemma">cha_lub_le</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">z</span> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">induction</span> <span class="id" title="var">z</span> <span class="id" title="keyword">as</span> [ <span class="id" title="var">x</span> <span class="id" title="var">q</span> ] ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">induction</span> <span class="id" title="var">q</span> ; <span class="id" title="var">cbn</span> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <span class="id" title="var">p</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">abstract</span><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">intros</span> <span class="id" title="var">Y₂</span> <span class="id" title="var">Y₁</span> <span class="id" title="var">X₂</span> <span class="id" title="var">X₁</span> <span class="id" title="var">f₁</span> <span class="id" title="var">f₂</span> <span class="id" title="var">g₁</span> <span class="id" title="var">g₂</span> <span class="id" title="var">p</span> <span class="id" title="var">Hp</span> <span class="id" title="var">P</span> <span class="id" title="var">y</span> ; <span class="id" title="var">cbn</span> <span class="id" title="tactic">in</span> × ;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">intros</span> <span class="id" title="var">Y₂</span> <span class="id" title="var">Y₁</span> <span class="id" title="var">X₂</span> <span class="id" title="var">X₁</span> <span class="id" title="var">f₁</span> <span class="id" title="var">f₂</span> <span class="id" title="var">g₁</span> <span class="id" title="var">g₂</span> <span class="id" title="var">p</span> <span class="id" title="var">Hp</span> <span class="id" title="var">P</span> <span class="id" title="var">y</span> ; <span class="id" title="var">cbn</span> <span class="id" title="tactic">in</span> * ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#cha_lub_le"><span class="id" title="lemma">cha_lub_le</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">z</span> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">induction</span> <span class="id" title="var">z</span> <span class="id" title="keyword">as</span> [ <span class="id" title="var">z</span> <span class="id" title="var">zp</span> ] ;<br/>
@@ -410,19 +409,19 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">cbn</span> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Limits.html#el_pullback_set_pr1"><span class="id" title="lemma">el_pullback_set_pr1</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.OrderTheory.Lattice.CompleteHeyting.html#cha_le_refl"><span class="id" title="lemma">cha_le_refl</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab1553"></a><h1 class="section">5. The first-order hyperdoctrine of H-valued predicates</h1>
+<a id="lab1582"></a><h1 class="section">5. The first-order hyperdoctrine of H-valued predicates</h1>
 
 </div>
 <div class="code">
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="h_valued_sets_first_order_hyperdoctrine" class="idref" href="#h_valued_sets_first_order_hyperdoctrine"><span class="id" title="definition">h_valued_sets_first_order_hyperdoctrine</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Hyperdoctrines.FirstOrderHyperdoctrine.html#first_order_hyperdoctrine"><span class="id" title="definition">first_order_hyperdoctrine</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Hyperdoctrines.FirstOrderHyperdoctrine.html#make_first_order_hyperdoctrine"><span class="id" title="definition">make_first_order_hyperdoctrine</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#h_valued_sets_hyperdoctrine"><span class="id" title="definition">h_valued_sets_hyperdoctrine</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#fiberwise_terminal_h_valued_sets"><span class="id" title="definition">fiberwise_terminal_h_valued_sets</span></a>.<br/>
@@ -432,13 +431,13 @@
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#fiberwise_exponentials_h_valued_sets"><span class="id" title="definition">fiberwise_exponentials_h_valued_sets</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#has_dependent_products_h_valued_sets"><span class="id" title="definition">has_dependent_products_h_valued_sets</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#has_dependent_sums_h_valued_sets"><span class="id" title="definition">has_dependent_sums_h_valued_sets</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab1554"></a><h1 class="section">6. The tripos of H-valued predicates</h1>
+<a id="lab1583"></a><h1 class="section">6. The tripos of H-valued predicates</h1>
 
 </div>
 <div class="code">
@@ -462,24 +461,24 @@
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="is_tripos_h_valued_sets" class="idref" href="#is_tripos_h_valued_sets"><span class="id" title="definition">is_tripos_h_valued_sets</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Hyperdoctrines.Tripos.html#is_tripos"><span class="id" title="definition">is_tripos</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#h_valued_sets_first_order_hyperdoctrine"><span class="id" title="definition">h_valued_sets_first_order_hyperdoctrine</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">X</span> ; <span class="id" title="var">cbn</span> <span class="id" title="tactic">in</span> × ; <span class="id" title="tactic">unfold</span> <a class="idref" href="UniMath.Foundations.PartD.html#prodtofuntoprod"><span class="id" title="definition">prodtofuntoprod</span></a> ; <span class="id" title="var">cbn</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">X</span> ; <span class="id" title="var">cbn</span> <span class="id" title="tactic">in</span> * ; <span class="id" title="tactic">unfold</span> <a class="idref" href="UniMath.Foundations.PartD.html#prodtofuntoprod"><span class="id" title="definition">prodtofuntoprod</span></a> ; <span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#power_h_valued_set"><span class="id" title="definition">power_h_valued_set</span></a> <span class="id" title="var">X</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#in_power_h_valued_set"><span class="id" title="definition">in_power_h_valued_set</span></a> <span class="id" title="var">X</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">Γ</span> <span class="id" title="var">R</span> ; <span class="id" title="var">cbn</span> <span class="id" title="tactic">in</span> ×.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">Γ</span> <span class="id" title="var">R</span> ; <span class="id" title="var">cbn</span> <span class="id" title="tactic">in</span> *.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">simple</span> <span class="id" title="tactic">refine</span> (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="97663af12d008dfc98f7e61dde21ee75" class="idref" href="#97663af12d008dfc98f7e61dde21ee75"><span class="id" title="binder"><span id="db027aca38788e2b507c990d428e4c0e" class="id">Γ</span></span></a> <a id="x:89" class="idref" href="#x:89"><span class="id" title="binder"><span id="x:91" class="id">x</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <span class="id" title="var">R</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#x:89"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#97663af12d008dfc98f7e61dde21ee75"><span class="id" title="variable">Γ</span></a>)).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">abstract</span><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>).<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="tripos_h_valued_sets" class="idref" href="#tripos_h_valued_sets"><span class="id" title="definition">tripos_h_valued_sets</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Hyperdoctrines.Tripos.html#tripos"><span class="id" title="definition">tripos</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Hyperdoctrines.Tripos.html#make_tripos"><span class="id" title="definition">make_tripos</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#h_valued_sets_first_order_hyperdoctrine"><span class="id" title="definition">h_valued_sets_first_order_hyperdoctrine</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#is_tripos_h_valued_sets"><span class="id" title="definition">is_tripos_h_valued_sets</span></a>.<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Defined</span>.<br/>
+</div>
 <span class="id" title="keyword">End</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.HValuedPredicates.html#HValuedSets"><span class="id" title="section">HValuedSets</span></a>.<br/>
 </div>
 </div>
