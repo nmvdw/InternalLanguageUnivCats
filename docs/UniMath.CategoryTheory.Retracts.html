@@ -1,0 +1,351 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="coqdoc.css" rel="stylesheet" type="text/css" />
+<title>UniMath.CategoryTheory.Retracts</title>
+</head>
+
+<body>
+
+<div id="page">
+
+<div id="header">
+</div>
+
+<div id="main">
+
+<h1 class="libtitle">Library UniMath.CategoryTheory.Retracts</h1>
+
+<div class="code">
+<span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="UniMath.Foundations.All.html#"><span class="id" title="library">UniMath.Foundations.All</span></a>.<br/>
+<span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="UniMath.MoreFoundations.All.html#"><span class="id" title="library">UniMath.MoreFoundations.All</span></a>.<br/>
+<span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#"><span class="id" title="library">UniMath.CategoryTheory.Core.Categories</span></a>.<br/>
+<span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#"><span class="id" title="library">UniMath.CategoryTheory.Core.Functors</span></a>.<br/>
+<span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="UniMath.CategoryTheory.OppositeCategory.Core.html#"><span class="id" title="library">UniMath.CategoryTheory.OppositeCategory.Core</span></a>.<br/>
+
+<br/>
+<span class="id" title="keyword">Local Open</span> <span class="id" title="keyword">Scope</span> <span class="id" title="var">cat</span>.<br/>
+
+<br/>
+</div>
+
+<div class="doc">
+<a id="lab1094"></a><h1 class="section">1. Retractions</h1>
+
+</div>
+<div class="code">
+<span class="id" title="keyword">Section</span> <a id="SectionsAndRetractions" class="idref" href="#SectionsAndRetractions"><span class="id" title="section">SectionsAndRetractions</span></a>.<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Context</span> {<a id="SectionsAndRetractions.C" class="idref" href="#SectionsAndRetractions.C"><span class="id" title="variable">C</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#precategory"><span class="id" title="definition">precategory</span></a>}.<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="is_retraction" class="idref" href="#is_retraction"><span class="id" title="definition">is_retraction</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;{<a id="A:2" class="idref" href="#A:2"><span class="id" title="binder">A</span></a> <a id="B:3" class="idref" href="#B:3"><span class="id" title="binder">B</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#SectionsAndRetractions.C"><span class="id" title="variable">C</span></a>}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;(<a id="s:4" class="idref" href="#s:4"><span class="id" title="binder">s</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#A:2"><span class="id" title="variable">A</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#B:3"><span class="id" title="variable">B</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;(<a id="r:5" class="idref" href="#r:5"><span class="id" title="binder">r</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#B:3"><span class="id" title="variable">B</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#A:2"><span class="id" title="variable">A</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;:= <a class="idref" href="UniMath.CategoryTheory.Retracts.html#s:4"><span class="id" title="variable">s</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#r:5"><span class="id" title="variable">r</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#identity"><span class="id" title="definition">identity</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#A:2"><span class="id" title="variable">A</span></a>.<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Lemma</span> <a id="isaprop_is_retraction" class="idref" href="#isaprop_is_retraction"><span class="id" title="lemma">isaprop_is_retraction</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;{<a id="A:6" class="idref" href="#A:6"><span class="id" title="binder">A</span></a> <a id="B:7" class="idref" href="#B:7"><span class="id" title="binder">B</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#SectionsAndRetractions.C"><span class="id" title="variable">C</span></a>}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;(<a id="s:8" class="idref" href="#s:8"><span class="id" title="binder">s</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#A:6"><span class="id" title="variable">A</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#B:7"><span class="id" title="variable">B</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;(<a id="r:9" class="idref" href="#r:9"><span class="id" title="binder">r</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#B:7"><span class="id" title="variable">B</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#A:6"><span class="id" title="variable">A</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;(<a id="H:10" class="idref" href="#H:10"><span class="id" title="binder">H</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#has_homsets"><span class="id" title="definition">has_homsets</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#SectionsAndRetractions.C"><span class="id" title="variable">C</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.PartB.html#isaprop"><span class="id" title="definition">isaprop</span></a> (<a class="idref" href="UniMath.CategoryTheory.Retracts.html#is_retraction"><span class="id" title="definition">is_retraction</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#s:8"><span class="id" title="variable">s</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#r:9"><span class="id" title="variable">r</span></a>).<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <span class="id" title="var">H</span>.<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+
+<br/>
+</div>
+
+<div class="doc">
+A retraction of B onto A 
+</div>
+<div class="code">
+&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="retraction" class="idref" href="#retraction"><span class="id" title="definition">retraction</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;(<a id="A:11" class="idref" href="#A:11"><span class="id" title="binder">A</span></a> <a id="B:12" class="idref" href="#B:12"><span class="id" title="binder">B</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#SectionsAndRetractions.C"><span class="id" title="variable">C</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;:= <a class="idref" href="UniMath.Foundations.Preamble.html#cd4bc1b07c8b3bdc9f3bbc7941b56107"><span class="id" title="notation">∑</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#cd4bc1b07c8b3bdc9f3bbc7941b56107"><span class="id" title="notation">(</span></a><a id="s:13" class="idref" href="#s:13"><span class="id" title="binder">s</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#A:11"><span class="id" title="variable">A</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#B:12"><span class="id" title="variable">B</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="r:14" class="idref" href="#r:14"><span class="id" title="binder">r</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#B:12"><span class="id" title="variable">B</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#A:11"><span class="id" title="variable">A</span></a><a class="idref" href="UniMath.Foundations.Preamble.html#cd4bc1b07c8b3bdc9f3bbc7941b56107"><span class="id" title="notation">),</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.Retracts.html#is_retraction"><span class="id" title="definition">is_retraction</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#s:13"><span class="id" title="variable">s</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#r:14"><span class="id" title="variable">r</span></a>.<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Section</span> <a id="SectionsAndRetractions.Accessors" class="idref" href="#SectionsAndRetractions.Accessors"><span class="id" title="section">Accessors</span></a>.<br/>
+
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Context</span> {<a id="SectionsAndRetractions.Accessors.A" class="idref" href="#SectionsAndRetractions.Accessors.A"><span class="id" title="variable">A</span></a> <a id="SectionsAndRetractions.Accessors.B" class="idref" href="#SectionsAndRetractions.Accessors.B"><span class="id" title="variable">B</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#SectionsAndRetractions.C"><span class="id" title="variable">C</span></a>}.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Context</span> (<a id="SectionsAndRetractions.Accessors.H" class="idref" href="#SectionsAndRetractions.Accessors.H"><span class="id" title="variable">H</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#retraction"><span class="id" title="definition">retraction</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#SectionsAndRetractions.Accessors.A"><span class="id" title="variable">A</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#SectionsAndRetractions.Accessors.B"><span class="id" title="variable">B</span></a>).<br/>
+
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="retraction_section" class="idref" href="#retraction_section"><span class="id" title="definition">retraction_section</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Retracts.html#SectionsAndRetractions.Accessors.A"><span class="id" title="variable">A</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#SectionsAndRetractions.Accessors.B"><span class="id" title="variable">B</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:= <a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#SectionsAndRetractions.Accessors.H"><span class="id" title="variable">H</span></a>.<br/>
+
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="retraction_retraction" class="idref" href="#retraction_retraction"><span class="id" title="definition">retraction_retraction</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Retracts.html#SectionsAndRetractions.Accessors.B"><span class="id" title="variable">B</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#SectionsAndRetractions.Accessors.A"><span class="id" title="variable">A</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:= <a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr12'_x"><span class="id" title="notation">pr12</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#SectionsAndRetractions.Accessors.H"><span class="id" title="variable">H</span></a>.<br/>
+
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="retraction_is_retraction" class="idref" href="#retraction_is_retraction"><span class="id" title="definition">retraction_is_retraction</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Retracts.html#retraction_section"><span class="id" title="definition">retraction_section</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#retraction_retraction"><span class="id" title="definition">retraction_retraction</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#identity"><span class="id" title="definition">identity</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#SectionsAndRetractions.Accessors.A"><span class="id" title="variable">A</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:= <a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr22'_x"><span class="id" title="notation">pr22</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#SectionsAndRetractions.Accessors.H"><span class="id" title="variable">H</span></a>.<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">End</span> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#SectionsAndRetractions.Accessors"><span class="id" title="section">Accessors</span></a>.<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Coercion</span> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#retraction_retraction"><span class="id" title="definition">retraction_retraction</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.Retracts.html#retraction_retraction"><span class="id" title="definition">:</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#retraction_retraction"><span class="id" title="definition">retraction</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#retraction_retraction"><span class="id" title="definition">&gt;-&gt;</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#retraction_retraction"><span class="id" title="definition">precategory_morphisms</span></a>.<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Lemma</span> <a id="isaset_retraction" class="idref" href="#isaset_retraction"><span class="id" title="lemma">isaset_retraction</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;(<a id="A:18" class="idref" href="#A:18"><span class="id" title="binder">A</span></a> <a id="B:19" class="idref" href="#B:19"><span class="id" title="binder">B</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#ob"><span class="id" title="definition">ob</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#SectionsAndRetractions.C"><span class="id" title="variable">C</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;(<a id="H:20" class="idref" href="#H:20"><span class="id" title="binder">H</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#has_homsets"><span class="id" title="definition">has_homsets</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#SectionsAndRetractions.C"><span class="id" title="variable">C</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.PartB.html#isaset"><span class="id" title="definition">isaset</span></a> (<a class="idref" href="UniMath.CategoryTheory.Retracts.html#retraction"><span class="id" title="definition">retraction</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#A:18"><span class="id" title="variable">A</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#B:19"><span class="id" title="variable">B</span></a>).<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">do</span> 2 (<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartB.html#isaset_total2"><span class="id" title="lemma">isaset_total2</span></a>; [<span class="id" title="tactic">apply</span> <span class="id" title="var">H</span> | <span class="id" title="tactic">intro</span>]).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartB.html#isasetaprop"><span class="id" title="lemma">isasetaprop</span></a>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#isaprop_is_retraction"><span class="id" title="lemma">isaprop_is_retraction</span></a>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <span class="id" title="var">H</span>.<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+
+<br/>
+<span class="id" title="keyword">End</span> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#SectionsAndRetractions"><span class="id" title="section">SectionsAndRetractions</span></a>.<br/>
+
+<br/>
+</div>
+
+<div class="doc">
+<a id="lab1095"></a><h1 class="section">2. Idempotents and split idempotents</h1>
+
+</div>
+<div class="code">
+<span class="id" title="keyword">Section</span> <a id="Idempotents" class="idref" href="#Idempotents"><span class="id" title="section">Idempotents</span></a>.<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Context</span> {<a id="Idempotents.C" class="idref" href="#Idempotents.C"><span class="id" title="variable">C</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#precategory"><span class="id" title="definition">precategory</span></a>}.<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="is_idempotent" class="idref" href="#is_idempotent"><span class="id" title="definition">is_idempotent</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;{<a id="c:22" class="idref" href="#c:22"><span class="id" title="binder">c</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#Idempotents.C"><span class="id" title="variable">C</span></a>}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;(<a id="e:23" class="idref" href="#e:23"><span class="id" title="binder">e</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#c:22"><span class="id" title="variable">c</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#c:22"><span class="id" title="variable">c</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;:= <a class="idref" href="UniMath.CategoryTheory.Retracts.html#e:23"><span class="id" title="variable">e</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#e:23"><span class="id" title="variable">e</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#e:23"><span class="id" title="variable">e</span></a>.<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="idempotent" class="idref" href="#idempotent"><span class="id" title="definition">idempotent</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;(<a id="c:24" class="idref" href="#c:24"><span class="id" title="binder">c</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#Idempotents.C"><span class="id" title="variable">C</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;:= <a class="idref" href="UniMath.Foundations.Preamble.html#cd4bc1b07c8b3bdc9f3bbc7941b56107"><span class="id" title="notation">∑</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#cd4bc1b07c8b3bdc9f3bbc7941b56107"><span class="id" title="notation">(</span></a><a id="e:25" class="idref" href="#e:25"><span class="id" title="binder">e</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#c:24"><span class="id" title="variable">c</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#c:24"><span class="id" title="variable">c</span></a><a class="idref" href="UniMath.Foundations.Preamble.html#cd4bc1b07c8b3bdc9f3bbc7941b56107"><span class="id" title="notation">),</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#is_idempotent"><span class="id" title="definition">is_idempotent</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#e:25"><span class="id" title="variable">e</span></a>.<br/>
+
+<br/>
+&nbsp;&nbsp;#[<span class="id" title="var">reversible</span>=<span class="id" title="keyword">no</span>] <span class="id" title="keyword">Coercion</span> <a id="idempotent_morphism" class="idref" href="#idempotent_morphism"><span class="id" title="definition">idempotent_morphism</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;{<a id="c:26" class="idref" href="#c:26"><span class="id" title="binder">c</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#Idempotents.C"><span class="id" title="variable">C</span></a>}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;(<a id="e:27" class="idref" href="#e:27"><span class="id" title="binder">e</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#idempotent"><span class="id" title="definition">idempotent</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#c:26"><span class="id" title="variable">c</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Retracts.html#c:26"><span class="id" title="variable">c</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#c:26"><span class="id" title="variable">c</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;:= <a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#e:27"><span class="id" title="variable">e</span></a>.<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="idempotent_is_idempotent" class="idref" href="#idempotent_is_idempotent"><span class="id" title="definition">idempotent_is_idempotent</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;{<a id="c:28" class="idref" href="#c:28"><span class="id" title="binder">c</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#Idempotents.C"><span class="id" title="variable">C</span></a>}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;(<a id="e:29" class="idref" href="#e:29"><span class="id" title="binder">e</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#idempotent"><span class="id" title="definition">idempotent</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#c:28"><span class="id" title="variable">c</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Retracts.html#is_idempotent"><span class="id" title="definition">is_idempotent</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#e:29"><span class="id" title="variable">e</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;:= <a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#e:29"><span class="id" title="variable">e</span></a>.<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="is_split_idempotent" class="idref" href="#is_split_idempotent"><span class="id" title="definition">is_split_idempotent</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;{<a id="c:30" class="idref" href="#c:30"><span class="id" title="binder">c</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#Idempotents.C"><span class="id" title="variable">C</span></a>}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;(<a id="e:31" class="idref" href="#e:31"><span class="id" title="binder">e</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#c:30"><span class="id" title="variable">c</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#c:30"><span class="id" title="variable">c</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;:= <a class="idref" href="UniMath.Foundations.Preamble.html#cd4bc1b07c8b3bdc9f3bbc7941b56107"><span class="id" title="notation">∑</span></a> <a id="c':32" class="idref" href="#c':32"><span class="id" title="binder">c'</span></a> (<a id="H:33" class="idref" href="#H:33"><span class="id" title="binder">H</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#retraction"><span class="id" title="definition">retraction</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#c':32"><span class="id" title="variable">c'</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#c:30"><span class="id" title="variable">c</span></a><a class="idref" href="UniMath.Foundations.Preamble.html#cd4bc1b07c8b3bdc9f3bbc7941b56107"><span class="id" title="notation">),</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#e:31"><span class="id" title="variable">e</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#retraction_retraction"><span class="id" title="definition">retraction_retraction</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#H:33"><span class="id" title="variable">H</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#retraction_section"><span class="id" title="definition">retraction_section</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#H:33"><span class="id" title="variable">H</span></a>.<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="split_idempotent" class="idref" href="#split_idempotent"><span class="id" title="definition">split_idempotent</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;(<a id="c:34" class="idref" href="#c:34"><span class="id" title="binder">c</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#Idempotents.C"><span class="id" title="variable">C</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;:= <a class="idref" href="UniMath.Foundations.Preamble.html#cd4bc1b07c8b3bdc9f3bbc7941b56107"><span class="id" title="notation">∑</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#cd4bc1b07c8b3bdc9f3bbc7941b56107"><span class="id" title="notation">(</span></a><a id="e:35" class="idref" href="#e:35"><span class="id" title="binder">e</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#c:34"><span class="id" title="variable">c</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#c:34"><span class="id" title="variable">c</span></a><a class="idref" href="UniMath.Foundations.Preamble.html#cd4bc1b07c8b3bdc9f3bbc7941b56107"><span class="id" title="notation">),</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#is_split_idempotent"><span class="id" title="definition">is_split_idempotent</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#e:35"><span class="id" title="variable">e</span></a>.<br/>
+
+<br/>
+&nbsp;&nbsp;#[<span class="id" title="var">reversible</span>=<span class="id" title="keyword">no</span>] <span class="id" title="keyword">Coercion</span> <a id="split_idempotent_morphism" class="idref" href="#split_idempotent_morphism"><span class="id" title="definition">split_idempotent_morphism</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;{<a id="c:36" class="idref" href="#c:36"><span class="id" title="binder">c</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#Idempotents.C"><span class="id" title="variable">C</span></a>}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;(<a id="e:37" class="idref" href="#e:37"><span class="id" title="binder">e</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#split_idempotent"><span class="id" title="definition">split_idempotent</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#c:36"><span class="id" title="variable">c</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Retracts.html#c:36"><span class="id" title="variable">c</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#c:36"><span class="id" title="variable">c</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;:= <a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#e:37"><span class="id" title="variable">e</span></a>.<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="split_idempotent_is_split_idempotent" class="idref" href="#split_idempotent_is_split_idempotent"><span class="id" title="definition">split_idempotent_is_split_idempotent</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;{<a id="c:38" class="idref" href="#c:38"><span class="id" title="binder">c</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#Idempotents.C"><span class="id" title="variable">C</span></a>}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;(<a id="e:39" class="idref" href="#e:39"><span class="id" title="binder">e</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#split_idempotent"><span class="id" title="definition">split_idempotent</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#c:38"><span class="id" title="variable">c</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Retracts.html#is_split_idempotent"><span class="id" title="definition">is_split_idempotent</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#e:39"><span class="id" title="variable">e</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;:= <a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#e:39"><span class="id" title="variable">e</span></a>.<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="split_idempotent_object" class="idref" href="#split_idempotent_object"><span class="id" title="definition">split_idempotent_object</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;{<a id="c:40" class="idref" href="#c:40"><span class="id" title="binder">c</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#Idempotents.C"><span class="id" title="variable">C</span></a>}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;(<a id="e:41" class="idref" href="#e:41"><span class="id" title="binder">e</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#split_idempotent"><span class="id" title="definition">split_idempotent</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#c:40"><span class="id" title="variable">c</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Retracts.html#Idempotents.C"><span class="id" title="variable">C</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;:= <a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr12'_x"><span class="id" title="notation">pr12</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#e:41"><span class="id" title="variable">e</span></a>.<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="split_idempotent_retraction" class="idref" href="#split_idempotent_retraction"><span class="id" title="definition">split_idempotent_retraction</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;{<a id="c:42" class="idref" href="#c:42"><span class="id" title="binder">c</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#Idempotents.C"><span class="id" title="variable">C</span></a>}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;(<a id="e:43" class="idref" href="#e:43"><span class="id" title="binder">e</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#split_idempotent"><span class="id" title="definition">split_idempotent</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#c:42"><span class="id" title="variable">c</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Retracts.html#retraction"><span class="id" title="definition">retraction</span></a> (<a class="idref" href="UniMath.CategoryTheory.Retracts.html#split_idempotent_object"><span class="id" title="definition">split_idempotent_object</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#e:43"><span class="id" title="variable">e</span></a>) <a class="idref" href="UniMath.CategoryTheory.Retracts.html#c:42"><span class="id" title="variable">c</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;:= <a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr122'_x"><span class="id" title="notation">pr122</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#e:43"><span class="id" title="variable">e</span></a>.<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="split_idempotent_is_split" class="idref" href="#split_idempotent_is_split"><span class="id" title="definition">split_idempotent_is_split</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;{<a id="c:44" class="idref" href="#c:44"><span class="id" title="binder">c</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#Idempotents.C"><span class="id" title="variable">C</span></a>}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;(<a id="e:45" class="idref" href="#e:45"><span class="id" title="binder">e</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#split_idempotent"><span class="id" title="definition">split_idempotent</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#c:44"><span class="id" title="variable">c</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Retracts.html#split_idempotent_morphism"><span class="id" title="definition">split_idempotent_morphism</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#e:45"><span class="id" title="variable">e</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#split_idempotent_retraction"><span class="id" title="definition">split_idempotent_retraction</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#e:45"><span class="id" title="variable">e</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#retraction_section"><span class="id" title="definition">retraction_section</span></a> (<a class="idref" href="UniMath.CategoryTheory.Retracts.html#split_idempotent_retraction"><span class="id" title="definition">split_idempotent_retraction</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#e:45"><span class="id" title="variable">e</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;:= <a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr222'_x"><span class="id" title="notation">pr222</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#e:45"><span class="id" title="variable">e</span></a>.<br/>
+
+<br/>
+</div>
+
+<div class="doc">
+<a id="lab1096"></a><h2 class="section">2.2. Split idempotent implies idempotent</h2>
+
+</div>
+<div class="code">
+&nbsp;&nbsp;<span class="id" title="keyword">Lemma</span> <a id="split_idempotent_is_idempotent" class="idref" href="#split_idempotent_is_idempotent"><span class="id" title="lemma">split_idempotent_is_idempotent</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;{<a id="c:46" class="idref" href="#c:46"><span class="id" title="binder">c</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#Idempotents.C"><span class="id" title="variable">C</span></a>}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;(<a id="e:47" class="idref" href="#e:47"><span class="id" title="binder">e</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#split_idempotent"><span class="id" title="definition">split_idempotent</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#c:46"><span class="id" title="variable">c</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Retracts.html#is_idempotent"><span class="id" title="definition">is_idempotent</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#e:47"><span class="id" title="variable">e</span></a>.<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">induction</span> (<a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">!</span></a><a class="idref" href="UniMath.CategoryTheory.Retracts.html#split_idempotent_is_split"><span class="id" title="definition">split_idempotent_is_split</span></a> <span class="id" title="var">e</span>).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc"><span class="id" title="definition">assoc</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.PartA.html#8b57b11be4275b47948f6caec264b70f"><span class="id" title="notation">@</span></a> <span class="id" title="var">_</span>).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="x:48" class="idref" href="#x:48"><span class="id" title="binder"><span id="x:49" class="id">x</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#x:48"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <span class="id" title="var">_</span>) <span class="id" title="var">_</span>).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc'"><span class="id" title="definition">assoc'</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.PartA.html#8b57b11be4275b47948f6caec264b70f"><span class="id" title="notation">@</span></a> <span class="id" title="var">_</span>).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a> <span class="id" title="var">_</span> (<a class="idref" href="UniMath.CategoryTheory.Retracts.html#retraction_is_retraction"><span class="id" title="definition">retraction_is_retraction</span></a> <span class="id" title="var">_</span>) <a class="idref" href="UniMath.Foundations.PartA.html#8b57b11be4275b47948f6caec264b70f"><span class="id" title="notation">@</span></a> <span class="id" title="var">_</span>).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_right"><span class="id" title="definition">id_right</span></a>.<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+
+<br/>
+<span class="id" title="keyword">End</span> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#Idempotents"><span class="id" title="section">Idempotents</span></a>.<br/>
+
+<br/>
+</div>
+
+<div class="doc">
+<a id="lab1097"></a><h1 class="section">3. Functors</h1>
+
+</div>
+<div class="code">
+<span class="id" title="keyword">Section</span> <a id="Functors" class="idref" href="#Functors"><span class="id" title="section">Functors</span></a>.<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Context</span> {<a id="Functors.C" class="idref" href="#Functors.C"><span class="id" title="variable">C</span></a> <a id="Functors.D" class="idref" href="#Functors.D"><span class="id" title="variable">D</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#category"><span class="id" title="definition">category</span></a>}.<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Context</span> (<a id="Functors.F" class="idref" href="#Functors.F"><span class="id" title="variable">F</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#Functors.C"><span class="id" title="variable">C</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#2e11fa34845c6475af27ac9ab3f166ed"><span class="id" title="notation">⟶</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#Functors.D"><span class="id" title="variable">D</span></a>).<br/>
+
+<br/>
+</div>
+
+<div class="doc">
+<a id="lab1098"></a><h2 class="section">3.1. Retractions are preserved by functors</h2>
+
+</div>
+<div class="code">
+&nbsp;&nbsp;<span class="id" title="keyword">Lemma</span> <a id="functor_preserves_is_retraction" class="idref" href="#functor_preserves_is_retraction"><span class="id" title="lemma">functor_preserves_is_retraction</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;{<a id="a:53" class="idref" href="#a:53"><span class="id" title="binder">a</span></a> <a id="b:54" class="idref" href="#b:54"><span class="id" title="binder">b</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#Functors.C"><span class="id" title="variable">C</span></a>}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;(<a id="f:55" class="idref" href="#f:55"><span class="id" title="binder">f</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#retraction"><span class="id" title="definition">retraction</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#b:54"><span class="id" title="variable">b</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#a:53"><span class="id" title="variable">a</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Retracts.html#is_retraction"><span class="id" title="definition">is_retraction</span></a> (<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a><a class="idref" href="UniMath.CategoryTheory.Retracts.html#Functors.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">retraction_section</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">f</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">)</span></a>) (<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a><a class="idref" href="UniMath.CategoryTheory.Retracts.html#Functors.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">f</span></a>).<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">!</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_comp"><span class="id" title="definition">functor_comp</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.PartA.html#8b57b11be4275b47948f6caec264b70f"><span class="id" title="notation">@</span></a> <span class="id" title="var">_</span>).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a> <span class="id" title="var">_</span> (<a class="idref" href="UniMath.CategoryTheory.Retracts.html#retraction_is_retraction"><span class="id" title="definition">retraction_is_retraction</span></a> <span class="id" title="var">f</span>) <a class="idref" href="UniMath.Foundations.PartA.html#8b57b11be4275b47948f6caec264b70f"><span class="id" title="notation">@</span></a> <span class="id" title="var">_</span>).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_id"><span class="id" title="definition">functor_id</span></a>.<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="functor_preserves_retraction" class="idref" href="#functor_preserves_retraction"><span class="id" title="definition">functor_preserves_retraction</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;{<a id="a:56" class="idref" href="#a:56"><span class="id" title="binder">a</span></a> <a id="b:57" class="idref" href="#b:57"><span class="id" title="binder">b</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#Functors.C"><span class="id" title="variable">C</span></a>}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;(<a id="H:58" class="idref" href="#H:58"><span class="id" title="binder">H</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#retraction"><span class="id" title="definition">retraction</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#b:57"><span class="id" title="variable">b</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#a:56"><span class="id" title="variable">a</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Retracts.html#retraction"><span class="id" title="definition">retraction</span></a> (<a class="idref" href="UniMath.CategoryTheory.Retracts.html#Functors.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#b:57"><span class="id" title="variable">b</span></a>) (<a class="idref" href="UniMath.CategoryTheory.Retracts.html#Functors.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#a:56"><span class="id" title="variable">a</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;:= <span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#functor_preserves_is_retraction"><span class="id" title="lemma">functor_preserves_is_retraction</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#H:58"><span class="id" title="variable">H</span></a>.<br/>
+
+<br/>
+</div>
+
+<div class="doc">
+<a id="lab1099"></a><h2 class="section">3.2. Idempotents are preserved by functors</h2>
+
+</div>
+<div class="code">
+&nbsp;&nbsp;<span class="id" title="keyword">Lemma</span> <a id="functor_preserves_is_idempotent" class="idref" href="#functor_preserves_is_idempotent"><span class="id" title="lemma">functor_preserves_is_idempotent</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;{<a id="c:59" class="idref" href="#c:59"><span class="id" title="binder">c</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#Functors.C"><span class="id" title="variable">C</span></a>}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;(<a id="f:60" class="idref" href="#f:60"><span class="id" title="binder">f</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#idempotent"><span class="id" title="definition">idempotent</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#c:59"><span class="id" title="variable">c</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Retracts.html#is_idempotent"><span class="id" title="definition">is_idempotent</span></a> (<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a><a class="idref" href="UniMath.CategoryTheory.Retracts.html#Functors.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">f</span></a>).<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">!</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_comp"><span class="id" title="definition">functor_comp</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.PartA.html#8b57b11be4275b47948f6caec264b70f"><span class="id" title="notation">@</span></a> <span class="id" title="var">_</span>).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#idempotent_is_idempotent"><span class="id" title="definition">idempotent_is_idempotent</span></a>.<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="functor_preserves_idempotent" class="idref" href="#functor_preserves_idempotent"><span class="id" title="definition">functor_preserves_idempotent</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;{<a id="c:61" class="idref" href="#c:61"><span class="id" title="binder">c</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#Functors.C"><span class="id" title="variable">C</span></a>}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;(<a id="H:62" class="idref" href="#H:62"><span class="id" title="binder">H</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#idempotent"><span class="id" title="definition">idempotent</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#c:61"><span class="id" title="variable">c</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Retracts.html#idempotent"><span class="id" title="definition">idempotent</span></a> (<a class="idref" href="UniMath.CategoryTheory.Retracts.html#Functors.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#c:61"><span class="id" title="variable">c</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;:= <span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#functor_preserves_is_idempotent"><span class="id" title="lemma">functor_preserves_is_idempotent</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#H:62"><span class="id" title="variable">H</span></a>.<br/>
+
+<br/>
+</div>
+
+<div class="doc">
+<a id="lab1100"></a><h2 class="section">3.3. Split idempotents are preserved by functors</h2>
+
+</div>
+<div class="code">
+&nbsp;&nbsp;<span class="id" title="keyword">Lemma</span> <a id="functor_preserves_is_split_idempotent" class="idref" href="#functor_preserves_is_split_idempotent"><span class="id" title="lemma">functor_preserves_is_split_idempotent</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;{<a id="c:63" class="idref" href="#c:63"><span class="id" title="binder">c</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#Functors.C"><span class="id" title="variable">C</span></a>}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;(<a id="f:64" class="idref" href="#f:64"><span class="id" title="binder">f</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#split_idempotent"><span class="id" title="definition">split_idempotent</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#c:63"><span class="id" title="variable">c</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Retracts.html#is_split_idempotent"><span class="id" title="definition">is_split_idempotent</span></a> (<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a><a class="idref" href="UniMath.CategoryTheory.Retracts.html#Functors.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">f</span></a>).<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#is_split_idempotent"><span class="id" title="definition">is_split_idempotent</span></a>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">∃</span> (<a class="idref" href="UniMath.CategoryTheory.Retracts.html#Functors.F"><span class="id" title="variable">F</span></a> (<a class="idref" href="UniMath.CategoryTheory.Retracts.html#split_idempotent_object"><span class="id" title="definition">split_idempotent_object</span></a> <span class="id" title="var">f</span>)).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">∃</span> (<a class="idref" href="UniMath.CategoryTheory.Retracts.html#functor_preserves_retraction"><span class="id" title="definition">functor_preserves_retraction</span></a> (<a class="idref" href="UniMath.CategoryTheory.Retracts.html#split_idempotent_retraction"><span class="id" title="definition">split_idempotent_retraction</span></a> <span class="id" title="var">f</span>)).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.PartA.html#8b57b11be4275b47948f6caec264b70f"><span class="id" title="notation">@</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_comp"><span class="id" title="definition">functor_comp</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span>).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#split_idempotent_is_split"><span class="id" title="definition">split_idempotent_is_split</span></a>.<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="functor_preserves_split_idempotent" class="idref" href="#functor_preserves_split_idempotent"><span class="id" title="definition">functor_preserves_split_idempotent</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;{<a id="c:65" class="idref" href="#c:65"><span class="id" title="binder">c</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#Functors.C"><span class="id" title="variable">C</span></a>}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;(<a id="f:66" class="idref" href="#f:66"><span class="id" title="binder">f</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#split_idempotent"><span class="id" title="definition">split_idempotent</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#c:65"><span class="id" title="variable">c</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Retracts.html#split_idempotent"><span class="id" title="definition">split_idempotent</span></a> (<a class="idref" href="UniMath.CategoryTheory.Retracts.html#Functors.F"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#c:65"><span class="id" title="variable">c</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;:= <span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Retracts.html#functor_preserves_is_split_idempotent"><span class="id" title="lemma">functor_preserves_is_split_idempotent</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#f:66"><span class="id" title="variable">f</span></a><a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">)</span></a>.<br/>
+
+<br/>
+<span class="id" title="keyword">End</span> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#Functors"><span class="id" title="section">Functors</span></a>.<br/>
+
+<br/>
+<span class="id" title="keyword">Section</span> <a id="Opp" class="idref" href="#Opp"><span class="id" title="section">Opp</span></a>.<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Context</span> (<a id="Opp.C" class="idref" href="#Opp.C"><span class="id" title="variable">C</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#category"><span class="id" title="definition">category</span></a>).<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Context</span> (<a id="Opp.A" class="idref" href="#Opp.A"><span class="id" title="variable">A</span></a> <a id="Opp.B" class="idref" href="#Opp.B"><span class="id" title="variable">B</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#Opp.C"><span class="id" title="variable">C</span></a>).<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Context</span> (<a id="Opp.r" class="idref" href="#Opp.r"><span class="id" title="variable">r</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#retraction"><span class="id" title="definition">retraction</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#Opp.A"><span class="id" title="variable">A</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#Opp.B"><span class="id" title="variable">B</span></a>).<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="opp_retraction" class="idref" href="#opp_retraction"><span class="id" title="definition">opp_retraction</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Retracts.html#retraction"><span class="id" title="definition">retraction</span></a> (<a class="idref" href="UniMath.CategoryTheory.Retracts.html#Opp.A"><span class="id" title="variable">A</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#Opp.C"><span class="id" title="variable">C</span></a><a class="idref" href="UniMath.CategoryTheory.OppositeCategory.Core.html#a94a1bf0b374183e66549def52723bf4"><span class="id" title="notation">^</span></a><a class="idref" href="UniMath.CategoryTheory.OppositeCategory.Core.html#a94a1bf0b374183e66549def52723bf4"><span class="id" title="notation">opp</span></a>) (<a class="idref" href="UniMath.CategoryTheory.Retracts.html#Opp.B"><span class="id" title="variable">B</span></a> : <a class="idref" href="UniMath.CategoryTheory.Retracts.html#Opp.C"><span class="id" title="variable">C</span></a><a class="idref" href="UniMath.CategoryTheory.OppositeCategory.Core.html#a94a1bf0b374183e66549def52723bf4"><span class="id" title="notation">^</span></a><a class="idref" href="UniMath.CategoryTheory.OppositeCategory.Core.html#a94a1bf0b374183e66549def52723bf4"><span class="id" title="notation">opp</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;:= <a class="idref" href="UniMath.CategoryTheory.Retracts.html#retraction_retraction"><span class="id" title="definition">retraction_retraction</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#Opp.r"><span class="id" title="variable">r</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#retraction_section"><span class="id" title="definition">retraction_section</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#Opp.r"><span class="id" title="variable">r</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#retraction_is_retraction"><span class="id" title="definition">retraction_is_retraction</span></a> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#Opp.r"><span class="id" title="variable">r</span></a>.<br/>
+
+<br/>
+<span class="id" title="keyword">End</span> <a class="idref" href="UniMath.CategoryTheory.Retracts.html#Opp"><span class="id" title="section">Opp</span></a>.<br/>
+</div>
+</div>
+
+<div id="footer">
+<hr/><a href="index.html">Index</a><hr/>This page has been generated by <a href="http://coq.inria.fr/">coqdoc</a>
+</div>
+
+</div>
+
+</body>
+</html>
