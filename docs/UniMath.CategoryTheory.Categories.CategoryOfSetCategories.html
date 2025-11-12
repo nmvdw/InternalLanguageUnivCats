@@ -18,6 +18,50 @@
 <h1 class="libtitle">Library UniMath.CategoryTheory.Categories.CategoryOfSetCategories</h1>
 
 <div class="code">
+</div>
+
+<div class="doc">
+
+<div class="paragraph"> </div>
+
+ The category of strict categories
+
+<div class="paragraph"> </div>
+
+ Strict categories are the categories in which the type of objects forms a set. As such,
+ the type of functors between them is a set as well, and this allows us to construct a
+ category whose objects are strict categories and whose morphisms are functors. We also
+ show that this category is univalent.
+
+<div class="paragraph"> </div>
+
+ For the proof of univalence, we reuse the result that identity of categories is equivalent
+ to isomorphisms of categories. The main work lies in showing that isomorpisms in the
+ category of strict categories are the same as isomorphisms of categories. This makes use
+ of some infrastructure regarding isomorphisms.
+
+<div class="paragraph"> </div>
+
+ One technical detail that occurs in the proof of univalence, lies in the fact that we
+ define <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.CategoryOfSetCategories.html#path_setcategory_help_fun"><span class="id" title="definition">path_setcategory_help_fun</span></a></span> and <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.CategoryOfSetCategories.html#path_setcategory_help_fun_alt"><span class="id" title="definition">path_setcategory_help_fun_alt</span></a></span> and that we show
+ they are equal in <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.CategoryOfSetCategories.html#path_setcategory_help_fun_eq"><span class="id" title="lemma">path_setcategory_help_fun_eq</span></a></span>. The function <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.CategoryOfSetCategories.html#path_setcategory_help_fun"><span class="id" title="definition">path_setcategory_help_fun</span></a></span>
+ is more useful computationally in <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.CategoryOfSetCategories.html#is_univalent_cat_of_setcategory"><span class="id" title="lemma">is_univalent_cat_of_setcategory</span></a></span>, but
+ <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.CategoryOfSetCategories.html#path_setcategory_help_fun_alt"><span class="id" title="definition">path_setcategory_help_fun_alt</span></a></span> simplifies the construction of the equivalence in
+ <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.CategoryOfSetCategories.html#path_setcategory"><span class="id" title="definition">path_setcategory</span></a></span>.
+
+<div class="paragraph"> </div>
+
+ Contents
+ 1. The category of strict categories <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.CategoryOfSetCategories.html#cat_of_setcategory"><span class="id" title="definition">cat_of_setcategory</span></a></span>
+ 2. Isomorphisms of strict categories
+ 3. The univalence of the category of strict categories <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.CategoryOfSetCategories.html#is_univalent_cat_of_setcategory"><span class="id" title="lemma">is_univalent_cat_of_setcategory</span></a></span>
+ 4. An isomorphism of strict categories gives an adjoint equivalence <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.CategoryOfSetCategories.html#z_iso_to_equivalence"><span class="id" title="definition">z_iso_to_equivalence</span></a></span>
+
+<div class="paragraph"> </div>
+
+ 
+</div>
+<div class="code">
 <span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="UniMath.Foundations.All.html#"><span class="id" title="library">UniMath.Foundations.All</span></a>.<br/>
 <span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="UniMath.MoreFoundations.All.html#"><span class="id" title="library">UniMath.MoreFoundations.All</span></a>.<br/>
 <span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="UniMath.CategoryTheory.Core.Prelude.html#"><span class="id" title="library">UniMath.CategoryTheory.Core.Prelude</span></a>.<br/>
@@ -34,7 +78,7 @@
 </div>
 
 <div class="doc">
-<a id="lab1926"></a><h1 class="section">1. The category of strict categories</h1>
+<a id="lab2093"></a><h1 class="section">1. The category of strict categories</h1>
 
 </div>
 <div class="code">
@@ -122,7 +166,7 @@
 </div>
 
 <div class="doc">
-<a id="lab1927"></a><h1 class="section">2. Isomorphisms of strict categories</h1>
+<a id="lab2094"></a><h1 class="section">2. Isomorphisms of strict categories</h1>
 
 </div>
 <div class="code">
@@ -375,7 +419,7 @@
 </div>
 
 <div class="doc">
-<a id="lab1928"></a><h1 class="section">3. The univalence of the category of strict categories</h1>
+<a id="lab2095"></a><h1 class="section">3. The univalence of the category of strict categories</h1>
 
 </div>
 <div class="code">
@@ -533,12 +577,17 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.Categories.CategoryOfSetCategories.html#FG_forms_equivalence"><span class="id" title="lemma">FG_forms_equivalence</span></a>.<br/>
 
 <br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="z_iso_to_adj_equiv" class="idref" href="#z_iso_to_adj_equiv"><span class="id" title="definition">z_iso_to_adj_equiv</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Equivalences.Core.html#adj_equiv"><span class="id" title="definition">adj_equiv</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.CategoryOfSetCategories.html#IsoToEquivalence.A"><span class="id" title="variable">A</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.CategoryOfSetCategories.html#IsoToEquivalence.B"><span class="id" title="variable">B</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;:= <span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.CategoryOfSetCategories.html#z_iso_to_equivalence"><span class="id" title="definition">z_iso_to_equivalence</span></a>.<br/>
+
+<br/>
 <span class="id" title="keyword">End</span> <a class="idref" href="UniMath.CategoryTheory.Categories.CategoryOfSetCategories.html#IsoToEquivalence"><span class="id" title="section">IsoToEquivalence</span></a>.<br/>
 </div>
 </div>
 
 <div id="footer">
-<hr/><a href="index.html">Index</a><hr/>This page has been generated by <a href="http://coq.inria.fr/">coqdoc</a>
+<hr/><a href="index.html">Index</a><hr/>This page has been generated by <a href="http://rocq-prover.org/">coqdoc</a>
 </div>
 
 </div>

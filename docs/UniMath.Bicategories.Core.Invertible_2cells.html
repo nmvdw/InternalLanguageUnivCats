@@ -21,7 +21,7 @@
 </div>
 
 <div class="doc">
-<a id="lab2668"></a><h1 class="section">More on invertible 2cells</h1>
+<a id="lab2889"></a><h1 class="section">More on invertible 2cells</h1>
 
 </div>
 <div class="code">
@@ -48,7 +48,7 @@
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.Core.Bicat.html#is_invertible_2cell"><span class="id" title="definition">is_invertible_2cell</span></a> <a class="idref" href="UniMath.Bicategories.Core.Invertible_2cells.html#af5e705fdc40bdbd9663e8e5eac76a08"><span class="id" title="variable">β</span></a>.<br/>
 <a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.Core.Bicat.html#make_is_invertible_2cell"><span class="id" title="definition">make_is_invertible_2cell</span></a>.<br/>
-&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<span class="id" title="var">Hα</span><a class="idref" href="UniMath.Bicategories.Core.Bicat.html#dab6e5b0a19220dde831432fdda21dc2"><span class="id" title="notation">^-1</span></a>).<br/>
+&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <span class="id" title="var">Hα</span><a class="idref" href="UniMath.Bicategories.Core.Bicat.html#dab6e5b0a19220dde831432fdda21dc2"><span class="id" title="notation">^-1</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">abstract</span><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">rewrite</span> &lt;- <span class="id" title="var">p</span> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.Core.Bicat.html#vcomp_rinv"><span class="id" title="definition">vcomp_rinv</span></a>).<br/>
@@ -61,7 +61,7 @@
 </div>
 
 <div class="doc">
-<a id="lab2669"></a><h2 class="section">Inverse 2cell of a composition</h2>
+<a id="lab2890"></a><h2 class="section">Inverse 2cell of a composition</h2>
 
 </div>
 <div class="code">
@@ -131,7 +131,7 @@
 </div>
 
 <div class="doc">
-<a id="lab2670"></a><h2 class="section">Two-cells that are isomorphisms</h2>
+<a id="lab2891"></a><h2 class="section">Two-cells that are isomorphisms</h2>
 
 </div>
 <div class="code">
@@ -344,8 +344,8 @@
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.Core.Invertible_2cells.html#017d3bc95363ec57504eb03e6137a283"><span class="id" title="variable">η₁</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.Bicategories.Core.Invertible_2cells.html#435ce7a53511b3f5df8da3189c8beccc"><span class="id" title="variable">η₂</span></a> <a class="idref" href="UniMath.Foundations.Init.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">-&gt;</span></a> <a class="idref" href="UniMath.Bicategories.Core.Invertible_2cells.html#074e33edfa7cabaabc096c7518b1fd79"><span class="id" title="variable">inv_η₁</span></a><a class="idref" href="UniMath.Bicategories.Core.Bicat.html#dab6e5b0a19220dde831432fdda21dc2"><span class="id" title="notation">^-1</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.Bicategories.Core.Invertible_2cells.html#145d016d230621f3b4b100dac1b2008c"><span class="id" title="variable">inv_η₂</span></a><a class="idref" href="UniMath.Bicategories.Core.Bicat.html#dab6e5b0a19220dde831432fdda21dc2"><span class="id" title="notation">^-1</span></a>.<br/>
 <a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">p</span>.<br/>
-&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> &lt;- (<a class="idref" href="UniMath.Bicategories.Core.Bicat.html#id2_left"><span class="id" title="definition">id2_left</span></a> (<span class="id" title="var">inv_η₁</span><a class="idref" href="UniMath.Bicategories.Core.Bicat.html#dab6e5b0a19220dde831432fdda21dc2"><span class="id" title="notation">^-1</span></a>)).<br/>
-&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> &lt;- (<a class="idref" href="UniMath.Bicategories.Core.Bicat.html#id2_right"><span class="id" title="definition">id2_right</span></a> (<span class="id" title="var">inv_η₂</span><a class="idref" href="UniMath.Bicategories.Core.Bicat.html#dab6e5b0a19220dde831432fdda21dc2"><span class="id" title="notation">^-1</span></a>)).<br/>
+&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> &lt;- (<a class="idref" href="UniMath.Bicategories.Core.Bicat.html#id2_left"><span class="id" title="definition">id2_left</span></a> <span class="id" title="var">inv_η₁</span><a class="idref" href="UniMath.Bicategories.Core.Bicat.html#dab6e5b0a19220dde831432fdda21dc2"><span class="id" title="notation">^-1</span></a>).<br/>
+&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> &lt;- (<a class="idref" href="UniMath.Bicategories.Core.Bicat.html#id2_right"><span class="id" title="definition">id2_right</span></a> <span class="id" title="var">inv_η₂</span><a class="idref" href="UniMath.Bicategories.Core.Bicat.html#dab6e5b0a19220dde831432fdda21dc2"><span class="id" title="notation">^-1</span></a>).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> &lt;- (<a class="idref" href="UniMath.Bicategories.Core.Bicat.html#vcomp_linv"><span class="id" title="definition">vcomp_linv</span></a> <span class="id" title="var">inv_η₂</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> &lt;- <a class="idref" href="UniMath.Bicategories.Core.Bicat.html#vassocr"><span class="id" title="definition">vassocr</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a>.<br/>
@@ -395,7 +395,7 @@
 <a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">α</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.Core.Bicat.html#make_invertible_2cell"><span class="id" title="definition">make_invertible_2cell</span></a>.<br/>
-&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<span class="id" title="var">α</span><a class="idref" href="UniMath.Bicategories.Core.Bicat.html#dab6e5b0a19220dde831432fdda21dc2"><span class="id" title="notation">^-1</span></a>).<br/>
+&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <span class="id" title="var">α</span><a class="idref" href="UniMath.Bicategories.Core.Bicat.html#dab6e5b0a19220dde831432fdda21dc2"><span class="id" title="notation">^-1</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="var">is_iso</span>.<br/>
 </div>
 
@@ -539,7 +539,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="ee4f8f7723aa96ca8fe66f4ee0fd6936" class="idref" href="#ee4f8f7723aa96ca8fe66f4ee0fd6936"><span class="id" title="binder">Hα</span></a> : <a class="idref" href="UniMath.Bicategories.Core.Bicat.html#is_invertible_2cell"><span class="id" title="definition">is_invertible_2cell</span></a> <a class="idref" href="UniMath.Bicategories.Core.Invertible_2cells.html#b63653b13a3c082256231f35b308fcef"><span class="id" title="variable">α</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#is_z_isomorphism"><span class="id" title="definition">is_z_isomorphism</span></a> <a class="idref" href="UniMath.Bicategories.Core.Invertible_2cells.html#b63653b13a3c082256231f35b308fcef"><span class="id" title="variable">α</span></a>.<br/>
 &nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exists</span> (<span class="id" title="var">Hα</span><a class="idref" href="UniMath.Bicategories.Core.Bicat.html#dab6e5b0a19220dde831432fdda21dc2"><span class="id" title="notation">^-1</span></a>).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exists</span> <span class="id" title="var">Hα</span><a class="idref" href="UniMath.Bicategories.Core.Bicat.html#dab6e5b0a19220dde831432fdda21dc2"><span class="id" title="notation">^-1</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">abstract</span> (<span class="id" title="tactic">split</span> ; [ <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.Core.Bicat.html#vcomp_rinv"><span class="id" title="definition">vcomp_rinv</span></a> | <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.Core.Bicat.html#vcomp_linv"><span class="id" title="definition">vcomp_linv</span></a>]).<br/>
 </div>
 
@@ -615,7 +615,7 @@
 </div>
 
 <div id="footer">
-<hr/><a href="index.html">Index</a><hr/>This page has been generated by <a href="http://coq.inria.fr/">coqdoc</a>
+<hr/><a href="index.html">Index</a><hr/>This page has been generated by <a href="http://rocq-prover.org/">coqdoc</a>
 </div>
 
 </div>

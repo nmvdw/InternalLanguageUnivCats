@@ -89,11 +89,11 @@ TODO: this file needs cleanup
 </div>
 
 <div class="doc">
-<a id="lab1661"></a><h1 class="section">Yoneda functor</h1>
+<a id="lab1791"></a><h1 class="section">Yoneda functor</h1>
 
 <div class="paragraph"> </div>
 
-<a id="lab1662"></a><h2 class="section">On objects</h2>
+<a id="lab1792"></a><h2 class="section">On objects</h2>
 
 </div>
 <div class="code">
@@ -110,7 +110,7 @@ TODO: this file needs cleanup
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="yoneda_ob_functor_data" class="idref" href="#yoneda_ob_functor_data"><span class="id" title="definition">yoneda_ob_functor_data</span></a> (<a id="C:10" class="idref" href="#C:10"><span class="id" title="binder">C</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#category"><span class="id" title="definition">category</span></a>) (<a id="c:11" class="idref" href="#c:11"><span class="id" title="binder">c</span></a> : <a class="idref" href="UniMath.CategoryTheory.yoneda.html#C:10"><span class="id" title="variable">C</span></a>) :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_data"><span class="id" title="definition">functor_data</span></a> (<a class="idref" href="UniMath.CategoryTheory.yoneda.html#C:10"><span class="id" title="variable">C</span></a><a class="idref" href="UniMath.CategoryTheory.opp_precat.html#3fe3b9c50e890a929497aff54b35977e"><span class="id" title="notation">^</span></a><a class="idref" href="UniMath.CategoryTheory.opp_precat.html#3fe3b9c50e890a929497aff54b35977e"><span class="id" title="notation">op</span></a>) <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#::cat:'HSET'"><span class="id" title="notation">HSET</span></a>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_data"><span class="id" title="definition">functor_data</span></a> <a class="idref" href="UniMath.CategoryTheory.yoneda.html#C:10"><span class="id" title="variable">C</span></a><a class="idref" href="UniMath.CategoryTheory.opp_precat.html#3fe3b9c50e890a929497aff54b35977e"><span class="id" title="notation">^</span></a><a class="idref" href="UniMath.CategoryTheory.opp_precat.html#3fe3b9c50e890a929497aff54b35977e"><span class="id" title="notation">op</span></a> <a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Core.html#::cat:'HSET'"><span class="id" title="notation">HSET</span></a>.<br/>
 <a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">exists</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="c':12" class="idref" href="#c':12"><span class="id" title="binder"><span id="c':13" class="id">c'</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.Foundations.Sets.html#make_hSet"><span class="id" title="definition">make_hSet</span></a> (<a class="idref" href="UniMath.CategoryTheory.yoneda.html#yoneda_objects_ob"><span class="id" title="definition">yoneda_objects_ob</span></a> <span class="id" title="var">C</span> <span class="id" title="var">c</span> <a class="idref" href="UniMath.CategoryTheory.yoneda.html#c':12"><span class="id" title="variable">c'</span></a>) (<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a> <span class="id" title="var">C</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> ) ).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">a</span> <span class="id" title="var">b</span> <span class="id" title="var">f</span> <span class="id" title="var">g</span>. <span class="id" title="tactic">unfold</span> <a class="idref" href="UniMath.CategoryTheory.yoneda.html#yoneda_objects_ob"><span class="id" title="definition">yoneda_objects_ob</span></a> <span class="id" title="tactic">in</span> *. <span class="id" title="tactic">simpl</span> <span class="id" title="tactic">in</span> *.<br/>
@@ -140,7 +140,7 @@ TODO: this file needs cleanup
 </div>
 
 <div class="doc">
-<a id="lab1663"></a><h2 class="section">On morphisms</h2>
+<a id="lab1793"></a><h2 class="section">On morphisms</h2>
 
 </div>
 <div class="code">
@@ -180,7 +180,7 @@ TODO: this file needs cleanup
 </div>
 
 <div class="doc">
-<a id="lab1664"></a><h2 class="section">Functorial properties of the yoneda assignments</h2>
+<a id="lab1794"></a><h2 class="section">Functorial properties of the yoneda assignments</h2>
 
 </div>
 <div class="code">
@@ -214,9 +214,9 @@ TODO: this file needs cleanup
 </div>
 
 <div class="doc">
-<a id="lab1665"></a><h2 class="section">Yoneda lemma: natural transformations from <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.yoneda.html#yoneda"><span class="id" title="definition">yoneda</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Semantics.EnrichedEffectCalculus.CopowerModel.html#CopowerModel.C"><span class="id" title="variable">C</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.AlgebraicTheories.FundamentalTheorem.CommonUtilities.KaroubiEnvelope.html#OppKaroubiEquiv.OppKaroubiCounitIso.c"><span class="id" title="variable">c</span></a></span> to <span class="inlinecode"><a class="idref" href="UniMath.AlgebraicTheories.FundamentalTheorem.CommonUtilities.MonoidActions.html#ScalarExtension.Mor.F"><span class="id" title="variable">F</span></a></span></h2>
+<a id="lab1795"></a><h2 class="section">Yoneda lemma: natural transformations from <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.yoneda.html#yoneda"><span class="id" title="definition">yoneda</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Semantics.EnrichedEffectCalculus.CopowerModel.html#CopowerModel.C"><span class="id" title="variable">C</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.AlgebraicTheories.FundamentalTheorem.SurjectivePrecomposition.html#PrecompositionEssentiallySurjective.Iso.c"><span class="id" title="variable">c</span></a></span> to <span class="inlinecode"><a class="idref" href="UniMath.AlgebraicTheories.FundamentalTheorem.CommonUtilities.MonoidActions.html#ScalarExtension.Mor.F"><span class="id" title="variable">F</span></a></span></h2>
 
-         are isomorphic to <span class="inlinecode"><a class="idref" href="UniMath.AlgebraicTheories.FundamentalTheorem.CommonUtilities.MonoidActions.html#ScalarExtension.Mor.F"><span class="id" title="variable">F</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.AlgebraicTheories.FundamentalTheorem.CommonUtilities.KaroubiEnvelope.html#OppKaroubiEquiv.OppKaroubiCounitIso.c"><span class="id" title="variable">c</span></a></span> 
+         are isomorphic to <span class="inlinecode"><a class="idref" href="UniMath.AlgebraicTheories.FundamentalTheorem.CommonUtilities.MonoidActions.html#ScalarExtension.Mor.F"><span class="id" title="variable">F</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.AlgebraicTheories.FundamentalTheorem.SurjectivePrecomposition.html#PrecompositionEssentiallySurjective.Iso.c"><span class="id" title="variable">c</span></a></span> 
 </div>
 <div class="code">
 
@@ -405,7 +405,7 @@ TODO: this file needs cleanup
 </div>
 
 <div class="doc">
-<a id="lab1666"></a><h2 class="section">The Yoneda embedding is fully faithful</h2>
+<a id="lab1796"></a><h2 class="section">The Yoneda embedding is fully faithful</h2>
 
 </div>
 <div class="code">
@@ -510,7 +510,7 @@ TODO: this file needs cleanup
 </div>
 
 <div id="footer">
-<hr/><a href="index.html">Index</a><hr/>This page has been generated by <a href="http://coq.inria.fr/">coqdoc</a>
+<hr/><a href="index.html">Index</a><hr/>This page has been generated by <a href="http://rocq-prover.org/">coqdoc</a>
 </div>
 
 </div>

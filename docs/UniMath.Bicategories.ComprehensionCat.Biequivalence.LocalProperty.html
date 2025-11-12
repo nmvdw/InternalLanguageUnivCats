@@ -46,7 +46,7 @@
 <span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispBuilders.html#"><span class="id" title="library">UniMath.Bicategories.DisplayedBicats.DispBuilders</span></a>.<br/>
 <span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispPseudofunctor.html#"><span class="id" title="library">UniMath.Bicategories.DisplayedBicats.DispPseudofunctor</span></a>.<br/>
 <span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispTransformation.html#"><span class="id" title="library">UniMath.Bicategories.DisplayedBicats.DispTransformation</span></a>.<br/>
-<span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#"><span class="id" title="library">UniMath.Bicategories.DisplayedBicats.DispModification</span></a>.<br/>
+<span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispPseudoNaturalAdjequiv.html#"><span class="id" title="library">UniMath.Bicategories.DisplayedBicats.DispPseudoNaturalAdjequiv</span></a>.<br/>
 <span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat.html#"><span class="id" title="library">UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat</span></a>.<br/>
 <span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.PseudoFunctor.html#"><span class="id" title="library">UniMath.Bicategories.PseudoFunctors.PseudoFunctor</span></a>.<br/>
 <span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Examples.Identity.html#"><span class="id" title="library">UniMath.Bicategories.PseudoFunctors.Examples.Identity</span></a>.<br/>
@@ -78,7 +78,7 @@
 </div>
 
 <div class="doc">
-<a id="lab3333"></a><h1 class="section">1. The extended pseudofunctor from categories to comprehension categories</h1>
+<a id="lab3591"></a><h1 class="section">1. The extended pseudofunctor from categories to comprehension categories</h1>
 
 </div>
 <div class="code">
@@ -149,7 +149,7 @@
 </div>
 
 <div class="doc">
-<a id="lab3334"></a><h1 class="section">2. The extended pseudofunctor from comprehension categories to categories</h1>
+<a id="lab3592"></a><h1 class="section">2. The extended pseudofunctor from comprehension categories to categories</h1>
 
 </div>
 <div class="code">
@@ -209,7 +209,7 @@
 </div>
 
 <div class="doc">
-<a id="lab3335"></a><h1 class="section">3. The unit</h1>
+<a id="lab3593"></a><h1 class="section">3. The unit</h1>
 
 </div>
 <div class="code">
@@ -231,41 +231,29 @@
 </div>
 
 <br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="finlim_dfl_comp_cat_unit_local_property_pointwise_adjequiv" class="idref" href="#finlim_dfl_comp_cat_unit_local_property_pointwise_adjequiv"><span class="id" title="definition">finlim_dfl_comp_cat_unit_local_property_pointwise_adjequiv</span></a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="C:30" class="idref" href="#C:30"><span class="id" title="binder">C</span></a> : <a class="idref" href="UniMath.Bicategories.Core.Examples.StructuredCategories.html#univ_cat_with_finlim"><span class="id" title="definition">univ_cat_with_finlim</span></a>}<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HC:31" class="idref" href="#HC:31"><span class="id" title="binder">HC</span></a> : <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp.html#disp_bicat_of_univ_cat_with_cat_property"><span class="id" title="definition">disp_bicat_of_univ_cat_with_cat_property</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.LocalProperty.html#LocalPropertyBiequiv.P"><span class="id" title="variable">P</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.LocalProperty.html#C:30"><span class="id" title="variable">C</span></a>)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#disp_left_adjoint_equivalence"><span class="id" title="definition">disp_left_adjoint_equivalence</span></a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.Unit.html#finlim_dfl_comp_cat_unit_pointwise_equiv"><span class="id" title="definition">finlim_dfl_comp_cat_unit_pointwise_equiv</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.LocalProperty.html#C:30"><span class="id" title="variable">C</span></a>)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.LocalProperty.html#finlim_dfl_comp_cat_unit_local_property"><span class="id" title="definition">finlim_dfl_comp_cat_unit_local_property</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.LocalProperty.html#C:30"><span class="id" title="variable">C</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.LocalProperty.html#HC:31"><span class="id" title="variable">HC</span></a>).<br/>
-&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp.html#disp_adjoint_equiv_disp_bicat_of_univ_cat_with_cat_property"><span class="id" title="definition">disp_adjoint_equiv_disp_bicat_of_univ_cat_with_cat_property</span></a>.<br/>
-</div>
-
-<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="finlim_dfl_comp_cat_unit_inv_local_property" class="idref" href="#finlim_dfl_comp_cat_unit_inv_local_property"><span class="id" title="definition">finlim_dfl_comp_cat_unit_inv_local_property</span></a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispTransformation.html#disp_pstrans"><span class="id" title="definition">disp_pstrans</span></a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispPseudofunctor.html#disp_pseudo_id"><span class="id" title="definition">disp_pseudo_id</span></a> <span class="id" title="var">_</span>)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispPseudofunctor.html#disp_pseudo_comp"><span class="id" title="definition">disp_pseudo_comp</span></a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.LocalProperty.html#finlim_biequiv_dfl_comp_cat_disp_psfunctor_local_property"><span class="id" title="definition">finlim_biequiv_dfl_comp_cat_disp_psfunctor_local_property</span></a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.LocalProperty.html#dfl_comp_cat_to_finlim_disp_psfunctor_local_property"><span class="id" title="definition">dfl_comp_cat_to_finlim_disp_psfunctor_local_property</span></a>)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.Unit.html#finlim_dfl_comp_cat_unit_inv"><span class="id" title="definition">finlim_dfl_comp_cat_unit_inv</span></a>.<br/>
-&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispBuilders.html#make_disp_pstrans_inv_contr"><span class="id" title="definition">make_disp_pstrans_inv_contr</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp.html#disp_2cells_iscontr_disp_bicat_of_univ_cat_with_cat_property"><span class="id" title="definition">disp_2cells_iscontr_disp_bicat_of_univ_cat_with_cat_property</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.LocalProperty.html#finlim_dfl_comp_cat_unit_local_property"><span class="id" title="definition">finlim_dfl_comp_cat_unit_local_property</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">intros</span>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.LocalProperty.html#finlim_dfl_comp_cat_unit_local_property_pointwise_adjequiv"><span class="id" title="definition">finlim_dfl_comp_cat_unit_local_property_pointwise_adjequiv</span></a>.<br/>
-</div>
-
-<br/>
 </div>
 
 <div class="doc">
-<a id="lab3336"></a><h1 class="section">4. The counit</h1>
+<a id="lab3594"></a><h1 class="section">4. The counit</h1>
 
 </div>
 <div class="code">
+&nbsp;&nbsp;<span class="id" title="keyword">Proposition</span> <a id="fiberwise_cat_property_functor_counit" class="idref" href="#fiberwise_cat_property_functor_counit"><span class="id" title="lemma">fiberwise_cat_property_functor_counit</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="C:30" class="idref" href="#C:30"><span class="id" title="binder">C</span></a> : <a class="idref" href="UniMath.Bicategories.ComprehensionCat.DFLCompCat.html#dfl_full_comp_cat"><span class="id" title="definition">dfl_full_comp_cat</span></a>}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="H:31" class="idref" href="#H:31"><span class="id" title="binder">H</span></a> : <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.LocalProperties.html#fiberwise_cat_property"><span class="id" title="definition">fiberwise_cat_property</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.LocalProperty.html#LocalPropertyBiequiv.P"><span class="id" title="variable">P</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.LocalProperty.html#C:30"><span class="id" title="variable">C</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.LocalProperties.html#fiberwise_cat_property_functor"><span class="id" title="definition">fiberwise_cat_property_functor</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.Counit.html#finlim_dfl_comp_cat_counit"><span class="id" title="definition">finlim_dfl_comp_cat_counit</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.LocalProperty.html#C:30"><span class="id" title="variable">C</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.LocalProperty.html#H:31"><span class="id" title="variable">H</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.LocalProperty.html#local_property_in_cod"><span class="id" title="definition">local_property_in_cod</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.DFLCompCatToFinLim.html#dfl_full_comp_cat_to_finlim"><span class="id" title="definition">dfl_full_comp_cat_to_finlim</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.LocalProperty.html#C:30"><span class="id" title="variable">C</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.LocalProperty.html#local_property_in_dfl_comp_cat"><span class="id" title="definition">local_property_in_dfl_comp_cat</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.LocalProperty.html#C:30"><span class="id" title="variable">C</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.LocalProperty.html#H:31"><span class="id" title="variable">H</span></a>)).<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">x</span> ; <span class="id" title="var">cbn</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.LocalProperties.html#cat_property_adj_equivalence_of_cats"><span class="id" title="lemma">cat_property_adj_equivalence_of_cats</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.LocalProperty.html#LocalPropertyBiequiv.P"><span class="id" title="variable">P</span></a>).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Bicategories.ComprehensionCat.ComprehensionEso.html#fiber_functor_comprehension_adj_equiv"><span class="id" title="definition">fiber_functor_comprehension_adj_equiv</span></a> <span class="id" title="var">C</span> <span class="id" title="var">x</span>).<br/>
+</div>
+
+<br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="finlim_dfl_comp_cat_counit_local_property" class="idref" href="#finlim_dfl_comp_cat_counit_local_property"><span class="id" title="definition">finlim_dfl_comp_cat_counit_local_property</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispTransformation.html#disp_pstrans"><span class="id" title="definition">disp_pstrans</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispPseudofunctor.html#disp_pseudo_id"><span class="id" title="definition">disp_pseudo_id</span></a> <span class="id" title="var">_</span>)<br/>
@@ -278,44 +266,14 @@
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispBuilders.html#make_disp_pstrans_contr"><span class="id" title="definition">make_disp_pstrans_contr</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.DFLCompCatWithProp.html#disp_2cells_iscontr_disp_bicat_of_cat_property_dfl_full_comp_cat"><span class="id" title="definition">disp_2cells_iscontr_disp_bicat_of_cat_property_dfl_full_comp_cat</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="C:32" class="idref" href="#C:32"><span class="id" title="binder"><span id="C:34" class="id">C</span></span></a> <a id="H:33" class="idref" href="#H:33"><span class="id" title="binder"><span id="H:35" class="id">H</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#tt"><span class="id" title="constructor">tt</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">x</span> ; <span class="id" title="var">cbn</span>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.LocalProperties.html#cat_property_adj_equivalence_of_cats'"><span class="id" title="lemma">cat_property_adj_equivalence_of_cats'</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.LocalProperty.html#LocalPropertyBiequiv.P"><span class="id" title="variable">P</span></a>).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Bicategories.ComprehensionCat.ComprehensionEso.html#fiber_functor_comprehension_adj_equiv"><span class="id" title="definition">fiber_functor_comprehension_adj_equiv</span></a> <span class="id" title="var">C</span> <span class="id" title="var">x</span>).<br/>
-</div>
-
-<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="finlim_dfl_comp_cat_counit_local_property_pointwise_adjequiv" class="idref" href="#finlim_dfl_comp_cat_counit_local_property_pointwise_adjequiv"><span class="id" title="definition">finlim_dfl_comp_cat_counit_local_property_pointwise_adjequiv</span></a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="C:36" class="idref" href="#C:36"><span class="id" title="binder">C</span></a> : <a class="idref" href="UniMath.Bicategories.ComprehensionCat.DFLCompCat.html#dfl_full_comp_cat"><span class="id" title="definition">dfl_full_comp_cat</span></a>}<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HC:37" class="idref" href="#HC:37"><span class="id" title="binder">HC</span></a> : <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.DFLCompCatWithProp.html#disp_bicat_of_cat_property_dfl_full_comp_cat"><span class="id" title="definition">disp_bicat_of_cat_property_dfl_full_comp_cat</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.LocalProperty.html#LocalPropertyBiequiv.P"><span class="id" title="variable">P</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.LocalProperty.html#C:36"><span class="id" title="variable">C</span></a>)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#disp_left_adjoint_equivalence"><span class="id" title="definition">disp_left_adjoint_equivalence</span></a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.Counit.html#finlim_dfl_comp_cat_counit_pointwise_equiv"><span class="id" title="definition">finlim_dfl_comp_cat_counit_pointwise_equiv</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.LocalProperty.html#C:36"><span class="id" title="variable">C</span></a>)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.LocalProperty.html#finlim_dfl_comp_cat_counit_local_property"><span class="id" title="definition">finlim_dfl_comp_cat_counit_local_property</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.LocalProperty.html#C:36"><span class="id" title="variable">C</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.LocalProperty.html#HC:37"><span class="id" title="variable">HC</span></a>).<br/>
-&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.DFLCompCatWithProp.html#disp_adjoint_equiv_disp_bicat_of_cat_property_dfl_full_comp_cat"><span class="id" title="definition">disp_adjoint_equiv_disp_bicat_of_cat_property_dfl_full_comp_cat</span></a>.<br/>
-</div>
-
-<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="finlim_dfl_comp_cat_counit_inv_local_property" class="idref" href="#finlim_dfl_comp_cat_counit_inv_local_property"><span class="id" title="definition">finlim_dfl_comp_cat_counit_inv_local_property</span></a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispTransformation.html#disp_pstrans"><span class="id" title="definition">disp_pstrans</span></a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispPseudofunctor.html#disp_pseudo_comp"><span class="id" title="definition">disp_pseudo_comp</span></a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.LocalProperty.html#dfl_comp_cat_to_finlim_disp_psfunctor_local_property"><span class="id" title="definition">dfl_comp_cat_to_finlim_disp_psfunctor_local_property</span></a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.LocalProperty.html#finlim_biequiv_dfl_comp_cat_disp_psfunctor_local_property"><span class="id" title="definition">finlim_biequiv_dfl_comp_cat_disp_psfunctor_local_property</span></a>)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispPseudofunctor.html#disp_pseudo_id"><span class="id" title="definition">disp_pseudo_id</span></a> <span class="id" title="var">_</span>)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.Counit.html#finlim_dfl_comp_cat_counit_inv"><span class="id" title="definition">finlim_dfl_comp_cat_counit_inv</span></a>.<br/>
-&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispBuilders.html#make_disp_pstrans_inv_contr"><span class="id" title="definition">make_disp_pstrans_inv_contr</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.DFLCompCatWithProp.html#disp_2cells_iscontr_disp_bicat_of_cat_property_dfl_full_comp_cat"><span class="id" title="definition">disp_2cells_iscontr_disp_bicat_of_cat_property_dfl_full_comp_cat</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.LocalProperty.html#finlim_dfl_comp_cat_counit_local_property"><span class="id" title="definition">finlim_dfl_comp_cat_counit_local_property</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">intros</span>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.LocalProperty.html#finlim_dfl_comp_cat_counit_local_property_pointwise_adjequiv"><span class="id" title="definition">finlim_dfl_comp_cat_counit_local_property_pointwise_adjequiv</span></a>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.LocalProperty.html#fiberwise_cat_property_functor_counit"><span class="id" title="lemma">fiberwise_cat_property_functor_counit</span></a>.<br/>
 </div>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab3337"></a><h1 class="section">5. The displayed biequivalence</h1>
+<a id="lab3595"></a><h1 class="section">5. The displayed biequivalence</h1>
 
 </div>
 <div class="code">
@@ -326,9 +284,15 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.LocalProperty.html#finlim_biequiv_dfl_comp_cat_disp_psfunctor_local_property"><span class="id" title="definition">finlim_biequiv_dfl_comp_cat_disp_psfunctor_local_property</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.LocalProperty.html#dfl_comp_cat_to_finlim_disp_psfunctor_local_property"><span class="id" title="definition">dfl_comp_cat_to_finlim_disp_psfunctor_local_property</span></a>.<br/>
 &nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">simple</span> <span class="id" title="tactic">refine</span> (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispPseudoNaturalAdjequiv.html#make_disp_biequiv_unit_counit_pointwise_adjequiv_alt"><span class="id" title="definition">make_disp_biequiv_unit_counit_pointwise_adjequiv_alt</span></a>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.DFLCompCat.html#is_univalent_2_bicat_of_dfl_full_comp_cat"><span class="id" title="lemma">is_univalent_2_bicat_of_dfl_full_comp_cat</span></a>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.Biequiv.html#finlim_dfl_comp_cat_biequivalence_adjoints"><span class="id" title="definition">finlim_dfl_comp_cat_biequivalence_adjoints</span></a>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.DFLCompCatWithProp.html#disp_2cells_isaprop_disp_bicat_of_cat_property_dfl_full_comp_cat"><span class="id" title="definition">disp_2cells_isaprop_disp_bicat_of_cat_property_dfl_full_comp_cat</span></a>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.DFLCompCatWithProp.html#disp_locally_groupoid_disp_bicat_of_cat_property_dfl_full_comp_cat"><span class="id" title="definition">disp_locally_groupoid_disp_bicat_of_cat_property_dfl_full_comp_cat</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.LocalProperty.html#finlim_dfl_comp_cat_unit_local_property"><span class="id" title="definition">finlim_dfl_comp_cat_unit_local_property</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.LocalProperty.html#finlim_dfl_comp_cat_counit_inv_local_property"><span class="id" title="definition">finlim_dfl_comp_cat_counit_inv_local_property</span></a>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.LocalProperty.html#finlim_dfl_comp_cat_counit_local_property"><span class="id" title="definition">finlim_dfl_comp_cat_counit_local_property</span></a>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">xx</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.DFLCompCatWithProp.html#disp_adjoint_equiv_disp_bicat_of_cat_property_dfl_full_comp_cat"><span class="id" title="definition">disp_adjoint_equiv_disp_bicat_of_cat_property_dfl_full_comp_cat</span></a>.<br/>
 </div>
 
 <br/>
@@ -339,24 +303,19 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.Biequiv.html#finlim_dfl_comp_cat_biequivalence_adjoints"><span class="id" title="definition">finlim_dfl_comp_cat_biequivalence_adjoints</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.LocalProperty.html#finlim_dfl_comp_cat_biequivalence_unit_counit_local_property"><span class="id" title="definition">finlim_dfl_comp_cat_biequivalence_unit_counit_local_property</span></a>.<br/>
 &nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">simple</span> <span class="id" title="tactic">refine</span> (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">(</span></a><span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span><a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">(</span></a><span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span><a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">)</span></a>).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.LocalProperty.html#finlim_dfl_comp_cat_unit_inv_local_property"><span class="id" title="definition">finlim_dfl_comp_cat_unit_inv_local_property</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.LocalProperty.html#finlim_dfl_comp_cat_counit_local_property"><span class="id" title="definition">finlim_dfl_comp_cat_counit_local_property</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispBuilders.html#make_disp_invmodification_contr"><span class="id" title="definition">make_disp_invmodification_contr</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp.html#disp_2cells_iscontr_disp_bicat_of_univ_cat_with_cat_property"><span class="id" title="definition">disp_2cells_iscontr_disp_bicat_of_univ_cat_with_cat_property</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispBuilders.html#make_disp_invmodification_contr"><span class="id" title="definition">make_disp_invmodification_contr</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp.html#disp_2cells_iscontr_disp_bicat_of_univ_cat_with_cat_property"><span class="id" title="definition">disp_2cells_iscontr_disp_bicat_of_univ_cat_with_cat_property</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispBuilders.html#make_disp_invmodification_contr"><span class="id" title="definition">make_disp_invmodification_contr</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.DFLCompCatWithProp.html#disp_2cells_iscontr_disp_bicat_of_cat_property_dfl_full_comp_cat"><span class="id" title="definition">disp_2cells_iscontr_disp_bicat_of_cat_property_dfl_full_comp_cat</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispBuilders.html#make_disp_invmodification_contr"><span class="id" title="definition">make_disp_invmodification_contr</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.DFLCompCatWithProp.html#disp_2cells_iscontr_disp_bicat_of_cat_property_dfl_full_comp_cat"><span class="id" title="definition">disp_2cells_iscontr_disp_bicat_of_cat_property_dfl_full_comp_cat</span></a>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispPseudoNaturalAdjequiv.html#make_disp_biequiv_pointwise_adjequiv_alt"><span class="id" title="definition">make_disp_biequiv_pointwise_adjequiv_alt</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span>).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.Core.Examples.StructuredCategories.html#is_univalent_2_bicat_of_univ_cat_with_finlim"><span class="id" title="definition">is_univalent_2_bicat_of_univ_cat_with_finlim</span></a>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp.html#disp_2cells_isaprop_disp_bicat_of_univ_cat_with_cat_property"><span class="id" title="definition">disp_2cells_isaprop_disp_bicat_of_univ_cat_with_cat_property</span></a>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp.html#disp_locally_groupoid_disp_bicat_of_univ_cat_with_cat_property"><span class="id" title="definition">disp_locally_groupoid_disp_bicat_of_univ_cat_with_cat_property</span></a>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">xx</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.CatWithProp.html#disp_adjoint_equiv_disp_bicat_of_univ_cat_with_cat_property"><span class="id" title="definition">disp_adjoint_equiv_disp_bicat_of_univ_cat_with_cat_property</span></a>.<br/>
 </div>
 <span class="id" title="keyword">End</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.LocalProperty.html#LocalPropertyBiequiv"><span class="id" title="section">LocalPropertyBiequiv</span></a>.<br/>
 </div>
 </div>
 
 <div id="footer">
-<hr/><a href="index.html">Index</a><hr/>This page has been generated by <a href="http://coq.inria.fr/">coqdoc</a>
+<hr/><a href="index.html">Index</a><hr/>This page has been generated by <a href="http://rocq-prover.org/">coqdoc</a>
 </div>
 
 </div>

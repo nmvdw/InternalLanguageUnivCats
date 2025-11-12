@@ -22,6 +22,7 @@
 <span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="UniMath.MoreFoundations.All.html#"><span class="id" title="library">UniMath.MoreFoundations.All</span></a>.<br/>
 <span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="UniMath.CategoryTheory.Core.Prelude.html#"><span class="id" title="library">UniMath.CategoryTheory.Core.Prelude</span></a>.<br/>
 <span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="UniMath.CategoryTheory.Adjunctions.Core.html#"><span class="id" title="library">UniMath.CategoryTheory.Adjunctions.Core</span></a>.<br/>
+<span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="UniMath.CategoryTheory.Adjunctions.Coreflections.html#"><span class="id" title="library">UniMath.CategoryTheory.Adjunctions.Coreflections</span></a>.<br/>
 <span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#"><span class="id" title="library">UniMath.CategoryTheory.DisplayedCats.Core</span></a>.<br/>
 <span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.html#"><span class="id" title="library">UniMath.CategoryTheory.DisplayedCats.Codomain</span></a>.<br/>
 <span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.FiberCod.html#"><span class="id" title="library">UniMath.CategoryTheory.DisplayedCats.Codomain.FiberCod</span></a>.<br/>
@@ -34,7 +35,7 @@
 </div>
 
 <div class="doc">
-<a id="lab1415"></a><h1 class="section">1. The domain functor</h1>
+<a id="lab1485"></a><h1 class="section">1. The domain functor</h1>
 
 </div>
 <div class="code">
@@ -74,7 +75,7 @@
 </div>
 
 <div class="doc">
-<a id="lab1416"></a><h1 class="section">2. The domain functor is a left adjoint</h1>
+<a id="lab1486"></a><h1 class="section">2. The domain functor is a left adjoint</h1>
 
 </div>
 <div class="code">
@@ -135,21 +136,23 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="x:20" class="idref" href="#x:20"><span class="id" title="binder">x</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.CodDomain.html#C:18"><span class="id" title="variable">C</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Adjunctions.Core.html#is_left_adjoint"><span class="id" title="definition">is_left_adjoint</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.CodDomain.html#slice_dom"><span class="id" title="definition">slice_dom</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.CodDomain.html#x:20"><span class="id" title="variable">x</span></a>).<br/>
 <a class="proof" href="#">Show proof.</a><br/><div class="proof">
-&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Adjunctions.Core.html#left_adjoint_from_partial"><span class="id" title="definition">left_adjoint_from_partial</span></a>.<br/>
-&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="z:21" class="idref" href="#z:21"><span class="id" title="binder"><span id="z:22" class="id">z</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.FiberCod.html#pr_cod_fib"><span class="id" title="definition">pr_cod_fib</span></a> <span class="id" title="var">BP</span> <span class="id" title="var">x</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.CodDomain.html#z:21"><span class="id" title="variable">z</span></a>).<br/>
-&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="z:23" class="idref" href="#z:23"><span class="id" title="binder"><span id="z:24" class="id">z</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#BinProductPr2"><span class="id" title="definition">BinProductPr2</span></a> <span class="id" title="var">_</span> (<span class="id" title="var">BP</span> <span class="id" title="var">x</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.CodDomain.html#z:23"><span class="id" title="variable">z</span></a>)).<br/>
-&nbsp;&nbsp;- <span class="id" title="tactic">intros</span> <span class="id" title="var">z</span> <span class="id" title="var">yf</span> <span class="id" title="var">g</span>.<br/>
+&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Adjunctions.Coreflections.html#coreflections_to_is_left_adjoint"><span class="id" title="definition">coreflections_to_is_left_adjoint</span></a>.<br/>
+&nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">z</span>.<br/>
+&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Adjunctions.Coreflections.html#make_coreflection'"><span class="id" title="definition">make_coreflection'</span></a>.<br/>
+&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.FiberCod.html#pr_cod_fib"><span class="id" title="definition">pr_cod_fib</span></a> <span class="id" title="var">BP</span> <span class="id" title="var">x</span> <span class="id" title="var">z</span>).<br/>
+&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#BinProductPr2"><span class="id" title="definition">BinProductPr2</span></a> <span class="id" title="var">_</span> (<span class="id" title="var">BP</span> <span class="id" title="var">x</span> <span class="id" title="var">z</span>)).<br/>
+&nbsp;&nbsp;- <span class="id" title="tactic">intro</span> <span class="id" title="var">g</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartB.html#iscontraprop1"><span class="id" title="lemma">iscontraprop1</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.CodDomain.html#is_left_adjoint_slice_dom_unique"><span class="id" title="lemma">is_left_adjoint_slice_dom_unique</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">simple</span> <span class="id" title="tactic">refine</span> (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.CodDomain.html#is_left_adjoint_slice_dom_mor"><span class="id" title="definition">is_left_adjoint_slice_dom_mor</span></a> <span class="id" title="var">BP</span> <span class="id" title="var">yf</span> <span class="id" title="var">g</span>).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.CodDomain.html#is_left_adjoint_slice_dom_mor"><span class="id" title="definition">is_left_adjoint_slice_dom_mor</span></a> <span class="id" title="var">BP</span> <span class="id" title="var">_</span> <span class="id" title="var">g</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Codomain.CodDomain.html#is_left_adjoint_slice_dom_comm"><span class="id" title="lemma">is_left_adjoint_slice_dom_comm</span></a>.<br/>
 </div>
 </div>
 </div>
 
 <div id="footer">
-<hr/><a href="index.html">Index</a><hr/>This page has been generated by <a href="http://coq.inria.fr/">coqdoc</a>
+<hr/><a href="index.html">Index</a><hr/>This page has been generated by <a href="http://rocq-prover.org/">coqdoc</a>
 </div>
 
 </div>

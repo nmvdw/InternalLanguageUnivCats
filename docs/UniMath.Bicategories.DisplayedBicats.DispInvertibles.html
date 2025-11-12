@@ -21,7 +21,7 @@
 </div>
 
 <div class="doc">
-<a id="lab2707"></a><h1 class="section">Displayed invertible 2-cells</h1>
+<a id="lab2928"></a><h1 class="section">Displayed invertible 2-cells</h1>
 
 
 <div class="paragraph"> </div>
@@ -127,7 +127,7 @@ The displayed identity 2-cells are invertible
 </div>
 
 <div class="doc">
-<a id="lab2708"></a><h2 class="section">Being a displayed invertible 2-cell is a proposition</h2>
+<a id="lab2929"></a><h2 class="section">Being a displayed invertible 2-cell is a proposition</h2>
  The proof of this fact is a bit tricky, and used an intermediate datastructure <span class="inlinecode"><a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispInvertibles.html#disp_iso_total"><span class="id" title="definition">disp_iso_total</span></a></span>.
 
 </div>
@@ -254,7 +254,7 @@ The displayed identity 2-cells are invertible
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">z</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.Preamble.html#tpair"><span class="id" title="constructor">tpair</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.Preamble.html#tpair"><span class="id" title="constructor">tpair</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> (<span class="id" title="var">x</span><a class="idref" href="UniMath.Bicategories.Core.Bicat.html#dab6e5b0a19220dde831432fdda21dc2"><span class="id" title="notation">^-1</span></a>).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> <span class="id" title="var">x</span><a class="idref" href="UniMath.Bicategories.Core.Bicat.html#dab6e5b0a19220dde831432fdda21dc2"><span class="id" title="notation">^-1</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <span class="id" title="var">z</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">split</span> ; <span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.PartA.html#total2_paths_f"><span class="id" title="lemma">total2_paths_f</span></a> ; <span class="id" title="var">cbn</span>.<br/>
@@ -403,7 +403,7 @@ The displayed identity 2-cells are invertible
 </div>
 
 <div class="doc">
-<a id="lab2709"></a><h2 class="section">Classification of invertible 2-cells in the total bicategory</h2>
+<a id="lab2930"></a><h2 class="section">Classification of invertible 2-cells in the total bicategory</h2>
 
 </div>
 <div class="code">
@@ -416,7 +416,7 @@ The displayed identity 2-cells are invertible
 </div>
 
 <div class="doc">
-<a id="lab2710"></a><h3 class="section">If a 2-cell is invertible in the total category, then it is invertible in the base category</h3>
+<a id="lab2931"></a><h3 class="section">If a 2-cell is invertible in the total category, then it is invertible in the base category</h3>
 
 </div>
 <div class="code">
@@ -449,7 +449,7 @@ The displayed identity 2-cells are invertible
 </div>
 
 <div class="doc">
-<a id="lab2711"></a><h3 class="section">If a 2-cell is invertible in the total category, then it is invertible in the fiber</h3>
+<a id="lab2932"></a><h3 class="section">If a 2-cell is invertible in the total category, then it is invertible in the fiber</h3>
 
 </div>
 <div class="code">
@@ -510,7 +510,7 @@ The displayed identity 2-cells are invertible
 </div>
 
 <div class="doc">
-<a id="lab2712"></a><h3 class="section">If the displayed 2-cell is invertible, then the corresponding 2-cell in the total bicategory is also invertible.</h3>
+<a id="lab2933"></a><h3 class="section">If the displayed 2-cell is invertible, then the corresponding 2-cell in the total bicategory is also invertible.</h3>
 
 </div>
 <div class="code">
@@ -1404,11 +1404,44 @@ Transporting along displayed invertible 2-cells
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.Bicategories.Core.Univalence.html#idtoiso_2_1_isotoid_2_1"><span class="id" title="definition">idtoiso_2_1_isotoid_2_1</span></a> ;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>).<br/>
 </div>
+
+<br/>
+</div>
+
+<div class="doc">
+Convenient builder for invertible 2-cells in the total bicategory 
+</div>
+<div class="code">
+<span class="id" title="keyword">Definition</span> <a id="make_invertible_2cell_total_disp_locally_groupoid" class="idref" href="#make_invertible_2cell_total_disp_locally_groupoid"><span class="id" title="definition">make_invertible_2cell_total_disp_locally_groupoid</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="B:633" class="idref" href="#B:633"><span class="id" title="binder">B</span></a> : <a class="idref" href="UniMath.Bicategories.Core.Bicat.html#bicat"><span class="id" title="definition">bicat</span></a>}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="D:634" class="idref" href="#D:634"><span class="id" title="binder">D</span></a> : <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispBicat.html#disp_bicat"><span class="id" title="definition">disp_bicat</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispInvertibles.html#B:633"><span class="id" title="variable">B</span></a>}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HD:635" class="idref" href="#HD:635"><span class="id" title="binder">HD</span></a> : <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispBicat.html#disp_locally_groupoid"><span class="id" title="definition">disp_locally_groupoid</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispInvertibles.html#D:634"><span class="id" title="variable">D</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="x:636" class="idref" href="#x:636"><span class="id" title="binder">x</span></a> <a id="y:637" class="idref" href="#y:637"><span class="id" title="binder">y</span></a> : <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispInvertibles.html#B:633"><span class="id" title="variable">B</span></a>}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="f:638" class="idref" href="#f:638"><span class="id" title="binder">f</span></a> <a id="g:639" class="idref" href="#g:639"><span class="id" title="binder">g</span></a> : <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispInvertibles.html#x:636"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispInvertibles.html#y:637"><span class="id" title="variable">y</span></a>}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="bd1ed63d98deed969d579c3c1d29db94" class="idref" href="#bd1ed63d98deed969d579c3c1d29db94"><span class="id" title="binder">τ</span></a> : <a class="idref" href="UniMath.Bicategories.Core.Bicat.html#invertible_2cell"><span class="id" title="definition">invertible_2cell</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispInvertibles.html#f:638"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispInvertibles.html#g:639"><span class="id" title="variable">g</span></a>}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="xx:641" class="idref" href="#xx:641"><span class="id" title="binder">xx</span></a> : <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispInvertibles.html#D:634"><span class="id" title="variable">D</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispInvertibles.html#x:636"><span class="id" title="variable">x</span></a>}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="yy:642" class="idref" href="#yy:642"><span class="id" title="binder">yy</span></a> : <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispInvertibles.html#D:634"><span class="id" title="variable">D</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispInvertibles.html#y:637"><span class="id" title="variable">y</span></a>}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="ff:643" class="idref" href="#ff:643"><span class="id" title="binder">ff</span></a> : <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispInvertibles.html#xx:641"><span class="id" title="variable">xx</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">--&gt;[</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispInvertibles.html#f:638"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">]</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispInvertibles.html#yy:642"><span class="id" title="variable">yy</span></a>}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="gg:644" class="idref" href="#gg:644"><span class="id" title="binder">gg</span></a> : <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispInvertibles.html#xx:641"><span class="id" title="variable">xx</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">--&gt;[</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispInvertibles.html#g:639"><span class="id" title="variable">g</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">]</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispInvertibles.html#yy:642"><span class="id" title="variable">yy</span></a>}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="9367778b6f37d97f7cf189985f232b51" class="idref" href="#9367778b6f37d97f7cf189985f232b51"><span class="id" title="binder">ττ</span></a> : <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispInvertibles.html#ff:643"><span class="id" title="variable">ff</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispBicat.html#ec4a750d8a1eb160dc3826c27d618ee4"><span class="id" title="notation">==&gt;[</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispInvertibles.html#bd1ed63d98deed969d579c3c1d29db94"><span class="id" title="variable">τ</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispBicat.html#ec4a750d8a1eb160dc3826c27d618ee4"><span class="id" title="notation">]</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispInvertibles.html#gg:644"><span class="id" title="variable">gg</span></a>)<br/>
+&nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.Core.Bicat.html#invertible_2cell"><span class="id" title="definition">invertible_2cell</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="var">C</span> := <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispBicat.html#total_bicat"><span class="id" title="definition">total_bicat</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispInvertibles.html#D:634"><span class="id" title="variable">D</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="var">a</span> := <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispInvertibles.html#x:636"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispInvertibles.html#xx:641"><span class="id" title="variable">xx</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="var">b</span> := <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispInvertibles.html#y:637"><span class="id" title="variable">y</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispInvertibles.html#yy:642"><span class="id" title="variable">yy</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispInvertibles.html#f:638"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispInvertibles.html#ff:643"><span class="id" title="variable">ff</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispInvertibles.html#g:639"><span class="id" title="variable">g</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispInvertibles.html#gg:644"><span class="id" title="variable">gg</span></a>).<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
+&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.Core.Bicat.html#make_invertible_2cell"><span class="id" title="definition">make_invertible_2cell</span></a>.<br/>
+&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> τ <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> ττ).<br/>
+&nbsp;&nbsp;- <span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispInvertibles.html#is_invertible_disp_to_total"><span class="id" title="definition">is_invertible_disp_to_total</span></a>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> τ <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <span class="id" title="var">HD</span>.<br/>
+</div>
 </div>
 </div>
 
 <div id="footer">
-<hr/><a href="index.html">Index</a><hr/>This page has been generated by <a href="http://coq.inria.fr/">coqdoc</a>
+<hr/><a href="index.html">Index</a><hr/>This page has been generated by <a href="http://rocq-prover.org/">coqdoc</a>
 </div>
 
 </div>

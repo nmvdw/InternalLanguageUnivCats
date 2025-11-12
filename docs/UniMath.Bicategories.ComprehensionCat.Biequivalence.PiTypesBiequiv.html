@@ -56,6 +56,7 @@
 <span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispPseudofunctor.html#"><span class="id" title="library">UniMath.Bicategories.DisplayedBicats.DispPseudofunctor</span></a>.<br/>
 <span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispTransformation.html#"><span class="id" title="library">UniMath.Bicategories.DisplayedBicats.DispTransformation</span></a>.<br/>
 <span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispModification.html#"><span class="id" title="library">UniMath.Bicategories.DisplayedBicats.DispModification</span></a>.<br/>
+<span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispPseudoNaturalAdjequiv.html#"><span class="id" title="library">UniMath.Bicategories.DisplayedBicats.DispPseudoNaturalAdjequiv</span></a>.<br/>
 <span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat.html#"><span class="id" title="library">UniMath.Bicategories.PseudoFunctors.Display.PseudoFunctorBicat</span></a>.<br/>
 <span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.PseudoFunctor.html#"><span class="id" title="library">UniMath.Bicategories.PseudoFunctors.PseudoFunctor</span></a>.<br/>
 <span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Examples.Identity.html#"><span class="id" title="library">UniMath.Bicategories.PseudoFunctors.Examples.Identity</span></a>.<br/>
@@ -81,7 +82,7 @@
 </div>
 
 <div class="doc">
-<a id="lab3338"></a><h1 class="section">1. Lemmas on equivalences and locally cartesian closed categories</h1>
+<a id="lab3602"></a><h1 class="section">1. Lemmas on equivalences and locally cartesian closed categories</h1>
 
 </div>
 <div class="code">
@@ -269,7 +270,7 @@
 </div>
 
 <div class="doc">
-<a id="lab3339"></a><h1 class="section">2. The extended pseudofunctor from categories to comprehension categories</h1>
+<a id="lab3603"></a><h1 class="section">2. The extended pseudofunctor from categories to comprehension categories</h1>
 
 </div>
 <div class="code">
@@ -291,7 +292,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.Biequiv.html#finlim_biequiv_dfl_comp_cat_psfunctor"><span class="id" title="definition">finlim_biequiv_dfl_comp_cat_psfunctor</span></a>.<br/>
 <a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispBuilders.html#make_disp_psfunctor_contr"><span class="id" title="definition">make_disp_psfunctor_contr</span></a>.<br/>
-&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.TypeFormers.PiTypes.html#disp_2cells_iscontr_disp_bicat_of_pi_type_dfl_full_comp_cat"><span class="id" title="definition">disp_2cells_iscontr_disp_bicat_of_pi_type_dfl_full_comp_cat</span></a>.<br/>
+&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.TypeFormers.PiTypes.html#disp_2cells_iscontr_disp_bicat_of_pi_type_dfl_full_comp_cat"><span class="id" title="lemma">disp_2cells_iscontr_disp_bicat_of_pi_type_dfl_full_comp_cat</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="C:68" class="idref" href="#C:68"><span class="id" title="binder"><span id="C:70" class="id">C</span></span></a> <a id="H:69" class="idref" href="#H:69"><span class="id" title="binder"><span id="H:71" class="id">H</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#tt"><span class="id" title="constructor">tt</span></a>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.PiTypesBiequiv.html#finlim_comp_cat_dependent_prod"><span class="id" title="definition">finlim_comp_cat_dependent_prod</span></a> <span class="id" title="var">C</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <span class="id" title="var">H</span>)).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">abstract</span><br/>
@@ -304,7 +305,7 @@
 </div>
 
 <div class="doc">
-<a id="lab3340"></a><h1 class="section">3. The extended pseudofunctor from comprehension categories to categories</h1>
+<a id="lab3604"></a><h1 class="section">3. The extended pseudofunctor from comprehension categories to categories</h1>
 
 </div>
 <div class="code">
@@ -398,7 +399,7 @@
 </div>
 
 <div class="doc">
-<a id="lab3341"></a><h1 class="section">4. The unit</h1>
+<a id="lab3605"></a><h1 class="section">4. The unit</h1>
 
 </div>
 <div class="code">
@@ -419,38 +420,10 @@
 </div>
 
 <br/>
-<span class="id" title="keyword">Definition</span> <a id="finlim_dfl_comp_cat_unit_pi_types_pointwise_adjequiv" class="idref" href="#finlim_dfl_comp_cat_unit_pi_types_pointwise_adjequiv"><span class="id" title="definition">finlim_dfl_comp_cat_unit_pi_types_pointwise_adjequiv</span></a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="C:96" class="idref" href="#C:96"><span class="id" title="binder">C</span></a> : <a class="idref" href="UniMath.Bicategories.Core.Examples.StructuredCategories.html#univ_cat_with_finlim"><span class="id" title="definition">univ_cat_with_finlim</span></a>}<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HC:97" class="idref" href="#HC:97"><span class="id" title="binder">HC</span></a> : <a class="idref" href="UniMath.Bicategories.Core.Examples.StructuredCategories.html#disp_bicat_univ_lccc"><span class="id" title="definition">disp_bicat_univ_lccc</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.PiTypesBiequiv.html#C:96"><span class="id" title="variable">C</span></a>)<br/>
-&nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#disp_left_adjoint_equivalence"><span class="id" title="definition">disp_left_adjoint_equivalence</span></a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.Unit.html#finlim_dfl_comp_cat_unit_pointwise_equiv"><span class="id" title="definition">finlim_dfl_comp_cat_unit_pointwise_equiv</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.PiTypesBiequiv.html#C:96"><span class="id" title="variable">C</span></a>)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.PiTypesBiequiv.html#finlim_dfl_comp_cat_unit_pi_types"><span class="id" title="definition">finlim_dfl_comp_cat_unit_pi_types</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.PiTypesBiequiv.html#C:96"><span class="id" title="variable">C</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.PiTypesBiequiv.html#HC:97"><span class="id" title="variable">HC</span></a>).<br/>
-<a class="proof" href="#">Show proof.</a><br/><div class="proof">
-&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.Core.Examples.StructuredCategories.html#disp_adjoint_equiv_disp_bicat_univ_lccc"><span class="id" title="definition">disp_adjoint_equiv_disp_bicat_univ_lccc</span></a>.<br/>
-</div>
-
-<br/>
-<span class="id" title="keyword">Definition</span> <a id="finlim_dfl_comp_cat_unit_inv_pi_types" class="idref" href="#finlim_dfl_comp_cat_unit_inv_pi_types"><span class="id" title="definition">finlim_dfl_comp_cat_unit_inv_pi_types</span></a><br/>
-&nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispTransformation.html#disp_pstrans"><span class="id" title="definition">disp_pstrans</span></a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispPseudofunctor.html#disp_pseudo_id"><span class="id" title="definition">disp_pseudo_id</span></a> <span class="id" title="var">_</span>)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispPseudofunctor.html#disp_pseudo_comp"><span class="id" title="definition">disp_pseudo_comp</span></a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.PiTypesBiequiv.html#finlim_biequiv_dfl_comp_cat_disp_psfunctor_pi_types"><span class="id" title="definition">finlim_biequiv_dfl_comp_cat_disp_psfunctor_pi_types</span></a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.PiTypesBiequiv.html#dfl_comp_cat_to_finlim_disp_psfunctor_pi_types"><span class="id" title="definition">dfl_comp_cat_to_finlim_disp_psfunctor_pi_types</span></a>)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.Unit.html#finlim_dfl_comp_cat_unit_inv"><span class="id" title="definition">finlim_dfl_comp_cat_unit_inv</span></a>.<br/>
-<a class="proof" href="#">Show proof.</a><br/><div class="proof">
-&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispBuilders.html#make_disp_pstrans_inv_contr"><span class="id" title="definition">make_disp_pstrans_inv_contr</span></a>.<br/>
-&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.Core.Examples.StructuredCategories.html#disp_2cells_iscontr_univ_lccc"><span class="id" title="definition">disp_2cells_iscontr_univ_lccc</span></a>.<br/>
-&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.PiTypesBiequiv.html#finlim_dfl_comp_cat_unit_pi_types"><span class="id" title="definition">finlim_dfl_comp_cat_unit_pi_types</span></a>.<br/>
-&nbsp;&nbsp;- <span class="id" title="tactic">intros</span>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.PiTypesBiequiv.html#finlim_dfl_comp_cat_unit_pi_types_pointwise_adjequiv"><span class="id" title="definition">finlim_dfl_comp_cat_unit_pi_types_pointwise_adjequiv</span></a>.<br/>
-</div>
-
-<br/>
 </div>
 
 <div class="doc">
-<a id="lab3342"></a><h1 class="section">5. The counit</h1>
+<a id="lab3606"></a><h1 class="section">5. The counit</h1>
 
 </div>
 <div class="code">
@@ -464,45 +437,17 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.Counit.html#finlim_dfl_comp_cat_counit"><span class="id" title="definition">finlim_dfl_comp_cat_counit</span></a>.<br/>
 <a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispBuilders.html#make_disp_pstrans_contr"><span class="id" title="definition">make_disp_pstrans_contr</span></a>.<br/>
-&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.TypeFormers.PiTypes.html#disp_2cells_iscontr_disp_bicat_of_pi_type_dfl_full_comp_cat"><span class="id" title="definition">disp_2cells_iscontr_disp_bicat_of_pi_type_dfl_full_comp_cat</span></a>.<br/>
-&nbsp;&nbsp;- <span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="C:98" class="idref" href="#C:98"><span class="id" title="binder"><span id="C:100" class="id">C</span></span></a> <a id="H:99" class="idref" href="#H:99"><span class="id" title="binder"><span id="H:101" class="id">H</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#tt"><span class="id" title="constructor">tt</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
+&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.TypeFormers.PiTypes.html#disp_2cells_iscontr_disp_bicat_of_pi_type_dfl_full_comp_cat"><span class="id" title="lemma">disp_2cells_iscontr_disp_bicat_of_pi_type_dfl_full_comp_cat</span></a>.<br/>
+&nbsp;&nbsp;- <span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="C:96" class="idref" href="#C:96"><span class="id" title="binder"><span id="C:98" class="id">C</span></span></a> <a id="H:97" class="idref" href="#H:97"><span class="id" title="binder"><span id="H:99" class="id">H</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#tt"><span class="id" title="constructor">tt</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.PiTypesBiequiv.html#preserves_dependent_products_adj_equiv"><span class="id" title="definition">preserves_dependent_products_adj_equiv</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.Counit.html#finlim_dfl_comp_cat_counit_pointwise_equiv"><span class="id" title="definition">finlim_dfl_comp_cat_counit_pointwise_equiv</span></a> <span class="id" title="var">C</span>)).<br/>
-</div>
-
-<br/>
-<span class="id" title="keyword">Definition</span> <a id="finlim_dfl_comp_cat_counit_pi_types_pointwise_adjequiv" class="idref" href="#finlim_dfl_comp_cat_counit_pi_types_pointwise_adjequiv"><span class="id" title="definition">finlim_dfl_comp_cat_counit_pi_types_pointwise_adjequiv</span></a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="C:102" class="idref" href="#C:102"><span class="id" title="binder">C</span></a> : <a class="idref" href="UniMath.Bicategories.ComprehensionCat.DFLCompCat.html#dfl_full_comp_cat"><span class="id" title="definition">dfl_full_comp_cat</span></a>}<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HC:103" class="idref" href="#HC:103"><span class="id" title="binder">HC</span></a> : <a class="idref" href="UniMath.Bicategories.ComprehensionCat.TypeFormers.PiTypes.html#disp_bicat_of_pi_type_dfl_full_comp_cat"><span class="id" title="definition">disp_bicat_of_pi_type_dfl_full_comp_cat</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.PiTypesBiequiv.html#C:102"><span class="id" title="variable">C</span></a>)<br/>
-&nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#disp_left_adjoint_equivalence"><span class="id" title="definition">disp_left_adjoint_equivalence</span></a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.Counit.html#finlim_dfl_comp_cat_counit_pointwise_equiv"><span class="id" title="definition">finlim_dfl_comp_cat_counit_pointwise_equiv</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.PiTypesBiequiv.html#C:102"><span class="id" title="variable">C</span></a>)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.PiTypesBiequiv.html#finlim_dfl_comp_cat_counit_pi_types"><span class="id" title="definition">finlim_dfl_comp_cat_counit_pi_types</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.PiTypesBiequiv.html#C:102"><span class="id" title="variable">C</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.PiTypesBiequiv.html#HC:103"><span class="id" title="variable">HC</span></a>).<br/>
-<a class="proof" href="#">Show proof.</a><br/><div class="proof">
-&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.TypeFormers.PiTypes.html#disp_adjoint_equiv_disp_bicat_of_pi_type_dfl_full_comp_cat"><span class="id" title="definition">disp_adjoint_equiv_disp_bicat_of_pi_type_dfl_full_comp_cat</span></a>.<br/>
-</div>
-
-<br/>
-<span class="id" title="keyword">Definition</span> <a id="finlim_dfl_comp_cat_counit_inv_pi_types" class="idref" href="#finlim_dfl_comp_cat_counit_inv_pi_types"><span class="id" title="definition">finlim_dfl_comp_cat_counit_inv_pi_types</span></a><br/>
-&nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispTransformation.html#disp_pstrans"><span class="id" title="definition">disp_pstrans</span></a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispPseudofunctor.html#disp_pseudo_comp"><span class="id" title="definition">disp_pseudo_comp</span></a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.PiTypesBiequiv.html#dfl_comp_cat_to_finlim_disp_psfunctor_pi_types"><span class="id" title="definition">dfl_comp_cat_to_finlim_disp_psfunctor_pi_types</span></a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.PiTypesBiequiv.html#finlim_biequiv_dfl_comp_cat_disp_psfunctor_pi_types"><span class="id" title="definition">finlim_biequiv_dfl_comp_cat_disp_psfunctor_pi_types</span></a>)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispPseudofunctor.html#disp_pseudo_id"><span class="id" title="definition">disp_pseudo_id</span></a> <span class="id" title="var">_</span>)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.Counit.html#finlim_dfl_comp_cat_counit_inv"><span class="id" title="definition">finlim_dfl_comp_cat_counit_inv</span></a>.<br/>
-<a class="proof" href="#">Show proof.</a><br/><div class="proof">
-&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispBuilders.html#make_disp_pstrans_inv_contr"><span class="id" title="definition">make_disp_pstrans_inv_contr</span></a>.<br/>
-&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.TypeFormers.PiTypes.html#disp_2cells_iscontr_disp_bicat_of_pi_type_dfl_full_comp_cat"><span class="id" title="definition">disp_2cells_iscontr_disp_bicat_of_pi_type_dfl_full_comp_cat</span></a>.<br/>
-&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.PiTypesBiequiv.html#finlim_dfl_comp_cat_counit_pi_types"><span class="id" title="definition">finlim_dfl_comp_cat_counit_pi_types</span></a>.<br/>
-&nbsp;&nbsp;- <span class="id" title="tactic">intros</span>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.PiTypesBiequiv.html#finlim_dfl_comp_cat_counit_pi_types_pointwise_adjequiv"><span class="id" title="definition">finlim_dfl_comp_cat_counit_pi_types_pointwise_adjequiv</span></a>.<br/>
 </div>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab3343"></a><h1 class="section">6. The displayed biequivalence</h1>
+<a id="lab3607"></a><h1 class="section">6. The displayed biequivalence</h1>
 
 </div>
 <div class="code">
@@ -513,9 +458,15 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.PiTypesBiequiv.html#finlim_biequiv_dfl_comp_cat_disp_psfunctor_pi_types"><span class="id" title="definition">finlim_biequiv_dfl_comp_cat_disp_psfunctor_pi_types</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.PiTypesBiequiv.html#dfl_comp_cat_to_finlim_disp_psfunctor_pi_types"><span class="id" title="definition">dfl_comp_cat_to_finlim_disp_psfunctor_pi_types</span></a>.<br/>
 <a class="proof" href="#">Show proof.</a><br/><div class="proof">
-&nbsp;&nbsp;<span class="id" title="tactic">simple</span> <span class="id" title="tactic">refine</span> (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
+&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispPseudoNaturalAdjequiv.html#make_disp_biequiv_unit_counit_pointwise_adjequiv_alt"><span class="id" title="definition">make_disp_biequiv_unit_counit_pointwise_adjequiv_alt</span></a>.<br/>
+&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.DFLCompCat.html#is_univalent_2_bicat_of_dfl_full_comp_cat"><span class="id" title="lemma">is_univalent_2_bicat_of_dfl_full_comp_cat</span></a>.<br/>
+&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.Biequiv.html#finlim_dfl_comp_cat_biequivalence_adjoints"><span class="id" title="definition">finlim_dfl_comp_cat_biequivalence_adjoints</span></a>.<br/>
+&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.TypeFormers.PiTypes.html#disp_2cells_isaprop_disp_bicat_of_pi_type_dfl_full_comp_cat"><span class="id" title="lemma">disp_2cells_isaprop_disp_bicat_of_pi_type_dfl_full_comp_cat</span></a>.<br/>
+&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.TypeFormers.PiTypes.html#disp_locally_groupoid_disp_bicat_of_pi_type_dfl_full_comp_cat"><span class="id" title="lemma">disp_locally_groupoid_disp_bicat_of_pi_type_dfl_full_comp_cat</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.PiTypesBiequiv.html#finlim_dfl_comp_cat_unit_pi_types"><span class="id" title="definition">finlim_dfl_comp_cat_unit_pi_types</span></a>.<br/>
-&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.PiTypesBiequiv.html#finlim_dfl_comp_cat_counit_inv_pi_types"><span class="id" title="definition">finlim_dfl_comp_cat_counit_inv_pi_types</span></a>.<br/>
+&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.PiTypesBiequiv.html#finlim_dfl_comp_cat_counit_pi_types"><span class="id" title="definition">finlim_dfl_comp_cat_counit_pi_types</span></a>.<br/>
+&nbsp;&nbsp;- <span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">xx</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.TypeFormers.PiTypes.html#disp_adjoint_equiv_disp_bicat_of_pi_type_dfl_full_comp_cat"><span class="id" title="definition">disp_adjoint_equiv_disp_bicat_of_pi_type_dfl_full_comp_cat</span></a>.<br/>
 </div>
 
 <br/>
@@ -526,23 +477,32 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.Biequiv.html#finlim_dfl_comp_cat_biequivalence_adjoints"><span class="id" title="definition">finlim_dfl_comp_cat_biequivalence_adjoints</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.PiTypesBiequiv.html#finlim_dfl_comp_cat_biequivalence_unit_counit_pi_types"><span class="id" title="definition">finlim_dfl_comp_cat_biequivalence_unit_counit_pi_types</span></a>.<br/>
 <a class="proof" href="#">Show proof.</a><br/><div class="proof">
-&nbsp;&nbsp;<span class="id" title="tactic">simple</span> <span class="id" title="tactic">refine</span> (<span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">(</span></a><span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span><a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">(</span></a><span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span><a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">)</span></a>).<br/>
-&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.PiTypesBiequiv.html#finlim_dfl_comp_cat_unit_inv_pi_types"><span class="id" title="definition">finlim_dfl_comp_cat_unit_inv_pi_types</span></a>.<br/>
-&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.PiTypesBiequiv.html#finlim_dfl_comp_cat_counit_pi_types"><span class="id" title="definition">finlim_dfl_comp_cat_counit_pi_types</span></a>.<br/>
-&nbsp;&nbsp;- <span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispBuilders.html#make_disp_invmodification_contr"><span class="id" title="definition">make_disp_invmodification_contr</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.Core.Examples.StructuredCategories.html#disp_2cells_iscontr_univ_lccc"><span class="id" title="definition">disp_2cells_iscontr_univ_lccc</span></a>.<br/>
-&nbsp;&nbsp;- <span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispBuilders.html#make_disp_invmodification_contr"><span class="id" title="definition">make_disp_invmodification_contr</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.Core.Examples.StructuredCategories.html#disp_2cells_iscontr_univ_lccc"><span class="id" title="definition">disp_2cells_iscontr_univ_lccc</span></a>.<br/>
-&nbsp;&nbsp;- <span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispBuilders.html#make_disp_invmodification_contr"><span class="id" title="definition">make_disp_invmodification_contr</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.TypeFormers.PiTypes.html#disp_2cells_iscontr_disp_bicat_of_pi_type_dfl_full_comp_cat"><span class="id" title="definition">disp_2cells_iscontr_disp_bicat_of_pi_type_dfl_full_comp_cat</span></a>.<br/>
-&nbsp;&nbsp;- <span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispBuilders.html#make_disp_invmodification_contr"><span class="id" title="definition">make_disp_invmodification_contr</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.TypeFormers.PiTypes.html#disp_2cells_iscontr_disp_bicat_of_pi_type_dfl_full_comp_cat"><span class="id" title="definition">disp_2cells_iscontr_disp_bicat_of_pi_type_dfl_full_comp_cat</span></a>.<br/>
+&nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispPseudoNaturalAdjequiv.html#make_disp_biequiv_pointwise_adjequiv_alt"><span class="id" title="definition">make_disp_biequiv_pointwise_adjequiv_alt</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span>).<br/>
+&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.Core.Examples.StructuredCategories.html#is_univalent_2_bicat_of_univ_cat_with_finlim"><span class="id" title="definition">is_univalent_2_bicat_of_univ_cat_with_finlim</span></a>.<br/>
+&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.Core.Examples.StructuredCategories.html#disp_2cells_isaprop_univ_lccc"><span class="id" title="definition">disp_2cells_isaprop_univ_lccc</span></a>.<br/>
+&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Bicategories.Core.Examples.StructuredCategories.html#disp_locally_groupoid_univ_lccc"><span class="id" title="definition">disp_locally_groupoid_univ_lccc</span></a>.<br/>
+&nbsp;&nbsp;- <span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">xx</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.Core.Examples.StructuredCategories.html#disp_adjoint_equiv_disp_bicat_univ_lccc"><span class="id" title="definition">disp_adjoint_equiv_disp_bicat_univ_lccc</span></a>.<br/>
 </div>
+
+<br/>
+<span class="id" title="keyword">Definition</span> <a id="lang_lccc" class="idref" href="#lang_lccc"><span class="id" title="definition">lang_lccc</span></a><br/>
+&nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.PseudoFunctors.PseudoFunctor.html#psfunctor"><span class="id" title="definition">psfunctor</span></a> <a class="idref" href="UniMath.Bicategories.Core.Examples.StructuredCategories.html#bicat_of_univ_lccc"><span class="id" title="definition">bicat_of_univ_lccc</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.TypeFormers.PiTypes.html#bicat_of_pi_type_dfl_full_comp_cat"><span class="id" title="definition">bicat_of_pi_type_dfl_full_comp_cat</span></a><br/>
+&nbsp;&nbsp;:= <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispPseudofunctor.html#total_psfunctor"><span class="id" title="definition">total_psfunctor</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.PiTypesBiequiv.html#finlim_biequiv_dfl_comp_cat_disp_psfunctor_pi_types"><span class="id" title="definition">finlim_biequiv_dfl_comp_cat_disp_psfunctor_pi_types</span></a>.<br/>
+
+<br/>
+<span class="id" title="keyword">Definition</span> <a id="internal_language_lccc" class="idref" href="#internal_language_lccc"><span class="id" title="definition">internal_language_lccc</span></a><br/>
+&nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.PseudoFunctors.Biequivalence.html#is_biequivalence"><span class="id" title="definition">is_biequivalence</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.PiTypesBiequiv.html#lang_lccc"><span class="id" title="definition">lang_lccc</span></a><br/>
+&nbsp;&nbsp;:= <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispBiequivalence.html#total_is_biequivalence"><span class="id" title="definition">total_is_biequivalence</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Bicategories.ComprehensionCat.Biequivalence.PiTypesBiequiv.html#finlim_biequiv_dfl_comp_cat_psfunctor_pi_types"><span class="id" title="definition">finlim_biequiv_dfl_comp_cat_psfunctor_pi_types</span></a>.<br/>
 </div>
 </div>
 
 <div id="footer">
-<hr/><a href="index.html">Index</a><hr/>This page has been generated by <a href="http://coq.inria.fr/">coqdoc</a>
+<hr/><a href="index.html">Index</a><hr/>This page has been generated by <a href="http://rocq-prover.org/">coqdoc</a>
 </div>
 
 </div>

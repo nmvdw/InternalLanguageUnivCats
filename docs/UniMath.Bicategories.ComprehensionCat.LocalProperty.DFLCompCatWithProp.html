@@ -45,7 +45,7 @@
 </div>
 
 <div class="doc">
-<a id="lab3330"></a><h1 class="section">1. The displayed bicategory of DFL comprehension categories with fiberwise structure</h1>
+<a id="lab3588"></a><h1 class="section">1. The displayed bicategory of DFL comprehension categories with fiberwise structure</h1>
 
 </div>
 <div class="code">
@@ -61,19 +61,17 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="b20d639c22112acae485e79941400f8b" class="idref" href="#b20d639c22112acae485e79941400f8b"><span class="id" title="binder"><span id="b28f13d0f30b8d99265c42a5341d1cc8" class="id">H₂</span></span></a> : <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.LocalProperties.html#fiberwise_cat_property"><span class="id" title="definition">fiberwise_cat_property</span></a> <span class="id" title="var">P</span> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.DFLCompCatWithProp.html#603f1cccf45cfa7ce65909d4b3398a78"><span class="id" title="variable">C₂</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="F:8" class="idref" href="#F:8"><span class="id" title="binder"><span id="F:13" class="id">F</span></span></a> : <a class="idref" href="UniMath.Bicategories.ComprehensionCat.DFLCompCat.html#dfl_full_comp_cat_functor"><span class="id" title="definition">dfl_full_comp_cat_functor</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.DFLCompCatWithProp.html#7a9c4a29798196c9e0949082c7ce30b8"><span class="id" title="variable">C₁</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.DFLCompCatWithProp.html#603f1cccf45cfa7ce65909d4b3398a78"><span class="id" title="variable">C₂</span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">),</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.LocalProperties.html#fiberwise_cat_property_functor"><span class="id" title="definition">fiberwise_cat_property_functor</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.DFLCompCatWithProp.html#F:8"><span class="id" title="variable">F</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.DFLCompCatWithProp.html#5d0db52d5530754dff0b8dcfe9611b25"><span class="id" title="variable">H₁</span></a> <a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.DFLCompCatWithProp.html#b20d639c22112acae485e79941400f8b"><span class="id" title="variable">H₂</span></a>).<br/>
-&nbsp;&nbsp;- <span class="id" title="tactic">abstract</span><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">intros</span> <span class="id" title="var">C</span> <span class="id" title="var">H</span> <span class="id" title="var">x</span> ;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.LocalProperties.html#cat_property_fiber_functor_id'"><span class="id" title="lemma">cat_property_fiber_functor_id'</span></a> <span class="id" title="var">P</span> <span class="id" title="var">C</span> <span class="id" title="var">x</span> (<span class="id" title="var">H</span> <span class="id" title="var">x</span>))).<br/>
-&nbsp;&nbsp;- <span class="id" title="tactic">abstract</span><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">intros</span> <span class="id" title="var">C₁</span> <span class="id" title="var">C₂</span> <span class="id" title="var">C₃</span> <span class="id" title="var">H₁</span> <span class="id" title="var">H₂</span> <span class="id" title="var">H₃</span> <span class="id" title="var">F</span> <span class="id" title="var">G</span> <span class="id" title="var">HF</span> <span class="id" title="var">HG</span> <span class="id" title="var">x</span> ;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.LocalProperties.html#cat_property_fiber_functor_comp"><span class="id" title="lemma">cat_property_fiber_functor_comp</span></a> <span class="id" title="var">P</span> (<span class="id" title="var">HF</span> <span class="id" title="var">x</span>) (<span class="id" title="var">HG</span> <span class="id" title="var">_</span>))).<br/>
+&nbsp;&nbsp;- <span class="id" title="tactic">intros</span> <span class="id" title="var">C</span> <span class="id" title="var">H</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.LocalProperties.html#identity_fiberwise_cat_property_functor"><span class="id" title="lemma">identity_fiberwise_cat_property_functor</span></a> <span class="id" title="var">H</span>).<br/>
+&nbsp;&nbsp;- <span class="id" title="tactic">intros</span> <span class="id" title="var">C₁</span> <span class="id" title="var">C₂</span> <span class="id" title="var">C₃</span> <span class="id" title="var">H₁</span> <span class="id" title="var">H₂</span> <span class="id" title="var">H₃</span> <span class="id" title="var">F</span> <span class="id" title="var">G</span> <span class="id" title="var">HF</span> <span class="id" title="var">HG</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Bicategories.ComprehensionCat.LocalProperty.LocalProperties.html#comp_fiberwise_cat_property_functor"><span class="id" title="lemma">comp_fiberwise_cat_property_functor</span></a> <span class="id" title="var">HF</span> <span class="id" title="var">HG</span>).<br/>
 </div>
 
 <br/>
 </div>
 
 <div class="doc">
-<a id="lab3331"></a><h1 class="section">2. Properties of this displayed bicategory</h1>
+<a id="lab3589"></a><h1 class="section">2. Properties of this displayed bicategory</h1>
 
 </div>
 <div class="code">
@@ -140,7 +138,7 @@
 </div>
 
 <div class="doc">
-<a id="lab3332"></a><h1 class="section">3. Adjoint equivalences</h1>
+<a id="lab3590"></a><h1 class="section">3. Adjoint equivalences</h1>
 
 </div>
 <div class="code">
@@ -209,7 +207,7 @@
 </div>
 
 <div id="footer">
-<hr/><a href="index.html">Index</a><hr/>This page has been generated by <a href="http://coq.inria.fr/">coqdoc</a>
+<hr/><a href="index.html">Index</a><hr/>This page has been generated by <a href="http://rocq-prover.org/">coqdoc</a>
 </div>
 
 </div>

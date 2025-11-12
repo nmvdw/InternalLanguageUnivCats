@@ -21,7 +21,7 @@
 </div>
 
 <div class="doc">
-<a id="lab2713"></a><h1 class="section">Internal adjunction in displayed bicategories</h1>
+<a id="lab2934"></a><h1 class="section">Internal adjunction in displayed bicategories</h1>
 
 
 <div class="paragraph"> </div>
@@ -54,7 +54,7 @@
 </div>
 
 <div class="doc">
-<a id="lab2714"></a><h1 class="section">Definitions and properties of displayed adjunctions</h1>
+<a id="lab2935"></a><h1 class="section">Definitions and properties of displayed adjunctions</h1>
 
 </div>
 <div class="code">
@@ -67,8 +67,8 @@
 </div>
 
 <div class="doc">
-<a id="lab2715"></a><h2 class="section">Displayed left adjoints</h2>
-<a id="lab2716"></a><h3 class="section">Data &amp; laws for left adjoints</h3>
+<a id="lab2936"></a><h2 class="section">Displayed left adjoints</h2>
+<a id="lab2937"></a><h3 class="section">Data &amp; laws for left adjoints</h3>
 
 </div>
 <div class="code">
@@ -201,7 +201,7 @@
 </div>
 
 <div class="doc">
-<a id="lab2717"></a><h3 class="section">Laws for equivalences</h3>
+<a id="lab2938"></a><h3 class="section">Laws for equivalences</h3>
 
 </div>
 <div class="code">
@@ -265,7 +265,7 @@
 </div>
 
 <div class="doc">
-<a id="lab2718"></a><h3 class="section">Packaged</h3>
+<a id="lab2939"></a><h3 class="section">Packaged</h3>
 
 </div>
 <div class="code">
@@ -333,7 +333,7 @@
 From now on, we need the <span class="inlinecode"><a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispBicat.html#has_disp_cellset"><span class="id" title="definition">has_disp_cellset</span></a></span> <span class="inlinecode"><span class="id" title="var">property</span></span>. 
 <div class="paragraph"> </div>
 
-<a id="lab2719"></a><h2 class="section">Identity is a displayed adjoint</h2>
+<a id="lab2940"></a><h2 class="section">Identity is a displayed adjoint</h2>
 
 </div>
 <div class="code">
@@ -521,7 +521,7 @@ From now on, we need the <span class="inlinecode"><a class="idref" href="UniMath
 </div>
 
 <div class="doc">
-<a id="lab2720"></a><h1 class="section">Classification of internal adjunctions in the total category</h1>
+<a id="lab2941"></a><h1 class="section">Classification of internal adjunctions in the total category</h1>
 
 </div>
 <div class="code">
@@ -1041,11 +1041,66 @@ The equivalence for equivalence laws
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> (<a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#disp_left_equivalence_to_left_adjoint_equivalence"><span class="id" title="definition">disp_left_equivalence_to_left_adjoint_equivalence</span></a> <span class="id" title="var">Hff</span>))).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.Bicategories.Core.AdjointUnique.html#isaprop_left_adjoint_equivalence"><span class="id" title="lemma">isaprop_left_adjoint_equivalence</span></a> <span class="id" title="var">_</span> <span class="id" title="var">HB</span>).<br/>
 </div>
+
+<br/>
+</div>
+
+<div class="doc">
+Convenient builders for displayed adjoint equivalences 
+</div>
+<div class="code">
+<span class="id" title="keyword">Definition</span> <a id="make_disp_adjequiv_prop_grpd" class="idref" href="#make_disp_adjequiv_prop_grpd"><span class="id" title="definition">make_disp_adjequiv_prop_grpd</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="B:420" class="idref" href="#B:420"><span class="id" title="binder">B</span></a> : <a class="idref" href="UniMath.Bicategories.Core.Bicat.html#bicat"><span class="id" title="definition">bicat</span></a>}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="D:421" class="idref" href="#D:421"><span class="id" title="binder">D</span></a> : <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispBicat.html#disp_bicat"><span class="id" title="definition">disp_bicat</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#B:420"><span class="id" title="variable">B</span></a>}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="45f1d2ee2c57fe3db413ba0690ae2eea" class="idref" href="#45f1d2ee2c57fe3db413ba0690ae2eea"><span class="id" title="binder">HD₁</span></a> : <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispBicat.html#disp_2cells_isaprop"><span class="id" title="definition">disp_2cells_isaprop</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#D:421"><span class="id" title="variable">D</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="fa4628b42dec7e43492174b2c42cb58f" class="idref" href="#fa4628b42dec7e43492174b2c42cb58f"><span class="id" title="binder">HD₂</span></a> : <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispBicat.html#disp_locally_groupoid"><span class="id" title="definition">disp_locally_groupoid</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#D:421"><span class="id" title="variable">D</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="x:424" class="idref" href="#x:424"><span class="id" title="binder">x</span></a> <a id="y:425" class="idref" href="#y:425"><span class="id" title="binder">y</span></a> : <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#B:420"><span class="id" title="variable">B</span></a>}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="f:426" class="idref" href="#f:426"><span class="id" title="binder">f</span></a> : <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#x:424"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#y:425"><span class="id" title="variable">y</span></a>}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="Hf:427" class="idref" href="#Hf:427"><span class="id" title="binder">Hf</span></a> : <a class="idref" href="UniMath.Bicategories.Morphisms.Adjunctions.html#left_adjoint_equivalence"><span class="id" title="definition">left_adjoint_equivalence</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#f:426"><span class="id" title="variable">f</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="xx:428" class="idref" href="#xx:428"><span class="id" title="binder">xx</span></a> : <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#D:421"><span class="id" title="variable">D</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#x:424"><span class="id" title="variable">x</span></a>}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="yy:429" class="idref" href="#yy:429"><span class="id" title="binder">yy</span></a> : <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#D:421"><span class="id" title="variable">D</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#y:425"><span class="id" title="variable">y</span></a>}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="ff:430" class="idref" href="#ff:430"><span class="id" title="binder">ff</span></a> : <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#xx:428"><span class="id" title="variable">xx</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">--&gt;[</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#f:426"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">]</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#yy:429"><span class="id" title="variable">yy</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="gg:431" class="idref" href="#gg:431"><span class="id" title="binder">gg</span></a> : <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#yy:429"><span class="id" title="variable">yy</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">--&gt;[</span></a> <a class="idref" href="UniMath.Bicategories.Morphisms.Adjunctions.html#left_adjoint_right_adjoint"><span class="id" title="definition">left_adjoint_right_adjoint</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#Hf:427"><span class="id" title="variable">Hf</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">]</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#xx:428"><span class="id" title="variable">xx</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="a5dbbd941fc05d2ce13f9659bcc23319" class="idref" href="#a5dbbd941fc05d2ce13f9659bcc23319"><span class="id" title="binder">ηη</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#id_disp"><span class="id" title="definition">id_disp</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#xx:428"><span class="id" title="variable">xx</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispBicat.html#ec4a750d8a1eb160dc3826c27d618ee4"><span class="id" title="notation">==&gt;[</span></a> <a class="idref" href="UniMath.Bicategories.Morphisms.Adjunctions.html#left_adjoint_unit"><span class="id" title="definition">left_adjoint_unit</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#Hf:427"><span class="id" title="variable">Hf</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispBicat.html#ec4a750d8a1eb160dc3826c27d618ee4"><span class="id" title="notation">]</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#ff:430"><span class="id" title="variable">ff</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#8735f787ddf36c3591f69d28c3fbee50"><span class="id" title="notation">;;</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#gg:431"><span class="id" title="variable">gg</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="f36514d1938ca977d23840b6d8d63c0b" class="idref" href="#f36514d1938ca977d23840b6d8d63c0b"><span class="id" title="binder">εε</span></a> : <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#gg:431"><span class="id" title="variable">gg</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#8735f787ddf36c3591f69d28c3fbee50"><span class="id" title="notation">;;</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#ff:430"><span class="id" title="variable">ff</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispBicat.html#ec4a750d8a1eb160dc3826c27d618ee4"><span class="id" title="notation">==&gt;[</span></a> <a class="idref" href="UniMath.Bicategories.Morphisms.Adjunctions.html#left_adjoint_counit"><span class="id" title="definition">left_adjoint_counit</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#Hf:427"><span class="id" title="variable">Hf</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispBicat.html#ec4a750d8a1eb160dc3826c27d618ee4"><span class="id" title="notation">]</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#id_disp"><span class="id" title="definition">id_disp</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#yy:429"><span class="id" title="variable">yy</span></a>)<br/>
+&nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#disp_left_adjoint_equivalence"><span class="id" title="definition">disp_left_adjoint_equivalence</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#Hf:427"><span class="id" title="variable">Hf</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#ff:430"><span class="id" title="variable">ff</span></a>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
+&nbsp;&nbsp;<span class="id" title="tactic">simple</span> <span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">(</span></a><span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span><a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">_</span>).<br/>
+&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <span class="id" title="var">gg</span>.<br/>
+&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <span class="id" title="var">ηη</span>.<br/>
+&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <span class="id" title="var">εε</span>.<br/>
+&nbsp;&nbsp;- <span class="id" title="tactic">abstract</span><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">split</span> ; <span class="id" title="tactic">apply</span> <span class="id" title="var">HD₁</span>).<br/>
+&nbsp;&nbsp;- <span class="id" title="tactic">abstract</span><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">split</span> ; <span class="id" title="tactic">apply</span> <span class="id" title="var">HD₂</span>).<br/>
+</div>
+
+<br/>
+<span class="id" title="keyword">Definition</span> <a id="make_disp_adjequiv_contr" class="idref" href="#make_disp_adjequiv_contr"><span class="id" title="definition">make_disp_adjequiv_contr</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="B:434" class="idref" href="#B:434"><span class="id" title="binder">B</span></a> : <a class="idref" href="UniMath.Bicategories.Core.Bicat.html#bicat"><span class="id" title="definition">bicat</span></a>}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="D:435" class="idref" href="#D:435"><span class="id" title="binder">D</span></a> : <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispBicat.html#disp_bicat"><span class="id" title="definition">disp_bicat</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#B:434"><span class="id" title="variable">B</span></a>}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="HD:436" class="idref" href="#HD:436"><span class="id" title="binder">HD</span></a> : <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispBicat.html#disp_2cells_iscontr"><span class="id" title="definition">disp_2cells_iscontr</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#D:435"><span class="id" title="variable">D</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="x:437" class="idref" href="#x:437"><span class="id" title="binder">x</span></a> <a id="y:438" class="idref" href="#y:438"><span class="id" title="binder">y</span></a> : <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#B:434"><span class="id" title="variable">B</span></a>}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="f:439" class="idref" href="#f:439"><span class="id" title="binder">f</span></a> : <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#x:437"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#y:438"><span class="id" title="variable">y</span></a>}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="Hf:440" class="idref" href="#Hf:440"><span class="id" title="binder">Hf</span></a> : <a class="idref" href="UniMath.Bicategories.Morphisms.Adjunctions.html#left_adjoint_equivalence"><span class="id" title="definition">left_adjoint_equivalence</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#f:439"><span class="id" title="variable">f</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="xx:441" class="idref" href="#xx:441"><span class="id" title="binder">xx</span></a> : <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#D:435"><span class="id" title="variable">D</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#x:437"><span class="id" title="variable">x</span></a>}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="yy:442" class="idref" href="#yy:442"><span class="id" title="binder">yy</span></a> : <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#D:435"><span class="id" title="variable">D</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#y:438"><span class="id" title="variable">y</span></a>}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="ff:443" class="idref" href="#ff:443"><span class="id" title="binder">ff</span></a> : <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#xx:441"><span class="id" title="variable">xx</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">--&gt;[</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#f:439"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">]</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#yy:442"><span class="id" title="variable">yy</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="gg:444" class="idref" href="#gg:444"><span class="id" title="binder">gg</span></a> : <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#yy:442"><span class="id" title="variable">yy</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">--&gt;[</span></a> <a class="idref" href="UniMath.Bicategories.Morphisms.Adjunctions.html#left_adjoint_right_adjoint"><span class="id" title="definition">left_adjoint_right_adjoint</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#Hf:440"><span class="id" title="variable">Hf</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">]</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#xx:441"><span class="id" title="variable">xx</span></a>)<br/>
+&nbsp;&nbsp;: <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#disp_left_adjoint_equivalence"><span class="id" title="definition">disp_left_adjoint_equivalence</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#Hf:440"><span class="id" title="variable">Hf</span></a> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#ff:443"><span class="id" title="variable">ff</span></a>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
+&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispAdjunctions.html#make_disp_adjequiv_prop_grpd"><span class="id" title="definition">make_disp_adjequiv_prop_grpd</span></a>.<br/>
+&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispBicat.html#disp_2cells_isaprop_from_disp_2cells_iscontr"><span class="id" title="definition">disp_2cells_isaprop_from_disp_2cells_iscontr</span></a> <span class="id" title="var">_</span> <span class="id" title="var">HD</span>).<br/>
+&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Bicategories.DisplayedBicats.DispBicat.html#disp_2cells_isgroupoid_from_disp_2cells_iscontr"><span class="id" title="definition">disp_2cells_isgroupoid_from_disp_2cells_iscontr</span></a> <span class="id" title="var">_</span> <span class="id" title="var">HD</span>).<br/>
+&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <span class="id" title="var">gg</span>.<br/>
+&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <span class="id" title="var">HD</span>.<br/>
+&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <span class="id" title="var">HD</span>.<br/>
+</div>
 </div>
 </div>
 
 <div id="footer">
-<hr/><a href="index.html">Index</a><hr/>This page has been generated by <a href="http://coq.inria.fr/">coqdoc</a>
+<hr/><a href="index.html">Index</a><hr/>This page has been generated by <a href="http://rocq-prover.org/">coqdoc</a>
 </div>
 
 </div>

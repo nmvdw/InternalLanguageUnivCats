@@ -36,7 +36,7 @@
 </div>
 
 <div class="doc">
-<a id="lab1362"></a><h1 class="section">1. Coequalizers of kernel pairs</h1>
+<a id="lab1425"></a><h1 class="section">1. Coequalizers of kernel pairs</h1>
 
 </div>
 <div class="code">
@@ -62,7 +62,7 @@
 </div>
 
 <div class="doc">
-<a id="lab1363"></a><h1 class="section">2. Regular categories</h1>
+<a id="lab1426"></a><h1 class="section">2. Regular categories</h1>
 
 </div>
 <div class="code">
@@ -123,7 +123,7 @@
 </div>
 
 <div class="doc">
-<a id="lab1364"></a><h1 class="section">3. Morphisms between kernel pairs (Lemma 2.1.2 in Borceux)</h1>
+<a id="lab1427"></a><h1 class="section">3. Morphisms between kernel pairs (Lemma 2.1.2 in Borceux)</h1>
 
 </div>
 <div class="code">
@@ -374,7 +374,7 @@
 </div>
 
 <div class="doc">
-<a id="lab1365"></a><h1 class="section">4. Factorization in regular categories</h1>
+<a id="lab1428"></a><h1 class="section">4. Factorization in regular categories</h1>
 
 </div>
 <div class="code">
@@ -547,11 +547,52 @@
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.RegularAndExact.RegularCategory.html#is_regular_category_coeqs_of_kernel_pair"><span class="id" title="definition">is_regular_category_coeqs_of_kernel_pair</span></a> <span class="id" title="var">HC</span>).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.RegularAndExact.RegularCategory.html#is_regular_category_regular_epi_pb_stable"><span class="id" title="definition">is_regular_category_regular_epi_pb_stable</span></a> <span class="id" title="var">HC</span>).<br/>
 </div>
+
+<br/>
+<span class="id" title="keyword">Section</span> <a id="Accessors" class="idref" href="#Accessors"><span class="id" title="section">Accessors</span></a>.<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Context</span> {<a id="Accessors.C" class="idref" href="#Accessors.C"><span class="id" title="variable">C</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#category"><span class="id" title="definition">category</span></a>}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="Accessors.HC" class="idref" href="#Accessors.HC"><span class="id" title="variable">HC</span></a> : <a class="idref" href="UniMath.CategoryTheory.RegularAndExact.RegularCategory.html#is_regular_category"><span class="id" title="definition">is_regular_category</span></a> <a class="idref" href="UniMath.CategoryTheory.RegularAndExact.RegularCategory.html#C:60"><span class="id" title="variable">C</span></a>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="Accessors.x" class="idref" href="#Accessors.x"><span class="id" title="variable">x</span></a> <a id="Accessors.y" class="idref" href="#Accessors.y"><span class="id" title="variable">y</span></a> : <a class="idref" href="UniMath.CategoryTheory.RegularAndExact.RegularCategory.html#C:60"><span class="id" title="variable">C</span></a>}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a id="Accessors.f" class="idref" href="#Accessors.f"><span class="id" title="variable">f</span></a> : <a class="idref" href="UniMath.CategoryTheory.RegularAndExact.RegularCategory.html#x:62"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.CategoryTheory.RegularAndExact.RegularCategory.html#y:63"><span class="id" title="variable">y</span></a>).<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="regular_category_im" class="idref" href="#regular_category_im"><span class="id" title="definition">regular_category_im</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.RegularAndExact.RegularCategory.html#Accessors.C"><span class="id" title="variable">C</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;:= <a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> (<a class="idref" href="UniMath.CategoryTheory.RegularAndExact.RegularCategory.html#regular_category_epi_mono_factorization"><span class="id" title="definition">regular_category_epi_mono_factorization</span></a> <a class="idref" href="UniMath.CategoryTheory.RegularAndExact.RegularCategory.html#Accessors.HC"><span class="id" title="variable">HC</span></a> <a class="idref" href="UniMath.CategoryTheory.RegularAndExact.RegularCategory.html#Accessors.f"><span class="id" title="variable">f</span></a>).<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="regular_category_to_im" class="idref" href="#regular_category_to_im"><span class="id" title="definition">regular_category_to_im</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.RegularAndExact.RegularCategory.html#Accessors.x"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.CategoryTheory.RegularAndExact.RegularCategory.html#regular_category_im"><span class="id" title="definition">regular_category_im</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;:= <a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr12'_x"><span class="id" title="notation">pr12</span></a> <a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr12'_x"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.RegularAndExact.RegularCategory.html#regular_category_epi_mono_factorization"><span class="id" title="definition">regular_category_epi_mono_factorization</span></a> <a class="idref" href="UniMath.CategoryTheory.RegularAndExact.RegularCategory.html#Accessors.HC"><span class="id" title="variable">HC</span></a> <a class="idref" href="UniMath.CategoryTheory.RegularAndExact.RegularCategory.html#Accessors.f"><span class="id" title="variable">f</span></a><a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr12'_x"><span class="id" title="notation">)</span></a>.<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Proposition</span> <a id="is_regular_epi_regular_category_to_im" class="idref" href="#is_regular_epi_regular_category_to_im"><span class="id" title="lemma">is_regular_epi_regular_category_to_im</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.RegularAndExact.RegularEpi.html#is_regular_epi"><span class="id" title="definition">is_regular_epi</span></a> <a class="idref" href="UniMath.CategoryTheory.RegularAndExact.RegularCategory.html#regular_category_to_im"><span class="id" title="definition">regular_category_to_im</span></a>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> (<a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr222'_x"><span class="id" title="notation">pr222</span></a> <a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr222'_x"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.RegularAndExact.RegularCategory.html#regular_category_epi_mono_factorization"><span class="id" title="definition">regular_category_epi_mono_factorization</span></a> <a class="idref" href="UniMath.CategoryTheory.RegularAndExact.RegularCategory.html#Accessors.HC"><span class="id" title="variable">HC</span></a> <a class="idref" href="UniMath.CategoryTheory.RegularAndExact.RegularCategory.html#Accessors.f"><span class="id" title="variable">f</span></a><a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr222'_x"><span class="id" title="notation">)</span></a>)).<br/>
+</div>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="regular_category_im_Monic" class="idref" href="#regular_category_im_Monic"><span class="id" title="definition">regular_category_im_Monic</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Monics.html#Monic"><span class="id" title="definition">Monic</span></a> <a class="idref" href="UniMath.CategoryTheory.RegularAndExact.RegularCategory.html#Accessors.C"><span class="id" title="variable">C</span></a> <a class="idref" href="UniMath.CategoryTheory.RegularAndExact.RegularCategory.html#regular_category_im"><span class="id" title="definition">regular_category_im</span></a> <a class="idref" href="UniMath.CategoryTheory.RegularAndExact.RegularCategory.html#Accessors.y"><span class="id" title="variable">y</span></a>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Monics.html#make_Monic"><span class="id" title="definition">make_Monic</span></a>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr122'_x"><span class="id" title="notation">pr122</span></a> <a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr122'_x"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.RegularAndExact.RegularCategory.html#regular_category_epi_mono_factorization"><span class="id" title="definition">regular_category_epi_mono_factorization</span></a> <a class="idref" href="UniMath.CategoryTheory.RegularAndExact.RegularCategory.html#Accessors.HC"><span class="id" title="variable">HC</span></a> <a class="idref" href="UniMath.CategoryTheory.RegularAndExact.RegularCategory.html#Accessors.f"><span class="id" title="variable">f</span></a><a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr122'_x"><span class="id" title="notation">)</span></a>).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr12'_x"><span class="id" title="notation">pr12</span></a> <a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr12'_x"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr222'_x"><span class="id" title="notation">pr222</span></a> <a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr222'_x"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.RegularAndExact.RegularCategory.html#regular_category_epi_mono_factorization"><span class="id" title="definition">regular_category_epi_mono_factorization</span></a> <a class="idref" href="UniMath.CategoryTheory.RegularAndExact.RegularCategory.html#Accessors.HC"><span class="id" title="variable">HC</span></a> <a class="idref" href="UniMath.CategoryTheory.RegularAndExact.RegularCategory.html#Accessors.f"><span class="id" title="variable">f</span></a><a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr222'_x"><span class="id" title="notation">)</span></a><a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr12'_x"><span class="id" title="notation">)</span></a>).<br/>
+</div>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Proposition</span> <a id="regular_category_im_commutes" class="idref" href="#regular_category_im_commutes"><span class="id" title="lemma">regular_category_im_commutes</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.RegularAndExact.RegularCategory.html#Accessors.f"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.CategoryTheory.RegularAndExact.RegularCategory.html#regular_category_to_im"><span class="id" title="definition">regular_category_to_im</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.RegularAndExact.RegularCategory.html#regular_category_im_Monic"><span class="id" title="definition">regular_category_im_Monic</span></a>.<br/>
+&nbsp;&nbsp;<a class="proof" href="#">Show proof.</a><br/><div class="proof">
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr22'_x"><span class="id" title="notation">pr22</span></a> <a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr22'_x"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr222'_x"><span class="id" title="notation">pr222</span></a> <a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr222'_x"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.RegularAndExact.RegularCategory.html#regular_category_epi_mono_factorization"><span class="id" title="definition">regular_category_epi_mono_factorization</span></a> <a class="idref" href="UniMath.CategoryTheory.RegularAndExact.RegularCategory.html#Accessors.HC"><span class="id" title="variable">HC</span></a> <a class="idref" href="UniMath.CategoryTheory.RegularAndExact.RegularCategory.html#Accessors.f"><span class="id" title="variable">f</span></a><a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr222'_x"><span class="id" title="notation">)</span></a><a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr22'_x"><span class="id" title="notation">)</span></a>).<br/>
+</div>
+<span class="id" title="keyword">End</span> <a class="idref" href="UniMath.CategoryTheory.RegularAndExact.RegularCategory.html#Accessors"><span class="id" title="section">Accessors</span></a>.<br/>
 </div>
 </div>
 
 <div id="footer">
-<hr/><a href="index.html">Index</a><hr/>This page has been generated by <a href="http://coq.inria.fr/">coqdoc</a>
+<hr/><a href="index.html">Index</a><hr/>This page has been generated by <a href="http://rocq-prover.org/">coqdoc</a>
 </div>
 
 </div>

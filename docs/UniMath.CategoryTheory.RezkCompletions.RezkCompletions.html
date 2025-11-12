@@ -27,7 +27,7 @@
 <span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="UniMath.CategoryTheory.FunctorCategory.html#"><span class="id" title="library">UniMath.CategoryTheory.FunctorCategory</span></a>.<br/>
 <span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="UniMath.CategoryTheory.opp_precat.html#"><span class="id" title="library">UniMath.CategoryTheory.opp_precat</span></a>.<br/>
 <span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="UniMath.CategoryTheory.PrecompEquivalence.html#"><span class="id" title="library">UniMath.CategoryTheory.PrecompEquivalence</span></a>.<br/>
-<span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="UniMath.CategoryTheory.WeakEquivalences.html#"><span class="id" title="library">UniMath.CategoryTheory.WeakEquivalences</span></a>.<br/>
+<span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="UniMath.CategoryTheory.WeakEquivalences.Core.html#"><span class="id" title="library">UniMath.CategoryTheory.WeakEquivalences.Core</span></a>.<br/>
 <span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="UniMath.CategoryTheory.whiskering.html#"><span class="id" title="library">UniMath.CategoryTheory.whiskering</span></a>.<br/>
 
 <br/>
@@ -37,7 +37,7 @@
 </div>
 
 <div class="doc">
-<a id="lab1697"></a><h1 class="section">1. The definition and accessors of a Rezk completion</h1>
+<a id="lab1844"></a><h1 class="section">1. The definition and accessors of a Rezk completion</h1>
 
 </div>
 <div class="code">
@@ -46,7 +46,7 @@
 <span class="id" title="keyword">Definition</span> <a id="rezk_completion" class="idref" href="#rezk_completion"><span class="id" title="definition">rezk_completion</span></a><br/>
 &nbsp;&nbsp;(<a id="A:1" class="idref" href="#A:1"><span class="id" title="binder">A</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#category"><span class="id" title="definition">category</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a><br/>
-&nbsp;&nbsp;:= <a class="idref" href="UniMath.Foundations.Preamble.html#cd4bc1b07c8b3bdc9f3bbc7941b56107"><span class="id" title="notation">∑</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#cd4bc1b07c8b3bdc9f3bbc7941b56107"><span class="id" title="notation">(</span></a><a id="D:2" class="idref" href="#D:2"><span class="id" title="binder">D</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Univalence.html#univalent_category"><span class="id" title="definition">univalent_category</span></a><a class="idref" href="UniMath.Foundations.Preamble.html#cd4bc1b07c8b3bdc9f3bbc7941b56107"><span class="id" title="notation">),</span></a> <a class="idref" href="UniMath.CategoryTheory.WeakEquivalences.html#weak_equiv"><span class="id" title="definition">weak_equiv</span></a> <a class="idref" href="UniMath.CategoryTheory.RezkCompletions.RezkCompletions.html#A:1"><span class="id" title="variable">A</span></a> <a class="idref" href="UniMath.CategoryTheory.RezkCompletions.RezkCompletions.html#D:2"><span class="id" title="variable">D</span></a>.<br/>
+&nbsp;&nbsp;:= <a class="idref" href="UniMath.Foundations.Preamble.html#cd4bc1b07c8b3bdc9f3bbc7941b56107"><span class="id" title="notation">∑</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#cd4bc1b07c8b3bdc9f3bbc7941b56107"><span class="id" title="notation">(</span></a><a id="D:2" class="idref" href="#D:2"><span class="id" title="binder">D</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Univalence.html#univalent_category"><span class="id" title="definition">univalent_category</span></a><a class="idref" href="UniMath.Foundations.Preamble.html#cd4bc1b07c8b3bdc9f3bbc7941b56107"><span class="id" title="notation">),</span></a> <a class="idref" href="UniMath.CategoryTheory.WeakEquivalences.Core.html#weak_equiv"><span class="id" title="definition">weak_equiv</span></a> <a class="idref" href="UniMath.CategoryTheory.RezkCompletions.RezkCompletions.html#A:1"><span class="id" title="variable">A</span></a> <a class="idref" href="UniMath.CategoryTheory.RezkCompletions.RezkCompletions.html#D:2"><span class="id" title="variable">D</span></a>.<br/>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="RezkCat" class="idref" href="#RezkCat"><span class="id" title="definition">RezkCat</span></a> : <a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a><br/>
@@ -73,7 +73,7 @@
 <span class="id" title="keyword">Definition</span> <a id="rezk_completion_weak_equivalence" class="idref" href="#rezk_completion_weak_equivalence"><span class="id" title="definition">rezk_completion_weak_equivalence</span></a><br/>
 &nbsp;&nbsp;{<a id="A:11" class="idref" href="#A:11"><span class="id" title="binder">A</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#category"><span class="id" title="definition">category</span></a>}<br/>
 &nbsp;&nbsp;(<a id="D:12" class="idref" href="#D:12"><span class="id" title="binder">D</span></a> : <a class="idref" href="UniMath.CategoryTheory.RezkCompletions.RezkCompletions.html#rezk_completion"><span class="id" title="definition">rezk_completion</span></a> <a class="idref" href="UniMath.CategoryTheory.RezkCompletions.RezkCompletions.html#A:11"><span class="id" title="variable">A</span></a>)<br/>
-&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.WeakEquivalences.html#weak_equiv"><span class="id" title="definition">weak_equiv</span></a> <a class="idref" href="UniMath.CategoryTheory.RezkCompletions.RezkCompletions.html#A:11"><span class="id" title="variable">A</span></a> <a class="idref" href="UniMath.CategoryTheory.RezkCompletions.RezkCompletions.html#D:12"><span class="id" title="variable">D</span></a><br/>
+&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.WeakEquivalences.Core.html#weak_equiv"><span class="id" title="definition">weak_equiv</span></a> <a class="idref" href="UniMath.CategoryTheory.RezkCompletions.RezkCompletions.html#A:11"><span class="id" title="variable">A</span></a> <a class="idref" href="UniMath.CategoryTheory.RezkCompletions.RezkCompletions.html#D:12"><span class="id" title="variable">D</span></a><br/>
 &nbsp;&nbsp;:= <a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> <a class="idref" href="UniMath.CategoryTheory.RezkCompletions.RezkCompletions.html#D:12"><span class="id" title="variable">D</span></a>.<br/>
 
 <br/>
@@ -87,7 +87,7 @@
 <span class="id" title="keyword">Definition</span> <a id="rezk_completion_is_weak_equivalence" class="idref" href="#rezk_completion_is_weak_equivalence"><span class="id" title="definition">rezk_completion_is_weak_equivalence</span></a><br/>
 &nbsp;&nbsp;{<a id="A:15" class="idref" href="#A:15"><span class="id" title="binder">A</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#category"><span class="id" title="definition">category</span></a>}<br/>
 &nbsp;&nbsp;(<a id="D:16" class="idref" href="#D:16"><span class="id" title="binder">D</span></a> : <a class="idref" href="UniMath.CategoryTheory.RezkCompletions.RezkCompletions.html#rezk_completion"><span class="id" title="definition">rezk_completion</span></a> <a class="idref" href="UniMath.CategoryTheory.RezkCompletions.RezkCompletions.html#A:15"><span class="id" title="variable">A</span></a>)<br/>
-&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.WeakEquivalences.html#is_weak_equiv"><span class="id" title="definition">is_weak_equiv</span></a> (<a class="idref" href="UniMath.CategoryTheory.RezkCompletions.RezkCompletions.html#rezk_completion_functor"><span class="id" title="definition">rezk_completion_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.RezkCompletions.RezkCompletions.html#D:16"><span class="id" title="variable">D</span></a>)<br/>
+&nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.WeakEquivalences.Core.html#is_weak_equiv"><span class="id" title="definition">is_weak_equiv</span></a> (<a class="idref" href="UniMath.CategoryTheory.RezkCompletions.RezkCompletions.html#rezk_completion_functor"><span class="id" title="definition">rezk_completion_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.RezkCompletions.RezkCompletions.html#D:16"><span class="id" title="variable">D</span></a>)<br/>
 &nbsp;&nbsp;:= <a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> (<a class="idref" href="UniMath.CategoryTheory.RezkCompletions.RezkCompletions.html#rezk_completion_weak_equivalence"><span class="id" title="definition">rezk_completion_weak_equivalence</span></a> <a class="idref" href="UniMath.CategoryTheory.RezkCompletions.RezkCompletions.html#D:16"><span class="id" title="variable">D</span></a>).<br/>
 
 <br/>
@@ -95,14 +95,14 @@
 &nbsp;&nbsp;{<a id="A:17" class="idref" href="#A:17"><span class="id" title="binder">A</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#category"><span class="id" title="definition">category</span></a>}<br/>
 &nbsp;&nbsp;(<a id="D:18" class="idref" href="#D:18"><span class="id" title="binder">D</span></a> : <a class="idref" href="UniMath.CategoryTheory.RezkCompletions.RezkCompletions.html#rezk_completion"><span class="id" title="definition">rezk_completion</span></a> <a class="idref" href="UniMath.CategoryTheory.RezkCompletions.RezkCompletions.html#A:17"><span class="id" title="variable">A</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#essentially_surjective"><span class="id" title="definition">essentially_surjective</span></a> (<a class="idref" href="UniMath.CategoryTheory.RezkCompletions.RezkCompletions.html#rezk_completion_functor"><span class="id" title="definition">rezk_completion_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.RezkCompletions.RezkCompletions.html#D:18"><span class="id" title="variable">D</span></a>)<br/>
-&nbsp;&nbsp;:= <a class="idref" href="UniMath.CategoryTheory.WeakEquivalences.html#eso_from_weak_equiv"><span class="id" title="definition">eso_from_weak_equiv</span></a> <span class="id" title="var">_</span> (<a class="idref" href="UniMath.CategoryTheory.RezkCompletions.RezkCompletions.html#rezk_completion_is_weak_equivalence"><span class="id" title="definition">rezk_completion_is_weak_equivalence</span></a> <a class="idref" href="UniMath.CategoryTheory.RezkCompletions.RezkCompletions.html#D:18"><span class="id" title="variable">D</span></a>).<br/>
+&nbsp;&nbsp;:= <a class="idref" href="UniMath.CategoryTheory.WeakEquivalences.Core.html#eso_from_weak_equiv"><span class="id" title="definition">eso_from_weak_equiv</span></a> <span class="id" title="var">_</span> (<a class="idref" href="UniMath.CategoryTheory.RezkCompletions.RezkCompletions.html#rezk_completion_is_weak_equivalence"><span class="id" title="definition">rezk_completion_is_weak_equivalence</span></a> <a class="idref" href="UniMath.CategoryTheory.RezkCompletions.RezkCompletions.html#D:18"><span class="id" title="variable">D</span></a>).<br/>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="rezk_completion_fully_faithful" class="idref" href="#rezk_completion_fully_faithful"><span class="id" title="definition">rezk_completion_fully_faithful</span></a><br/>
 &nbsp;&nbsp;{<a id="A:19" class="idref" href="#A:19"><span class="id" title="binder">A</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#category"><span class="id" title="definition">category</span></a>}<br/>
 &nbsp;&nbsp;(<a id="D:20" class="idref" href="#D:20"><span class="id" title="binder">D</span></a> : <a class="idref" href="UniMath.CategoryTheory.RezkCompletions.RezkCompletions.html#rezk_completion"><span class="id" title="definition">rezk_completion</span></a> <a class="idref" href="UniMath.CategoryTheory.RezkCompletions.RezkCompletions.html#A:19"><span class="id" title="variable">A</span></a>)<br/>
 &nbsp;&nbsp;: <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#fully_faithful"><span class="id" title="definition">fully_faithful</span></a> (<a class="idref" href="UniMath.CategoryTheory.RezkCompletions.RezkCompletions.html#rezk_completion_functor"><span class="id" title="definition">rezk_completion_functor</span></a> <a class="idref" href="UniMath.CategoryTheory.RezkCompletions.RezkCompletions.html#D:20"><span class="id" title="variable">D</span></a>)<br/>
-&nbsp;&nbsp;:= <a class="idref" href="UniMath.CategoryTheory.WeakEquivalences.html#ff_from_weak_equiv"><span class="id" title="definition">ff_from_weak_equiv</span></a> <span class="id" title="var">_</span> (<a class="idref" href="UniMath.CategoryTheory.RezkCompletions.RezkCompletions.html#rezk_completion_is_weak_equivalence"><span class="id" title="definition">rezk_completion_is_weak_equivalence</span></a> <a class="idref" href="UniMath.CategoryTheory.RezkCompletions.RezkCompletions.html#D:20"><span class="id" title="variable">D</span></a>).<br/>
+&nbsp;&nbsp;:= <a class="idref" href="UniMath.CategoryTheory.WeakEquivalences.Core.html#ff_from_weak_equiv"><span class="id" title="definition">ff_from_weak_equiv</span></a> <span class="id" title="var">_</span> (<a class="idref" href="UniMath.CategoryTheory.RezkCompletions.RezkCompletions.html#rezk_completion_is_weak_equivalence"><span class="id" title="definition">rezk_completion_is_weak_equivalence</span></a> <a class="idref" href="UniMath.CategoryTheory.RezkCompletions.RezkCompletions.html#D:20"><span class="id" title="variable">D</span></a>).<br/>
 
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="rezk_completion_of_univalent" class="idref" href="#rezk_completion_of_univalent"><span class="id" title="definition">rezk_completion_of_univalent</span></a><br/>
@@ -120,7 +120,7 @@
 </div>
 
 <div class="doc">
-<a id="lab1698"></a><h1 class="section">2. The definition an initial functor from a category</h1>
+<a id="lab1845"></a><h1 class="section">2. The definition an initial functor from a category</h1>
 
 </div>
 <div class="code">
@@ -219,7 +219,7 @@
 </div>
 
 <div class="doc">
-<a id="lab1699"></a><h2 class="section">2.1. The proof that for an initial functor F, any functor G is the identity if F ∙ G = F</h2>
+<a id="lab1846"></a><h2 class="section">2.1. The proof that for an initial functor F, any functor G is the identity if F ∙ G = F</h2>
 
 </div>
 <div class="code">
@@ -241,7 +241,7 @@
 </div>
 
 <div class="doc">
-<a id="lab1700"></a><h1 class="section">3. The equivalence between the covariant functor categories</h1>
+<a id="lab1847"></a><h1 class="section">3. The equivalence between the covariant functor categories</h1>
 
 </div>
 <div class="code">
@@ -289,7 +289,7 @@
 </div>
 
 <div class="doc">
-<a id="lab1701"></a><h2 class="section">3.1. The proof that F is the initial functor from A</h2>
+<a id="lab1848"></a><h2 class="section">3.1. The proof that F is the initial functor from A</h2>
 
 </div>
 <div class="code">
@@ -307,7 +307,7 @@
 </div>
 
 <div class="doc">
-<a id="lab1702"></a><h1 class="section">4. The equivalence between the contravariant functor categories</h1>
+<a id="lab1849"></a><h1 class="section">4. The equivalence between the contravariant functor categories</h1>
 
 </div>
 <div class="code">
@@ -355,7 +355,7 @@
 </div>
 
 <div id="footer">
-<hr/><a href="index.html">Index</a><hr/>This page has been generated by <a href="http://coq.inria.fr/">coqdoc</a>
+<hr/><a href="index.html">Index</a><hr/>This page has been generated by <a href="http://rocq-prover.org/">coqdoc</a>
 </div>
 
 </div>
